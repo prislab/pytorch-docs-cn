@@ -1,0 +1,481 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017, Torch Contributors
+# This file is distributed under the same license as the PyTorch package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PyTorch master (0.3.0.post4 )\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-01-12 11:13+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.5.1\n"
+
+#: ../../source/cuda.rst:2
+msgid "torch.cuda"
+msgstr ""
+
+#: of torch.cuda:1
+msgid ""
+"This package adds support for CUDA tensor types, that implement the same "
+"function as CPU tensors, but they utilize GPUs for computation."
+msgstr ""
+
+#: of torch.cuda:4
+msgid ""
+"It is lazily initialized, so you can always import it, and use "
+":func:`is_available()` to determine if your system supports CUDA."
+msgstr ""
+
+#: of torch.cuda:7
+msgid ":ref:`cuda-semantics` has more details about working with CUDA."
+msgstr ""
+
+#: of torch.cuda.current_blas_handle:1
+msgid "Returns cublasHandle_t pointer to current cuBLAS handle"
+msgstr ""
+
+#: of torch.cuda.current_device:1
+msgid "Returns the index of a currently selected device."
+msgstr ""
+
+#: of torch.cuda.current_stream:1
+msgid "Returns a currently selected :class:`Stream`."
+msgstr ""
+
+#: of torch.cuda.device:1
+msgid "Context-manager that changes the selected device."
+msgstr ""
+
+#: of torch.cuda.Event torch.cuda.Stream torch.cuda.Stream.record_event
+#: torch.cuda.Stream.wait_event torch.cuda.Stream.wait_stream
+#: torch.cuda.comm.broadcast torch.cuda.comm.gather torch.cuda.comm.reduce_add
+#: torch.cuda.comm.scatter torch.cuda.device torch.cuda.device_of
+#: torch.cuda.get_device_capability torch.cuda.get_device_name
+#: torch.cuda.get_rng_state torch.cuda.manual_seed torch.cuda.manual_seed_all
+#: torch.cuda.nvtx.mark torch.cuda.nvtx.range_push torch.cuda.set_device
+#: torch.cuda.set_rng_state torch.cuda.stream
+msgid "参数"
+msgstr ""
+
+#: of torch.cuda.device:3
+msgid "device index to select. It's a no-op if this argument is negative."
+msgstr ""
+
+#: of torch.cuda.device_count:1
+msgid "Returns the number of GPUs available."
+msgstr ""
+
+#: of torch.cuda.device_of:1
+msgid "Context-manager that changes the current device to that of given object."
+msgstr ""
+
+#: of torch.cuda.device_of:3
+msgid ""
+"You can use both tensors and storages as arguments. If a given object is "
+"not allocated on a GPU, this is a no-op."
+msgstr ""
+
+#: of torch.cuda.device_of:6
+msgid "object allocated on the selected device."
+msgstr ""
+
+#: of torch.cuda.empty_cache:1
+msgid ""
+"Releases all unoccupied cached memory currently held by the caching "
+"allocator so that those can be used in other GPU application and visible "
+"in `nvidia-smi`."
+msgstr ""
+
+#: of torch.cuda.get_device_capability:1
+msgid "Gets the cuda capability of a device."
+msgstr ""
+
+#: of torch.cuda.get_device_capability:3 torch.cuda.get_device_name:3
+msgid ""
+"device for which to return the name. This function is a no-op if this "
+"argument is negative."
+msgstr ""
+
+#: of torch.cuda.Event.query torch.cuda.Stream.query
+#: torch.cuda.Stream.record_event torch.cuda.comm.broadcast
+#: torch.cuda.comm.gather torch.cuda.comm.reduce_add torch.cuda.comm.scatter
+#: torch.cuda.get_device_capability
+msgid "返回"
+msgstr ""
+
+#: of torch.cuda.get_device_capability:7
+msgid "the major and minor cuda capability of the device"
+msgstr ""
+
+#: of torch.cuda.get_device_capability
+msgid "返回类型"
+msgstr ""
+
+#: of torch.cuda.get_device_name:1
+msgid "Gets the name of a device."
+msgstr ""
+
+#: of torch.cuda.is_available:1
+msgid "Returns a bool indicating if CUDA is currently available."
+msgstr ""
+
+#: of torch.cuda.set_device:1
+msgid "Sets the current device."
+msgstr ""
+
+#: of torch.cuda.set_device:3
+msgid ""
+"Usage of this function is discouraged in favor of :any:`device`. In most "
+"cases it's better to use ``CUDA_VISIBLE_DEVICES`` environmental variable."
+msgstr ""
+
+#: of torch.cuda.set_device:6
+msgid "selected device. This function is a no-op if this argument is negative."
+msgstr ""
+
+#: of torch.cuda.stream:1
+msgid "Context-manager that selects a given stream."
+msgstr ""
+
+#: of torch.cuda.stream:3
+msgid ""
+"All CUDA kernels queued within its context will be enqueued on a selected"
+" stream."
+msgstr ""
+
+#: of torch.cuda.stream:6
+msgid "selected stream. This manager is a no-op if it's ``None``."
+msgstr ""
+
+#: of torch.cuda.synchronize:1
+msgid "Waits for all kernels in all streams on current device to complete."
+msgstr ""
+
+#: ../../source/cuda.rst:10
+msgid "Random Number Generator"
+msgstr ""
+
+#: of torch.cuda.get_rng_state:1
+msgid ""
+"Returns the random number generator state of the current GPU as a "
+"ByteTensor."
+msgstr ""
+
+#: of torch.cuda.get_rng_state:4
+msgid ""
+"The device to return the RNG state of. Default: -1 (i.e., use the current"
+" device)."
+msgstr ""
+
+#: of torch.cuda.get_rng_state:9 torch.cuda.initial_seed:4
+msgid "This function eagerly initializes CUDA."
+msgstr ""
+
+#: of torch.cuda.set_rng_state:1
+msgid "Sets the random number generator state of the current GPU."
+msgstr ""
+
+#: of torch.cuda.set_rng_state:3
+msgid "The desired state"
+msgstr ""
+
+#: of torch.cuda.manual_seed:1
+msgid ""
+"Sets the seed for generating random numbers for the current GPU. It's "
+"safe to call this function if CUDA is not available; in that case, it is "
+"silently ignored."
+msgstr ""
+
+#: of torch.cuda.manual_seed:5 torch.cuda.manual_seed_all:5
+msgid "The desired seed."
+msgstr ""
+
+#: of torch.cuda.manual_seed:9
+msgid ""
+"If you are working with a multi-GPU model, this function is insufficient "
+"to get determinism.  To seed all GPUs, use :func:`manual_seed_all`."
+msgstr ""
+
+#: of torch.cuda.manual_seed_all:1
+msgid ""
+"Sets the seed for generating random numbers on all GPUs. It's safe to "
+"call this function if CUDA is not available; in that case, it is silently"
+" ignored."
+msgstr ""
+
+#: of torch.cuda.seed:1
+msgid ""
+"Sets the seed for generating random numbers to a random number for the "
+"current GPU. It's safe to call this function if CUDA is not available; in"
+" that case, it is silently ignored."
+msgstr ""
+
+#: of torch.cuda.seed:6
+msgid ""
+"If you are working with a multi-GPU model, this function will only "
+"initialize the seed on one GPU.  To initialize all GPUs, use "
+":func:`seed_all`."
+msgstr ""
+
+#: of torch.cuda.seed_all:1
+msgid ""
+"Sets the seed for generating random numbers to a random number on all "
+"GPUs. It's safe to call this function if CUDA is not available; in that "
+"case, it is silently ignored."
+msgstr ""
+
+#: of torch.cuda.initial_seed:1
+msgid "Returns the current random seed of the current GPU."
+msgstr ""
+
+#: ../../source/cuda.rst:21
+msgid "Communication collectives"
+msgstr ""
+
+#: of torch.cuda.comm.broadcast:1
+msgid "Broadcasts a tensor to a number of GPUs."
+msgstr ""
+
+#: of torch.cuda.comm.broadcast:3
+msgid "tensor to broadcast."
+msgstr ""
+
+#: of torch.cuda.comm.broadcast:5
+msgid ""
+"an iterable of devices among which to broadcast. Note that it should be "
+"like (src, dst1, dst2, ...), the first element of which is the source "
+"device to broadcast from."
+msgstr ""
+
+#: of torch.cuda.comm.broadcast:10
+msgid ""
+"A tuple containing copies of the ``tensor``, placed on devices "
+"corresponding to indices from ``devices``."
+msgstr ""
+
+#: of torch.cuda.comm.reduce_add:1
+msgid "Sums tensors from multiple GPUs."
+msgstr ""
+
+#: of torch.cuda.comm.reduce_add:3
+msgid "All inputs should have matching shapes."
+msgstr ""
+
+#: of torch.cuda.comm.reduce_add:5
+msgid "an iterable of tensors to add."
+msgstr ""
+
+#: of torch.cuda.comm.reduce_add:7
+msgid "a device on which the output will be placed (default: current device)."
+msgstr ""
+
+#: of torch.cuda.comm.reduce_add:11
+msgid ""
+"A tensor containing an elementwise sum of all inputs, placed on the "
+"``destination`` device."
+msgstr ""
+
+#: of torch.cuda.comm.scatter:1
+msgid "Scatters tensor across multiple GPUs."
+msgstr ""
+
+#: of torch.cuda.comm.scatter:3
+msgid "tensor to scatter."
+msgstr ""
+
+#: of torch.cuda.comm.scatter:5
+msgid ""
+"iterable of ints, specifying among which devices the tensor should be "
+"scattered."
+msgstr ""
+
+#: of torch.cuda.comm.scatter:8
+msgid ""
+"sizes of chunks to be placed on each device. It should match ``devices`` "
+"in length and sum to ``tensor.size(dim)``. If not specified, the tensor "
+"will be divided into equal chunks."
+msgstr ""
+
+#: of torch.cuda.comm.scatter:13
+msgid "A dimension along which to chunk the tensor."
+msgstr ""
+
+#: of torch.cuda.comm.scatter:16
+msgid ""
+"A tuple containing chunks of the ``tensor``, spread across given "
+"``devices``."
+msgstr ""
+
+#: of torch.cuda.comm.gather:1
+msgid "Gathers tensors from multiple GPUs."
+msgstr ""
+
+#: of torch.cuda.comm.gather:3
+msgid "Tensor sizes in all dimension different than ``dim`` have to match."
+msgstr ""
+
+#: of torch.cuda.comm.gather:5
+msgid "iterable of tensors to gather."
+msgstr ""
+
+#: of torch.cuda.comm.gather:7
+msgid "a dimension along which the tensors will be concatenated."
+msgstr ""
+
+#: of torch.cuda.comm.gather:9
+msgid "output device (-1 means CPU, default: current device)"
+msgstr ""
+
+#: of torch.cuda.comm.gather:13
+msgid ""
+"A tensor located on ``destination`` device, that is a result of "
+"concatenating ``tensors`` along ``dim``."
+msgstr ""
+
+#: ../../source/cuda.rst:32
+msgid "Streams and events"
+msgstr ""
+
+#: of torch.cuda.Stream:1
+msgid "Wrapper around a CUDA stream."
+msgstr ""
+
+#: of torch.cuda.Stream:3
+msgid "a device on which to allocate the Stream."
+msgstr ""
+
+#: of torch.cuda.Stream:5
+msgid "priority of the stream. Lower numbers represent higher priorities."
+msgstr ""
+
+#: of torch.cuda.Stream.query:1
+msgid "Checks if all the work submitted has been completed."
+msgstr ""
+
+#: of torch.cuda.Stream.query:3
+msgid "A boolean indicating if all kernels in this stream are completed."
+msgstr ""
+
+#: of torch.cuda.Stream.record_event:1
+msgid "Records an event."
+msgstr ""
+
+#: of torch.cuda.Stream.record_event:3
+msgid "event to record. If not given, a new one will be allocated."
+msgstr ""
+
+#: of torch.cuda.Stream.record_event:7
+msgid "Recorded event."
+msgstr ""
+
+#: of torch.cuda.Stream.synchronize:1
+msgid "Wait for all the kernels in this stream to complete."
+msgstr ""
+
+#: of torch.cuda.Stream.wait_event:1
+msgid "Makes all future work submitted to the stream wait for an event."
+msgstr ""
+
+#: of torch.cuda.Stream.wait_event:3
+msgid "an event to wait for."
+msgstr ""
+
+#: of torch.cuda.Stream.wait_stream:1
+msgid "Synchronizes with another stream."
+msgstr ""
+
+#: of torch.cuda.Stream.wait_stream:3
+msgid ""
+"All future work submitted to this stream will wait until all kernels "
+"submitted to a given stream at the time of call complete."
+msgstr ""
+
+#: of torch.cuda.Stream.wait_stream:6
+msgid "a stream to synchronize."
+msgstr ""
+
+#: of torch.cuda.Event:1
+msgid "Wrapper around CUDA event."
+msgstr ""
+
+#: of torch.cuda.Event:3
+msgid "indicates if the event should measure time (default: ``False``)"
+msgstr ""
+
+#: of torch.cuda.Event:6
+msgid "if ``True``, :meth:`wait` will be blocking (default: ``False``)"
+msgstr ""
+
+#: of torch.cuda.Event:8
+msgid ""
+"if ``True``, the event can be shared between processes (default: "
+"``False``)"
+msgstr ""
+
+#: of torch.cuda.Event.elapsed_time:1
+msgid "Returns the time elapsed before the event was recorded."
+msgstr ""
+
+#: of torch.cuda.Event.ipc_handle:1
+msgid "Returns an IPC handle of this event."
+msgstr ""
+
+#: of torch.cuda.Event.query:1
+msgid "Checks if the event has been recorded."
+msgstr ""
+
+#: of torch.cuda.Event.query:3
+msgid "A boolean indicating if the event has been recorded."
+msgstr ""
+
+#: of torch.cuda.Event.record:1
+msgid "Records the event in a given stream."
+msgstr ""
+
+#: of torch.cuda.Event.synchronize:1
+msgid "Synchronizes with the event."
+msgstr ""
+
+#: of torch.cuda.Event.wait:1
+msgid "Makes a given stream wait for the event."
+msgstr ""
+
+#: ../../source/cuda.rst:41
+msgid "Memory management"
+msgstr ""
+
+#: ../../source/cuda.rst:45
+msgid "NVIDIA Tools Extension (NVTX)"
+msgstr ""
+
+#: of torch.cuda.nvtx.mark:1
+msgid "Describe an instantaneous event that occurred at some point."
+msgstr ""
+
+#: of torch.cuda.nvtx.mark:3
+msgid "ASCII message to associate with the event."
+msgstr ""
+
+#: of torch.cuda.nvtx.range_push:1
+msgid ""
+"Pushes a range onto a stack of nested range span.  Returns zero-based "
+"depth of the range that is started."
+msgstr ""
+
+#: of torch.cuda.nvtx.range_push:4
+msgid "ASCII message to associate with range"
+msgstr ""
+
+#: of torch.cuda.nvtx.range_pop:1
+msgid ""
+"Pops a range off of a stack of nested range spans.  Returns the zero-"
+"based depth of the range that is ended."
+msgstr ""
+

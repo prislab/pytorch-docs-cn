@@ -1,0 +1,158 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017, Torch Contributors
+# This file is distributed under the same license as the PyTorch package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PyTorch master (0.3.0.post4 )\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-01-12 11:13+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.5.1\n"
+
+#: ../../source/notes/extending.rst:2
+msgid "Extending PyTorch"
+msgstr ""
+
+#: ../../source/notes/extending.rst:4
+msgid ""
+"In this note we'll cover ways of extending :mod:`torch.nn`, "
+":mod:`torch.autograd`, and writing custom C extensions utilizing our C "
+"libraries."
+msgstr ""
+
+#: ../../source/notes/extending.rst:9
+msgid "Extending :mod:`torch.autograd`"
+msgstr ""
+
+#: ../../source/notes/extending.rst:13
+msgid ""
+"Adding operations to :mod:`~torch.autograd` requires implementing a new "
+":class:`Function` subclass for each operation. Recall that "
+":class:`Function` s are what :mod:`~torch.autograd` uses to compute the "
+"results and gradients, and encode the operation history. Every new "
+"function requires you to implement 2 methods:"
+msgstr ""
+
+#: ../../source/notes/extending.rst:19
+msgid ""
+":meth:`~Function.forward` - the code that performs the operation. It can "
+"take as many arguments as you want, with some of them being optional, if "
+"you specify the default values. All kinds of Python objects are accepted "
+"here. :class:`Variable` arguments will be converted to :class:`Tensor` s "
+"before the call, and their use will be registered in the graph. Note that"
+" this logic won't traverse lists/dicts/any other data structures and will"
+" only consider Variables that are direct arguments to the call. You can "
+"return either a single :class:`Tensor` output, or a :class:`tuple` of "
+":class:`Tensor` s if there are multiple outputs. Also, please refer to "
+"the docs of :class:`Function` to find descriptions of useful methods that"
+" can be called only from :meth:`~Function.forward`."
+msgstr ""
+
+#: ../../source/notes/extending.rst:29
+msgid ""
+":meth:`~Function.backward` - gradient formula. It will be given as many "
+":class:`Variable` arguments as there were outputs, with each of them "
+"representing gradient w.r.t. that output. It should return as many "
+":class:`Variable` s as there were inputs, with each of them containing "
+"the gradient w.r.t. its corresponding input. If your inputs didn't "
+"require gradient (see :attr:`~Variable.needs_input_grad`), or were "
+"non-:class:`Variable` objects, you can return :class:`python:None`. Also,"
+" if you have optional arguments to :meth:`~Variable.forward` you can "
+"return more gradients than there were inputs, as long as they're all "
+":any:`python:None`."
+msgstr ""
+
+#: ../../source/notes/extending.rst:39
+msgid ""
+"Below you can find code for a ``Linear`` function from :mod:`torch.nn`, "
+"with additional comments::"
+msgstr ""
+
+#: ../../source/notes/extending.rst:79
+msgid ""
+"Now, to make it easier to use these custom ops, we recommend aliasing "
+"their ``apply`` method::"
+msgstr ""
+
+#: ../../source/notes/extending.rst:84
+msgid ""
+"Here, we give an additional example of a function that is parametrized by"
+" non-Variable arguments::"
+msgstr ""
+
+#: ../../source/notes/extending.rst:101
+msgid ""
+"You probably want to check if the backward method you implemented "
+"actually computes the derivatives of your function. It is possible by "
+"comparing with numerical approximations using small finite differences::"
+msgstr ""
+
+#: ../../source/notes/extending.rst:115
+msgid "Extending :mod:`torch.nn`"
+msgstr ""
+
+#: ../../source/notes/extending.rst:119
+msgid ""
+":mod:`~torch.nn` exports two kinds of interfaces - modules and their "
+"functional versions. You can extend it in both ways, but we recommend "
+"using modules for all kinds of layers, that hold any parameters or "
+"buffers, and recommend using a functional form parameter-less operations "
+"like activation functions, pooling, etc."
+msgstr ""
+
+#: ../../source/notes/extending.rst:125
+msgid ""
+"Adding a functional version of an operation is already fully covered in "
+"the section above."
+msgstr ""
+
+#: ../../source/notes/extending.rst:129
+msgid "Adding a :class:`Module`"
+msgstr ""
+
+#: ../../source/notes/extending.rst:131
+msgid ""
+"Since :mod:`~torch.nn` heavily utilizes :mod:`~torch.autograd`, adding a "
+"new :class:`Module` requires implementing a "
+":class:`~torch.autograd.Function` that performs the operation and can "
+"compute the gradient. From now on let's assume that we want to implement "
+"a ``Linear`` module and we have the function implementated as in the "
+"listing above. There's very little code required to add this. Now, there "
+"are two functions that need to be implemented:"
+msgstr ""
+
+#: ../../source/notes/extending.rst:138
+msgid ""
+"``__init__`` (*optional*) - takes in arguments such as kernel sizes, "
+"numbers of features, etc. and initializes parameters and buffers."
+msgstr ""
+
+#: ../../source/notes/extending.rst:140
+msgid ""
+":meth:`~Module.forward` - instantiates a "
+":class:`~torch.autograd.Function` and uses it to perform the operation. "
+"It's very similar to a functional wrapper shown above."
+msgstr ""
+
+#: ../../source/notes/extending.rst:144
+msgid "This is how a ``Linear`` module can be implemented::"
+msgstr ""
+
+#: ../../source/notes/extending.rst:179
+msgid "Writing custom C extensions"
+msgstr ""
+
+#: ../../source/notes/extending.rst:181
+msgid ""
+"Coming soon. For now you can find an example at `GitHub "
+"<https://github.com/pytorch/extension-ffi>`_."
+msgstr ""
+

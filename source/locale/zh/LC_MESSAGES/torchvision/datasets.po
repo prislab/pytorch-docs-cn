@@ -1,0 +1,364 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017, Torch Contributors
+# This file is distributed under the same license as the PyTorch package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PyTorch master (0.3.0.post4 )\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-01-12 11:27+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.5.1\n"
+
+#: ../../source/torchvision/datasets.rst:2
+msgid "torchvision.datasets"
+msgstr ""
+
+#: ../../source/torchvision/datasets.rst:4
+msgid ""
+"All datasets are subclasses of :class:`torch.utils.data.Dataset` i.e, "
+"they have ``__getitem__`` and ``__len__`` methods implemented. Hence, "
+"they can all be passed to a :class:`torch.utils.data.DataLoader` which "
+"can load multiple samples parallelly using ``torch.multiprocessing`` "
+"workers. For example: ::"
+msgstr ""
+
+#: ../../source/torchvision/datasets.rst:16
+msgid "The following datasets are available:"
+msgstr ""
+
+#: ../../source/torchvision/datasets.rst:21
+msgid ""
+"All the datasets have almost similar API. They all have two common "
+"arguments: ``transform`` and  ``target_transform`` to transform the input"
+" and target respectively."
+msgstr ""
+
+#: ../../source/torchvision/datasets.rst:29
+msgid "MNIST"
+msgstr ""
+
+#: of torchvision.datasets.MNIST:1
+msgid "`MNIST <http://yann.lecun.com/exdb/mnist/>`_ Dataset."
+msgstr ""
+
+#: of torchvision.datasets.CIFAR10 torchvision.datasets.CIFAR10.__getitem__
+#: torchvision.datasets.CocoCaptions
+#: torchvision.datasets.CocoCaptions.__getitem__
+#: torchvision.datasets.CocoDetection
+#: torchvision.datasets.CocoDetection.__getitem__
+#: torchvision.datasets.FashionMNIST torchvision.datasets.ImageFolder
+#: torchvision.datasets.ImageFolder.__getitem__ torchvision.datasets.LSUN
+#: torchvision.datasets.LSUN.__getitem__ torchvision.datasets.MNIST
+#: torchvision.datasets.PhotoTour torchvision.datasets.PhotoTour.__getitem__
+#: torchvision.datasets.STL10 torchvision.datasets.STL10.__getitem__
+#: torchvision.datasets.SVHN torchvision.datasets.SVHN.__getitem__
+msgid "参数"
+msgstr ""
+
+#: of torchvision.datasets.FashionMNIST:3 torchvision.datasets.MNIST:3
+msgid ""
+"Root directory of dataset where ``processed/training.pt`` and  "
+"``processed/test.pt`` exist."
+msgstr ""
+
+#: of torchvision.datasets.FashionMNIST:6 torchvision.datasets.MNIST:6
+msgid "If True, creates dataset from ``training.pt``, otherwise from ``test.pt``."
+msgstr ""
+
+#: of torchvision.datasets.CIFAR10:15 torchvision.datasets.FashionMNIST:9
+#: torchvision.datasets.MNIST:9 torchvision.datasets.PhotoTour:11
+#: torchvision.datasets.STL10:15 torchvision.datasets.SVHN:18
+msgid ""
+"If true, downloads the dataset from the internet and puts it in root "
+"directory. If dataset is already downloaded, it is not downloaded again."
+msgstr ""
+
+#: of torchvision.datasets.CIFAR10:9 torchvision.datasets.FashionMNIST:13
+#: torchvision.datasets.ImageFolder:13 torchvision.datasets.LSUN:8
+#: torchvision.datasets.MNIST:13 torchvision.datasets.STL10:9
+#: torchvision.datasets.SVHN:12
+msgid ""
+"A function/transform that  takes in an PIL image and returns a "
+"transformed version. E.g, ``transforms.RandomCrop``"
+msgstr ""
+
+#: of torchvision.datasets.CIFAR10:12 torchvision.datasets.CocoCaptions:10
+#: torchvision.datasets.CocoDetection:10 torchvision.datasets.FashionMNIST:16
+#: torchvision.datasets.ImageFolder:16 torchvision.datasets.LSUN:11
+#: torchvision.datasets.MNIST:16 torchvision.datasets.STL10:12
+#: torchvision.datasets.SVHN:15
+msgid "A function/transform that takes in the target and transforms it."
+msgstr ""
+
+#: ../../source/torchvision/datasets.rst:34
+msgid "Fashion-MNIST"
+msgstr ""
+
+#: of torchvision.datasets.FashionMNIST:1
+msgid ""
+"`Fashion-MNIST <https://github.com/zalandoresearch/fashion-mnist>`_ "
+"Dataset."
+msgstr ""
+
+#: ../../source/torchvision/datasets.rst:39
+msgid "EMNIST"
+msgstr ""
+
+#: ../../source/torchvision/datasets.rst:44
+msgid "COCO"
+msgstr ""
+
+#: ../../source/torchvision/datasets.rst:47
+msgid "These require the `COCO API to be installed`_"
+msgstr ""
+
+#: ../../source/torchvision/datasets.rst:53
+msgid "Captions"
+msgstr ""
+
+#: of torchvision.datasets.CocoCaptions:1
+msgid ""
+"`MS Coco Captions <http://mscoco.org/dataset/#captions-challenge2015>`_ "
+"Dataset."
+msgstr ""
+
+#: of torchvision.datasets.CocoCaptions:3 torchvision.datasets.CocoDetection:3
+msgid "Root directory where images are downloaded to."
+msgstr ""
+
+#: of torchvision.datasets.CocoCaptions:5 torchvision.datasets.CocoDetection:5
+msgid "Path to json annotation file."
+msgstr ""
+
+#: of torchvision.datasets.CocoCaptions:7 torchvision.datasets.CocoDetection:7
+msgid ""
+"A function/transform that  takes in an PIL image and returns a "
+"transformed version. E.g, ``transforms.ToTensor``"
+msgstr ""
+
+#: of torchvision.datasets.CocoCaptions:15
+msgid "Example"
+msgstr ""
+
+#: of torchvision.datasets.CocoCaptions:30
+msgid "Output: ::"
+msgstr ""
+
+#: of torchvision.datasets.CIFAR10.__getitem__:1
+#: torchvision.datasets.CocoCaptions.__getitem__:1
+#: torchvision.datasets.CocoDetection.__getitem__:1
+#: torchvision.datasets.ImageFolder.__getitem__:1
+#: torchvision.datasets.LSUN.__getitem__:1
+#: torchvision.datasets.PhotoTour.__getitem__:1
+#: torchvision.datasets.STL10.__getitem__:1
+#: torchvision.datasets.SVHN.__getitem__:1
+msgid "Index"
+msgstr ""
+
+#: of torchvision.datasets.CIFAR10.__getitem__
+#: torchvision.datasets.CocoCaptions.__getitem__
+#: torchvision.datasets.CocoDetection.__getitem__
+#: torchvision.datasets.ImageFolder.__getitem__
+#: torchvision.datasets.LSUN.__getitem__
+#: torchvision.datasets.PhotoTour.__getitem__
+#: torchvision.datasets.STL10.__getitem__ torchvision.datasets.SVHN.__getitem__
+msgid "返回"
+msgstr ""
+
+#: of torchvision.datasets.CocoCaptions.__getitem__:4
+msgid "Tuple (image, target). target is a list of captions for the image."
+msgstr ""
+
+#: of torchvision.datasets.CIFAR10.__getitem__
+#: torchvision.datasets.CocoCaptions.__getitem__
+#: torchvision.datasets.CocoDetection.__getitem__
+#: torchvision.datasets.ImageFolder.__getitem__
+#: torchvision.datasets.LSUN.__getitem__
+#: torchvision.datasets.PhotoTour.__getitem__
+#: torchvision.datasets.STL10.__getitem__ torchvision.datasets.SVHN.__getitem__
+msgid "返回类型"
+msgstr ""
+
+#: ../../source/torchvision/datasets.rst:61
+msgid "Detection"
+msgstr ""
+
+#: of torchvision.datasets.CocoDetection:1
+msgid ""
+"`MS Coco Detection <http://mscoco.org/dataset/#detections-"
+"challenge2016>`_ Dataset."
+msgstr ""
+
+#: of torchvision.datasets.CocoDetection.__getitem__:4
+msgid "Tuple (image, target). target is the object returned by ``coco.loadAnns``."
+msgstr ""
+
+#: ../../source/torchvision/datasets.rst:68
+msgid "LSUN"
+msgstr ""
+
+#: of torchvision.datasets.LSUN:1
+msgid "`LSUN <http://lsun.cs.princeton.edu>`_ dataset."
+msgstr ""
+
+#: of torchvision.datasets.LSUN:3
+msgid "Root directory for the database files."
+msgstr ""
+
+#: of torchvision.datasets.LSUN:5
+msgid ""
+"One of {'train', 'val', 'test'} or a list of categories to load. e,g. "
+"['bedroom_train', 'church_train']."
+msgstr ""
+
+#: of torchvision.datasets.LSUN.__getitem__:4
+msgid "Tuple (image, target) where target is the index of the target category."
+msgstr ""
+
+#: ../../source/torchvision/datasets.rst:75
+msgid "ImageFolder"
+msgstr ""
+
+#: of torchvision.datasets.ImageFolder:1
+msgid "A generic data loader where the images are arranged in this way: ::"
+msgstr ""
+
+#: of torchvision.datasets.ImageFolder:11
+msgid "Root directory path."
+msgstr ""
+
+#: of torchvision.datasets.ImageFolder:19
+msgid "A function to load an image given its path."
+msgstr ""
+
+#: of torchvision.datasets.ImageFolder.__getitem__:4
+msgid "(image, target) where target is class_index of the target class."
+msgstr ""
+
+#: ../../source/torchvision/datasets.rst:83
+msgid "Imagenet-12"
+msgstr ""
+
+#: ../../source/torchvision/datasets.rst:85
+msgid ""
+"This should simply be implemented with an ``ImageFolder`` dataset. The "
+"data is preprocessed `as described here "
+"<https://github.com/facebook/fb.resnet.torch/blob/master/INSTALL.md"
+"#download-the-imagenet-dataset>`__"
+msgstr ""
+
+#: ../../source/torchvision/datasets.rst:89
+msgid ""
+"`Here is an example "
+"<https://github.com/pytorch/examples/blob/27e2a46c1d1505324032b1d94fc6ce24d5b67e97/imagenet/main.py#L48-L62>`__."
+msgstr ""
+
+#: ../../source/torchvision/datasets.rst:93
+msgid "CIFAR"
+msgstr ""
+
+#: of torchvision.datasets.CIFAR10:1
+msgid "`CIFAR10 <https://www.cs.toronto.edu/~kriz/cifar.html>`_ Dataset."
+msgstr ""
+
+#: of torchvision.datasets.CIFAR10:3
+msgid "Root directory of dataset where directory ``cifar-10-batches-py`` exists."
+msgstr ""
+
+#: of torchvision.datasets.CIFAR10:6
+msgid ""
+"If True, creates dataset from training set, otherwise creates from test "
+"set."
+msgstr ""
+
+#: of torchvision.datasets.CIFAR10.__getitem__:4
+#: torchvision.datasets.STL10.__getitem__:4
+#: torchvision.datasets.SVHN.__getitem__:4
+msgid "(image, target) where target is index of the target class."
+msgstr ""
+
+#: of torchvision.datasets.CIFAR100:1
+msgid "`CIFAR100 <https://www.cs.toronto.edu/~kriz/cifar.html>`_ Dataset."
+msgstr ""
+
+#: of torchvision.datasets.CIFAR100:3
+msgid "This is a subclass of the `CIFAR10` Dataset."
+msgstr ""
+
+#: ../../source/torchvision/datasets.rst:102
+msgid "STL10"
+msgstr ""
+
+#: of torchvision.datasets.STL10:1
+msgid "`STL10 <https://cs.stanford.edu/~acoates/stl10/>`_ Dataset."
+msgstr ""
+
+#: of torchvision.datasets.STL10:3
+msgid "Root directory of dataset where directory ``stl10_binary`` exists."
+msgstr ""
+
+#: of torchvision.datasets.STL10:6
+msgid ""
+"One of {'train', 'test', 'unlabeled', 'train+unlabeled'}. Accordingly "
+"dataset is selected."
+msgstr ""
+
+#: ../../source/torchvision/datasets.rst:110
+msgid "SVHN"
+msgstr ""
+
+#: of torchvision.datasets.SVHN:1
+msgid ""
+"`SVHN <http://ufldl.stanford.edu/housenumbers/>`_ Dataset. Note: The SVHN"
+" dataset assigns the label `10` to the digit `0`. However, in this "
+"Dataset, we assign the label `0` to the digit `0` to be compatible with "
+"PyTorch loss functions which expect the class labels to be in the range "
+"`[0, C-1]`"
+msgstr ""
+
+#: of torchvision.datasets.SVHN:6
+msgid "Root directory of dataset where directory ``SVHN`` exists."
+msgstr ""
+
+#: of torchvision.datasets.SVHN:9
+msgid ""
+"One of {'train', 'test', 'extra'}. Accordingly dataset is selected. "
+"'extra' is Extra training set."
+msgstr ""
+
+#: ../../source/torchvision/datasets.rst:118
+msgid "PhotoTour"
+msgstr ""
+
+#: of torchvision.datasets.PhotoTour:1
+msgid ""
+"`Learning Local Image Descriptors Data "
+"<http://phototour.cs.washington.edu/patches/default.htm>`_ Dataset."
+msgstr ""
+
+#: of torchvision.datasets.PhotoTour:4
+msgid "Root directory where images are."
+msgstr ""
+
+#: of torchvision.datasets.PhotoTour:6
+msgid "Name of the dataset to load."
+msgstr ""
+
+#: of torchvision.datasets.PhotoTour:8
+msgid ""
+"A function/transform that  takes in an PIL image and returns a "
+"transformed version."
+msgstr ""
+
+#: of torchvision.datasets.PhotoTour.__getitem__:4
+msgid "(data1, data2, matches)"
+msgstr ""
+

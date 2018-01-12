@@ -1,0 +1,173 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017, Torch Contributors
+# This file is distributed under the same license as the PyTorch package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PyTorch master (0.3.0.post4 )\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-01-12 11:13+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.5.1\n"
+
+#: ../../source/storage.rst:2
+msgid "torch.Storage"
+msgstr ""
+
+#: ../../source/storage.rst:4
+msgid ""
+"A :class:`torch.Storage` is a contiguous, one-dimensional array of a "
+"single data type."
+msgstr ""
+
+#: ../../source/storage.rst:7
+msgid ""
+"Every :class:`torch.Tensor` has a corresponding storage of the same data "
+"type."
+msgstr ""
+
+#: of torch.FloatStorage.byte:1
+msgid "Casts this storage to byte type"
+msgstr ""
+
+#: of torch.FloatStorage.char:1
+msgid "Casts this storage to char type"
+msgstr ""
+
+#: of torch.FloatStorage.clone:1
+msgid "Returns a copy of this storage"
+msgstr ""
+
+#: of torch.FloatStorage.cpu:1
+msgid "Returns a CPU copy of this storage if it's not already on the CPU"
+msgstr ""
+
+#: of torch.FloatStorage.cuda:1
+msgid "Returns a copy of this object in CUDA memory."
+msgstr ""
+
+#: of torch.FloatStorage.cuda:3
+msgid ""
+"If this object is already in CUDA memory and on the correct device, then "
+"no copy is performed and the original object is returned."
+msgstr ""
+
+#: of torch.FloatStorage.cuda torch.FloatStorage.from_file
+#: torch.FloatStorage.type
+msgid "参数"
+msgstr ""
+
+#: of torch.FloatStorage.cuda:6
+msgid "The destination GPU id. Defaults to the current device."
+msgstr ""
+
+#: of torch.FloatStorage.cuda:8
+msgid ""
+"If ``True`` and the source is in pinned memory, the copy will be "
+"asynchronous with respect to the host. Otherwise, the argument has no "
+"effect."
+msgstr ""
+
+#: of torch.FloatStorage.double:1
+msgid "Casts this storage to double type"
+msgstr ""
+
+#: of torch.FloatStorage.float:1
+msgid "Casts this storage to float type"
+msgstr ""
+
+#: of torch.FloatStorage.from_file:1
+msgid ""
+"If shared is True then memory is shared between all processes. All "
+"changes are written to the file. If shared is False then the changes on "
+"the storage do not affect the file."
+msgstr ""
+
+#: of torch.FloatStorage.from_file:5
+msgid ""
+"Size is the number of elements in the storage. If shared is False then "
+"the file must contain at least `size * sizeof(Type)` bytes (`Type` is the"
+" type of storage). If shared is True the file will be created if needed."
+msgstr ""
+
+#: of torch.FloatStorage.from_file:9
+msgid "file name to map"
+msgstr ""
+
+#: of torch.FloatStorage.from_file:11
+msgid "whether to share memory"
+msgstr ""
+
+#: of torch.FloatStorage.from_file:13
+msgid "number of elements in the storage"
+msgstr ""
+
+#: of torch.FloatStorage.half:1
+msgid "Casts this storage to half type"
+msgstr ""
+
+#: of torch.FloatStorage.int:1
+msgid "Casts this storage to int type"
+msgstr ""
+
+#: of torch.FloatStorage.long:1
+msgid "Casts this storage to long type"
+msgstr ""
+
+#: of torch.FloatStorage.pin_memory:1
+msgid "Copies the storage to pinned memory, if it's not already pinned."
+msgstr ""
+
+#: of torch.FloatStorage.share_memory_:1
+msgid "Moves the storage to shared memory."
+msgstr ""
+
+#: of torch.FloatStorage.share_memory_:3
+msgid ""
+"This is a no-op for storages already in shared memory and for CUDA "
+"storages, which do not need to be moved for sharing across processes. "
+"Storages in shared memory cannot be resized."
+msgstr ""
+
+#: of torch.FloatStorage.share_memory_:7
+msgid "Returns: self"
+msgstr ""
+
+#: of torch.FloatStorage.short:1
+msgid "Casts this storage to short type"
+msgstr ""
+
+#: of torch.FloatStorage.tolist:1
+msgid "Returns a list containing the elements of this storage"
+msgstr ""
+
+#: of torch.FloatStorage.type:1
+msgid ""
+"Returns the type if `new_type` is not provided, else casts this object to"
+" the specified type."
+msgstr ""
+
+#: of torch.FloatStorage.type:4
+msgid ""
+"If this is already of the correct type, no copy is performed and the "
+"original object is returned."
+msgstr ""
+
+#: of torch.FloatStorage.type:7
+msgid "The desired type"
+msgstr ""
+
+#: of torch.FloatStorage.type:9
+msgid ""
+"If ``True``, and the source is in pinned memory and destination is on the"
+" GPU or vice versa, the copy is performed asynchronously with respect to "
+"the host. Otherwise, the argument has no effect."
+msgstr ""
+

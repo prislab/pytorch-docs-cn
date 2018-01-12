@@ -1,0 +1,110 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017, Torch Contributors
+# This file is distributed under the same license as the PyTorch package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PyTorch master (0.3.0.post4 )\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-01-12 11:13+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.5.1\n"
+
+#: ../../source/sparse.rst:4
+msgid "torch.sparse"
+msgstr ""
+
+#: ../../source/sparse.rst:8
+msgid "This API is currently experimental and may change in the near future."
+msgstr ""
+
+#: ../../source/sparse.rst:10
+msgid ""
+"Torch supports sparse tensors in COO(rdinate) format, which can "
+"efficiently store and process tensors for which the majority of elements "
+"are zeros."
+msgstr ""
+
+#: ../../source/sparse.rst:14
+msgid ""
+"A sparse tensor is represented as a pair of dense tensors: a tensor of "
+"values and a 2D tensor of indices.  A sparse tensor can be constructed by"
+" providing these two tensors, as well as the size of the sparse tensor "
+"(which cannot be inferred from these tensors!)  Suppose we want to define"
+" a sparse tensor with the entry 3 at location (0, 2), entry 4 at location"
+" (1, 0), and entry 5 at location (1, 2).  We would then write:"
+msgstr ""
+
+#: ../../source/sparse.rst:29
+msgid ""
+"Note that the input to LongTensor is NOT a list of index tuples.  If you "
+"want to write your indices this way, you should transpose before passing "
+"them to the sparse constructor:"
+msgstr ""
+
+#: ../../source/sparse.rst:40
+msgid ""
+"You can also construct hybrid sparse tensors, where only the first n "
+"dimensions are sparse, and the rest of the dimensions are dense."
+msgstr ""
+
+#: ../../source/sparse.rst:53
+msgid "An empty sparse tensor can be constructed by specifying its size:"
+msgstr ""
+
+#: ../../source/sparse.rst:63
+msgid ""
+"Our sparse tensor format permits *uncoalesced* sparse tensors, where "
+"there may be duplicate coordinates in the indices; in this case, the "
+"interpretation is that the value at that index is the sum of all "
+"duplicate value entries. Uncoalesced tensors permit us to implement "
+"certain operators more efficiently."
+msgstr ""
+
+#: ../../source/sparse.rst:69
+msgid ""
+"For the most part, you shouldn't have to care whether or not a sparse "
+"tensor is coalesced or not, as most operations will work identically "
+"given a coalesced or uncoalesced sparse tensor. However, there are two "
+"cases in which you may need to care."
+msgstr ""
+
+#: ../../source/sparse.rst:74
+msgid ""
+"First, if you repeatedly perform an operation that can produce duplicate "
+"entries (e.g., :func:`torch.sparse.FloatTensor.add`), you should "
+"occasionally coalesce your sparse tensors to prevent them from growing "
+"too large."
+msgstr ""
+
+#: ../../source/sparse.rst:79
+msgid ""
+"Second, some operators will produce different values depending on whether"
+" or not they are coalesced or not (e.g., "
+":func:`torch.sparse.FloatTensor._values` and "
+":func:`torch.sparse.FloatTensor._indices`, as well as "
+":func:`torch.Tensor._sparse_mask`).  These operators are prefixed by an "
+"underscore to indicate that they reveal internal implementation details "
+"and should be used with care, since code that works with coalesced sparse"
+" tensors may not work with uncoalesced sparse tensors; generally "
+"speaking, it is safest to explicitly coalesce before working with these "
+"operators."
+msgstr ""
+
+#: ../../source/sparse.rst:90
+msgid ""
+"For example, suppose that we wanted to implement an operator by operating"
+" directly on :func:`torch.sparse.FloatTensor._values`. Multiplication by "
+"a scalar can be implemented in the obvious way, as multiplication "
+"distributes over addition; however, square root cannot be implemented "
+"directly, since ``sqrt(a + b) != sqrt(a) + sqrt(b)`` (which is what would"
+" be computed if you were given an uncoalesced tensor.)"
+msgstr ""
+

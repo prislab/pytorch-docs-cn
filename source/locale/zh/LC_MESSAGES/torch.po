@@ -1,0 +1,2919 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017, Torch Contributors
+# This file is distributed under the same license as the PyTorch package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PyTorch master (0.3.0.post4 )\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-01-12 11:13+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.5.1\n"
+
+#: ../../source/torch.rst:2
+msgid "torch"
+msgstr ""
+
+#: of torch:1
+msgid ""
+"The torch package contains data structures for multi-dimensional tensors "
+"and mathematical operations over these are defined. Additionally, it "
+"provides many utilities for efficient serializing of Tensors and "
+"arbitrary types, and other useful utilities."
+msgstr ""
+
+#: of torch:6
+msgid ""
+"It has a CUDA counterpart, that enables you to run your tensor "
+"computations on an NVIDIA GPU with compute capability >= 3.0."
+msgstr ""
+
+#: ../../source/torch.rst:6
+msgid "Tensors"
+msgstr ""
+
+#: of torch.is_tensor:1
+msgid "Returns True if `obj` is a pytorch tensor."
+msgstr ""
+
+#: ../../docstring of torch.acos torch.add torch.addbmm torch.addcdiv
+#: torch.addcmul torch.addmm torch.addmv torch.addr torch.arange torch.asin
+#: torch.atan torch.atan2 torch.baddbmm torch.bernoulli torch.bmm
+#: torch.btrifact torch.btrisolve torch.cat torch.ceil torch.chunk torch.clamp
+#: torch.cos torch.cosh torch.cross torch.cumprod torch.cumsum torch.diag
+#: torch.dist torch.div torch.eig torch.eq torch.eye torch.floor torch.fmod
+#: torch.gather torch.ge torch.gels torch.geqrf torch.ger torch.gesv torch.gt
+#: torch.histc torch.index_select torch.inverse torch.is_storage
+#: torch.is_tensor torch.kthvalue torch.le torch.lerp torch.linspace torch.load
+#: torch.log torch.log1p torch.logspace torch.lt torch.manual_seed
+#: torch.masked_select torch.matmul torch.max torch.mean torch.median torch.min
+#: torch.mm torch.mode torch.mul torch.multinomial torch.mv torch.ne torch.neg
+#: torch.nonzero torch.norm torch.normal torch.numel torch.ones torch.ones_like
+#: torch.potrf torch.potri torch.potrs torch.pow torch.prod torch.pstrf
+#: torch.qr torch.rand torch.randn torch.randperm torch.range torch.reciprocal
+#: torch.remainder torch.renorm torch.round torch.rsqrt torch.save
+#: torch.set_printoptions torch.set_rng_state torch.sigmoid torch.sign
+#: torch.sin torch.sinh torch.sort torch.split torch.sqrt torch.squeeze
+#: torch.stack torch.std torch.sum torch.svd torch.symeig torch.t torch.take
+#: torch.tan torch.tanh torch.topk torch.transpose torch.tril torch.triu
+#: torch.trunc torch.unbind torch.unsqueeze torch.var torch.zeros
+#: torch.zeros_like
+msgid "参数"
+msgstr ""
+
+#: of torch.is_storage:3 torch.is_tensor:3
+msgid "Object to test"
+msgstr ""
+
+#: of torch.is_storage:1
+msgid "Returns True if `obj` is a pytorch storage object."
+msgstr ""
+
+#: ../../docstring of torch.numel:1
+msgid "Returns the total number of elements in the :attr:`input` Tensor."
+msgstr ""
+
+#: ../../docstring of torch.acos:3 torch.add:11 torch.asin:3 torch.atan:3
+#: torch.ceil:4 torch.clamp:13 torch.clamp:48 torch.clamp:81 torch.cos:3
+#: torch.cosh:4 torch.cross:10 torch.cumprod:8 torch.cumsum:8 torch.diag:12
+#: torch.dist:6 torch.div:11 torch.floor:4 torch.kthvalue:15 torch.log:4
+#: torch.log1p:8 torch.max:5 torch.max:31 torch.max:79 torch.mean:5
+#: torch.mean:30 torch.median:5 torch.median:33 torch.min:5 torch.min:31
+#: torch.min:79 torch.mode:14 torch.mul:11 torch.neg:5 torch.nonzero:9
+#: torch.norm:5 torch.norm:32 torch.numel:3 torch.pow:20 torch.prod:5
+#: torch.prod:30 torch.reciprocal:4 torch.round:4 torch.rsqrt:4 torch.sigmoid:3
+#: torch.sign:3 torch.sin:3 torch.sinh:4 torch.sort:12 torch.sqrt:3
+#: torch.squeeze:17 torch.std:8 torch.std:38 torch.sum:5 torch.sum:30 torch.t:6
+#: torch.take:5 torch.tan:3 torch.tanh:4 torch.topk:14 torch.transpose:8
+#: torch.tril:13 torch.triu:13 torch.trunc:4 torch.unsqueeze:9 torch.var:8
+#: torch.var:38
+msgid "the input `Tensor`"
+msgstr ""
+
+#: ../../docstring of torch.abs:3 torch.acos:8 torch.add:18 torch.add:61
+#: torch.addbmm:33 torch.addcdiv:21 torch.addcmul:22 torch.addmm:29
+#: torch.addmv:31 torch.addr:32 torch.arange:14 torch.asin:8 torch.atan:8
+#: torch.atan2:14 torch.baddbmm:31 torch.bernoulli:19 torch.bmm:20
+#: torch.btrifact:13 torch.btrisolve:12 torch.cat:16 torch.ceil:9
+#: torch.clamp:22 torch.clamp:55 torch.clamp:88 torch.cos:8 torch.cosh:9
+#: torch.cross:19 torch.cumprod:15 torch.cumsum:15 torch.dist:13 torch.div:18
+#: torch.div:56 torch.dot:5 torch.eq:20 torch.equal:3 torch.erf:3
+#: torch.erfinv:3 torch.exp:3 torch.eye:13 torch.floor:9 torch.fmod:17
+#: torch.frac:3 torch.from_numpy:7 torch.gather:24 torch.ge:20 torch.gels:46
+#: torch.ger:14 torch.gesv:24 torch.gt:20 torch.histc:20 torch.index_select:19
+#: torch.inverse:13 torch.kthvalue:27 torch.le:20 torch.lerp:18
+#: torch.linspace:16 torch.log:9 torch.log1p:13 torch.logspace:16 torch.lt:20
+#: torch.masked_select:17 torch.max:8 torch.max:40 torch.max:86 torch.mean:8
+#: torch.mean:40 torch.median:8 torch.median:44 torch.min:8 torch.min:40
+#: torch.min:86 torch.mm:16 torch.mode:25 torch.mul:18 torch.mul:53
+#: torch.multinomial:34 torch.mv:16 torch.ne:20 torch.neg:10 torch.nonzero:14
+#: torch.norm:10 torch.norm:43 torch.normal:25 torch.normal:53 torch.normal:76
+#: torch.numel:6 torch.ones:9 torch.ones_like:8 torch.potrf:17 torch.potri:18
+#: torch.potrs:23 torch.pow:27 torch.pow:89 torch.prod:8 torch.prod:39
+#: torch.pstrf:17 torch.qr:22 torch.rand:11 torch.randn:11 torch.randperm:6
+#: torch.range:16 torch.reciprocal:9 torch.remainder:17 torch.renorm:18
+#: torch.round:9 torch.rsqrt:9 torch.sigmoid:8 torch.sign:8 torch.sin:8
+#: torch.sinh:9 torch.sort:23 torch.sqrt:8 torch.squeeze:25 torch.std:13
+#: torch.std:49 torch.sum:8 torch.sum:39 torch.svd:23 torch.t:11 torch.take:10
+#: torch.tan:8 torch.tanh:9 torch.topk:30 torch.trace:3 torch.transpose:15
+#: torch.tril:20 torch.triu:20 torch.trunc:9 torch.var:13 torch.var:49
+#: torch.zeros:9 torch.zeros_like:8
+msgid "Example::"
+msgstr ""
+
+#: of torch.set_printoptions:1
+msgid "Set options for printing. Items shamelessly taken from Numpy"
+msgstr ""
+
+#: of torch.set_printoptions:3
+msgid "Number of digits of precision for floating point output (default 8)."
+msgstr ""
+
+#: of torch.set_printoptions:5
+msgid ""
+"Total number of array elements which trigger summarization rather than "
+"full repr (default 1000)."
+msgstr ""
+
+#: of torch.set_printoptions:7
+msgid ""
+"Number of array items in summary at beginning and end of each dimension "
+"(default 3)."
+msgstr ""
+
+#: of torch.set_printoptions:9
+msgid ""
+"The number of characters per line for the purpose of inserting line "
+"breaks (default 80). Thresholded matricies will ignore this parameter."
+msgstr ""
+
+#: of torch.set_printoptions:12
+msgid ""
+"Sane defaults for pretty printing. Can override with any of the above "
+"options. (default, short, full)"
+msgstr ""
+
+#: ../../source/torch.rst:15
+msgid "Creation Ops"
+msgstr ""
+
+#: ../../docstring of torch.eye:1
+msgid "Returns a 2-D tensor with ones on the diagonal and zeros elsewhere."
+msgstr ""
+
+#: ../../docstring of torch.eye:3
+msgid "Number of rows"
+msgstr ""
+
+#: ../../docstring of torch.eye:5
+msgid "Number of columns. If None, defaults to `n`"
+msgstr ""
+
+#: ../../docstring of torch.addbmm:30 torch.addcdiv:18 torch.addcmul:19
+#: torch.addmm:26 torch.addmv:28 torch.addr:29 torch.baddbmm:28
+#: torch.bernoulli:16 torch.bmm:17 torch.eye:7 torch.fmod:14 torch.matmul:29
+#: torch.mm:13 torch.mv:13 torch.remainder:14 torch.renorm:15
+msgid "Output tensor"
+msgstr ""
+
+#: ../../docstring of torch.eig torch.eq torch.eye torch.ge torch.gels torch.gt
+#: torch.histc torch.le torch.lt torch.ne
+msgid "返回"
+msgstr ""
+
+#: ../../docstring of torch.eye:10
+msgid "a 2-D tensor with ones on the diagonal and zeros elsewhere"
+msgstr ""
+
+#: ../../docstring of torch.eig torch.eq torch.eye torch.ge torch.gels torch.gt
+#: torch.histc torch.le torch.lt torch.ne
+msgid "返回类型"
+msgstr ""
+
+#: ../../docstring of torch.from_numpy:1
+msgid "Creates a :class:`Tensor` from a :class:`numpy.ndarray`."
+msgstr ""
+
+#: ../../docstring of torch.from_numpy:3
+msgid ""
+"The returned tensor and `ndarray` share the same memory. Modifications to"
+" the tensor will be reflected in the `ndarray` and vice versa. The "
+"returned tensor is not resizable."
+msgstr ""
+
+#: ../../docstring of torch.linspace:1
+msgid ""
+"Returns a one-dimensional Tensor of :attr:`steps` equally spaced points "
+"between :attr:`start` and :attr:`end`"
+msgstr ""
+
+#: ../../docstring of torch.linspace:4
+msgid "The output tensor is 1D of size :attr:`steps`"
+msgstr ""
+
+#: ../../docstring of torch.arange:5 torch.linspace:6 torch.logspace:6
+#: torch.range:7
+msgid "The starting value for the set of points"
+msgstr ""
+
+#: ../../docstring of torch.arange:7 torch.linspace:8 torch.logspace:8
+#: torch.range:9
+msgid "The ending value for the set of points"
+msgstr ""
+
+#: ../../docstring of torch.linspace:10 torch.logspace:10
+msgid "Number of points to sample between :attr:`start` and :attr:`end`"
+msgstr ""
+
+#: ../../docstring of torch.acos:5 torch.add:15 torch.add:58 torch.arange:11
+#: torch.asin:5 torch.atan:5 torch.atan2:11 torch.ceil:6 torch.clamp:19
+#: torch.clamp:52 torch.clamp:85 torch.cos:5 torch.cosh:6 torch.cross:16
+#: torch.cumprod:12 torch.cumsum:12 torch.diag:16 torch.div:15 torch.div:53
+#: torch.floor:6 torch.lerp:15 torch.linspace:13 torch.log:6 torch.log1p:10
+#: torch.logspace:13 torch.max:83 torch.min:83 torch.mul:15 torch.mul:50
+#: torch.multinomial:31 torch.neg:7 torch.pow:24 torch.pow:86 torch.range:13
+#: torch.reciprocal:6 torch.round:6 torch.rsqrt:6 torch.sigmoid:5 torch.sign:5
+#: torch.sin:5 torch.sinh:6 torch.sqrt:5 torch.squeeze:22 torch.t:8 torch.tan:5
+#: torch.tanh:6 torch.tril:17 torch.triu:17 torch.trunc:6 torch.unsqueeze:13
+msgid "The result `Tensor`"
+msgstr ""
+
+#: ../../docstring of torch.logspace:1
+msgid ""
+"Returns a one-dimensional Tensor of :attr:`steps` points logarithmically "
+"spaced between :math:`10^{start}` and :math:`10^{end}`"
+msgstr ""
+
+#: ../../docstring of torch.logspace:4
+msgid "The output is a 1D tensor of size :attr:`steps`"
+msgstr ""
+
+#: ../../docstring of torch.ones:1
+msgid ""
+"Returns a Tensor filled with the scalar value `1`, with the shape defined"
+" by the varargs :attr:`sizes`."
+msgstr ""
+
+#: ../../docstring of torch.ones:4 torch.rand:6 torch.randn:6 torch.zeros:4
+msgid "a set of ints defining the shape of the output Tensor."
+msgstr ""
+
+#: ../../docstring of torch.mean:37 torch.median:39 torch.mode:20 torch.norm:40
+#: torch.ones:6 torch.ones_like:5 torch.prod:36 torch.rand:8 torch.randn:8
+#: torch.std:46 torch.sum:36 torch.var:46 torch.zeros:6 torch.zeros_like:5
+msgid "the result Tensor"
+msgstr ""
+
+#: ../../docstring of torch.ones_like:1
+msgid ""
+"Returns a Tensor filled with the scalar value `1`, with the same size as "
+":attr:`input`."
+msgstr ""
+
+#: ../../docstring of torch.ones_like:3 torch.zeros_like:3
+msgid "The size of the input will determine the size of the output."
+msgstr ""
+
+#: ../../docstring of torch.arange:1
+msgid ""
+"Returns a 1D Tensor of size :math:`floor((end - start) / step)` with "
+"values from the interval ``[start, end)`` taken with step :attr:`step` "
+"starting from `start`."
+msgstr ""
+
+#: ../../docstring of torch.arange:9 torch.range:11
+msgid "The gap between each pair of adjacent points"
+msgstr ""
+
+#: ../../docstring of torch.range:1
+msgid ""
+"Returns a 1D Tensor of size :math:`floor((end - start) / step) + 1` with "
+"values from :attr:`start` to :attr:`end` with step :attr:`step`. Step is "
+"the gap between two values in the tensor. :math:`x_{i+1} = x_i + step`"
+msgstr ""
+
+#: ../../docstring of torch.range:5
+msgid "This function is deprecated in favor of :func:`torch.arange`."
+msgstr ""
+
+#: ../../docstring of torch.zeros:1
+msgid ""
+"Returns a Tensor filled with the scalar value `0`, with the shape defined"
+" by the varargs :attr:`sizes`."
+msgstr ""
+
+#: ../../docstring of torch.zeros_like:1
+msgid ""
+"Returns a Tensor filled with the scalar value `0`, with the same size as "
+":attr:`input`."
+msgstr ""
+
+#: ../../source/torch.rst:28
+msgid "Indexing, Slicing, Joining, Mutating Ops"
+msgstr ""
+
+#: ../../docstring of torch.cat:1
+msgid ""
+"Concatenates the given sequence of :attr:`seq` Tensors in the given "
+"dimension."
+msgstr ""
+
+#: ../../docstring of torch.cat:3
+msgid ""
+":func:`torch.cat` can be seen as an inverse operation for "
+":func:`torch.split` and :func:`torch.chunk`"
+msgstr ""
+
+#: ../../docstring of torch.cat:6
+msgid ":func:`cat` can be best understood via examples."
+msgstr ""
+
+#: ../../docstring of torch.cat:8
+msgid "Can be any python sequence of `Tensor` of the same type."
+msgstr ""
+
+#: ../../docstring of torch.cat:11
+msgid "The dimension over which the tensors are concatenated"
+msgstr ""
+
+#: ../../docstring of torch.cat:13 torch.histc:14 torch.index_select:16
+#: torch.masked_select:14
+msgid "Output argument"
+msgstr ""
+
+#: of torch.chunk:1
+msgid "Splits a tensor into a number of chunks along a given dimension."
+msgstr ""
+
+#: of torch.chunk:3 torch.split:6
+msgid "tensor to split."
+msgstr ""
+
+#: of torch.chunk:5
+msgid "number of chunks to return."
+msgstr ""
+
+#: of torch.chunk:7 torch.split:10
+msgid "dimension along which to split the tensor."
+msgstr ""
+
+#: ../../docstring of torch.gather:1
+msgid "Gathers values along an axis specified by `dim`."
+msgstr ""
+
+#: ../../docstring of torch.gather:3
+msgid "For a 3-D tensor the output is specified by::"
+msgstr ""
+
+#: ../../docstring of torch.gather:9
+msgid ""
+"If :attr:`input` is an n-dimensional tensor with size :math:`(x_0, "
+"x_1..., x_{i-1}, x_i, x_{i+1}, ..., x_{n-1})` and :attr:`dim` = i, then "
+":attr:`index` must be an n-dimensional tensor with size :math:`(x_0, x_1,"
+" ..., x_{i-1}, y, x_{i+1}, ..., x_{n-1})` where y >= 1 and :attr:`out` "
+"will have the same size as :attr:`index`."
+msgstr ""
+
+#: ../../docstring of torch.gather:15
+msgid "The source tensor"
+msgstr ""
+
+#: ../../docstring of torch.gather:17
+msgid "The axis along which to index"
+msgstr ""
+
+#: ../../docstring of torch.gather:19
+msgid "The indices of elements to gather"
+msgstr ""
+
+#: ../../docstring of torch.gather:21
+msgid "Destination tensor"
+msgstr ""
+
+#: ../../docstring of torch.index_select:1
+msgid ""
+"Returns a new `Tensor` which indexes the :attr:`input` `Tensor` along "
+"dimension :attr:`dim` using the entries in :attr:`index` which is a "
+"`LongTensor`."
+msgstr ""
+
+#: ../../docstring of torch.index_select:4
+msgid ""
+"The returned `Tensor` has the same number of dimensions as the original "
+"`Tensor`."
+msgstr ""
+
+#: ../../docstring of torch.index_select:7 torch.masked_select:7
+msgid ""
+"The returned `Tensor` does **not** use the same storage as the original "
+"`Tensor`"
+msgstr ""
+
+#: ../../docstring of torch.histc:6 torch.index_select:10
+#: torch.masked_select:10
+msgid "Input data"
+msgstr ""
+
+#: ../../docstring of torch.index_select:12
+msgid "the dimension in which we index"
+msgstr ""
+
+#: ../../docstring of torch.index_select:14
+msgid "the 1D tensor containing the indices to index"
+msgstr ""
+
+#: ../../docstring of torch.masked_select:1
+msgid ""
+"Returns a new 1D `Tensor` which indexes the :attr:`input` `Tensor` "
+"according to the binary mask :attr:`mask` which is a `ByteTensor`."
+msgstr ""
+
+#: ../../docstring of torch.masked_select:4
+msgid ""
+"The shapes of the :attr:`mask` tensor and the :attr:`input` tensor don't "
+"need to match, but they must be :ref:`broadcastable <broadcasting-"
+"semantics>`."
+msgstr ""
+
+#: ../../docstring of torch.masked_select:12
+msgid "the tensor containing the binary mask to index with"
+msgstr ""
+
+#: ../../docstring of torch.nonzero:1
+msgid ""
+"Returns a tensor containing the indices of all non-zero elements of "
+":attr:`input`.  Each row in the result contains the indices of a non-zero"
+" element in :attr:`input`."
+msgstr ""
+
+#: ../../docstring of torch.nonzero:5
+msgid ""
+"If :attr:`input` has `n` dimensions, then the resulting indices Tensor "
+":attr:`out` is of size `z x n`, where `z` is the total number of non-zero"
+" elements in the :attr:`input` Tensor."
+msgstr ""
+
+#: ../../docstring of torch.nonzero:11
+msgid "The result `Tensor` containing indices"
+msgstr ""
+
+#: of torch.split:1
+msgid "Splits the tensor into equally sized chunks (if possible)."
+msgstr ""
+
+#: of torch.split:3
+msgid ""
+"Last chunk will be smaller if the tensor size along a given dimension is "
+"not divisible by ``split_size``."
+msgstr ""
+
+#: of torch.split:8
+msgid "size of a single chunk."
+msgstr ""
+
+#: ../../docstring of torch.squeeze:1
+msgid ""
+"Returns a `Tensor` with all the dimensions of :attr:`input` of size `1` "
+"removed."
+msgstr ""
+
+#: ../../docstring of torch.squeeze:3
+msgid ""
+"If `input` is of shape: :math:`(A x 1 x B x C x 1 x D)` then the `out` "
+"Tensor will be of shape: :math:`(A x B x C x D)`"
+msgstr ""
+
+#: ../../docstring of torch.squeeze:6
+msgid ""
+"When :attr:`dim` is given, a squeeze operation is done only in the given "
+"dimension. If `input` is of shape: :math:`(A x 1 x B)`, `squeeze(input, "
+"0)` leaves the Tensor unchanged, but `squeeze(input, 1)` will squeeze the"
+" tensor to the shape :math:`(A x B)`."
+msgstr ""
+
+#: ../../docstring of torch.squeeze:11
+msgid ""
+"As an exception to the above, a 1-dimensional tensor of size 1 will not "
+"have its dimensions changed."
+msgstr ""
+
+#: ../../docstring of torch.squeeze:14
+msgid ""
+"The returned Tensor shares the storage with the input Tensor, so changing"
+" the contents of one will change the contents of the other."
+msgstr ""
+
+#: ../../docstring of torch.squeeze:19
+msgid "if given, the input will be squeezed only in this dimension"
+msgstr ""
+
+#: of torch.stack:1
+msgid "Concatenates sequence of tensors along a new dimension."
+msgstr ""
+
+#: of torch.stack:3
+msgid "All tensors need to be of the same size."
+msgstr ""
+
+#: of torch.stack:5
+msgid "sequence of tensors to concatenate."
+msgstr ""
+
+#: of torch.stack:7
+msgid ""
+"dimension to insert. Has to be between 0 and the number of dimensions of "
+"concatenated tensors (inclusive)."
+msgstr ""
+
+#: ../../docstring of torch.t:1
+msgid ""
+"Expects :attr:`input` to be a matrix (2D Tensor) and transposes "
+"dimensions 0 and 1."
+msgstr ""
+
+#: ../../docstring of torch.t:4
+msgid "Can be seen as a short-hand function for `transpose(input, 0, 1)`"
+msgstr ""
+
+#: ../../docstring of torch.take:1
+msgid ""
+"Returns a new `Tensor` with the elements of :attr:`input` at the given "
+"indices. The input tensor is treated as if it were viewed as a 1D tensor."
+" The result takes the same shape as the indices."
+msgstr ""
+
+#: ../../docstring of torch.take:7
+msgid "the indices into `Tensor`"
+msgstr ""
+
+#: ../../docstring of torch.transpose:1
+msgid ""
+"Returns a `Tensor` that is a transposed version of :attr:`input`. The "
+"given dimensions :attr:`dim0` and :attr:`dim1` are swapped."
+msgstr ""
+
+#: ../../docstring of torch.transpose:4
+msgid ""
+"The resulting :attr:`out` Tensor shares it's underlying storage with the "
+":attr:`input` Tensor, so changing the content of one would change the "
+"content of the other."
+msgstr ""
+
+#: ../../docstring of torch.transpose:10
+msgid "The first dimension to be transposed"
+msgstr ""
+
+#: ../../docstring of torch.transpose:12
+msgid "The second dimension to be transposed"
+msgstr ""
+
+#: of torch.unbind:1
+msgid "Removes a tensor dimension."
+msgstr ""
+
+#: of torch.unbind:3
+msgid "Returns a tuple of all slices along a given dimension, already without it."
+msgstr ""
+
+#: of torch.unbind:5
+msgid "tensor to unbind."
+msgstr ""
+
+#: of torch.unbind:7
+msgid "dimension to remove."
+msgstr ""
+
+#: ../../docstring of torch.unsqueeze:1
+msgid ""
+"Returns a new tensor with a dimension of size one inserted at the "
+"specified position."
+msgstr ""
+
+#: ../../docstring of torch.unsqueeze:4
+msgid "The returned tensor shares the same underlying data with this tensor."
+msgstr ""
+
+#: ../../docstring of torch.unsqueeze:6
+msgid ""
+"A negative dim value can be used and will correspond to :math:`dim + "
+"input.dim() + 1`"
+msgstr ""
+
+#: ../../docstring of torch.unsqueeze:11
+msgid "The index at which to insert the singleton dimension"
+msgstr ""
+
+#: ../../docstring of torch.load:38 torch.unsqueeze:17
+msgid "Example"
+msgstr ""
+
+#: ../../source/torch.rst:46
+msgid "Random sampling"
+msgstr ""
+
+#: of torch.manual_seed:1
+msgid ""
+"Sets the seed for generating random numbers. And returns a "
+"`torch._C.Generator` object."
+msgstr ""
+
+#: of torch.manual_seed:4
+msgid "The desired seed."
+msgstr ""
+
+#: of torch.initial_seed:1
+msgid "Returns the initial seed for generating random numbers as a python `long`."
+msgstr ""
+
+#: of torch.get_rng_state:1
+msgid "Returns the random number generator state as a ByteTensor."
+msgstr ""
+
+#: of torch.set_rng_state:1
+msgid "Sets the random number generator state."
+msgstr ""
+
+#: of torch.set_rng_state:3
+msgid "The desired state"
+msgstr ""
+
+#: ../../docstring of torch.bernoulli:1
+msgid "Draws binary random numbers (0 or 1) from a bernoulli distribution."
+msgstr ""
+
+#: ../../docstring of torch.bernoulli:3
+msgid ""
+"The :attr:`input` Tensor should be a tensor containing probabilities to "
+"be used for drawing the binary random number. Hence, all values in "
+":attr:`input` have to be in the range: :math:`0 <= input_i <= 1`"
+msgstr ""
+
+#: ../../docstring of torch.bernoulli:8
+msgid ""
+"The `i-th` element of the output tensor will draw a value `1` according "
+"to the `i-th` probability value given in :attr:`input`."
+msgstr ""
+
+#: ../../docstring of torch.bernoulli:11
+msgid ""
+"The returned :attr:`out` Tensor only has values 0 or 1 and is of the same"
+" shape as :attr:`input`"
+msgstr ""
+
+#: ../../docstring of torch.bernoulli:14
+msgid "Probability values for the bernoulli distribution"
+msgstr ""
+
+#: ../../docstring of torch.multinomial:1
+msgid ""
+"Returns a Tensor where each row contains :attr:`num_samples` indices "
+"sampled from the multinomial probability distribution located in the "
+"corresponding row of Tensor :attr:`input`."
+msgstr ""
+
+#: ../../docstring of torch.multinomial:6
+msgid ""
+"The rows of :attr:`input` do not need to sum to one (in which case we use"
+" the values as weights), but must be non-negative and have a non-zero "
+"sum."
+msgstr ""
+
+#: ../../docstring of torch.multinomial:9
+msgid ""
+"Indices are ordered from left to right according to when each was sampled"
+" (first samples are placed in first column)."
+msgstr ""
+
+#: ../../docstring of torch.multinomial:12
+msgid ""
+"If :attr:`input` is a vector, :attr:`out` is a vector of size "
+"`num_samples`."
+msgstr ""
+
+#: ../../docstring of torch.multinomial:14
+msgid ""
+"If :attr:`input` is a matrix with `m` rows, :attr:`out` is an matrix of "
+"shape `m × n`."
+msgstr ""
+
+#: ../../docstring of torch.multinomial:17
+msgid "If replacement is ``True``, samples are drawn with replacement."
+msgstr ""
+
+#: ../../docstring of torch.multinomial:19
+msgid ""
+"If not, they are drawn without replacement, which means that when a "
+"sample index is drawn for a row, it cannot be drawn again for that row."
+msgstr ""
+
+#: ../../docstring of torch.multinomial:22
+msgid ""
+"This implies the constraint that :attr:`num_samples` must be lower than "
+":attr:`input` length (or number of columns of :attr:`input` if it is a "
+"matrix)."
+msgstr ""
+
+#: ../../docstring of torch.multinomial:25
+msgid "Tensor containing probabilities"
+msgstr ""
+
+#: ../../docstring of torch.multinomial:27
+msgid "number of samples to draw"
+msgstr ""
+
+#: ../../docstring of torch.multinomial:29
+msgid "Whether to draw with replacement or not"
+msgstr ""
+
+#: ../../docstring of torch.normal:3
+msgid ""
+"Returns a Tensor of random numbers drawn from separate normal "
+"distributions who's mean and standard deviation are given."
+msgstr ""
+
+#: ../../docstring of torch.normal:6
+msgid ""
+"The :attr:`means` is a Tensor with the mean of each output element's "
+"normal distribution"
+msgstr ""
+
+#: ../../docstring of torch.normal:9
+msgid ""
+"The :attr:`std` is a Tensor with the standard deviation of each output "
+"element's normal distribution"
+msgstr ""
+
+#: ../../docstring of torch.normal:12
+msgid ""
+"The shapes of :attr:`means` and :attr:`std` don't need to match. The "
+"total number of elements in each Tensor need to be the same."
+msgstr ""
+
+#: ../../docstring of torch.normal:15
+msgid ""
+"When the shapes do not match, the shape of :attr:`means` is used as the "
+"shape for the returned output Tensor"
+msgstr ""
+
+#: ../../docstring of torch.normal:18 torch.normal:69
+msgid "the Tensor of per-element means"
+msgstr ""
+
+#: ../../docstring of torch.normal:20 torch.normal:48
+msgid "the Tensor of per-element standard deviations"
+msgstr ""
+
+#: ../../docstring of torch.normal:22 torch.normal:50 torch.normal:73
+msgid "the optional result Tensor"
+msgstr ""
+
+#: ../../docstring of torch.normal:43
+msgid ""
+"Similar to the function above, but the means are shared among all drawn "
+"elements."
+msgstr ""
+
+#: ../../docstring of torch.normal:46
+msgid "the mean for all distributions"
+msgstr ""
+
+#: ../../docstring of torch.normal:66
+msgid ""
+"Similar to the function above, but the standard-deviations are shared "
+"among all drawn elements."
+msgstr ""
+
+#: ../../docstring of torch.normal:71
+msgid "the standard deviation for all distributions"
+msgstr ""
+
+#: ../../docstring of torch.rand:1
+msgid ""
+"Returns a Tensor filled with random numbers from a uniform distribution "
+"on the interval :math:`[0, 1)`"
+msgstr ""
+
+#: ../../docstring of torch.rand:4 torch.randn:4
+msgid "The shape of the Tensor is defined by the varargs :attr:`sizes`."
+msgstr ""
+
+#: ../../docstring of torch.randn:1
+msgid ""
+"Returns a Tensor filled with random numbers from a normal distribution "
+"with zero mean and variance of one."
+msgstr ""
+
+#: ../../docstring of torch.randperm:1
+msgid "Returns a random permutation of integers from ``0`` to ``n - 1``."
+msgstr ""
+
+#: ../../docstring of torch.randperm:3
+msgid "the upper bound (exclusive)"
+msgstr ""
+
+#: ../../source/torch.rst:60
+msgid "In-place random sampling"
+msgstr ""
+
+#: ../../source/torch.rst:62
+msgid ""
+"There are a few more in-place random sampling functions defined on "
+"Tensors as well. Click through to refer to their documentation:"
+msgstr ""
+
+#: ../../source/torch.rst:64
+msgid ""
+":func:`torch.Tensor.bernoulli_` - in-place version of "
+":func:`torch.bernoulli`"
+msgstr ""
+
+#: ../../source/torch.rst:65
+msgid ":func:`torch.Tensor.cauchy_` - numbers drawn from the Cauchy distribution"
+msgstr ""
+
+#: ../../source/torch.rst:66
+msgid ""
+":func:`torch.Tensor.exponential_` - numbers drawn from the exponential "
+"distribution"
+msgstr ""
+
+#: ../../source/torch.rst:67
+msgid ""
+":func:`torch.Tensor.geometric_` - elements drawn from the geometric "
+"distribution"
+msgstr ""
+
+#: ../../source/torch.rst:68
+msgid ""
+":func:`torch.Tensor.log_normal_` - samples from the log-normal "
+"distribution"
+msgstr ""
+
+#: ../../source/torch.rst:69
+msgid ":func:`torch.Tensor.normal_` - in-place version of :func:`torch.normal`"
+msgstr ""
+
+#: ../../source/torch.rst:70
+msgid ""
+":func:`torch.Tensor.random_` - numbers sampled from the discrete uniform "
+"distribution"
+msgstr ""
+
+#: ../../source/torch.rst:71
+msgid ""
+":func:`torch.Tensor.uniform_` - numbers sampled from the uniform "
+"distribution"
+msgstr ""
+
+#: ../../source/torch.rst:75
+msgid "Serialization"
+msgstr ""
+
+#: of torch.save:1
+msgid "Saves an object to a disk file."
+msgstr ""
+
+#: of torch.save:3
+msgid "See also: :ref:`recommend-saving-models`"
+msgstr ""
+
+#: of torch.save:5
+msgid "saved object"
+msgstr ""
+
+#: of torch.save:6
+msgid ""
+"a file-like object (has to implement fileno that returns a file "
+"descriptor) or a string containing a file name"
+msgstr ""
+
+#: of torch.save:8
+msgid "module used for pickling metadata and objects"
+msgstr ""
+
+#: of torch.save:9
+msgid "can be specified to override the default protocol"
+msgstr ""
+
+#: of torch.load:1
+msgid "Loads an object saved with :func:`torch.save` from a file."
+msgstr ""
+
+#: of torch.load:3
+msgid ""
+"torch.load uses Python's unpickling facilities but treats storages, which"
+" underlie tensors, specially. They are first deserialized on the CPU and "
+"are then moved to the device they were saved from. If this fails (e.g. "
+"because the run time system doesn't have certain devices), an exception "
+"is raised. However, storages can be dynamically remapped to an "
+"alternative set of devices using the map_location argument."
+msgstr ""
+
+#: of torch.load:10
+msgid ""
+"If map_location is a callable, it will be called once for each serialized"
+" storage with two arguments: storage and location. The storage argument "
+"will be the initial deserialization of the storage, residing on the CPU. "
+"Each serialized storage has a location tag associated with it which "
+"identifies the device it was saved from, and this tag is the second "
+"argument passed to map_location. The builtin location tags are 'cpu' for "
+"CPU tensors and 'cuda:device_id' (e.g. 'cuda:2') for CUDA tensors. "
+"map_location should return either None or a storage. If map_location "
+"returns a storage, it will be used as the final deserialized object, "
+"already moved to the right device. Otherwise, torch.load will fall back "
+"to the default behavior, as if map_location wasn't specified."
+msgstr ""
+
+#: of torch.load:22
+msgid ""
+"If map_location is a dict, it will be used to remap location tags "
+"appearing in the file (keys), to ones that specify where to put the "
+"storages (values)."
+msgstr ""
+
+#: of torch.load:26
+msgid ""
+"User extensions can register their own location tags and tagging and "
+"deserialization methods using register_package."
+msgstr ""
+
+#: of torch.load:29
+msgid ""
+"a file-like object (has to implement fileno that returns a file "
+"descriptor, and must implement seek), or a string containing a file name"
+msgstr ""
+
+#: of torch.load:32
+msgid "a function or a dict specifying how to remap storage locations"
+msgstr ""
+
+#: of torch.load:34
+msgid ""
+"module used for unpickling metadata and objects (has to match the "
+"pickle_module used to serialize file)"
+msgstr ""
+
+#: ../../source/torch.rst:81
+msgid "Parallelism"
+msgstr ""
+
+#: ../../docstring of torch.get_num_threads:1
+msgid "Gets the number of OpenMP threads used for parallelizing CPU operations"
+msgstr ""
+
+#: ../../docstring of torch.set_num_threads:1
+msgid "Sets the number of OpenMP threads used for parallelizing CPU operations"
+msgstr ""
+
+#: ../../source/torch.rst:87
+msgid "Math operations"
+msgstr ""
+
+#: ../../source/torch.rst:90
+msgid "Pointwise Ops"
+msgstr ""
+
+#: ../../docstring of torch.abs:1
+msgid ""
+"Computes the element-wise absolute value of the given :attr:`input` a "
+"tensor."
+msgstr ""
+
+#: ../../docstring of torch.acos:1
+msgid ""
+"Returns a new `Tensor` with the arccosine  of the elements of "
+":attr:`input`."
+msgstr ""
+
+#: ../../docstring of torch.add:3
+msgid ""
+"Adds the scalar :attr:`value` to each element of the input :attr:`input` "
+"and returns a new resulting tensor."
+msgstr ""
+
+#: ../../docstring of torch.add:6
+msgid ":math:`out = tensor + value`"
+msgstr ""
+
+#: ../../docstring of torch.add:8
+msgid ""
+"If :attr:`input` is of type FloatTensor or DoubleTensor, :attr:`value` "
+"must be a real number, otherwise it should be an integer."
+msgstr ""
+
+#: ../../docstring of torch.add:13
+msgid "the number to be added to each element of :attr:`input`"
+msgstr ""
+
+#: ../../docstring of torch.add:40
+msgid ""
+"Each element of the Tensor :attr:`other` is multiplied by the scalar "
+":attr:`value` and added to each element of the Tensor :attr:`input`. The "
+"resulting Tensor is returned."
+msgstr ""
+
+#: ../../docstring of torch.add:44 torch.dist:3 torch.mul:41
+msgid ""
+"The shapes of :attr:`input` and :attr:`other` must be :ref:`broadcastable"
+" <broadcasting-semantics>`."
+msgstr ""
+
+#: ../../docstring of torch.add:47
+msgid ":math:`out = input + (other * value)`"
+msgstr ""
+
+#: ../../docstring of torch.add:49
+msgid ""
+"If :attr:`other` is of type FloatTensor or DoubleTensor, :attr:`value` "
+"must be a real number, otherwise it should be an integer."
+msgstr ""
+
+#: ../../docstring of torch.add:52 torch.atan2:7
+msgid "the first input `Tensor`"
+msgstr ""
+
+#: ../../docstring of torch.add:54
+msgid "the scalar multiplier for :attr:`other`"
+msgstr ""
+
+#: ../../docstring of torch.add:56 torch.atan2:9 torch.cross:12 torch.max:81
+#: torch.min:81
+msgid "the second input `Tensor`"
+msgstr ""
+
+#: ../../docstring of torch.addcdiv:1
+msgid ""
+"Performs the element-wise division of :attr:`tensor1` by :attr:`tensor2`,"
+" multiply the result by the scalar :attr:`value` and add it to "
+":attr:`tensor`."
+msgstr ""
+
+#: ../../docstring of torch.addcdiv:4 torch.addcmul:5
+msgid ""
+"The shapes of :attr:`tensor`, :attr:`tensor1`, and :attr:`tensor2` must "
+"be :ref:`broadcastable <broadcasting-semantics>`."
+msgstr ""
+
+#: ../../docstring of torch.addcdiv:7 torch.addcmul:8
+msgid ""
+"For inputs of type `FloatTensor` or `DoubleTensor`, :attr:`value` must be"
+" a real number, otherwise an integer."
+msgstr ""
+
+#: ../../docstring of torch.addcdiv:10 torch.addcmul:11
+msgid "the tensor to be added"
+msgstr ""
+
+#: ../../docstring of torch.addcdiv:12
+msgid "multiplier for `tensor1 ./ tensor2`"
+msgstr ""
+
+#: ../../docstring of torch.addcdiv:14
+msgid "Numerator tensor"
+msgstr ""
+
+#: ../../docstring of torch.addcdiv:16
+msgid "Denominator tensor"
+msgstr ""
+
+#: ../../docstring of torch.addcmul:1
+msgid ""
+"Performs the element-wise multiplication of :attr:`tensor1` by "
+":attr:`tensor2`, multiply the result by the scalar :attr:`value` and add "
+"it to :attr:`tensor`."
+msgstr ""
+
+#: ../../docstring of torch.addcmul:13
+msgid "multiplier for `tensor1 .* tensor2`"
+msgstr ""
+
+#: ../../docstring of torch.addcmul:15 torch.addcmul:17
+msgid "tensor to be multiplied"
+msgstr ""
+
+#: ../../docstring of torch.asin:1
+msgid "Returns a new `Tensor` with the arcsine  of the elements of :attr:`input`."
+msgstr ""
+
+#: ../../docstring of torch.atan:1
+msgid ""
+"Returns a new `Tensor` with the arctangent  of the elements of "
+":attr:`input`."
+msgstr ""
+
+#: ../../docstring of torch.atan2:1
+msgid ""
+"Returns a new `Tensor` with the arctangent of the elements of "
+":attr:`input1` and :attr:`input2`."
+msgstr ""
+
+#: ../../docstring of torch.atan2:4
+msgid ""
+"The shapes of :attr:`input1` and :attr:`input2` must be "
+":ref:`broadcastable <broadcasting-semantics>`."
+msgstr ""
+
+#: ../../docstring of torch.ceil:1
+msgid ""
+"Returns a new `Tensor` with the ceil of the elements of :attr:`input`, "
+"the smallest integer greater than or equal to each element."
+msgstr ""
+
+#: ../../docstring of torch.clamp:1
+msgid ""
+"Clamp all elements in :attr:`input` into the range `[min, max]` and "
+"return a resulting Tensor."
+msgstr ""
+
+#: ../../docstring of torch.clamp:10
+msgid ""
+"If :attr:`input` is of type `FloatTensor` or `DoubleTensor`, args "
+":attr:`min` and :attr:`max` must be real numbers, otherwise they should "
+"be integers"
+msgstr ""
+
+#: ../../docstring of torch.clamp:15
+msgid "lower-bound of the range to be clamped to"
+msgstr ""
+
+#: ../../docstring of torch.clamp:17
+msgid "upper-bound of the range to be clamped to"
+msgstr ""
+
+#: ../../docstring of torch.clamp:43
+msgid "Clamps all elements in :attr:`input` to be larger or equal :attr:`min`."
+msgstr ""
+
+#: ../../docstring of torch.clamp:45 torch.clamp:78 torch.div:8 torch.mul:8
+msgid ""
+"If :attr:`input` is of type `FloatTensor` or `DoubleTensor`, "
+":attr:`value` should be a real number, otherwise it should be an integer"
+msgstr ""
+
+#: ../../docstring of torch.clamp:50
+msgid "minimal value of each element in the output"
+msgstr ""
+
+#: ../../docstring of torch.clamp:76
+msgid "Clamps all elements in :attr:`input` to be smaller or equal :attr:`max`."
+msgstr ""
+
+#: ../../docstring of torch.clamp:83
+msgid "maximal value of each element in the output"
+msgstr ""
+
+#: ../../docstring of torch.cos:1
+msgid "Returns a new `Tensor` with the cosine  of the elements of :attr:`input`."
+msgstr ""
+
+#: ../../docstring of torch.cosh:1
+msgid ""
+"Returns a new `Tensor` with the hyperbolic cosine  of the elements of "
+":attr:`input`."
+msgstr ""
+
+#: ../../docstring of torch.div:3
+msgid ""
+"Divides each element of the input :attr:`input` with the scalar "
+":attr:`value` and returns a new resulting tensor."
+msgstr ""
+
+#: ../../docstring of torch.div:6
+msgid ":math:`out = tensor / value`"
+msgstr ""
+
+#: ../../docstring of torch.div:13
+msgid "the number to be divided to each element of :attr:`input`"
+msgstr ""
+
+#: ../../docstring of torch.div:42
+msgid ""
+"Each element of the Tensor :attr:`input` is divided by each element of "
+"the Tensor :attr:`other`. The resulting Tensor is returned. The shapes of"
+" :attr:`input` and :attr:`other` must be :ref:`broadcastable "
+"<broadcasting-semantics>`."
+msgstr ""
+
+#: ../../docstring of torch.div:47
+msgid ":math:`out_i = input_i / other_i`"
+msgstr ""
+
+#: ../../docstring of torch.div:49
+msgid "the numerator `Tensor`"
+msgstr ""
+
+#: ../../docstring of torch.div:51
+msgid "the denominator `Tensor`"
+msgstr ""
+
+#: ../../docstring of torch.erf:1
+msgid "Computes the error function of each element."
+msgstr ""
+
+#: ../../docstring of torch.erfinv:1
+msgid "Computes the inverse error function of each element."
+msgstr ""
+
+#: ../../docstring of torch.exp:1
+msgid "Computes the exponential of each element."
+msgstr ""
+
+#: ../../docstring of torch.floor:1
+msgid ""
+"Returns a new `Tensor` with the floor of the elements of :attr:`input`, "
+"the largest integer less than or equal to each element."
+msgstr ""
+
+#: ../../docstring of torch.fmod:1 torch.remainder:1
+msgid "Computes the element-wise remainder of division."
+msgstr ""
+
+#: ../../docstring of torch.fmod:3
+msgid ""
+"The dividend and divisor may contain both for integer and floating point "
+"numbers. The remainder has the same sign as the dividend `tensor`."
+msgstr ""
+
+#: ../../docstring of torch.fmod:6 torch.remainder:6
+msgid ""
+"When :attr:`divisor` is a Tensor, the shapes of :attr:`input` and "
+":attr:`divisor` must be :ref:`broadcastable <broadcasting-semantics>`."
+msgstr ""
+
+#: ../../docstring of torch.fmod:9 torch.remainder:9
+msgid "The dividend"
+msgstr ""
+
+#: ../../docstring of torch.fmod:11 torch.remainder:11
+msgid ""
+"The divisor. This may be either a number or a tensor of the same shape as"
+" the dividend."
+msgstr ""
+
+#: ../../docstring of torch.fmod:26
+msgid ""
+":func:`torch.remainder`, which computes the element-wise remainder of "
+"division equivalently to Python's `%` operator"
+msgstr ""
+
+#: ../../docstring of torch.frac:1
+msgid "Computes the fractional portion of each element in `tensor`."
+msgstr ""
+
+#: ../../docstring of torch.lerp:1
+msgid ""
+"Does a linear interpolation of two tensors :attr:`start` and :attr:`end` "
+"based on a scalar :attr:`weight`: and returns the resulting :attr:`out` "
+"Tensor."
+msgstr ""
+
+#: ../../docstring of torch.lerp:4
+msgid ":math:`out_i = start_i + weight * (end_i - start_i)`"
+msgstr ""
+
+#: ../../docstring of torch.lerp:6
+msgid ""
+"The shapes of :attr:`start` and :attr:`end` must be :ref:`broadcastable "
+"<broadcasting-semantics>`."
+msgstr ""
+
+#: ../../docstring of torch.lerp:9
+msgid "the `Tensor` with the starting points"
+msgstr ""
+
+#: ../../docstring of torch.lerp:11
+msgid "the `Tensor` with the ending points"
+msgstr ""
+
+#: ../../docstring of torch.lerp:13
+msgid "the weight for the interpolation formula"
+msgstr ""
+
+#: ../../docstring of torch.log:1
+msgid ""
+"Returns a new `Tensor` with the natural logarithm of the elements of "
+":attr:`input`."
+msgstr ""
+
+#: ../../docstring of torch.log1p:1
+msgid "Returns a new `Tensor` with the natural logarithm of (1 + :attr:`input`)."
+msgstr ""
+
+#: ../../docstring of torch.log1p:3
+msgid ":math:`y_i = log(x_i + 1)`"
+msgstr ""
+
+#: ../../docstring of torch.log1p:5
+msgid ""
+"This function is more accurate than :func:`torch.log` for small values of"
+" :attr:`input`"
+msgstr ""
+
+#: ../../docstring of torch.mul:3
+msgid ""
+"Multiplies each element of the input :attr:`input` with the scalar "
+":attr:`value` and returns a new resulting tensor."
+msgstr ""
+
+#: ../../docstring of torch.mul:6
+msgid ":math:`out = tensor * value`"
+msgstr ""
+
+#: ../../docstring of torch.mul:13
+msgid "the number to be multiplied to each element of :attr:`input`"
+msgstr ""
+
+#: ../../docstring of torch.mul:38
+msgid ""
+"Each element of the Tensor :attr:`input` is multiplied by each element of"
+" the Tensor :attr:`other`. The resulting Tensor is returned."
+msgstr ""
+
+#: ../../docstring of torch.mul:44
+msgid ":math:`out_i = input_i * other_i`"
+msgstr ""
+
+#: ../../docstring of torch.mul:46
+msgid "the first multiplicand `Tensor`"
+msgstr ""
+
+#: ../../docstring of torch.mul:48
+msgid "the second multiplicand `Tensor`"
+msgstr ""
+
+#: ../../docstring of torch.neg:1
+msgid "Returns a new `Tensor` with the negative of the elements of :attr:`input`."
+msgstr ""
+
+#: ../../docstring of torch.neg:3
+msgid ":math:`out = -1 * input`"
+msgstr ""
+
+#: ../../docstring of torch.pow:3
+msgid ""
+"Takes the power of each element in :attr:`input` with :attr:`exponent` "
+"and returns a Tensor with the result."
+msgstr ""
+
+#: ../../docstring of torch.pow:6
+msgid ""
+":attr:`exponent` can be either a single ``float`` number or a ``Tensor`` "
+"with the same number of elements as :attr:`input`."
+msgstr ""
+
+#: ../../docstring of torch.pow:9
+msgid "When :attr:`exponent` is a scalar value, the operation applied is:"
+msgstr ""
+
+#: ../../docstring of torch.pow:11
+msgid ":math:`out_i = x_i ^ {exponent}`"
+msgstr ""
+
+#: ../../docstring of torch.pow:13
+msgid "When :attr:`exponent` is a Tensor, the operation applied is:"
+msgstr ""
+
+#: ../../docstring of torch.pow:15
+msgid ":math:`out_i = x_i ^ {exponent_i}`"
+msgstr ""
+
+#: ../../docstring of torch.pow:17
+msgid ""
+"When :attr:`exponent` is a Tensor, the shapes of :attr:`input` and "
+":attr:`exponent` must be :ref:`broadcastable <broadcasting-semantics>`."
+msgstr ""
+
+#: ../../docstring of torch.pow:22
+msgid "the exponent value"
+msgstr ""
+
+#: ../../docstring of torch.pow:75
+msgid ""
+":attr:`base` is a scalar ``float`` value, and :attr:`input` is a Tensor. "
+"The returned Tensor :attr:`out` is of the same shape as :attr:`input`"
+msgstr ""
+
+#: ../../docstring of torch.pow:78
+msgid "The operation applied is:"
+msgstr ""
+
+#: ../../docstring of torch.pow:80
+msgid ":math:`out_i = base ^ {input_i}`"
+msgstr ""
+
+#: ../../docstring of torch.pow:82
+msgid "the scalar base value for the power operation"
+msgstr ""
+
+#: ../../docstring of torch.pow:84
+msgid "the exponent `Tensor`"
+msgstr ""
+
+#: ../../docstring of torch.reciprocal:1
+msgid ""
+"Returns a new `Tensor` with the reciprocal of the elements of "
+":attr:`input`, i.e. :math:`1.0 / x`"
+msgstr ""
+
+#: ../../docstring of torch.remainder:3
+msgid ""
+"The divisor and dividend may contain both for integer and floating point "
+"numbers. The remainder has the same sign as the divisor."
+msgstr ""
+
+#: ../../docstring of torch.remainder:26
+msgid ""
+":func:`torch.fmod`, which computes the element-wise remainder of division"
+" equivalently to the C library function ``fmod()``"
+msgstr ""
+
+#: ../../docstring of torch.round:1
+msgid ""
+"Returns a new `Tensor` with each of the elements of :attr:`input` rounded"
+" to the closest integer."
+msgstr ""
+
+#: ../../docstring of torch.rsqrt:1
+msgid ""
+"Returns a new `Tensor` with the reciprocal of the square-root of each of "
+"the elements of :attr:`input`."
+msgstr ""
+
+#: ../../docstring of torch.sigmoid:1
+msgid "Returns a new `Tensor` with the sigmoid of the elements of :attr:`input`."
+msgstr ""
+
+#: ../../docstring of torch.sign:1
+msgid "Returns a new `Tensor` with the sign of the elements of :attr:`input`."
+msgstr ""
+
+#: ../../docstring of torch.sin:1
+msgid "Returns a new `Tensor` with the sine of the elements of :attr:`input`."
+msgstr ""
+
+#: ../../docstring of torch.sinh:1
+msgid ""
+"Returns a new `Tensor` with the hyperbolic sine of the elements of "
+":attr:`input`."
+msgstr ""
+
+#: ../../docstring of torch.sqrt:1
+msgid ""
+"Returns a new `Tensor` with the square-root of the elements of "
+":attr:`input`."
+msgstr ""
+
+#: ../../docstring of torch.tan:1
+msgid "Returns a new `Tensor` with the tangent of the elements of :attr:`input`."
+msgstr ""
+
+#: ../../docstring of torch.tanh:1
+msgid ""
+"Returns a new `Tensor` with the hyperbolic tangent of the elements of "
+":attr:`input`."
+msgstr ""
+
+#: ../../docstring of torch.trunc:1
+msgid ""
+"Returns a new `Tensor` with the truncated integer values of the elements "
+"of :attr:`input`."
+msgstr ""
+
+#: ../../source/torch.rst:132
+msgid "Reduction Ops"
+msgstr ""
+
+#: ../../docstring of torch.cumprod:1
+msgid ""
+"Returns the cumulative product of elements of :attr:`input` in the "
+"dimension :attr:`dim`."
+msgstr ""
+
+#: ../../docstring of torch.cumprod:4
+msgid ""
+"For example, if :attr:`input` is a vector of size N, the result will also"
+" be a vector of size N, with elements: :math:`y_i = x_1 * x_2 * x_3 * ..."
+" * x_i`"
+msgstr ""
+
+#: ../../docstring of torch.cumprod:10 torch.cumsum:10
+msgid "the dimension to do the operation over"
+msgstr ""
+
+#: ../../docstring of torch.cumsum:1
+msgid ""
+"Returns the cumulative sum of elements of :attr:`input` in the dimension "
+":attr:`dim`."
+msgstr ""
+
+#: ../../docstring of torch.cumsum:4
+msgid ""
+"For example, if :attr:`input` is a vector of size N, the result will also"
+" be a vector of size N, with elements: :math:`y_i = x_1 + x_2 + x_3 + ..."
+" + x_i`"
+msgstr ""
+
+#: ../../docstring of torch.dist:1
+msgid "Returns the p-norm of (:attr:`input` - :attr:`other`)"
+msgstr ""
+
+#: ../../docstring of torch.dist:8
+msgid "the Right-hand-side input `Tensor`"
+msgstr ""
+
+#: ../../docstring of torch.dist:10
+msgid "The norm to be computed."
+msgstr ""
+
+#: ../../docstring of torch.mean:3
+msgid "Returns the mean value of all elements in the :attr:`input` Tensor."
+msgstr ""
+
+#: ../../docstring of torch.mean:22
+msgid ""
+"Returns the mean value of each row of the :attr:`input` Tensor in the "
+"given dimension :attr:`dim`."
+msgstr ""
+
+#: ../../docstring of torch.mean:25
+msgid ""
+"If :attr:`keepdim` is ``True``, the output Tensor is of the same size as "
+":attr:`input` except in the dimension :attr:`dim` where it is of size 1. "
+"Otherwise, :attr:`dim` is squeezed (see :func:`torch.squeeze`), resulting"
+" in the output Tensor having 1 fewer dimension."
+msgstr ""
+
+#: ../../docstring of torch.max:33 torch.mean:32 torch.median:35 torch.min:33
+#: torch.mode:16 torch.norm:36 torch.prod:32 torch.std:40 torch.sum:32
+#: torch.var:40
+msgid "the dimension to reduce"
+msgstr ""
+
+#: ../../docstring of torch.mean:34
+msgid "whether the output tensor has :attr:`dim` retained or not"
+msgstr ""
+
+#: ../../docstring of torch.median:3
+msgid "Returns the median value of all elements in the :attr:`input` Tensor."
+msgstr ""
+
+#: ../../docstring of torch.median:22
+msgid ""
+"Returns the median value of each row of the :attr:`input` Tensor in the "
+"given dimension :attr:`dim`. Also returns the index location of the "
+"median value as a `LongTensor`."
+msgstr ""
+
+#: ../../docstring of torch.median:26 torch.mode:5
+msgid "By default, :attr:`dim` is the last dimension of the :attr:`input` Tensor."
+msgstr ""
+
+#: ../../docstring of torch.median:28 torch.var:30
+msgid ""
+"If :attr:`keepdim` is ``True``, the output Tensors are of the same size "
+"as :attr:`input` except in the dimension :attr:`dim` where they are of "
+"size 1. Otherwise, :attr:`dim` is squeezed (see :func:`torch.squeeze`), "
+"resulting in the outputs Tensor having 1 fewer dimension than "
+":attr:`input`."
+msgstr ""
+
+#: ../../docstring of torch.kthvalue:21 torch.max:35 torch.median:37
+msgid "whether the output Tensors have :attr:`dim` retained or not"
+msgstr ""
+
+#: ../../docstring of torch.median:41 torch.mode:22
+msgid "the result index Tensor"
+msgstr ""
+
+#: ../../docstring of torch.mode:1
+msgid ""
+"Returns the mode value of each row of the :attr:`input` Tensor in the "
+"given dimension :attr:`dim`. Also returns the index location of the mode "
+"value as a `LongTensor`."
+msgstr ""
+
+#: ../../docstring of torch.max:26 torch.min:26 torch.mode:7
+msgid ""
+"If :attr:`keepdim` is ``True``, the output Tensors are of the same size "
+"as :attr:`input` except in the dimension :attr:`dim` where they are of "
+"size 1. Otherwise, :attr:`dim` is squeezed (see :func:`torch.squeeze`), "
+"resulting in the output Tensors having 1 fewer dimension than "
+":attr:`input`."
+msgstr ""
+
+#: ../../docstring of torch.mode:12
+msgid "This function is not defined for ``torch.cuda.Tensor`` yet."
+msgstr ""
+
+#: ../../docstring of torch.min:35 torch.mode:18
+msgid "whether the output tensors have :attr:`dim` retained or not"
+msgstr ""
+
+#: ../../docstring of torch.norm:3
+msgid "Returns the p-norm of the :attr:`input` Tensor."
+msgstr ""
+
+#: ../../docstring of torch.norm:7 torch.norm:34
+msgid "the exponent value in the norm formulation"
+msgstr ""
+
+#: ../../docstring of torch.norm:24
+msgid ""
+"Returns the p-norm of each row of the :attr:`input` Tensor in the given "
+"dimension :attr:`dim`."
+msgstr ""
+
+#: ../../docstring of torch.norm:27 torch.prod:25 torch.std:30 torch.sum:25
+msgid ""
+"If :attr:`keepdim` is ``True``, the output Tensor is of the same size as "
+":attr:`input` except in the dimension :attr:`dim` where it is of size 1. "
+"Otherwise, :attr:`dim` is squeezed (see :func:`torch.squeeze`), resulting"
+" in the output Tensor having 1 fewer dimension than :attr:`input`."
+msgstr ""
+
+#: ../../docstring of torch.norm:38 torch.prod:34 torch.std:42 torch.sum:34
+#: torch.var:42
+msgid "whether the output Tensor has :attr:`dim` retained or not"
+msgstr ""
+
+#: ../../docstring of torch.prod:3
+msgid "Returns the product of all elements in the :attr:`input` Tensor."
+msgstr ""
+
+#: ../../docstring of torch.prod:22
+msgid ""
+"Returns the product of each row of the :attr:`input` Tensor in the given "
+"dimension :attr:`dim`."
+msgstr ""
+
+#: ../../docstring of torch.std:3
+msgid ""
+"Returns the standard-deviation of all elements in the :attr:`input` "
+"Tensor."
+msgstr ""
+
+#: ../../docstring of torch.std:5 torch.std:35
+msgid ""
+"If :attr:`unbiased` is ``False``, then the standard-deviation will be "
+"calculated via the biased estimator. Otherwise, Bessel's correction will "
+"be used."
+msgstr ""
+
+#: ../../docstring of torch.std:10 torch.std:44 torch.var:10 torch.var:44
+msgid "whether to use the unbiased estimation or not"
+msgstr ""
+
+#: ../../docstring of torch.std:27
+msgid ""
+"Returns the standard-deviation of each row of the :attr:`input` Tensor in"
+" the given dimension :attr:`dim`."
+msgstr ""
+
+#: ../../docstring of torch.sum:3
+msgid "Returns the sum of all elements in the :attr:`input` Tensor."
+msgstr ""
+
+#: ../../docstring of torch.sum:22
+msgid ""
+"Returns the sum of each row of the :attr:`input` Tensor in the given "
+"dimension :attr:`dim`."
+msgstr ""
+
+#: ../../docstring of torch.var:3
+msgid "Returns the variance of all elements in the :attr:`input` Tensor."
+msgstr ""
+
+#: ../../docstring of torch.var:5 torch.var:35
+msgid ""
+"If :attr:`unbiased` is ``False``, then the variance will be calculated "
+"via the biased estimator. Otherwise, Bessel's correction will be used."
+msgstr ""
+
+#: ../../docstring of torch.var:27
+msgid ""
+"Returns the variance of each row of the :attr:`input` Tensor in the given"
+" dimension :attr:`dim`."
+msgstr ""
+
+#: ../../source/torch.rst:147
+msgid "Comparison Ops"
+msgstr ""
+
+#: ../../docstring of torch.eq:1
+msgid "Computes element-wise equality"
+msgstr ""
+
+#: ../../docstring of torch.eq:3 torch.ge:3 torch.gt:3 torch.le:3 torch.lt:3
+#: torch.ne:3
+msgid ""
+"The second argument can be a number or a tensor whose shape is "
+":ref:`broadcastable <broadcasting-semantics>` with the first argument."
+msgstr ""
+
+#: ../../docstring of torch.eq:6 torch.ge:6 torch.gt:6 torch.le:6 torch.lt:6
+#: torch.ne:6
+msgid "Tensor to compare"
+msgstr ""
+
+#: ../../docstring of torch.eq:8 torch.ge:8 torch.gt:8 torch.le:8 torch.lt:8
+#: torch.ne:8
+msgid "Tensor or value to compare"
+msgstr ""
+
+#: ../../docstring of torch.eq:10 torch.ge:10 torch.gt:10 torch.le:10
+#: torch.lt:10 torch.ne:10
+msgid "Output tensor. Must be a `ByteTensor` or the same type as `tensor`."
+msgstr ""
+
+#: ../../docstring of torch.eq:14
+msgid ""
+"a ``torch.ByteTensor`` containing a 1 at each location where the     "
+"tensors are equal and a 0 at every other location"
+msgstr ""
+
+#: ../../docstring of torch.eq:16
+msgid "a ``torch.ByteTensor`` containing a 1 at each location where the"
+msgstr ""
+
+#: ../../docstring of torch.eq:17
+msgid "tensors are equal and a 0 at every other location"
+msgstr ""
+
+#: ../../docstring of torch.equal:1
+msgid ""
+"``True`` if two tensors have the same size and elements, ``False`` "
+"otherwise."
+msgstr ""
+
+#: ../../docstring of torch.ge:1
+msgid "Computes `tensor >= other` element-wise."
+msgstr ""
+
+#: ../../docstring of torch.ge:14 torch.gt:14 torch.le:14
+msgid ""
+"a ``torch.ByteTensor`` containing a 1 at each location where     "
+"comparison is true."
+msgstr ""
+
+#: ../../docstring of torch.ge:16 torch.gt:16 torch.le:16 torch.lt:16
+#: torch.ne:16
+msgid "a ``torch.ByteTensor`` containing a 1 at each location where"
+msgstr ""
+
+#: ../../docstring of torch.ge:17 torch.gt:17 torch.le:17 torch.lt:17
+#: torch.ne:17
+msgid "comparison is true."
+msgstr ""
+
+#: ../../docstring of torch.gt:1
+msgid "Computes `tensor > other` element-wise."
+msgstr ""
+
+#: ../../docstring of torch.kthvalue:1
+msgid ""
+"Returns the :attr:`k` th smallest element of the given :attr:`input` "
+"Tensor along a given dimension."
+msgstr ""
+
+#: ../../docstring of torch.kthvalue:4 torch.sort:4 torch.topk:4
+msgid "If :attr:`dim` is not given, the last dimension of the `input` is chosen."
+msgstr ""
+
+#: ../../docstring of torch.kthvalue:6
+msgid ""
+"A tuple of `(values, indices)` is returned, where the `indices` is the "
+"indices of the kth-smallest element in the original `input` Tensor in "
+"dimension `dim`."
+msgstr ""
+
+#: ../../docstring of torch.kthvalue:9
+msgid ""
+"If :attr:`keepdim` is ``True``, both the :attr:`values` and "
+":attr:`indices` Tensors are the same size as :attr:`input`, except in the"
+" dimension :attr:`dim` where they are of size 1. Otherwise, :attr:`dim` "
+"is squeezed (see :func:`torch.squeeze`), resulting in both the "
+":attr:`values` and :attr:`indices` Tensors having 1 fewer dimension than "
+"the :attr:`input` Tensor."
+msgstr ""
+
+#: ../../docstring of torch.kthvalue:17
+msgid "k for the k-th smallest element"
+msgstr ""
+
+#: ../../docstring of torch.kthvalue:19
+msgid "The dimension to find the kth value along"
+msgstr ""
+
+#: ../../docstring of torch.kthvalue:23 torch.sort:19 torch.topk:26
+msgid ""
+"The output tuple of (Tensor, LongTensor) can be optionally given to be "
+"used as output buffers"
+msgstr ""
+
+#: ../../docstring of torch.le:1
+msgid "Computes `tensor <= other` element-wise."
+msgstr ""
+
+#: ../../docstring of torch.lt:1
+msgid "Computes `tensor < other` element-wise."
+msgstr ""
+
+#: ../../docstring of torch.lt:14 torch.ne:14
+msgid ""
+"a ``torch.ByteTensor`` containing a 1 at each location where        "
+"comparison is true."
+msgstr ""
+
+#: ../../docstring of torch.max:3
+msgid "Returns the maximum value of all elements in the :attr:`input` Tensor."
+msgstr ""
+
+#: ../../docstring of torch.max:22
+msgid ""
+"Returns the maximum value of each row of the :attr:`input` Tensor in the "
+"given dimension :attr:`dim`. The second return value is the index "
+"location of each maximum value found (argmax)."
+msgstr ""
+
+#: ../../docstring of torch.max:37
+msgid "the result tuple of two output Tensors (max, max_indices)"
+msgstr ""
+
+#: ../../docstring of torch.max:68
+msgid ""
+"Each element of the Tensor :attr:`input` is compared with the "
+"corresponding element of the Tensor :attr:`other` and an element-wise "
+"`max` is taken."
+msgstr ""
+
+#: ../../docstring of torch.max:71 torch.min:71
+msgid ""
+"The shapes of :attr:`input` and :attr:`other` don't need to match, but "
+"they must be :ref:`broadcastable <broadcasting-semantics>`."
+msgstr ""
+
+#: ../../docstring of torch.max:74 torch.min:74
+msgid ""
+"When the shapes do not match, the shape of the returned output tensor "
+"follows the :ref:`broadcasting rules <broadcasting-semantics>`."
+msgstr ""
+
+#: ../../docstring of torch.max:77
+msgid ":math:`out_i = max(tensor_i, other_i)`"
+msgstr ""
+
+#: ../../docstring of torch.min:3
+msgid "Returns the minimum value of all elements in the :attr:`input` Tensor."
+msgstr ""
+
+#: ../../docstring of torch.min:22
+msgid ""
+"Returns the minimum value of each row of the :attr:`input` Tensor in the "
+"given dimension :attr:`dim`. The second return value is the index "
+"location of each minimum value found (argmin)."
+msgstr ""
+
+#: ../../docstring of torch.min:37
+msgid "the result tuple of two output Tensors (min, min_indices)"
+msgstr ""
+
+#: ../../docstring of torch.min:67
+msgid ""
+"Each element of the Tensor :attr:`input` is compared with the "
+"corresponding element of the Tensor :attr:`other` and an element-wise "
+"`min` is taken. The resulting Tensor is returned."
+msgstr ""
+
+#: ../../docstring of torch.min:77
+msgid ":math:`out_i = min(tensor_i, other_i)`"
+msgstr ""
+
+#: ../../docstring of torch.ne:1
+msgid "Computes `tensor != other` element-wise."
+msgstr ""
+
+#: ../../docstring of torch.sort:1
+msgid ""
+"Sorts the elements of the :attr:`input` Tensor along a given dimension in"
+" ascending order by value."
+msgstr ""
+
+#: ../../docstring of torch.sort:6
+msgid ""
+"If :attr:`descending` is ``True`` then the elements are sorted in "
+"descending order by value."
+msgstr ""
+
+#: ../../docstring of torch.sort:9
+msgid ""
+"A tuple of (sorted_tensor, sorted_indices) is returned, where the "
+"sorted_indices are the indices of the elements in the original `input` "
+"Tensor."
+msgstr ""
+
+#: ../../docstring of torch.sort:14 torch.topk:18
+msgid "The dimension to sort along"
+msgstr ""
+
+#: ../../docstring of torch.sort:16
+msgid "Controls the sorting order (ascending or descending)"
+msgstr ""
+
+#: ../../docstring of torch.topk:1
+msgid ""
+"Returns the :attr:`k` largest elements of the given :attr:`input` Tensor "
+"along a given dimension."
+msgstr ""
+
+#: ../../docstring of torch.topk:6
+msgid ""
+"If :attr:`largest` is ``False`` then the `k` smallest elements are "
+"returned."
+msgstr ""
+
+#: ../../docstring of torch.topk:8
+msgid ""
+"A tuple of `(values, indices)` is returned, where the `indices` are the "
+"indices of the elements in the original `input` Tensor."
+msgstr ""
+
+#: ../../docstring of torch.topk:11
+msgid ""
+"The boolean option :attr:`sorted` if ``True``, will make sure that the "
+"returned `k` elements are themselves sorted"
+msgstr ""
+
+#: ../../docstring of torch.topk:16
+msgid "the k in \"top-k\""
+msgstr ""
+
+#: ../../docstring of torch.topk:20
+msgid "Controls whether to return largest or smallest elements"
+msgstr ""
+
+#: ../../docstring of torch.topk:23
+msgid "Controls whether to return the elements in sorted order"
+msgstr ""
+
+#: ../../source/torch.rst:163
+msgid "Other Operations"
+msgstr ""
+
+#: ../../docstring of torch.cross:1
+msgid ""
+"Returns the cross product of vectors in dimension :attr:`dim` of "
+":attr:`input` and :attr:`other`."
+msgstr ""
+
+#: ../../docstring of torch.cross:4
+msgid ""
+":attr:`input` and :attr:`other` must have the same size, and the size of "
+"their :attr:`dim` dimension should be 3."
+msgstr ""
+
+#: ../../docstring of torch.cross:7
+msgid ""
+"If :attr:`dim` is not given, it defaults to the first dimension found "
+"with the size 3."
+msgstr ""
+
+#: ../../docstring of torch.cross:14
+msgid "the dimension to take the cross-product in."
+msgstr ""
+
+#: ../../docstring of torch.diag:1
+msgid ""
+"If :attr:`input` is a vector (1D Tensor), then returns a 2D square Tensor"
+" with the elements of :attr:`input` as the diagonal."
+msgstr ""
+
+#: ../../docstring of torch.diag:3
+msgid ""
+"If :attr:`input` is a matrix (2D Tensor), then returns a 1D Tensor with "
+"the diagonal elements of :attr:`input`."
+msgstr ""
+
+#: ../../docstring of torch.diag:6 torch.tril:7 torch.triu:7
+msgid "The argument :attr:`diagonal` controls which diagonal to consider."
+msgstr ""
+
+#: ../../docstring of torch.diag:8 torch.tril:9 torch.triu:9
+msgid ":attr:`diagonal` = 0, is the main diagonal."
+msgstr ""
+
+#: ../../docstring of torch.diag:9 torch.tril:10 torch.triu:10
+msgid ":attr:`diagonal` > 0, is above the main diagonal."
+msgstr ""
+
+#: ../../docstring of torch.diag:10 torch.tril:11 torch.triu:11
+msgid ":attr:`diagonal` < 0, is below the main diagonal."
+msgstr ""
+
+#: ../../docstring of torch.diag:14 torch.tril:15 torch.triu:15
+msgid "the diagonal to consider"
+msgstr ""
+
+#: ../../docstring of torch.diag:19
+msgid "Example:"
+msgstr ""
+
+#: ../../docstring of torch.diag:21
+msgid "Get the square matrix where the input vector is the diagonal::"
+msgstr ""
+
+#: ../../docstring of torch.diag:47
+msgid "Get the k-th diagonal of a given matrix::"
+msgstr ""
+
+#: ../../docstring of torch.histc:1
+msgid "Computes the histogram of a tensor."
+msgstr ""
+
+#: ../../docstring of torch.histc:3
+msgid ""
+"The elements are sorted into equal width bins between `min` and `max`. If"
+" `min` and `max` are both zero, the minimum and maximum values of the "
+"data are used."
+msgstr ""
+
+#: ../../docstring of torch.histc:8
+msgid "Number of histogram bins"
+msgstr ""
+
+#: ../../docstring of torch.histc:10
+msgid "Lower end of the range (inclusive)"
+msgstr ""
+
+#: ../../docstring of torch.histc:12
+msgid "Upper end of the range (inclusive)"
+msgstr ""
+
+#: ../../docstring of torch.histc:17
+msgid "the histogram"
+msgstr ""
+
+#: ../../docstring of torch.renorm:1
+msgid ""
+"Returns a Tensor where each sub-tensor of :attr:`input` along dimension "
+":attr:`dim` is normalized such that the `p`-norm of the sub-tensor is "
+"lower than the value :attr:`maxnorm`"
+msgstr ""
+
+#: ../../docstring of torch.renorm:5
+msgid "If the norm of a row is lower than `maxnorm`, the row is unchanged"
+msgstr ""
+
+#: ../../docstring of torch.renorm:7
+msgid "The input Tensor"
+msgstr ""
+
+#: ../../docstring of torch.renorm:9
+msgid "The power for the norm computation"
+msgstr ""
+
+#: ../../docstring of torch.renorm:11
+msgid "The dimension to slice over to get the sub-tensors"
+msgstr ""
+
+#: ../../docstring of torch.renorm:13
+msgid "The maximum norm to keep each sub-tensor under"
+msgstr ""
+
+#: ../../docstring of torch.trace:1
+msgid "Returns the sum of the elements of the diagonal of the input 2D matrix."
+msgstr ""
+
+#: ../../docstring of torch.tril:1
+msgid ""
+"Returns the lower triangular part of the matrix (2D Tensor) "
+":attr:`input`, the other elements of the result Tensor :attr:`out` are "
+"set to 0."
+msgstr ""
+
+#: ../../docstring of torch.tril:4
+msgid ""
+"The lower triangular part of the matrix is defined as the elements on and"
+" below the diagonal."
+msgstr ""
+
+#: ../../docstring of torch.triu:1
+msgid ""
+"Returns the upper triangular part of the matrix (2D Tensor) "
+":attr:`input`, the other elements of the result Tensor :attr:`out` are "
+"set to 0."
+msgstr ""
+
+#: ../../docstring of torch.triu:4
+msgid ""
+"The upper triangular part of the matrix is defined as the elements on and"
+" above the diagonal."
+msgstr ""
+
+#: ../../source/torch.rst:174
+msgid "BLAS and LAPACK Operations"
+msgstr ""
+
+#: ../../docstring of torch.addbmm:1
+msgid ""
+"Performs a batch matrix-matrix product of matrices stored in "
+":attr:`batch1` and :attr:`batch2`, with a reduced add step (all matrix "
+"multiplications get accumulated along the first dimension). :attr:`mat` "
+"is added to the final result."
+msgstr ""
+
+#: ../../docstring of torch.addbmm:7 torch.baddbmm:5 torch.bmm:4
+msgid ""
+":attr:`batch1` and :attr:`batch2` must be 3D Tensors each containing the "
+"same number of matrices."
+msgstr ""
+
+#: ../../docstring of torch.addbmm:10
+msgid ""
+"If :attr:`batch1` is a `b x n x m` Tensor, :attr:`batch2` is a `b x m x "
+"p` Tensor, ::attr:`mat` must be :ref:`broadcastable <broadcasting-"
+"semantics>` with a `n x p` Tensor and attr:`out` will be a `n x p` "
+"Tensor."
+msgstr ""
+
+#: ../../docstring of torch.addbmm:14
+msgid ""
+"In other words, :math:`res = (beta * M) + (alpha * sum(batch1_i @ "
+"batch2_i, i = 0, b))`"
+msgstr ""
+
+#: ../../docstring of torch.addbmm:17
+msgid ""
+"For inputs of type `FloatTensor` or `DoubleTensor`, args `beta` and "
+"`alpha` must be real numbers, otherwise they should be integers."
+msgstr ""
+
+#: ../../docstring of torch.addbmm:20 torch.addmm:16 torch.baddbmm:18
+msgid "multiplier for :attr:`mat`"
+msgstr ""
+
+#: ../../docstring of torch.addbmm:22 torch.addmm:18
+msgid "matrix to be added"
+msgstr ""
+
+#: ../../docstring of torch.addbmm:24 torch.baddbmm:22
+msgid "multiplier for `batch1 @ batch2`"
+msgstr ""
+
+#: ../../docstring of torch.addbmm:26 torch.baddbmm:24 torch.bmm:13
+msgid "First batch of matrices to be multiplied"
+msgstr ""
+
+#: ../../docstring of torch.addbmm:28 torch.baddbmm:26 torch.bmm:15
+msgid "Second batch of matrices to be multiplied"
+msgstr ""
+
+#: ../../docstring of torch.addmm:1
+msgid ""
+"Performs a matrix multiplication of the matrices :attr:`mat1` and "
+":attr:`mat2`. The matrix :attr:`mat` is added to the final result."
+msgstr ""
+
+#: ../../docstring of torch.addmm:4
+msgid ""
+"If :attr:`mat1` is a `n x m` Tensor, :attr:`mat2` is a `m x p` Tensor, "
+"then :attr:`mat` must be :ref:`broadcastable <broadcasting-semantics>` "
+"with a `n x p` Tensor and :attr:`out` will be a `n x p` Tensor."
+msgstr ""
+
+#: ../../docstring of torch.addmm:8
+msgid ""
+"`alpha` and `beta` are scaling factors on `mat1 @ mat2` and `mat` "
+"respectively."
+msgstr ""
+
+#: ../../docstring of torch.addmm:10
+msgid "In other words, :math:`out = (beta * M) + (alpha * mat1 @ mat2)`"
+msgstr ""
+
+#: ../../docstring of torch.addmm:13 torch.baddbmm:15
+msgid ""
+"For inputs of type `FloatTensor` or `DoubleTensor`, args :attr:`beta` and"
+" :attr:`alpha` must be real numbers, otherwise they should be integers."
+msgstr ""
+
+#: ../../docstring of torch.addmm:20
+msgid "multiplier for `mat1 @ mat2`"
+msgstr ""
+
+#: ../../docstring of torch.addmm:22 torch.mm:9
+msgid "First matrix to be multiplied"
+msgstr ""
+
+#: ../../docstring of torch.addmm:24 torch.mm:11
+msgid "Second matrix to be multiplied"
+msgstr ""
+
+#: ../../docstring of torch.addmv:1
+msgid ""
+"Performs a matrix-vector product of the matrix :attr:`mat` and the vector"
+" :attr:`vec`. The vector :attr:`tensor` is added to the final result."
+msgstr ""
+
+#: ../../docstring of torch.addmv:5
+msgid ""
+"If :attr:`mat` is a `n x m` Tensor, :attr:`vec` is a 1D Tensor of size "
+"`m`, then :attr:`tensor` must be :ref:`broadcastable <broadcasting-"
+"semantics>` with a 1D tensor of size `n` and :attr:`out` will be 1D "
+"tensor of size `n`."
+msgstr ""
+
+#: ../../docstring of torch.addmv:9
+msgid ""
+"`alpha` and `beta` are scaling factors on `mat * vec` and `tensor` "
+"respectively."
+msgstr ""
+
+#: ../../docstring of torch.addmv:11
+msgid "In other words:"
+msgstr ""
+
+#: ../../docstring of torch.addmv:13
+msgid ":math:`out = (beta * tensor) + (alpha * (mat @ vec2))`"
+msgstr ""
+
+#: ../../docstring of torch.addmv:15 torch.addr:15
+msgid ""
+"For inputs of type `FloatTensor` or `DoubleTensor`, args :attr:`beta` and"
+" :attr:`alpha` must be real numbers, otherwise they should be integers"
+msgstr ""
+
+#: ../../docstring of torch.addmv:18
+msgid "multiplier for :attr:`tensor`"
+msgstr ""
+
+#: ../../docstring of torch.addmv:20
+msgid "vector to be added"
+msgstr ""
+
+#: ../../docstring of torch.addmv:22
+msgid "multiplier for `mat @ vec`"
+msgstr ""
+
+#: ../../docstring of torch.addmv:24 torch.mv:9
+msgid "matrix to be multiplied"
+msgstr ""
+
+#: ../../docstring of torch.addmv:26 torch.mv:11
+msgid "vector to be multiplied"
+msgstr ""
+
+#: ../../docstring of torch.addr:1
+msgid ""
+"Performs the outer-product of vectors :attr:`vec1` and :attr:`vec2` and "
+"adds it to the matrix :attr:`mat`."
+msgstr ""
+
+#: ../../docstring of torch.addr:4
+msgid ""
+"Optional values :attr:`beta` and :attr:`alpha` are scalars that multiply "
+":attr:`mat` and :math:`(vec1 \\otimes vec2)` respectively"
+msgstr ""
+
+#: ../../docstring of torch.addr:7
+msgid "In other words, :math:`out = (beta * mat) + (alpha * vec1 \\otimes vec2)`"
+msgstr ""
+
+#: ../../docstring of torch.addr:10
+msgid ""
+"If :attr:`vec1` is a vector of size `n` and :attr:`vec2` is a vector of "
+"size `m`, then :attr:`mat` must be :ref:`broadcastable <broadcasting-"
+"semantics>` with a matrix of size `n x m` and :attr:`out` will be a "
+"matrix of size `n x m`."
+msgstr ""
+
+#: ../../docstring of torch.addr:18
+msgid "Multiplier for :attr:`mat`"
+msgstr ""
+
+#: ../../docstring of torch.addr:20
+msgid "Matrix to be added"
+msgstr ""
+
+#: ../../docstring of torch.addr:22
+msgid "Multiplier for outer product of for :attr:`vec1` and :attr:`vec2`"
+msgstr ""
+
+#: ../../docstring of torch.addr:25
+msgid "First vector of the outer product"
+msgstr ""
+
+#: ../../docstring of torch.addr:27
+msgid "Second vector of the outer product"
+msgstr ""
+
+#: ../../docstring of torch.baddbmm:1
+msgid ""
+"Performs a batch matrix-matrix product of matrices in :attr:`batch1` and "
+":attr:`batch2`. :attr:`mat` is added to the final result."
+msgstr ""
+
+#: ../../docstring of torch.baddbmm:8
+msgid ""
+"If :attr:`batch1` is a `b x n x m` Tensor, :attr:`batch2` is a `b x m x "
+"p` Tensor, then :attr:`mat` must be :ref:`broadcastable <broadcasting-"
+"semantics>` with a `b x n x p` Tensor and :attr:`out` will be a `b x n x "
+"p` Tensor."
+msgstr ""
+
+#: ../../docstring of torch.baddbmm:12
+msgid ""
+"In other words, :math:`res_i = (beta * M_i) + (alpha * batch1_i \\times "
+"batch2_i)`"
+msgstr ""
+
+#: ../../docstring of torch.baddbmm:20
+msgid "tensor to be added"
+msgstr ""
+
+#: ../../docstring of torch.bmm:1
+msgid ""
+"Performs a batch matrix-matrix product of matrices stored in "
+":attr:`batch1` and :attr:`batch2`."
+msgstr ""
+
+#: ../../docstring of torch.bmm:7
+msgid ""
+"If :attr:`batch1` is a `b x n x m` Tensor, :attr:`batch2` is a `b x m x "
+"p` Tensor, :attr:`out` will be a `b x n x p` Tensor."
+msgstr ""
+
+#: ../../docstring of torch.bmm:10 torch.mm:6
+msgid ""
+"This function does not :ref:`broadcast <broadcasting-semantics>`. For "
+"broadcasting matrix products, see :func:`torch.matmul`."
+msgstr ""
+
+#: ../../docstring of torch.btrifact:1
+msgid "Batch LU factorization."
+msgstr ""
+
+#: ../../docstring of torch.btrifact:3
+msgid ""
+"Returns a tuple containing the LU factorization and pivots. The optional "
+"argument `info` provides information if the factorization succeeded for "
+"each minibatch example. The info values are from dgetrf and a non-zero "
+"value indicates an error occurred. The specific values are from cublas if"
+" cuda is being used, otherwise LAPACK. Pivoting is done if pivot is set."
+msgstr ""
+
+#: ../../docstring of torch.btrifact:10
+msgid "tensor to factor."
+msgstr ""
+
+#: ../../docstring of torch.btrisolve:1
+msgid "Batch LU solve."
+msgstr ""
+
+#: ../../docstring of torch.btrisolve:3
+msgid "Returns the LU solve of the linear system Ax = b."
+msgstr ""
+
+#: ../../docstring of torch.btrisolve:5
+msgid "RHS tensor."
+msgstr ""
+
+#: ../../docstring of torch.btrisolve:7
+msgid "Pivoted LU factorization of A from btrifact."
+msgstr ""
+
+#: ../../docstring of torch.btrisolve:9
+msgid "Pivots of the LU factorization."
+msgstr ""
+
+#: ../../docstring of torch.dot:1
+msgid "Computes the dot product (inner product) of two tensors."
+msgstr ""
+
+#: ../../docstring of torch.dot:3 torch.ger:5 torch.mv:7
+msgid "This function does not :ref:`broadcast <broadcasting-semantics>`."
+msgstr ""
+
+#: ../../docstring of torch.eig:1
+msgid "Computes the eigenvalues and eigenvectors of a real square matrix."
+msgstr ""
+
+#: ../../docstring of torch.eig:3
+msgid ""
+"A square matrix for which the eigenvalues and eigenvectors will be "
+"computed"
+msgstr ""
+
+#: ../../docstring of torch.eig:6
+msgid ""
+"``True`` to compute both eigenvalues and eigenvectors. Otherwise, only "
+"eigenvalues will be computed."
+msgstr ""
+
+#: ../../docstring of torch.eig:9
+msgid "Output tensors"
+msgstr ""
+
+#: ../../docstring of torch.eig:12
+msgid ""
+"tuple containing      - **e** (*Tensor*): the right eigenvalues of ``a``"
+"     - **v** (*Tensor*): the eigenvectors of ``a`` if ``eigenvectors``"
+"                         is ``True``; otherwise an empty tensor"
+msgstr ""
+
+#: ../../docstring of torch.eig:14
+msgid "tuple containing"
+msgstr ""
+
+#: ../../docstring of torch.eig:16
+msgid "**e** (*Tensor*): the right eigenvalues of ``a``"
+msgstr ""
+
+#: ../../docstring of torch.eig:17
+msgid "**v** (*Tensor*): the eigenvectors of ``a`` if ``eigenvectors``"
+msgstr ""
+
+#: ../../docstring of torch.eig:18
+msgid "is ``True``; otherwise an empty tensor"
+msgstr ""
+
+#: ../../docstring of torch.gels:1
+msgid ""
+"Computes the solution to the least squares and least norm problems for a "
+"full rank :math:`m` by :math:`n` matrix :math:`A`."
+msgstr ""
+
+#: ../../docstring of torch.gels:4
+msgid "If :math:`m >= n`, :func:`gels` solves the least-squares problem:"
+msgstr ""
+
+#: ../../docstring of torch.gels:12
+msgid "If :math:`m < n`, :func:`gels` solves the least-norm problem:"
+msgstr ""
+
+#: ../../docstring of torch.gels:20
+msgid ""
+"The first :math:`n` rows of the returned matrix :math:`X` contains the "
+"solution. The remaining rows contain residual information: the euclidean "
+"norm of each column starting at row :math:`n` is the residual for the "
+"corresponding column."
+msgstr ""
+
+#: ../../docstring of torch.gels:25
+msgid "The matrix :math:`B`"
+msgstr ""
+
+#: ../../docstring of torch.gels:27
+msgid "The :math:`m` by :math:`n` matrix :math:`A`"
+msgstr ""
+
+#: ../../docstring of torch.gels:29
+msgid "Optional destination tensor"
+msgstr ""
+
+#: ../../docstring of torch.gels:32
+msgid ""
+"tuple containing:      - **X** (*Tensor*): the least squares solution"
+"     - **qr** (*Tensor*): the details of the QR factorization"
+msgstr ""
+
+#: ../../docstring of torch.gels:34
+msgid "tuple containing:"
+msgstr ""
+
+#: ../../docstring of torch.gels:36
+msgid "**X** (*Tensor*): the least squares solution"
+msgstr ""
+
+#: ../../docstring of torch.gels:37
+msgid "**qr** (*Tensor*): the details of the QR factorization"
+msgstr ""
+
+#: ../../docstring of torch.gels:42
+msgid ""
+"The returned matrices will always be transposed, irrespective of the "
+"strides of the input matrices. That is, they will have stride `(1, m)` "
+"instead of `(m, 1)`."
+msgstr ""
+
+#: ../../docstring of torch.geqrf:1
+msgid "This is a low-level function for calling LAPACK directly."
+msgstr ""
+
+#: ../../docstring of torch.geqrf:3
+msgid "You'll generally want to use :func:`torch.qr` instead."
+msgstr ""
+
+#: ../../docstring of torch.geqrf:5
+msgid ""
+"Computes a QR decomposition of :attr:`input`, but without constructing "
+"`Q` and `R` as explicit separate matrices."
+msgstr ""
+
+#: ../../docstring of torch.geqrf:8
+msgid ""
+"Rather, this directly calls the underlying LAPACK function `?geqrf` which"
+" produces a sequence of 'elementary reflectors'."
+msgstr ""
+
+#: ../../docstring of torch.geqrf:11
+msgid "See `LAPACK documentation`_ for further details."
+msgstr ""
+
+#: ../../docstring of torch.geqrf:13
+msgid "the input matrix"
+msgstr ""
+
+#: ../../docstring of torch.geqrf:15 torch.symeig:31
+msgid "The result tuple of (Tensor, Tensor)"
+msgstr ""
+
+#: ../../docstring of torch.ger:1
+msgid ""
+"Outer product of :attr:`vec1` and :attr:`vec2`. If :attr:`vec1` is a "
+"vector of size `n` and :attr:`vec2` is a vector of size `m`, then "
+":attr:`out` must be a matrix of size `n x m`."
+msgstr ""
+
+#: ../../docstring of torch.ger:7 torch.ger:9
+msgid "1D input vector"
+msgstr ""
+
+#: ../../docstring of torch.ger:11 torch.gesv:21
+msgid "optional output matrix"
+msgstr ""
+
+#: ../../docstring of torch.gesv:1
+msgid ""
+"`X, LU = torch.gesv(B, A)` returns the solution to the system of linear "
+"equations represented by :math:`AX = B`"
+msgstr ""
+
+#: ../../docstring of torch.gesv:4
+msgid "`LU` contains `L` and `U` factors for LU factorization of `A`."
+msgstr ""
+
+#: ../../docstring of torch.gesv:6
+msgid ":attr:`A` has to be a square and non-singular matrix (2D Tensor)."
+msgstr ""
+
+#: ../../docstring of torch.gesv:8
+msgid ""
+"If `A` is an `m x m` matrix and `B` is `m x k`, the result `LU` is `m x "
+"m` and `X` is `m x k` ."
+msgstr ""
+
+#: ../../docstring of torch.gesv:13
+msgid ""
+"Irrespective of the original strides, the returned matrices `X` and `LU` "
+"will be transposed, i.e. with strides `(1, m)` instead of `(m, 1)`."
+msgstr ""
+
+#: ../../docstring of torch.gesv:17
+msgid "input matrix of `m x k` dimensions"
+msgstr ""
+
+#: ../../docstring of torch.gesv:19
+msgid "input square matrix of `m x m` dimensions"
+msgstr ""
+
+#: ../../docstring of torch.inverse:1
+msgid "Takes the inverse of the square matrix :attr:`input`."
+msgstr ""
+
+#: ../../docstring of torch.inverse:5
+msgid ""
+"Irrespective of the original strides, the returned matrix will be "
+"transposed, i.e. with strides `(1, m)` instead of `(m, 1)`"
+msgstr ""
+
+#: ../../docstring of torch.inverse:8
+msgid "the input 2D square `Tensor`"
+msgstr ""
+
+#: ../../docstring of torch.inverse:10
+msgid "the optional output `Tensor`"
+msgstr ""
+
+#: of torch.matmul:1
+msgid "Matrix product of two tensors."
+msgstr ""
+
+#: of torch.matmul:3
+msgid "The behavior depends on the dimensionality of the tensors as follows:"
+msgstr ""
+
+#: of torch.matmul:5
+msgid "If both tensors are 1-dimensional, the dot product (scalar) is returned."
+msgstr ""
+
+#: of torch.matmul:6
+msgid ""
+"If both arguments are 2-dimensional, the matrix-matrix product is "
+"returned."
+msgstr ""
+
+#: of torch.matmul:7
+msgid ""
+"If the first argument is 1-dimensional and the second argument is "
+"2-dimensional, a 1 is prepended to its dimension for the purpose of the "
+"matrix multiply. After the matrix multiply, the prepended dimension is "
+"removed."
+msgstr ""
+
+#: of torch.matmul:10
+msgid ""
+"If the first argument is 2-dimensional and the second argument is "
+"1-dimensional, the matrix-vector product is returned."
+msgstr ""
+
+#: of torch.matmul:12
+msgid ""
+"If both arguments are at least 1-dimensional and at least one argument is"
+" N-dimensional (where N > 2), then a batched matrix multiply is returned."
+"  If the first argument is 1-dimensional, a 1 is prepended to its "
+"dimension for the purpose of the batched matrix multiply and removed "
+"after.  If the second argument is 1-dimensional, a 1 is appended to its "
+"dimension for the purpose of the batched matrix multiple and removed "
+"after. The non-matrix (i.e. batch) dimensions are :ref:`broadcasted "
+"<broadcasting-semantics>` (and thus must be broadcastable).  For example,"
+" if :attr:`tensor1` is a `j x 1 x n x m` Tensor and :attr:`tensor2` is a "
+"`k x m x p` Tensor, :attr:`out` will be an `j x k x n x p` Tensor."
+msgstr ""
+
+#: of torch.matmul:23
+msgid ""
+"The 1-dimensional dot product version of this function does not support "
+"an :attr:`out` parameter."
+msgstr ""
+
+#: of torch.matmul:25
+msgid "First tensor to be multiplied"
+msgstr ""
+
+#: of torch.matmul:27
+msgid "Second tensor to be multiplied"
+msgstr ""
+
+#: ../../docstring of torch.mm:1
+msgid ""
+"Performs a matrix multiplication of the matrices :attr:`mat1` and "
+":attr:`mat2`."
+msgstr ""
+
+#: ../../docstring of torch.mm:3
+msgid ""
+"If :attr:`mat1` is a `n x m` Tensor, :attr:`mat2` is a `m x p` Tensor, "
+":attr:`out` will be a `n x p` Tensor."
+msgstr ""
+
+#: ../../docstring of torch.mv:1
+msgid ""
+"Performs a matrix-vector product of the matrix :attr:`mat` and the vector"
+" :attr:`vec`."
+msgstr ""
+
+#: ../../docstring of torch.mv:4
+msgid ""
+"If :attr:`mat` is a `n x m` Tensor, :attr:`vec` is a 1D Tensor of size "
+"`m`, :attr:`out` will be 1D of size `n`."
+msgstr ""
+
+#: ../../docstring of torch.potrf:1
+msgid "potrf(a, upper, out=None)"
+msgstr ""
+
+#: ../../docstring of torch.potrf:3
+msgid ""
+"Computes the Cholesky decomposition of a positive semidefinite matrix "
+":attr:`a`: returns matrix `u` If `upper` is ``True`` or not provided, `u`"
+" is upper triangular such that :math:`a = u^T u`. If `upper` is "
+"``False``, `u` is lower triangular such that :math:`a = u u^T`."
+msgstr ""
+
+#: ../../docstring of torch.potrf:10
+msgid "the input 2D `Tensor`, a symmetric positive semidefinite matrix"
+msgstr ""
+
+#: ../../docstring of torch.potrf:12 torch.potrs:18 torch.pstrf:12
+msgid "Return upper (default) or lower triangular matrix"
+msgstr ""
+
+#: ../../docstring of torch.potrf:14
+msgid "A Tensor for u"
+msgstr ""
+
+#: ../../docstring of torch.potri:1
+msgid "potri(u, upper, out=None)"
+msgstr ""
+
+#: ../../docstring of torch.potri:3
+msgid ""
+"Computes the inverse of a positive semidefinite matrix given its Cholesky"
+" factor :attr:`u`: returns matrix `inv` If `upper` is ``True`` or not "
+"provided, `u` is upper triangular such that :math:`inv = (u^T u)^{-1}`. "
+"If `upper` is ``False``, `u` is lower triangular such that :math:`inv = "
+"(u u^T)^{-1}`."
+msgstr ""
+
+#: ../../docstring of torch.potri:10 torch.potrs:15
+msgid "the input 2D `Tensor`, a upper or lower triangular Cholesky factor"
+msgstr ""
+
+#: ../../docstring of torch.potri:13
+msgid "Flag if upper (default) or lower triangular matrix"
+msgstr ""
+
+#: ../../docstring of torch.potri:15
+msgid "A Tensor for inv"
+msgstr ""
+
+#: ../../docstring of torch.potrs:1
+msgid "potrs(b, u, upper, out=None)"
+msgstr ""
+
+#: ../../docstring of torch.potrs:3
+msgid ""
+"Solves a linear system of equations with a positive semidefinite matrix "
+"to be inverted given its given a Cholesky factor matrix :attr:`u`: "
+"returns matrix `c` If `upper` is ``True`` or not provided, `u` is and "
+"upper triangular such that :math:`c = (u^T u)^{-1} b`. If `upper` is "
+"``False``, `u` is and lower triangular such that :math:`c = (u u^T)^{-1} "
+"b`."
+msgstr ""
+
+#: ../../docstring of torch.potrs:11
+msgid "`b` is always a 2D `Tensor`, use `b.unsqueeze(1)` to convert a vector."
+msgstr ""
+
+#: ../../docstring of torch.potrs:13
+msgid "the right hand side 2D `Tensor`"
+msgstr ""
+
+#: ../../docstring of torch.potrs:20
+msgid "A Tensor for c"
+msgstr ""
+
+#: ../../docstring of torch.pstrf:1
+msgid "pstrf(a, upper, out=None)"
+msgstr ""
+
+#: ../../docstring of torch.pstrf:3
+msgid ""
+"Computes the pivoted Cholesky decomposition of a positive semidefinite "
+"matrix :attr:`a`: returns matrices `u` and `piv`. If `upper` is ``True`` "
+"or not provided, `u` is and upper triangular such that :math:`a = p^T u^T"
+" u p`, with `p` the permutation given by `piv`. If `upper` is ``False``, "
+"`u` is and lower triangular such that :math:`a = p^T u u^T p`."
+msgstr ""
+
+#: ../../docstring of torch.pstrf:10 torch.qr:17
+msgid "the input 2D `Tensor`"
+msgstr ""
+
+#: ../../docstring of torch.pstrf:14
+msgid "A tuple of u and piv Tensors"
+msgstr ""
+
+#: ../../docstring of torch.qr:1
+msgid ""
+"Computes the QR decomposition of a matrix :attr:`input`: returns matrices"
+" `q` and `r` such that :math:`x = q * r`, with `q` being an orthogonal "
+"matrix and `r` being an upper triangular matrix."
+msgstr ""
+
+#: ../../docstring of torch.qr:5
+msgid "This returns the thin (reduced) QR factorization."
+msgstr ""
+
+#: ../../docstring of torch.qr:7
+msgid ""
+"precision may be lost if the magnitudes of the elements of `input` are "
+"large"
+msgstr ""
+
+#: ../../docstring of torch.qr:10
+msgid ""
+"while it should always give you a valid decomposition, it may not give "
+"you the same one across platforms - it will depend on your LAPACK "
+"implementation."
+msgstr ""
+
+#: ../../docstring of torch.qr:14
+msgid ""
+"Irrespective of the original strides, the returned matrix `q` will be "
+"transposed, i.e. with strides `(1, m)` instead of `(m, 1)`."
+msgstr ""
+
+#: ../../docstring of torch.qr:19
+msgid "A tuple of Q and R Tensors"
+msgstr ""
+
+#: ../../docstring of torch.svd:1
+msgid ""
+"`U, S, V = torch.svd(A)` returns the singular value decomposition of a "
+"real matrix `A` of size `(n x m)` such that :math:`A = USV'*`."
+msgstr ""
+
+#: ../../docstring of torch.svd:4
+msgid "`U` is of shape `n x n`"
+msgstr ""
+
+#: ../../docstring of torch.svd:6
+msgid "`S` is of shape `n x m`"
+msgstr ""
+
+#: ../../docstring of torch.svd:8
+msgid "`V` is of shape `m x m`."
+msgstr ""
+
+#: ../../docstring of torch.svd:10
+msgid ""
+":attr:`some` represents the number of singular values to be computed. If "
+"`some=True`, it computes some and `some=False` computes all."
+msgstr ""
+
+#: ../../docstring of torch.svd:13
+msgid ""
+"Irrespective of the original strides, the returned matrix `U` will be "
+"transposed, i.e. with strides `(1, n)` instead of `(n, 1)`."
+msgstr ""
+
+#: ../../docstring of torch.svd:16
+msgid "the input 2D Tensor"
+msgstr ""
+
+#: ../../docstring of torch.svd:18
+msgid "controls the number of singular values to be computed"
+msgstr ""
+
+#: ../../docstring of torch.svd:20
+msgid "the result tuple"
+msgstr ""
+
+#: ../../docstring of torch.symeig:1
+msgid ""
+"`e, V = torch.symeig(input)` returns eigenvalues and eigenvectors of a "
+"symmetric real matrix :attr:`input`."
+msgstr ""
+
+#: ../../docstring of torch.symeig:4
+msgid "`input` and `V` are `m x m` matrices and `e` is a `m` dimensional vector."
+msgstr ""
+
+#: ../../docstring of torch.symeig:6
+msgid ""
+"This function calculates all eigenvalues (and vectors) of `input` such "
+"that `input = V diag(e) V'`"
+msgstr ""
+
+#: ../../docstring of torch.symeig:9
+msgid ""
+"The boolean argument :attr:`eigenvectors` defines computation of "
+"eigenvectors or eigenvalues only."
+msgstr ""
+
+#: ../../docstring of torch.symeig:12
+msgid ""
+"If it is ``False``, only eigenvalues are computed. If it is ``True``, "
+"both eigenvalues and eigenvectors are computed."
+msgstr ""
+
+#: ../../docstring of torch.symeig:15
+msgid ""
+"Since the input matrix `input` is supposed to be symmetric, only the "
+"upper triangular portion is used by default."
+msgstr ""
+
+#: ../../docstring of torch.symeig:18
+msgid "If :attr:`upper` is ``False``, then lower triangular portion is used."
+msgstr ""
+
+#: ../../docstring of torch.symeig:20
+msgid ""
+"Note: Irrespective of the original strides, the returned matrix `V` will "
+"be transposed, i.e. with strides `(1, m)` instead of `(m, 1)`."
+msgstr ""
+
+#: ../../docstring of torch.symeig:23
+msgid "the input symmetric matrix"
+msgstr ""
+
+#: ../../docstring of torch.symeig:25
+msgid "controls whether eigenvectors have to be computed"
+msgstr ""
+
+#: ../../docstring of torch.symeig:28
+msgid "controls whether to consider upper-triangular or lower-triangular region"
+msgstr ""
+
+#: ../../docstring of torch.symeig:34
+msgid "Examples::"
+msgstr ""
+

@@ -1,0 +1,212 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017, Torch Contributors
+# This file is distributed under the same license as the PyTorch package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PyTorch master (0.3.0.post4 )\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-01-12 11:13+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.5.1\n"
+
+#: ../../source/data.rst:2
+msgid "torch.utils.data"
+msgstr ""
+
+#: of torch.utils.data.Dataset:1
+msgid "An abstract class representing a Dataset."
+msgstr ""
+
+#: of torch.utils.data.Dataset:3
+msgid ""
+"All other datasets should subclass it. All subclasses should override "
+"``__len__``, that provides the size of the dataset, and ``__getitem__``, "
+"supporting integer indexing in range from 0 to len(self) exclusive."
+msgstr ""
+
+#: of torch.utils.data.TensorDataset:1
+msgid "Dataset wrapping data and target tensors."
+msgstr ""
+
+#: of torch.utils.data.TensorDataset:3
+msgid ""
+"Each sample will be retrieved by indexing both tensors along the first "
+"dimension."
+msgstr ""
+
+#: of torch.utils.data.ConcatDataset torch.utils.data.DataLoader
+#: torch.utils.data.TensorDataset
+#: torch.utils.data.distributed.DistributedSampler
+#: torch.utils.data.sampler.RandomSampler
+#: torch.utils.data.sampler.SequentialSampler
+#: torch.utils.data.sampler.SubsetRandomSampler
+#: torch.utils.data.sampler.WeightedRandomSampler
+msgid "参数"
+msgstr ""
+
+#: of torch.utils.data.TensorDataset:6
+msgid "contains sample data."
+msgstr ""
+
+#: of torch.utils.data.TensorDataset:8
+msgid "contains sample targets (labels)."
+msgstr ""
+
+#: of torch.utils.data.ConcatDataset:1
+msgid ""
+"Dataset to concatenate multiple datasets. Purpose: useful to assemble "
+"different existing datasets, possibly large-scale datasets as the "
+"concatenation operation is done in an on-the-fly manner."
+msgstr ""
+
+#: of torch.utils.data.ConcatDataset:6
+msgid "List of datasets to be concatenated"
+msgstr ""
+
+#: of torch.utils.data.DataLoader:1
+msgid ""
+"Data loader. Combines a dataset and a sampler, and provides single- or "
+"multi-process iterators over the dataset."
+msgstr ""
+
+#: of torch.utils.data.DataLoader:4
+msgid "dataset from which to load the data."
+msgstr ""
+
+#: of torch.utils.data.DataLoader:6
+msgid "how many samples per batch to load (default: 1)."
+msgstr ""
+
+#: of torch.utils.data.DataLoader:9
+msgid ""
+"set to ``True`` to have the data reshuffled at every epoch (default: "
+"False)."
+msgstr ""
+
+#: of torch.utils.data.DataLoader:12
+msgid ""
+"defines the strategy to draw samples from the dataset. If specified, "
+"``shuffle`` must be False."
+msgstr ""
+
+#: of torch.utils.data.DataLoader:15
+msgid ""
+"like sampler, but returns a batch of indices at a time. Mutually "
+"exclusive with batch_size, shuffle, sampler, and drop_last."
+msgstr ""
+
+#: of torch.utils.data.DataLoader:19
+msgid ""
+"how many subprocesses to use for data loading. 0 means that the data will"
+" be loaded in the main process (default: 0)"
+msgstr ""
+
+#: of torch.utils.data.DataLoader:23
+msgid "merges a list of samples to form a mini-batch."
+msgstr ""
+
+#: of torch.utils.data.DataLoader:25
+msgid ""
+"If ``True``, the data loader will copy tensors into CUDA pinned memory "
+"before returning them."
+msgstr ""
+
+#: of torch.utils.data.DataLoader:28
+msgid ""
+"set to ``True`` to drop the last incomplete batch, if the dataset size is"
+" not divisible by the batch size. If ``False`` and the size of dataset is"
+" not divisible by the batch size, then the last batch will be smaller. "
+"(default: False)"
+msgstr ""
+
+#: of torch.utils.data.sampler.Sampler:1
+msgid "Base class for all Samplers."
+msgstr ""
+
+#: of torch.utils.data.sampler.Sampler:3
+msgid ""
+"Every Sampler subclass has to provide an __iter__ method, providing a way"
+" to iterate over indices of dataset elements, and a __len__ method that "
+"returns the length of the returned iterators."
+msgstr ""
+
+#: of torch.utils.data.sampler.SequentialSampler:1
+msgid "Samples elements sequentially, always in the same order."
+msgstr ""
+
+#: of torch.utils.data.sampler.RandomSampler:3
+#: torch.utils.data.sampler.SequentialSampler:3
+msgid "dataset to sample from"
+msgstr ""
+
+#: of torch.utils.data.sampler.RandomSampler:1
+msgid "Samples elements randomly, without replacement."
+msgstr ""
+
+#: of torch.utils.data.sampler.SubsetRandomSampler:1
+msgid ""
+"Samples elements randomly from a given list of indices, without "
+"replacement."
+msgstr ""
+
+#: of torch.utils.data.sampler.SubsetRandomSampler:3
+msgid "a list of indices"
+msgstr ""
+
+#: of torch.utils.data.sampler.WeightedRandomSampler:1
+msgid ""
+"Samples elements from [0,..,len(weights)-1] with given probabilities "
+"(weights)."
+msgstr ""
+
+#: of torch.utils.data.sampler.WeightedRandomSampler:3
+msgid "a list of weights, not necessary summing up to one"
+msgstr ""
+
+#: of torch.utils.data.sampler.WeightedRandomSampler:5
+msgid "number of samples to draw"
+msgstr ""
+
+#: of torch.utils.data.sampler.WeightedRandomSampler:7
+msgid ""
+"if ``True``, samples are drawn with replacement. If not, they are drawn "
+"without replacement, which means that when a sample index is drawn for a "
+"row, it cannot be drawn again for that row."
+msgstr ""
+
+#: of torch.utils.data.distributed.DistributedSampler:1
+msgid "Sampler that restricts data loading to a subset of the dataset."
+msgstr ""
+
+#: of torch.utils.data.distributed.DistributedSampler:3
+msgid ""
+"It is especially useful in conjunction with "
+":class:`torch.nn.parallel.DistributedDataParallel`. In such case, each "
+"process can pass a DistributedSampler instance as a DataLoader sampler, "
+"and load a subset of the original dataset that is exclusive to it."
+msgstr ""
+
+#: of torch.utils.data.distributed.DistributedSampler:9
+msgid "Dataset is assumed to be of constant size."
+msgstr ""
+
+#: of torch.utils.data.distributed.DistributedSampler:11
+msgid "Dataset used for sampling."
+msgstr ""
+
+#: of torch.utils.data.distributed.DistributedSampler:12
+msgid "Number of processes participating in distributed training."
+msgstr ""
+
+#: of torch.utils.data.distributed.DistributedSampler:15
+msgid "Rank of the current process within num_replicas."
+msgstr ""
+

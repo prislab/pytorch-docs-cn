@@ -1,0 +1,6063 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017, Torch Contributors
+# This file is distributed under the same license as the PyTorch package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PyTorch master (0.3.0.post4 )\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-01-12 11:13+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.5.1\n"
+
+#: ../../source/nn.rst:5
+msgid "torch.nn"
+msgstr ""
+
+#: ../../source/nn.rst:11
+msgid "Parameters"
+msgstr ""
+
+#: of torch.nn.Parameter:1
+msgid "A kind of Variable that is to be considered a module parameter."
+msgstr ""
+
+#: of torch.nn.Parameter:3
+msgid ""
+"Parameters are :class:`~torch.autograd.Variable` subclasses, that have a "
+"very special property when used with :class:`Module` s - when they're "
+"assigned as Module attributes they are automatically added to the list of"
+" its parameters, and will appear e.g. in :meth:`~Module.parameters` "
+"iterator. Assigning a Variable doesn't have such effect. This is because "
+"one might want to cache some temporary state, like last hidden state of "
+"the RNN, in the model. If there was no such class as :class:`Parameter`, "
+"these temporaries would get registered too."
+msgstr ""
+
+#: of torch.nn.Parameter:12
+msgid ""
+"Another difference is that parameters can't be volatile and that they "
+"require gradient by default."
+msgstr ""
+
+#: ../../docstring of torch.nn.AdaptiveAvgPool1d torch.nn.AdaptiveAvgPool2d
+#: torch.nn.AdaptiveAvgPool3d torch.nn.AdaptiveMaxPool1d
+#: torch.nn.AdaptiveMaxPool2d torch.nn.AdaptiveMaxPool3d torch.nn.AlphaDropout
+#: torch.nn.AvgPool1d torch.nn.AvgPool2d torch.nn.AvgPool3d torch.nn.BCELoss
+#: torch.nn.BCEWithLogitsLoss torch.nn.BatchNorm1d torch.nn.BatchNorm2d
+#: torch.nn.BatchNorm3d torch.nn.Bilinear torch.nn.ConstantPad2d
+#: torch.nn.Conv1d torch.nn.Conv2d torch.nn.Conv3d torch.nn.ConvTranspose1d
+#: torch.nn.ConvTranspose2d torch.nn.ConvTranspose3d torch.nn.CosineSimilarity
+#: torch.nn.CrossEntropyLoss torch.nn.DataParallel torch.nn.Dropout
+#: torch.nn.Dropout2d torch.nn.Dropout3d torch.nn.ELU torch.nn.Embedding
+#: torch.nn.EmbeddingBag torch.nn.FractionalMaxPool2d torch.nn.GRU
+#: torch.nn.GRUCell torch.nn.Hardtanh torch.nn.InstanceNorm1d
+#: torch.nn.InstanceNorm2d torch.nn.InstanceNorm3d torch.nn.KLDivLoss
+#: torch.nn.L1Loss torch.nn.LPPool2d torch.nn.LSTM torch.nn.LSTMCell
+#: torch.nn.LeakyReLU torch.nn.Linear torch.nn.LogSoftmax torch.nn.MSELoss
+#: torch.nn.MaxPool1d torch.nn.MaxPool2d torch.nn.MaxPool3d
+#: torch.nn.MaxUnpool1d torch.nn.MaxUnpool2d torch.nn.MaxUnpool3d
+#: torch.nn.Module.add_module torch.nn.Module.apply torch.nn.Module.cuda
+#: torch.nn.Module.load_state_dict torch.nn.Module.register_buffer
+#: torch.nn.Module.register_parameter torch.nn.Module.state_dict
+#: torch.nn.Module.type torch.nn.ModuleList torch.nn.ModuleList.append
+#: torch.nn.ModuleList.extend torch.nn.NLLLoss torch.nn.NLLLoss2d
+#: torch.nn.PReLU torch.nn.PairwiseDistance torch.nn.Parameter
+#: torch.nn.ParameterList torch.nn.ParameterList.append
+#: torch.nn.ParameterList.extend torch.nn.PixelShuffle torch.nn.PoissonNLLLoss
+#: torch.nn.RNN torch.nn.RNNCell torch.nn.ReLU torch.nn.ReLU6
+#: torch.nn.ReflectionPad2d torch.nn.ReplicationPad2d torch.nn.ReplicationPad3d
+#: torch.nn.SELU torch.nn.SmoothL1Loss torch.nn.Softmax torch.nn.Softmin
+#: torch.nn.Softplus torch.nn.Softshrink torch.nn.Threshold
+#: torch.nn.TripletMarginLoss torch.nn.Upsample torch.nn.UpsamplingBilinear2d
+#: torch.nn.UpsamplingNearest2d torch.nn.ZeroPad2d
+#: torch.nn.functional.adaptive_avg_pool1d
+#: torch.nn.functional.adaptive_avg_pool2d
+#: torch.nn.functional.adaptive_avg_pool3d
+#: torch.nn.functional.adaptive_max_pool1d
+#: torch.nn.functional.adaptive_max_pool2d
+#: torch.nn.functional.adaptive_max_pool3d torch.nn.functional.affine_grid
+#: torch.nn.functional.alpha_dropout torch.nn.functional.avg_pool1d
+#: torch.nn.functional.avg_pool2d torch.nn.functional.avg_pool3d
+#: torch.nn.functional.binary_cross_entropy
+#: torch.nn.functional.binary_cross_entropy_with_logits
+#: torch.nn.functional.conv1d torch.nn.functional.conv2d
+#: torch.nn.functional.conv3d torch.nn.functional.conv_transpose1d
+#: torch.nn.functional.conv_transpose2d torch.nn.functional.conv_transpose3d
+#: torch.nn.functional.cosine_similarity torch.nn.functional.cross_entropy
+#: torch.nn.functional.glu torch.nn.functional.grid_sample
+#: torch.nn.functional.kl_div torch.nn.functional.log_softmax
+#: torch.nn.functional.nll_loss torch.nn.functional.normalize
+#: torch.nn.functional.pad torch.nn.functional.pairwise_distance
+#: torch.nn.functional.pixel_shuffle torch.nn.functional.poisson_nll_loss
+#: torch.nn.functional.softmax torch.nn.functional.softmin
+#: torch.nn.functional.triplet_margin_loss torch.nn.functional.upsample
+#: torch.nn.functional.upsample_bilinear torch.nn.functional.upsample_nearest
+#: torch.nn.init.calculate_gain torch.nn.init.constant torch.nn.init.dirac
+#: torch.nn.init.eye torch.nn.init.kaiming_normal torch.nn.init.kaiming_uniform
+#: torch.nn.init.normal torch.nn.init.orthogonal torch.nn.init.sparse
+#: torch.nn.init.uniform torch.nn.init.xavier_normal
+#: torch.nn.init.xavier_uniform torch.nn.parallel.DistributedDataParallel
+#: torch.nn.utils.clip_grad_norm torch.nn.utils.remove_weight_norm
+#: torch.nn.utils.rnn.pack_padded_sequence
+#: torch.nn.utils.rnn.pad_packed_sequence torch.nn.utils.weight_norm
+msgid "参数"
+msgstr ""
+
+#: of torch.nn.Parameter:15
+msgid "parameter tensor."
+msgstr ""
+
+#: of torch.nn.Parameter:17
+msgid ""
+"if the parameter requires gradient. See :ref:`excluding-subgraphs` for "
+"more details."
+msgstr ""
+
+#: ../../source/nn.rst:17
+msgid "Containers"
+msgstr ""
+
+#: ../../source/nn.rst:20
+msgid ":hidden:`Module`"
+msgstr ""
+
+#: of torch.nn.Module:1
+msgid "Base class for all neural network modules."
+msgstr ""
+
+#: of torch.nn.Module:3
+msgid "Your models should also subclass this class."
+msgstr ""
+
+#: of torch.nn.Module:5
+msgid ""
+"Modules can also contain other Modules, allowing to nest them in a tree "
+"structure. You can assign the submodules as regular attributes::"
+msgstr ""
+
+#: of torch.nn.Module:21
+msgid ""
+"Submodules assigned in this way will be registered, and will have their "
+"parameters converted too when you call .cuda(), etc."
+msgstr ""
+
+#: of torch.nn.Module.add_module:1
+msgid "Adds a child module to the current module."
+msgstr ""
+
+#: of torch.nn.Module.add_module:3
+msgid "The module can be accessed as an attribute using the given name."
+msgstr ""
+
+#: of torch.nn.Module.add_module:5
+msgid ""
+"name of the child module. The child module can be accessed from this "
+"module using the given name"
+msgstr ""
+
+#: of torch.nn.Module.add_module:8
+msgid "child module to be added to the module."
+msgstr ""
+
+#: of torch.nn.Module.apply:1
+msgid ""
+"Applies ``fn`` recursively to every submodule (as returned by "
+"``.children()``) as well as self. Typical use includes initializing the "
+"parameters of a model (see also :ref:`torch-nn-init`)."
+msgstr ""
+
+#: of torch.nn.Module.apply:5
+msgid "function to be applied to each submodule"
+msgstr ""
+
+#: of torch.nn.LogSoftmax torch.nn.Module.apply torch.nn.Module.cpu
+#: torch.nn.Module.cuda torch.nn.Module.double torch.nn.Module.float
+#: torch.nn.Module.half torch.nn.Module.register_backward_hook
+#: torch.nn.Module.register_forward_hook
+#: torch.nn.Module.register_forward_pre_hook torch.nn.Module.state_dict
+#: torch.nn.Module.train torch.nn.Module.type torch.nn.Softmax
+#: torch.nn.Softmax2d torch.nn.Softmin torch.nn.functional.affine_grid
+#: torch.nn.functional.grid_sample torch.nn.utils.clip_grad_norm
+#: torch.nn.utils.rnn.pack_padded_sequence
+#: torch.nn.utils.rnn.pad_packed_sequence torch.nn.utils.weight_norm
+msgid "返回"
+msgstr ""
+
+#: of torch.nn.Module.apply:8 torch.nn.Module.cpu:3 torch.nn.Module.cuda:11
+#: torch.nn.Module.double:3 torch.nn.Module.float:3 torch.nn.Module.half:3
+#: torch.nn.Module.train:5 torch.nn.Module.type:6
+msgid "self"
+msgstr ""
+
+#: of torch.nn.Module.apply torch.nn.Module.cpu torch.nn.Module.cuda
+#: torch.nn.Module.double torch.nn.Module.float torch.nn.Module.half
+#: torch.nn.Module.register_backward_hook torch.nn.Module.register_forward_hook
+#: torch.nn.Module.register_forward_pre_hook torch.nn.Module.state_dict
+#: torch.nn.Module.train torch.nn.Module.type torch.nn.functional.affine_grid
+#: torch.nn.functional.grid_sample
+msgid "返回类型"
+msgstr ""
+
+#: of torch.nn.Module.apply:12 torch.nn.Module.named_children:7
+#: torch.nn.Module.named_parameters:7 torch.nn.Module.parameters:8
+#: torch.nn.Module.register_buffer:16 torch.nn.Module.state_dict:24
+#: torch.nn.functional.avg_pool1d:19 torch.nn.utils.remove_weight_norm:9
+msgid "Example"
+msgstr ""
+
+#: of torch.nn.Module.children:1
+msgid "Returns an iterator over immediate children modules."
+msgstr ""
+
+#: of torch.nn.Module.children torch.nn.Module.modules
+#: torch.nn.Module.named_children torch.nn.Module.named_modules
+#: torch.nn.Module.named_parameters torch.nn.Module.parameters
+msgid "Yields"
+msgstr ""
+
+#: of torch.nn.Module.children:3
+msgid "*Module* -- a child module"
+msgstr ""
+
+#: of torch.nn.Module.cpu:1
+msgid "Moves all model parameters and buffers to the CPU."
+msgstr ""
+
+#: of torch.nn.Module.cuda:1
+msgid "Moves all model parameters and buffers to the GPU."
+msgstr ""
+
+#: of torch.nn.Module.cuda:3
+msgid ""
+"This also makes associated parameters and buffers different objects. So "
+"it should be called before constructing optimizer if the module will live"
+" on GPU while being optimized."
+msgstr ""
+
+#: of torch.nn.Module.cuda:7
+msgid "if specified, all parameters will be copied to that device"
+msgstr ""
+
+#: of torch.nn.Module.double:1
+msgid "Casts all parameters and buffers to double datatype."
+msgstr ""
+
+#: of torch.nn.Module.eval:1
+msgid "Sets the module in evaluation mode."
+msgstr ""
+
+#: of torch.nn.Module.eval:3 torch.nn.Module.train:3
+msgid "This has any effect only on modules such as Dropout or BatchNorm."
+msgstr ""
+
+#: of torch.nn.Module.float:1
+msgid "Casts all parameters and buffers to float datatype."
+msgstr ""
+
+#: of torch.nn.Module.forward:1
+msgid "Defines the computation performed at every call."
+msgstr ""
+
+#: of torch.nn.Module.forward:3
+msgid "Should be overriden by all subclasses."
+msgstr ""
+
+#: of torch.nn.Module.forward:6
+msgid ""
+"Although the recipe for forward pass needs to be defined within this "
+"function, one should call the :class:`Module` instance afterwards instead"
+" of this since the former takes care of running the registered hooks "
+"while the latter silently ignores them."
+msgstr ""
+
+#: of torch.nn.Module.half:1
+msgid "Casts all parameters and buffers to half datatype."
+msgstr ""
+
+#: of torch.nn.Module.load_state_dict:1
+msgid ""
+"Copies parameters and buffers from :attr:`state_dict` into this module "
+"and its descendants. If :attr:`strict` is ``True`` then the keys of "
+":attr:`state_dict` must exactly match the keys returned by this module's "
+":func:`state_dict()` function."
+msgstr ""
+
+#: of torch.nn.Module.load_state_dict:6
+msgid "A dict containing parameters and persistent buffers."
+msgstr ""
+
+#: of torch.nn.Module.load_state_dict:9
+msgid ""
+"Strictly enforce that the keys in :attr:`state_dict` match the keys "
+"returned by this module's `:func:`state_dict()` function."
+msgstr ""
+
+#: of torch.nn.Module.modules:1
+msgid "Returns an iterator over all modules in the network."
+msgstr ""
+
+#: of torch.nn.Module.modules:3
+msgid "*Module* -- a module in the network"
+msgstr ""
+
+#: of torch.nn.Module.modules:7 torch.nn.Module.named_modules:8
+msgid ""
+"Duplicate modules are returned only once. In the following example, ``l``"
+" will be returned only once."
+msgstr ""
+
+#: of torch.nn.Module.named_children:1
+msgid ""
+"Returns an iterator over immediate children modules, yielding both the "
+"name of the module as well as the module itself."
+msgstr ""
+
+#: of torch.nn.Module.named_children:4
+msgid "*(string, Module)* -- Tuple containing a name and child module"
+msgstr ""
+
+#: of torch.nn.Module.named_modules:1
+msgid ""
+"Returns an iterator over all modules in the network, yielding both the "
+"name of the module as well as the module itself."
+msgstr ""
+
+#: of torch.nn.Module.named_modules:4
+msgid "*(string, Module)* -- Tuple of name and module"
+msgstr ""
+
+#: of torch.nn.Module.named_parameters:1
+msgid ""
+"Returns an iterator over module parameters, yielding both the name of the"
+" parameter as well as the parameter itself"
+msgstr ""
+
+#: of torch.nn.Module.named_parameters:4
+msgid "*(string, Parameter)* -- Tuple containing the name and parameter"
+msgstr ""
+
+#: of torch.nn.Module.parameters:1
+msgid "Returns an iterator over module parameters."
+msgstr ""
+
+#: of torch.nn.Module.parameters:3
+msgid "This is typically passed to an optimizer."
+msgstr ""
+
+#: of torch.nn.Module.parameters:5
+msgid "*Parameter* -- module parameter"
+msgstr ""
+
+#: of torch.nn.Module.register_backward_hook:1
+msgid "Registers a backward hook on the module."
+msgstr ""
+
+#: of torch.nn.Module.register_backward_hook:3
+msgid ""
+"The hook will be called every time the gradients with respect to module "
+"inputs are computed. The hook should have the following signature::"
+msgstr ""
+
+#: of torch.nn.Module.register_backward_hook:8
+msgid ""
+"The :attr:`grad_input` and :attr:`grad_output` may be tuples if the "
+"module has multiple inputs or outputs. The hook should not modify its "
+"arguments, but it can optionally return a new gradient with respect to "
+"input that will be used in place of :attr:`grad_input` in subsequent "
+"computations."
+msgstr ""
+
+#: of torch.nn.Module.register_backward_hook:14
+#: torch.nn.Module.register_forward_hook:10
+#: torch.nn.Module.register_forward_pre_hook:10
+msgid ""
+"a handle that can be used to remove the added hook by calling "
+"``handle.remove()``"
+msgstr ""
+
+#: of torch.nn.Module.register_backward_hook:16
+#: torch.nn.Module.register_forward_hook:12
+#: torch.nn.Module.register_forward_pre_hook:12
+msgid ":class:`torch.utils.hooks.RemovableHandle`"
+msgstr ""
+
+#: of torch.nn.Module.register_buffer:1
+msgid "Adds a persistent buffer to the module."
+msgstr ""
+
+#: of torch.nn.Module.register_buffer:3
+msgid ""
+"This is typically used to register a buffer that should not to be "
+"considered a model parameter. For example, BatchNorm's ``running_mean`` "
+"is not a parameter, but is part of the persistent state."
+msgstr ""
+
+#: of torch.nn.Module.register_buffer:7
+msgid "Buffers can be accessed as attributes using given names."
+msgstr ""
+
+#: of torch.nn.Module.register_buffer:9
+msgid ""
+"name of the buffer. The buffer can be accessed from this module using the"
+" given name"
+msgstr ""
+
+#: of torch.nn.Module.register_buffer:12
+msgid "buffer to be registered."
+msgstr ""
+
+#: of torch.nn.Module.register_forward_hook:1
+msgid "Registers a forward hook on the module."
+msgstr ""
+
+#: of torch.nn.Module.register_forward_hook:3
+msgid ""
+"The hook will be called every time after :func:`forward` has computed an "
+"output. It should have the following signature::"
+msgstr ""
+
+#: of torch.nn.Module.register_forward_hook:8
+msgid "The hook should not modify the input or output."
+msgstr ""
+
+#: of torch.nn.Module.register_forward_pre_hook:1
+msgid "Registers a forward pre-hook on the module."
+msgstr ""
+
+#: of torch.nn.Module.register_forward_pre_hook:3
+msgid ""
+"The hook will be called every time before :func:`forward` is invoked. It "
+"should have the following signature::"
+msgstr ""
+
+#: of torch.nn.Module.register_forward_pre_hook:8
+msgid "The hook should not modify the input."
+msgstr ""
+
+#: of torch.nn.Module.register_parameter:1
+msgid "Adds a parameter to the module."
+msgstr ""
+
+#: of torch.nn.Module.register_parameter:3
+msgid "The parameter can be accessed as an attribute using given name."
+msgstr ""
+
+#: of torch.nn.Module.register_parameter:5
+msgid ""
+"name of the parameter. The parameter can be accessed from this module "
+"using the given name"
+msgstr ""
+
+#: of torch.nn.Module.register_parameter:8
+msgid "parameter to be added to the module."
+msgstr ""
+
+#: of torch.nn.Module.state_dict:1
+msgid "Returns a dictionary containing a whole state of the module."
+msgstr ""
+
+#: of torch.nn.Module.state_dict:3
+msgid ""
+"Both parameters and persistent buffers (e.g. running averages) are "
+"included. Keys are corresponding parameter and buffer names."
+msgstr ""
+
+#: of torch.nn.Module.state_dict:6
+msgid ""
+"When keep_vars is ``True``, it returns a Variable for each parameter "
+"(rather than a Tensor)."
+msgstr ""
+
+#: of torch.nn.Module.state_dict:9
+msgid ""
+"if not None, the return dictionary is stored into destination. Default: "
+"None"
+msgstr ""
+
+#: of torch.nn.Module.state_dict:12
+msgid ""
+"Adds a prefix to the key (name) of every parameter and buffer in the "
+"result dictionary. Default: ''"
+msgstr ""
+
+#: of torch.nn.Module.state_dict:15
+msgid ""
+"if ``True``, returns a Variable for each parameter. If ``False``, returns"
+" a Tensor for each parameter. Default: ``False``"
+msgstr ""
+
+#: of torch.nn.Module.state_dict:20
+msgid "a dictionary containing a whole state of the module"
+msgstr ""
+
+#: of torch.nn.Module.train:1
+msgid "Sets the module in training mode."
+msgstr ""
+
+#: of torch.nn.Module.type:1
+msgid "Casts all parameters and buffers to dst_type."
+msgstr ""
+
+#: of torch.nn.Module.type:3
+msgid "the desired type"
+msgstr ""
+
+#: of torch.nn.Module.zero_grad:1
+msgid "Sets gradients of all model parameters to zero."
+msgstr ""
+
+#: ../../source/nn.rst:26
+msgid ":hidden:`Sequential`"
+msgstr ""
+
+#: of torch.nn.Sequential:1
+msgid ""
+"A sequential container. Modules will be added to it in the order they are"
+" passed in the constructor. Alternatively, an ordered dict of modules can"
+" also be passed in."
+msgstr ""
+
+#: of torch.nn.Sequential:5
+msgid "To make it easier to understand, given is a small example::"
+msgstr ""
+
+#: ../../source/nn.rst:32
+msgid ":hidden:`ModuleList`"
+msgstr ""
+
+#: of torch.nn.ModuleList:1
+msgid "Holds submodules in a list."
+msgstr ""
+
+#: of torch.nn.ModuleList:3
+msgid ""
+"ModuleList can be indexed like a regular Python list, but modules it "
+"contains are properly registered, and will be visible by all Module "
+"methods."
+msgstr ""
+
+#: of torch.nn.ModuleList:6
+msgid "a list of modules to add"
+msgstr ""
+
+#: of torch.nn.DataParallel:25 torch.nn.MaxUnpool1d:34 torch.nn.MaxUnpool2d:35
+#: torch.nn.MaxUnpool3d:35 torch.nn.ModuleList:9 torch.nn.ParameterList:9
+#: torch.nn.functional.cosine_similarity:20 torch.nn.functional.nll_loss:20
+#: torch.nn.functional.pairwise_distance:16
+#: torch.nn.functional.triplet_margin_loss:29
+#: torch.nn.parallel.DistributedDataParallel:53 torch.nn.utils.weight_norm:29
+msgid "Example::"
+msgstr ""
+
+#: of torch.nn.ModuleList.append:1
+msgid "Appends a given module at the end of the list."
+msgstr ""
+
+#: of torch.nn.ModuleList.append:3
+msgid "module to append"
+msgstr ""
+
+#: of torch.nn.ModuleList.extend:1
+msgid "Appends modules from a Python list at the end."
+msgstr ""
+
+#: of torch.nn.ModuleList.extend:3
+msgid "list of modules to append"
+msgstr ""
+
+#: ../../source/nn.rst:38
+msgid ":hidden:`ParameterList`"
+msgstr ""
+
+#: of torch.nn.ParameterList:1
+msgid "Holds parameters in a list."
+msgstr ""
+
+#: of torch.nn.ParameterList:3
+msgid ""
+"ParameterList can be indexed like a regular Python list, but parameters "
+"it contains are properly registered, and will be visible by all Module "
+"methods."
+msgstr ""
+
+#: of torch.nn.ParameterList:6
+msgid "a list of :class:`~torch.nn.Parameter`` to add"
+msgstr ""
+
+#: of torch.nn.ParameterList.append:1
+msgid "Appends a given parameter at the end of the list."
+msgstr ""
+
+#: of torch.nn.ParameterList.append:3
+msgid "parameter to append"
+msgstr ""
+
+#: of torch.nn.ParameterList.extend:1
+msgid "Appends parameters from a Python list at the end."
+msgstr ""
+
+#: of torch.nn.ParameterList.extend:3
+msgid "list of parameters to append"
+msgstr ""
+
+#: ../../source/nn.rst:44
+msgid "Convolution Layers"
+msgstr ""
+
+#: ../../source/nn.rst:47
+msgid ":hidden:`Conv1d`"
+msgstr ""
+
+#: of torch.nn.Conv1d:1 torch.nn.functional.conv1d:1
+msgid ""
+"Applies a 1D convolution over an input signal composed of several input "
+"planes."
+msgstr ""
+
+#: of torch.nn.Conv1d:4
+msgid ""
+"In the simplest case, the output value of the layer with input size "
+":math:`(N, C_{in}, L)` and output :math:`(N, C_{out}, L_{out})` can be "
+"precisely described as:"
+msgstr ""
+
+#: of torch.nn.Conv1d:15
+msgid "where :math:`\\star` is the valid `cross-correlation`_ operator"
+msgstr ""
+
+#: of torch.nn.Conv1d:18 torch.nn.Conv2d:18
+msgid ""
+":attr:`stride` controls the stride for the cross-correlation, a single "
+"number or a tuple."
+msgstr ""
+
+#: of torch.nn.Conv1d:19 torch.nn.Conv2d:19 torch.nn.Conv3d:17
+#: torch.nn.ConvTranspose1d:9 torch.nn.ConvTranspose2d:9
+#: torch.nn.ConvTranspose3d:11
+msgid ":attr:`padding` controls the amount of implicit zero-paddings on both"
+msgstr ""
+
+#: of torch.nn.Conv1d:20 torch.nn.ConvTranspose1d:10
+msgid "sides for :attr:`padding` number of points."
+msgstr ""
+
+#: of torch.nn.Conv1d:23 torch.nn.Conv2d:23 torch.nn.Conv3d:20
+#: torch.nn.ConvTranspose1d:15 torch.nn.ConvTranspose2d:15
+#: torch.nn.ConvTranspose3d:17
+msgid ""
+":attr:`dilation` controls the spacing between the kernel points; also "
+"known as the à trous algorithm. It is harder to describe, but this "
+"`link`_ has a nice visualization of what :attr:`dilation` does."
+msgstr ""
+
+#: of torch.nn.Conv1d:25 torch.nn.Conv2d:25 torch.nn.Conv3d:22
+#: torch.nn.ConvTranspose1d:17 torch.nn.ConvTranspose2d:17
+#: torch.nn.ConvTranspose3d:19
+msgid ""
+":attr:`groups` controls the connections between inputs and outputs. "
+"`in_channels` and `out_channels` must both be divisible by `groups`."
+msgstr ""
+
+#: of torch.nn.Conv1d:26 torch.nn.Conv2d:26 torch.nn.Conv3d:23
+#: torch.nn.ConvTranspose1d:18 torch.nn.ConvTranspose2d:18
+#: torch.nn.ConvTranspose3d:20
+msgid "At groups=1, all inputs are convolved to all outputs."
+msgstr ""
+
+#: of torch.nn.Conv1d:32 torch.nn.Conv2d:32
+msgid ""
+"At groups=2, the operation becomes equivalent to having two conv      "
+"layers side by side, each seeing half the input channels,      and "
+"producing half the output channels, and both subsequently      "
+"concatenated. At groups=`in_channels`, each input channel is convolved "
+"with its      own set of filters (of size `out_channels // in_channels`)."
+msgstr ""
+
+#: of torch.nn.Conv1d:36 torch.nn.Conv2d:42 torch.nn.Conv3d:38
+#: torch.nn.ConvTranspose1d:27 torch.nn.ConvTranspose2d:34
+#: torch.nn.ConvTranspose3d:36
+msgid ""
+"Depending of the size of your kernel, several (of the last) columns of "
+"the input might be lost, because it is a valid `cross-correlation`_, and "
+"not a full `cross-correlation`_. It is up to the user to add proper "
+"padding."
+msgstr ""
+
+#: of torch.nn.Conv1d:43 torch.nn.Conv2d:49 torch.nn.Conv3d:45
+msgid ""
+"The configuration when `groups == in_channels` and `out_channels = K * "
+"in_channels` where `K` is a positive integer is termed in literature as "
+"depthwise convolution."
+msgstr ""
+
+#: of torch.nn.Conv1d:46
+msgid ""
+"In other words, for an input of size :math:`(N, C_{in}, L_{in})`, if you "
+"want a depthwise convolution with a depthwise multiplier `K`, then you "
+"use the constructor arguments :math:`(in\\_channels=C_{in}, "
+"out\\_channels=C_{in} * K, ..., groups=C_{in})`"
+msgstr ""
+
+#: of torch.nn.Conv1d:51 torch.nn.Conv2d:57 torch.nn.Conv3d:53
+#: torch.nn.ConvTranspose1d:32 torch.nn.ConvTranspose2d:39
+#: torch.nn.ConvTranspose3d:41
+msgid "Number of channels in the input image"
+msgstr ""
+
+#: of torch.nn.Conv1d:53 torch.nn.Conv2d:59 torch.nn.Conv3d:55
+#: torch.nn.ConvTranspose1d:34 torch.nn.ConvTranspose2d:41
+#: torch.nn.ConvTranspose3d:43
+msgid "Number of channels produced by the convolution"
+msgstr ""
+
+#: of torch.nn.Conv1d:55 torch.nn.Conv2d:61 torch.nn.Conv3d:57
+#: torch.nn.ConvTranspose1d:36 torch.nn.ConvTranspose2d:43
+#: torch.nn.ConvTranspose3d:45
+msgid "Size of the convolving kernel"
+msgstr ""
+
+#: of torch.nn.Conv1d:57 torch.nn.Conv2d:63 torch.nn.Conv3d:59
+#: torch.nn.ConvTranspose1d:38 torch.nn.ConvTranspose2d:45
+#: torch.nn.ConvTranspose3d:47
+msgid "Stride of the convolution. Default: 1"
+msgstr ""
+
+#: of torch.nn.Conv1d:59 torch.nn.Conv2d:65 torch.nn.ConvTranspose1d:40
+#: torch.nn.ConvTranspose2d:47
+msgid "Zero-padding added to both sides of the input. Default: 0"
+msgstr ""
+
+#: of torch.nn.Conv1d:62 torch.nn.Conv2d:67 torch.nn.Conv3d:63
+#: torch.nn.ConvTranspose1d:48 torch.nn.ConvTranspose2d:55
+#: torch.nn.ConvTranspose3d:57
+msgid "Spacing between kernel elements. Default: 1"
+msgstr ""
+
+#: of torch.nn.Conv1d:65 torch.nn.Conv2d:69 torch.nn.Conv3d:65
+#: torch.nn.ConvTranspose1d:44 torch.nn.ConvTranspose2d:51
+#: torch.nn.ConvTranspose3d:53
+msgid ""
+"Number of blocked connections from input channels to output channels. "
+"Default: 1"
+msgstr ""
+
+#: of torch.nn.Conv1d:68 torch.nn.Conv2d:71 torch.nn.Conv3d:67
+#: torch.nn.ConvTranspose1d:46 torch.nn.ConvTranspose2d:53
+#: torch.nn.ConvTranspose3d:55
+msgid "If ``True``, adds a learnable bias to the output. Default: ``True``"
+msgstr ""
+
+#: of torch.nn.AlphaDropout:25 torch.nn.AvgPool1d:30 torch.nn.AvgPool2d:34
+#: torch.nn.AvgPool3d:35 torch.nn.BCELoss:27 torch.nn.BatchNorm1d:31
+#: torch.nn.BatchNorm2d:31 torch.nn.BatchNorm3d:32 torch.nn.Bilinear:12
+#: torch.nn.ConstantPad2d:13 torch.nn.Conv1d:74 torch.nn.Conv2d:78
+#: torch.nn.Conv3d:75 torch.nn.ConvTranspose1d:54 torch.nn.ConvTranspose2d:62
+#: torch.nn.ConvTranspose3d:65 torch.nn.CosineSimilarity:15
+#: torch.nn.CrossEntropyLoss:46 torch.nn.Dropout:19 torch.nn.Dropout2d:24
+#: torch.nn.Dropout3d:24 torch.nn.ELU:10 torch.nn.Embedding:30
+#: torch.nn.EmbeddingBag:51 torch.nn.Hardtanh:21 torch.nn.InstanceNorm1d:26
+#: torch.nn.InstanceNorm2d:26 torch.nn.InstanceNorm3d:27 torch.nn.KLDivLoss:38
+#: torch.nn.L1Loss:29 torch.nn.LPPool2d:23 torch.nn.LeakyReLU:10
+#: torch.nn.Linear:12 torch.nn.LogSigmoid:6 torch.nn.LogSoftmax:8
+#: torch.nn.MSELoss:31 torch.nn.MaxPool1d:29 torch.nn.MaxPool2d:38
+#: torch.nn.MaxPool3d:39 torch.nn.MaxUnpool1d:32 torch.nn.MaxUnpool2d:33
+#: torch.nn.MaxUnpool3d:33 torch.nn.NLLLoss:53 torch.nn.NLLLoss2d:21
+#: torch.nn.PReLU:17 torch.nn.PairwiseDistance:15 torch.nn.PixelShuffle:16
+#: torch.nn.ReLU:9 torch.nn.ReLU6:8 torch.nn.ReflectionPad2d:11
+#: torch.nn.ReplicationPad2d:11 torch.nn.ReplicationPad3d:13 torch.nn.SELU:14
+#: torch.nn.Sigmoid:6 torch.nn.SmoothL1Loss:30 torch.nn.Softmax:10
+#: torch.nn.Softmax2d:9 torch.nn.Softmin:9 torch.nn.Softplus:15
+#: torch.nn.Softshrink:13 torch.nn.Softsign:6 torch.nn.Tanh:7
+#: torch.nn.Tanhshrink:6 torch.nn.Threshold:15 torch.nn.TripletMarginLoss:24
+#: torch.nn.Upsample:25 torch.nn.UpsamplingBilinear2d:18
+#: torch.nn.UpsamplingNearest2d:18 torch.nn.ZeroPad2d:11
+#: torch.nn.functional.cosine_similarity:18 torch.nn.functional.linear:7
+#: torch.nn.functional.pairwise_distance:14
+#: torch.nn.functional.triplet_margin_loss:27
+msgid "Shape:"
+msgstr ""
+
+#: of torch.nn.Conv1d:72 torch.nn.ConvTranspose1d:52
+msgid "Input: :math:`(N, C_{in}, L_{in})`"
+msgstr ""
+
+#: of torch.nn.Conv1d:73
+msgid ""
+"Output: :math:`(N, C_{out}, L_{out})` where :math:`L_{out} = "
+"floor((L_{in}  + 2 * padding - dilation * (kernel\\_size - 1) - 1) / "
+"stride + 1)`"
+msgstr ""
+
+#: of torch.nn.Bilinear torch.nn.Conv1d torch.nn.Conv2d torch.nn.Conv3d
+#: torch.nn.ConvTranspose1d torch.nn.ConvTranspose2d torch.nn.ConvTranspose3d
+#: torch.nn.Embedding torch.nn.EmbeddingBag torch.nn.GRU torch.nn.GRUCell
+#: torch.nn.LSTM torch.nn.LSTMCell torch.nn.Linear torch.nn.RNN
+#: torch.nn.RNNCell torch.nn.utils.rnn.PackedSequence
+msgid "变量"
+msgstr ""
+
+#: of torch.nn.Conv1d:76
+msgid ""
+"the learnable weights of the module of shape (out_channels, in_channels, "
+"kernel_size)"
+msgstr ""
+
+#: of torch.nn.Conv1d:79 torch.nn.Conv2d:83 torch.nn.Conv3d:80
+#: torch.nn.ConvTranspose1d:59 torch.nn.ConvTranspose2d:67
+#: torch.nn.ConvTranspose3d:70
+msgid "the learnable bias of the module of shape (out_channels)"
+msgstr ""
+
+#: of torch.nn.AlphaDropout:27 torch.nn.AvgPool1d:32 torch.nn.AvgPool2d:36
+#: torch.nn.AvgPool3d:37 torch.nn.BCELoss:29 torch.nn.Bilinear:19
+#: torch.nn.ConstantPad2d:15 torch.nn.Conv1d:84 torch.nn.Conv2d:87
+#: torch.nn.Conv3d:84 torch.nn.ConvTranspose2d:71 torch.nn.ConvTranspose3d:74
+#: torch.nn.CosineSimilarity:17 torch.nn.CrossEntropyLoss:48
+#: torch.nn.Dropout:21 torch.nn.Dropout2d:26 torch.nn.Dropout3d:26
+#: torch.nn.ELU:12 torch.nn.Embedding:38 torch.nn.EmbeddingBag:53
+#: torch.nn.GRU:57 torch.nn.GRUCell:34 torch.nn.Hardtanh:23 torch.nn.L1Loss:31
+#: torch.nn.LPPool2d:25 torch.nn.LSTM:67 torch.nn.LSTMCell:40
+#: torch.nn.LeakyReLU:12 torch.nn.Linear:19 torch.nn.LogSigmoid:8
+#: torch.nn.LogSoftmax:17 torch.nn.MSELoss:33 torch.nn.MaxPool1d:31
+#: torch.nn.MaxPool2d:40 torch.nn.MaxPool3d:41 torch.nn.NLLLoss:55
+#: torch.nn.NLLLoss2d:23 torch.nn.PReLU:19 torch.nn.PairwiseDistance:17
+#: torch.nn.PixelShuffle:18 torch.nn.PoissonNLLLoss:28 torch.nn.RNN:55
+#: torch.nn.RNNCell:32 torch.nn.ReLU:11 torch.nn.ReLU6:10
+#: torch.nn.ReflectionPad2d:13 torch.nn.ReplicationPad2d:13
+#: torch.nn.ReplicationPad3d:15 torch.nn.SELU:16 torch.nn.Sigmoid:8
+#: torch.nn.Softmax:24 torch.nn.Softmax2d:14 torch.nn.Softmin:18
+#: torch.nn.Softplus:17 torch.nn.Softshrink:15 torch.nn.Softsign:8
+#: torch.nn.Tanh:9 torch.nn.Tanhshrink:8 torch.nn.Threshold:17
+#: torch.nn.Upsample:27 torch.nn.UpsamplingBilinear2d:20
+#: torch.nn.UpsamplingNearest2d:20 torch.nn.ZeroPad2d:13
+#: torch.nn.functional.binary_cross_entropy:17
+#: torch.nn.functional.binary_cross_entropy_with_logits:17
+#: torch.nn.functional.conv1d:18 torch.nn.functional.conv2d:18
+#: torch.nn.functional.conv3d:18 torch.nn.functional.cross_entropy:27
+#: torch.nn.functional.pad:21 torch.nn.functional.pixel_shuffle:11
+msgid "Examples::"
+msgstr ""
+
+#: ../../source/nn.rst:53
+msgid ":hidden:`Conv2d`"
+msgstr ""
+
+#: of torch.nn.Conv2d:1
+msgid ""
+"Applies a 2D convolution over an input signal composed of several input "
+"planes."
+msgstr ""
+
+#: of torch.nn.Conv2d:4
+msgid ""
+"In the simplest case, the output value of the layer with input size "
+":math:`(N, C_{in}, H, W)` and output :math:`(N, C_{out}, H_{out}, "
+"W_{out})` can be precisely described as:"
+msgstr ""
+
+#: of torch.nn.Conv2d:15
+msgid "where :math:`\\star` is the valid 2D `cross-correlation`_ operator"
+msgstr ""
+
+#: of torch.nn.Conv2d:20 torch.nn.Conv3d:18 torch.nn.ConvTranspose2d:10
+#: torch.nn.ConvTranspose3d:12
+msgid "sides for :attr:`padding` number of points for each dimension."
+msgstr ""
+
+#: of torch.nn.Conv2d:34 torch.nn.Conv3d:30 torch.nn.MaxPool2d:20
+#: torch.nn.MaxPool3d:20
+msgid ""
+"The parameters :attr:`kernel_size`, :attr:`stride`, :attr:`padding`, "
+":attr:`dilation` can either be:"
+msgstr ""
+
+#: of torch.nn.AvgPool2d:20 torch.nn.Conv2d:36 torch.nn.LPPool2d:11
+#: torch.nn.MaxPool2d:22
+msgid ""
+"a single ``int`` -- in which case the same value is used for the height "
+"and width dimension"
+msgstr ""
+
+#: of torch.nn.AvgPool2d:21 torch.nn.Conv2d:37 torch.nn.ConvTranspose2d:29
+#: torch.nn.LPPool2d:12 torch.nn.MaxPool2d:23
+msgid ""
+"a ``tuple`` of two ints -- in which case, the first `int` is used for the"
+" height dimension, and the second `int` for the width dimension"
+msgstr ""
+
+#: of torch.nn.Conv2d:52
+msgid ""
+"In other words, for an input of size :math:`(N, C_{in}, H_{in}, W_{in})`,"
+" if you want a depthwise convolution with a depthwise multiplier `K`, "
+"then you use the constructor arguments :math:`(in\\_channels=C_{in}, "
+"out\\_channels=C_{in} * K, ..., groups=C_{in})`"
+msgstr ""
+
+#: of torch.nn.Conv2d:75 torch.nn.ConvTranspose2d:59
+msgid "Input: :math:`(N, C_{in}, H_{in}, W_{in})`"
+msgstr ""
+
+#: of torch.nn.Conv2d:76
+msgid ""
+"Output: :math:`(N, C_{out}, H_{out}, W_{out})` where :math:`H_{out} = "
+"floor((H_{in}  + 2 * padding[0] - dilation[0] * (kernel\\_size[0] - 1) - "
+"1) / stride[0] + 1)` :math:`W_{out} = floor((W_{in}  + 2 * padding[1] - "
+"dilation[1] * (kernel\\_size[1] - 1) - 1) / stride[1] + 1)`"
+msgstr ""
+
+#: of torch.nn.Conv2d:80
+msgid ""
+"the learnable weights of the module of shape (out_channels, in_channels, "
+"kernel_size[0], kernel_size[1])"
+msgstr ""
+
+#: ../../source/nn.rst:59
+msgid ":hidden:`Conv3d`"
+msgstr ""
+
+#: of torch.nn.Conv3d:1
+msgid ""
+"Applies a 3D convolution over an input signal composed of several input "
+"planes."
+msgstr ""
+
+#: of torch.nn.Conv3d:4
+msgid ""
+"In the simplest case, the output value of the layer with input size "
+":math:`(N, C_{in}, D, H, W)` and output :math:`(N, C_{out}, D_{out}, "
+"H_{out}, W_{out})` can be precisely described as:"
+msgstr ""
+
+#: of torch.nn.Conv3d:14
+msgid "where :math:`\\star` is the valid 3D `cross-correlation`_ operator"
+msgstr ""
+
+#: of torch.nn.Conv3d:16 torch.nn.ConvTranspose1d:8 torch.nn.ConvTranspose2d:8
+#: torch.nn.ConvTranspose3d:10
+msgid ":attr:`stride` controls the stride for the cross-correlation."
+msgstr ""
+
+#: of torch.nn.Conv3d:28 torch.nn.ConvTranspose1d:23
+#: torch.nn.ConvTranspose2d:23 torch.nn.ConvTranspose3d:25
+msgid ""
+"At groups=2, the operation becomes equivalent to having two conv layers"
+"      side by side, each seeing half the input channels,      and "
+"producing half the output channels, and both subsequently concatenated. "
+"At groups=`in_channels`, each input channel is convolved with its own set"
+" of filters      (of size `out_channels // in_channels`)."
+msgstr ""
+
+#: of torch.nn.AvgPool3d:20 torch.nn.Conv3d:32 torch.nn.MaxPool3d:22
+msgid ""
+"a single ``int`` -- in which case the same value is used for the depth, "
+"height and width dimension"
+msgstr ""
+
+#: of torch.nn.AvgPool3d:21 torch.nn.Conv3d:33 torch.nn.ConvTranspose3d:31
+#: torch.nn.MaxPool3d:23
+msgid ""
+"a ``tuple`` of three ints -- in which case, the first `int` is used for "
+"the depth dimension, the second `int` for the height dimension and the "
+"third `int` for the width dimension"
+msgstr ""
+
+#: of torch.nn.Conv3d:48
+msgid ""
+"In other words, for an input of size :math:`(N, C_{in}, D_{in}, H_{in}, "
+"W_{in})`, if you want a depthwise convolution with a depthwise multiplier"
+" `K`, then you use the constructor arguments "
+":math:`(in\\_channels=C_{in}, out\\_channels=C_{in} * K, ..., "
+"groups=C_{in})`"
+msgstr ""
+
+#: of torch.nn.Conv3d:61 torch.nn.ConvTranspose3d:49
+msgid "Zero-padding added to all three sides of the input. Default: 0"
+msgstr ""
+
+#: of torch.nn.Conv3d:71 torch.nn.ConvTranspose3d:61
+msgid "Input: :math:`(N, C_{in}, D_{in}, H_{in}, W_{in})`"
+msgstr ""
+
+#: of torch.nn.Conv3d:72
+msgid ""
+"Output: :math:`(N, C_{out}, D_{out}, H_{out}, W_{out})` where "
+":math:`D_{out} = floor((D_{in}  + 2 * padding[0] - dilation[0] * "
+"(kernel\\_size[0] - 1) - 1) / stride[0] + 1)` :math:`H_{out} = "
+"floor((H_{in}  + 2 * padding[1] - dilation[1] * (kernel\\_size[1] - 1) - "
+"1) / stride[1] + 1)` :math:`W_{out} = floor((W_{in}  + 2 * padding[2] - "
+"dilation[2] * (kernel\\_size[2] - 1) - 1) / stride[2] + 1)`"
+msgstr ""
+
+#: of torch.nn.Conv3d:77
+msgid ""
+"the learnable weights of the module of shape (out_channels, in_channels, "
+"kernel_size[0], kernel_size[1], kernel_size[2])"
+msgstr ""
+
+#: ../../source/nn.rst:65
+msgid ":hidden:`ConvTranspose1d`"
+msgstr ""
+
+#: of torch.nn.ConvTranspose1d:1
+msgid ""
+"Applies a 1D transposed convolution operator over an input image composed"
+" of several input planes."
+msgstr ""
+
+#: of torch.nn.ConvTranspose1d:4
+msgid ""
+"This module can be seen as the gradient of Conv1d with respect to its "
+"input. It is also known as a fractionally-strided convolution or a "
+"deconvolution (although it is not an actual deconvolution operation)."
+msgstr ""
+
+#: of torch.nn.ConvTranspose1d:11 torch.nn.ConvTranspose2d:11
+#: torch.nn.ConvTranspose3d:13
+msgid ":attr:`output_padding` controls the amount of implicit zero-paddings on"
+msgstr ""
+
+#: of torch.nn.ConvTranspose1d:12
+msgid "both sides of the output for :attr:`output_padding` number of points."
+msgstr ""
+
+#: of torch.nn.ConvTranspose1d:13
+msgid "number of points."
+msgstr ""
+
+#: of torch.nn.ConvTranspose1d:42 torch.nn.ConvTranspose2d:49
+#: torch.nn.ConvTranspose3d:51
+msgid "Zero-padding added to one side of the output. Default: 0"
+msgstr ""
+
+#: of torch.nn.ConvTranspose1d:53
+msgid ""
+"Output: :math:`(N, C_{out}, L_{out})` where :math:`L_{out} = (L_{in} - 1)"
+" * stride - 2 * padding + kernel\\_size + output\\_padding`"
+msgstr ""
+
+#: of torch.nn.ConvTranspose1d:56 torch.nn.ConvTranspose2d:64
+msgid ""
+"the learnable weights of the module of shape (in_channels, out_channels, "
+"kernel_size[0], kernel_size[1])"
+msgstr ""
+
+#: ../../source/nn.rst:71
+msgid ":hidden:`ConvTranspose2d`"
+msgstr ""
+
+#: of torch.nn.ConvTranspose2d:1
+msgid ""
+"Applies a 2D transposed convolution operator over an input image composed"
+" of several input planes."
+msgstr ""
+
+#: of torch.nn.ConvTranspose2d:4
+msgid ""
+"This module can be seen as the gradient of Conv2d with respect to its "
+"input. It is also known as a fractionally-strided convolution or a "
+"deconvolution (although it is not an actual deconvolution operation)."
+msgstr ""
+
+#: of torch.nn.ConvTranspose2d:12 torch.nn.ConvTranspose3d:14
+msgid "both sides of the output for :attr:`output_padding` number of points for"
+msgstr ""
+
+#: of torch.nn.ConvTranspose2d:13 torch.nn.ConvTranspose3d:15
+msgid "each dimension."
+msgstr ""
+
+#: of torch.nn.ConvTranspose2d:25 torch.nn.ConvTranspose3d:27
+msgid ""
+"The parameters :attr:`kernel_size`, :attr:`stride`, :attr:`padding`, "
+":attr:`output_padding` can either be:"
+msgstr ""
+
+#: of torch.nn.ConvTranspose2d:28
+msgid ""
+"a single ``int`` -- in which case the same value is used for the height "
+"and width dimensions"
+msgstr ""
+
+#: of torch.nn.ConvTranspose2d:60
+msgid ""
+"Output: :math:`(N, C_{out}, H_{out}, W_{out})` where :math:`H_{out} = "
+"(H_{in} - 1) * stride[0] - 2 * padding[0] + kernel\\_size[0] + "
+"output\\_padding[0]` :math:`W_{out} = (W_{in} - 1) * stride[1] - 2 * "
+"padding[1] + kernel\\_size[1] + output\\_padding[1]`"
+msgstr ""
+
+#: ../../source/nn.rst:78
+msgid ":hidden:`ConvTranspose3d`"
+msgstr ""
+
+#: of torch.nn.ConvTranspose3d:1
+msgid ""
+"Applies a 3D transposed convolution operator over an input image composed"
+" of several input planes. The transposed convolution operator multiplies "
+"each input value element-wise by a learnable kernel, and sums over the "
+"outputs from all input feature planes."
+msgstr ""
+
+#: of torch.nn.ConvTranspose3d:6
+msgid ""
+"This module can be seen as the gradient of Conv3d with respect to its "
+"input. It is also known as a fractionally-strided convolution or a "
+"deconvolution (although it is not an actual deconvolution operation)."
+msgstr ""
+
+#: of torch.nn.ConvTranspose3d:30
+msgid ""
+"a single ``int`` -- in which case the same value is used for the depth, "
+"height and width dimensions"
+msgstr ""
+
+#: of torch.nn.ConvTranspose3d:62
+msgid ""
+"Output: :math:`(N, C_{out}, D_{out}, H_{out}, W_{out})` where "
+":math:`D_{out} = (D_{in} - 1) * stride[0] - 2 * padding[0] + "
+"kernel\\_size[0] + output\\_padding[0]` :math:`H_{out} = (H_{in} - 1) * "
+"stride[1] - 2 * padding[1] + kernel\\_size[1] + output\\_padding[1]` "
+":math:`W_{out} = (W_{in} - 1) * stride[2] - 2 * padding[2] + "
+"kernel\\_size[2] + output\\_padding[2]`"
+msgstr ""
+
+#: of torch.nn.ConvTranspose3d:67
+msgid ""
+"the learnable weights of the module of shape (in_channels, out_channels, "
+"kernel_size[0], kernel_size[1], kernel_size[2])"
+msgstr ""
+
+#: ../../source/nn.rst:85
+msgid "Pooling Layers"
+msgstr ""
+
+#: ../../source/nn.rst:88
+msgid ":hidden:`MaxPool1d`"
+msgstr ""
+
+#: of torch.nn.MaxPool1d:1 torch.nn.functional.max_pool1d:1
+msgid ""
+"Applies a 1D max pooling over an input signal composed of several input "
+"planes."
+msgstr ""
+
+#: of torch.nn.MaxPool1d:4
+msgid ""
+"In the simplest case, the output value of the layer with input size "
+":math:`(N, C, L)` and output :math:`(N, C, L_{out})` can be precisely "
+"described as:"
+msgstr ""
+
+#: of torch.nn.AvgPool1d:16 torch.nn.AvgPool2d:16 torch.nn.MaxPool1d:14
+#: torch.nn.MaxPool2d:16 torch.nn.MaxPool3d:16
+msgid ""
+"If :attr:`padding` is non-zero, then the input is implicitly zero-padded "
+"on both sides for :attr:`padding` number of points"
+msgstr ""
+
+#: of torch.nn.MaxPool1d:16 torch.nn.MaxPool2d:18 torch.nn.MaxPool3d:18
+msgid ""
+":attr:`dilation` controls the spacing between the kernel points. It is "
+"harder to describe, but this `link`_ has a nice visualization of what "
+":attr:`dilation` does."
+msgstr ""
+
+#: of torch.nn.MaxPool1d:18 torch.nn.MaxPool2d:26 torch.nn.MaxPool3d:26
+msgid "the size of the window to take a max over"
+msgstr ""
+
+#: of torch.nn.AvgPool1d:22 torch.nn.AvgPool2d:25 torch.nn.AvgPool3d:25
+#: torch.nn.LPPool2d:16 torch.nn.MaxPool1d:19 torch.nn.MaxPool2d:27
+#: torch.nn.MaxPool3d:27
+msgid "the stride of the window. Default value is :attr:`kernel_size`"
+msgstr ""
+
+#: of torch.nn.AvgPool1d:23 torch.nn.AvgPool2d:26 torch.nn.MaxPool1d:20
+#: torch.nn.MaxPool2d:28
+msgid "implicit zero padding to be added on both sides"
+msgstr ""
+
+#: of torch.nn.MaxPool1d:21 torch.nn.MaxPool2d:29 torch.nn.MaxPool3d:29
+msgid "a parameter that controls the stride of elements in the window"
+msgstr ""
+
+#: of torch.nn.MaxPool1d:22 torch.nn.MaxPool2d:30 torch.nn.MaxPool3d:30
+msgid ""
+"if ``True``, will return the max indices along with the outputs. Useful "
+"when Unpooling later"
+msgstr ""
+
+#: of torch.nn.AvgPool1d:24 torch.nn.AvgPool2d:27 torch.nn.AvgPool3d:27
+#: torch.nn.LPPool2d:17 torch.nn.MaxPool1d:24 torch.nn.MaxPool2d:32
+#: torch.nn.MaxPool3d:32
+msgid "when True, will use `ceil` instead of `floor` to compute the output shape"
+msgstr ""
+
+#: of torch.nn.AvgPool1d:28 torch.nn.MaxPool1d:27
+msgid "Input: :math:`(N, C, L_{in})`"
+msgstr ""
+
+#: of torch.nn.MaxPool1d:28
+msgid ""
+"Output: :math:`(N, C, L_{out})` where :math:`L_{out} = floor((L_{in}  + 2"
+" * padding - dilation * (kernel\\_size - 1) - 1) / stride + 1)`"
+msgstr ""
+
+#: ../../source/nn.rst:94
+msgid ":hidden:`MaxPool2d`"
+msgstr ""
+
+#: of torch.nn.MaxPool2d:1 torch.nn.functional.max_pool2d:1
+msgid ""
+"Applies a 2D max pooling over an input signal composed of several input "
+"planes."
+msgstr ""
+
+#: of torch.nn.AvgPool2d:4 torch.nn.MaxPool2d:4
+msgid ""
+"In the simplest case, the output value of the layer with input size "
+":math:`(N, C, H, W)`, output :math:`(N, C, H_{out}, W_{out})` and "
+":attr:`kernel_size` :math:`(kH, kW)` can be precisely described as:"
+msgstr ""
+
+#: of torch.nn.AvgPool2d:31 torch.nn.ConstantPad2d:10 torch.nn.LPPool2d:20
+#: torch.nn.MaxPool2d:35 torch.nn.MaxUnpool2d:29 torch.nn.ReflectionPad2d:8
+#: torch.nn.ReplicationPad2d:8 torch.nn.UpsamplingBilinear2d:15
+#: torch.nn.UpsamplingNearest2d:15 torch.nn.ZeroPad2d:8
+msgid "Input: :math:`(N, C, H_{in}, W_{in})`"
+msgstr ""
+
+#: of torch.nn.LPPool2d:21 torch.nn.MaxPool2d:36
+msgid ""
+"Output: :math:`(N, C, H_{out}, W_{out})` where :math:`H_{out} = "
+"floor((H_{in}  + 2 * padding[0] - dilation[0] * (kernel\\_size[0] - 1) - "
+"1) / stride[0] + 1)` :math:`W_{out} = floor((W_{in}  + 2 * padding[1] - "
+"dilation[1] * (kernel\\_size[1] - 1) - 1) / stride[1] + 1)`"
+msgstr ""
+
+#: ../../source/nn.rst:100
+msgid ":hidden:`MaxPool3d`"
+msgstr ""
+
+#: of torch.nn.MaxPool3d:1 torch.nn.functional.max_pool3d:1
+msgid ""
+"Applies a 3D max pooling over an input signal composed of several input "
+"planes."
+msgstr ""
+
+#: of torch.nn.AvgPool3d:4 torch.nn.MaxPool3d:4
+msgid ""
+"In the simplest case, the output value of the layer with input size "
+":math:`(N, C, D, H, W)`, output :math:`(N, C, D_{out}, H_{out}, W_{out})`"
+" and :attr:`kernel_size` :math:`(kD, kH, kW)` can be precisely described "
+"as:"
+msgstr ""
+
+#: of torch.nn.AvgPool3d:26 torch.nn.MaxPool3d:28
+msgid "implicit zero padding to be added on all three sides"
+msgstr ""
+
+#: of torch.nn.AvgPool3d:31 torch.nn.MaxPool3d:35 torch.nn.MaxUnpool3d:28
+#: torch.nn.ReplicationPad3d:9
+msgid "Input: :math:`(N, C, D_{in}, H_{in}, W_{in})`"
+msgstr ""
+
+#: of torch.nn.MaxPool3d:36
+msgid ""
+"Output: :math:`(N, C, D_{out}, H_{out}, W_{out})` where :math:`D_{out} = "
+"floor((D_{in}  + 2 * padding[0] - dilation[0] * (kernel\\_size[0] - 1) - "
+"1) / stride[0] + 1)` :math:`H_{out} = floor((H_{in}  + 2 * padding[1] - "
+"dilation[1] * (kernel\\_size[1] - 1) - 1) / stride[1] + 1)` "
+":math:`W_{out} = floor((W_{in}  + 2 * padding[2] - dilation[2] * "
+"(kernel\\_size[2] - 1) - 1) / stride[2] + 1)`"
+msgstr ""
+
+#: ../../source/nn.rst:106
+msgid ":hidden:`MaxUnpool1d`"
+msgstr ""
+
+#: of torch.nn.MaxUnpool1d:1 torch.nn.functional.max_unpool1d:1
+msgid "Computes a partial inverse of :class:`MaxPool1d`."
+msgstr ""
+
+#: of torch.nn.MaxUnpool1d:3
+msgid ""
+":class:`MaxPool1d` is not fully invertible, since the non-maximal values "
+"are lost."
+msgstr ""
+
+#: of torch.nn.MaxUnpool1d:5
+msgid ""
+":class:`MaxUnpool1d` takes in as input the output of :class:`MaxPool1d` "
+"including the indices of the maximal values and computes a partial "
+"inverse in which all non-maximal values are set to zero."
+msgstr ""
+
+#: of torch.nn.MaxUnpool1d:9
+msgid ""
+"`MaxPool1d` can map several input sizes to the same output sizes. Hence, "
+"the inversion process can get ambiguous. To accommodate this, you can "
+"provide the needed output size as an additional argument `output_size` in"
+" the forward call. See the Inputs and Example below."
+msgstr ""
+
+#: of torch.nn.MaxUnpool1d:15 torch.nn.MaxUnpool2d:15 torch.nn.MaxUnpool3d:14
+msgid "Size of the max pooling window."
+msgstr ""
+
+#: of torch.nn.MaxUnpool1d:17 torch.nn.MaxUnpool2d:17 torch.nn.MaxUnpool3d:16
+msgid "Stride of the max pooling window. It is set to ``kernel_size`` by default."
+msgstr ""
+
+#: of torch.nn.MaxUnpool1d:20 torch.nn.MaxUnpool2d:20 torch.nn.MaxUnpool3d:19
+msgid "Padding that was added to the input"
+msgstr ""
+
+#: of torch.nn.MaxUnpool1d:26 torch.nn.MaxUnpool2d:26 torch.nn.MaxUnpool3d:25
+msgid "Inputs:"
+msgstr ""
+
+#: of torch.nn.MaxUnpool1d:24 torch.nn.MaxUnpool2d:24 torch.nn.MaxUnpool3d:23
+msgid "`input`: the input Tensor to invert"
+msgstr ""
+
+#: of torch.nn.MaxUnpool1d:25
+msgid "`indices`: the indices given out by `MaxPool1d`"
+msgstr ""
+
+#: of torch.nn.MaxUnpool1d:26 torch.nn.MaxUnpool2d:26 torch.nn.MaxUnpool3d:25
+msgid ""
+"`output_size` (optional) : a `torch.Size` that specifies the targeted "
+"output size"
+msgstr ""
+
+#: of torch.nn.MaxUnpool1d:29
+msgid "Input: :math:`(N, C, H_{in})`"
+msgstr ""
+
+#: of torch.nn.MaxUnpool1d:30
+msgid ""
+"Output: :math:`(N, C, H_{out})` where :math:`H_{out} = (H_{in} - 1) * "
+"stride[0] - 2 * padding[0] + kernel\\_size[0]` or as given by "
+":attr:`output_size` in the call operator"
+msgstr ""
+
+#: ../../source/nn.rst:112
+msgid ":hidden:`MaxUnpool2d`"
+msgstr ""
+
+#: of torch.nn.MaxUnpool2d:1 torch.nn.functional.max_unpool2d:1
+msgid "Computes a partial inverse of :class:`MaxPool2d`."
+msgstr ""
+
+#: of torch.nn.MaxUnpool2d:3
+msgid ""
+":class:`MaxPool2d` is not fully invertible, since the non-maximal values "
+"are lost."
+msgstr ""
+
+#: of torch.nn.MaxUnpool2d:5
+msgid ""
+":class:`MaxUnpool2d` takes in as input the output of :class:`MaxPool2d` "
+"including the indices of the maximal values and computes a partial "
+"inverse in which all non-maximal values are set to zero."
+msgstr ""
+
+#: of torch.nn.MaxUnpool2d:9
+msgid ""
+"`MaxPool2d` can map several input sizes to the same output sizes. Hence, "
+"the inversion process can get ambiguous. To accommodate this, you can "
+"provide the needed output size as an additional argument `output_size` in"
+" the forward call. See the Inputs and Example below."
+msgstr ""
+
+#: of torch.nn.MaxUnpool2d:25
+msgid "`indices`: the indices given out by `MaxPool2d`"
+msgstr ""
+
+#: of torch.nn.MaxUnpool2d:30
+msgid ""
+"Output: :math:`(N, C, H_{out}, W_{out})` where :math:`H_{out} = (H_{in} -"
+" 1) * stride[0] -2 * padding[0] + kernel\\_size[0]` :math:`W_{out} = "
+"(W_{in} - 1) * stride[1] -2 * padding[1] + kernel\\_size[1]` or as given "
+"by :attr:`output_size` in the call operator"
+msgstr ""
+
+#: ../../source/nn.rst:118
+msgid ":hidden:`MaxUnpool3d`"
+msgstr ""
+
+#: of torch.nn.MaxUnpool3d:1 torch.nn.functional.max_unpool3d:1
+msgid "Computes a partial inverse of :class:`MaxPool3d`."
+msgstr ""
+
+#: of torch.nn.MaxUnpool3d:3
+msgid ""
+":class:`MaxPool3d` is not fully invertible, since the non-maximal values "
+"are lost. :class:`MaxUnpool3d` takes in as input the output of "
+":class:`MaxPool3d` including the indices of the maximal values and "
+"computes a partial inverse in which all non-maximal values are set to "
+"zero."
+msgstr ""
+
+#: of torch.nn.MaxUnpool3d:8
+msgid ""
+"`MaxPool3d` can map several input sizes to the same output sizes. Hence, "
+"the inversion process can get ambiguous. To accommodate this, you can "
+"provide the needed output size as an additional argument `output_size` in"
+" the forward call. See the Inputs section below."
+msgstr ""
+
+#: of torch.nn.MaxUnpool3d:24
+msgid "`indices`: the indices given out by `MaxPool3d`"
+msgstr ""
+
+#: of torch.nn.MaxUnpool3d:29
+msgid ""
+"Output: :math:`(N, C, D_{out}, H_{out}, W_{out})` where :math:`D_{out} = "
+"(D_{in} - 1) * stride[0] - 2 * padding[0] + kernel\\_size[0]` "
+":math:`H_{out} = (H_{in} - 1) * stride[1] - 2 * padding[1] + "
+"kernel\\_size[1]` :math:`W_{out} = (W_{in} - 1) * stride[2] - 2 * "
+"padding[2] + kernel\\_size[2]` or as given by :attr:`output_size` in the "
+"call operator"
+msgstr ""
+
+#: ../../source/nn.rst:124
+msgid ":hidden:`AvgPool1d`"
+msgstr ""
+
+#: of torch.nn.AvgPool1d:1 torch.nn.functional.avg_pool1d:1
+msgid ""
+"Applies a 1D average pooling over an input signal composed of several "
+"input planes."
+msgstr ""
+
+#: of torch.nn.AvgPool1d:4
+msgid ""
+"In the simplest case, the output value of the layer with input size "
+":math:`(N, C, L)`, output :math:`(N, C, L_{out})` and :attr:`kernel_size`"
+" :math:`k` can be precisely described as:"
+msgstr ""
+
+#: of torch.nn.AvgPool1d:18
+msgid ""
+"The parameters :attr:`kernel_size`, :attr:`stride`, :attr:`padding` can "
+"each be an ``int`` or a one-element tuple."
+msgstr ""
+
+#: of torch.nn.AvgPool1d:21 torch.nn.AvgPool2d:24 torch.nn.AvgPool3d:24
+#: torch.nn.LPPool2d:15
+msgid "the size of the window"
+msgstr ""
+
+#: of torch.nn.AvgPool1d:25 torch.nn.AvgPool2d:28 torch.nn.AvgPool3d:28
+msgid "when True, will include the zero-padding in the averaging calculation"
+msgstr ""
+
+#: of torch.nn.AvgPool1d:29
+msgid ""
+"Output: :math:`(N, C, L_{out})` where :math:`L_{out} = floor((L_{in}  + 2"
+" * padding - kernel\\_size) / stride + 1)`"
+msgstr ""
+
+#: ../../source/nn.rst:130
+msgid ":hidden:`AvgPool2d`"
+msgstr ""
+
+#: of torch.nn.AvgPool2d:1
+msgid ""
+"Applies a 2D average pooling over an input signal composed of several "
+"input planes."
+msgstr ""
+
+#: of torch.nn.AvgPool2d:18
+msgid ""
+"The parameters :attr:`kernel_size`, :attr:`stride`, :attr:`padding` can "
+"either be:"
+msgstr ""
+
+#: of torch.nn.AvgPool2d:32
+msgid ""
+"Output: :math:`(N, C, H_{out}, W_{out})` where :math:`H_{out} = "
+"floor((H_{in}  + 2 * padding[0] - kernel\\_size[0]) / stride[0] + 1)` "
+":math:`W_{out} = floor((W_{in}  + 2 * padding[1] - kernel\\_size[1]) / "
+"stride[1] + 1)`"
+msgstr ""
+
+#: ../../source/nn.rst:136
+msgid ":hidden:`AvgPool3d`"
+msgstr ""
+
+#: of torch.nn.AvgPool3d:1
+msgid ""
+"Applies a 3D average pooling over an input signal composed of several "
+"input planes."
+msgstr ""
+
+#: of torch.nn.AvgPool3d:16
+msgid ""
+"If :attr:`padding` is non-zero, then the input is implicitly zero-padded "
+"on all three sides for :attr:`padding` number of points"
+msgstr ""
+
+#: of torch.nn.AvgPool3d:18 torch.nn.LPPool2d:9
+msgid "The parameters :attr:`kernel_size`, :attr:`stride` can either be:"
+msgstr ""
+
+#: of torch.nn.AvgPool3d:32
+msgid ""
+"Output: :math:`(N, C, D_{out}, H_{out}, W_{out})` where :math:`D_{out} = "
+"floor((D_{in} + 2 * padding[0] - kernel\\_size[0]) / stride[0] + 1)` "
+":math:`H_{out} = floor((H_{in} + 2 * padding[1] - kernel\\_size[1]) / "
+"stride[1] + 1)` :math:`W_{out} = floor((W_{in} + 2 * padding[2] - "
+"kernel\\_size[2]) / stride[2] + 1)`"
+msgstr ""
+
+#: ../../source/nn.rst:142
+msgid ":hidden:`FractionalMaxPool2d`"
+msgstr ""
+
+#: of torch.nn.FractionalMaxPool2d:1
+msgid ""
+"Applies a 2D fractional max pooling over an input signal composed of "
+"several input planes."
+msgstr ""
+
+#: of torch.nn.FractionalMaxPool2d:3
+msgid ""
+"Fractiona MaxPooling is described in detail in the paper `Fractional "
+"MaxPooling`_ by Ben Graham"
+msgstr ""
+
+#: of torch.nn.FractionalMaxPool2d:5
+msgid ""
+"The max-pooling operation is applied in kHxkW regions by a stochastic "
+"step size determined by the target output size. The number of output "
+"features is equal to the number of input planes."
+msgstr ""
+
+#: of torch.nn.FractionalMaxPool2d:9
+msgid ""
+"the size of the window to take a max over. Can be a single number k (for "
+"a square kernel of k x k) or a tuple (kh x kw)"
+msgstr ""
+
+#: of torch.nn.FractionalMaxPool2d:11
+msgid ""
+"the target output size of the image of the form oH x oW. Can be a tuple "
+"(oH, oW) or a single number oH for a square image oH x oH"
+msgstr ""
+
+#: of torch.nn.FractionalMaxPool2d:13
+msgid ""
+"If one wants to have an output size as a ratio of the input size, this "
+"option can be given. This has to be a number or tuple in the range (0, 1)"
+msgstr ""
+
+#: of torch.nn.AdaptiveMaxPool2d:8 torch.nn.FractionalMaxPool2d:15
+msgid ""
+"if ``True``, will return the indices along with the outputs. Useful to "
+"pass to nn.MaxUnpool2d. Default: ``False``"
+msgstr ""
+
+#: of torch.nn.AdaptiveAvgPool1d:9 torch.nn.AdaptiveAvgPool2d:10
+#: torch.nn.AdaptiveAvgPool3d:10 torch.nn.AdaptiveMaxPool1d:11
+#: torch.nn.AdaptiveMaxPool2d:12 torch.nn.AdaptiveMaxPool3d:12
+#: torch.nn.BatchNorm1d:34 torch.nn.BatchNorm2d:34 torch.nn.BatchNorm3d:35
+#: torch.nn.FractionalMaxPool2d:19 torch.nn.InstanceNorm1d:29
+#: torch.nn.InstanceNorm2d:29 torch.nn.InstanceNorm3d:30
+#: torch.nn.init.calculate_gain:19 torch.nn.init.constant:7
+#: torch.nn.init.dirac:8 torch.nn.init.eye:8 torch.nn.init.kaiming_normal:18
+#: torch.nn.init.kaiming_uniform:18 torch.nn.init.normal:9
+#: torch.nn.init.orthogonal:11 torch.nn.init.sparse:12 torch.nn.init.uniform:9
+#: torch.nn.init.xavier_normal:13 torch.nn.init.xavier_uniform:13
+msgid "Examples"
+msgstr ""
+
+#: ../../source/nn.rst:148
+msgid ":hidden:`LPPool2d`"
+msgstr ""
+
+#: of torch.nn.LPPool2d:1 torch.nn.functional.lp_pool2d:1
+msgid ""
+"Applies a 2D power-average pooling over an input signal composed of "
+"several input planes."
+msgstr ""
+
+#: of torch.nn.LPPool2d:4
+msgid ""
+"On each window, the function computed is: :math:`f(X) = pow(sum(pow(X, "
+"p)), 1/p)`"
+msgstr ""
+
+#: of torch.nn.LPPool2d:6
+msgid "At p = infinity, one gets Max Pooling"
+msgstr ""
+
+#: of torch.nn.LPPool2d:7
+msgid "At p = 1, one gets Average Pooling"
+msgstr ""
+
+#: ../../source/nn.rst:154
+msgid ":hidden:`AdaptiveMaxPool1d`"
+msgstr ""
+
+#: of torch.nn.AdaptiveMaxPool1d:1 torch.nn.functional.adaptive_max_pool1d:1
+msgid ""
+"Applies a 1D adaptive max pooling over an input signal composed of "
+"several input planes."
+msgstr ""
+
+#: of torch.nn.AdaptiveAvgPool1d:3 torch.nn.AdaptiveMaxPool1d:3
+msgid ""
+"The output size is H, for any input size. The number of output features "
+"is equal to the number of input planes."
+msgstr ""
+
+#: of torch.nn.AdaptiveAvgPool1d:6 torch.nn.AdaptiveMaxPool1d:6
+msgid "the target output size H"
+msgstr ""
+
+#: of torch.nn.AdaptiveMaxPool1d:7
+msgid ""
+"if ``True``, will return the indices along with the outputs. Useful to "
+"pass to nn.MaxUnpool1d. Default: ``False``"
+msgstr ""
+
+#: ../../source/nn.rst:160
+msgid ":hidden:`AdaptiveMaxPool2d`"
+msgstr ""
+
+#: of torch.nn.AdaptiveMaxPool2d:1 torch.nn.functional.adaptive_max_pool2d:1
+msgid ""
+"Applies a 2D adaptive max pooling over an input signal composed of "
+"several input planes."
+msgstr ""
+
+#: of torch.nn.AdaptiveAvgPool2d:3 torch.nn.AdaptiveMaxPool2d:3
+msgid ""
+"The output is of size H x W, for any input size. The number of output "
+"features is equal to the number of input planes."
+msgstr ""
+
+#: of torch.nn.AdaptiveAvgPool2d:6 torch.nn.AdaptiveMaxPool2d:6
+msgid ""
+"the target output size of the image of the form H x W. Can be a tuple (H,"
+" W) or a single number H for a square image H x H"
+msgstr ""
+
+#: ../../source/nn.rst:166
+msgid ":hidden:`AdaptiveMaxPool3d`"
+msgstr ""
+
+#: of torch.nn.AdaptiveMaxPool3d:1 torch.nn.functional.adaptive_max_pool3d:1
+msgid ""
+"Applies a 3D adaptive max pooling over an input signal composed of "
+"several input planes."
+msgstr ""
+
+#: of torch.nn.AdaptiveAvgPool3d:3 torch.nn.AdaptiveMaxPool3d:3
+msgid ""
+"The output is of size D x H x W, for any input size. The number of output"
+" features is equal to the number of input planes."
+msgstr ""
+
+#: of torch.nn.AdaptiveMaxPool3d:6
+msgid ""
+"the target output size of the image of the form D x H x W. Can be a tuple"
+" (D, H, W) or a single number D for a cube D x D x D"
+msgstr ""
+
+#: of torch.nn.AdaptiveMaxPool3d:8
+msgid ""
+"if ``True``, will return the indices along with the outputs. Useful to "
+"pass to nn.MaxUnpool3d. Default: ``False``"
+msgstr ""
+
+#: ../../source/nn.rst:172
+msgid ":hidden:`AdaptiveAvgPool1d`"
+msgstr ""
+
+#: of torch.nn.AdaptiveAvgPool1d:1 torch.nn.functional.adaptive_avg_pool1d:1
+msgid ""
+"Applies a 1D adaptive average pooling over an input signal composed of "
+"several input planes."
+msgstr ""
+
+#: ../../source/nn.rst:178
+msgid ":hidden:`AdaptiveAvgPool2d`"
+msgstr ""
+
+#: of torch.nn.AdaptiveAvgPool2d:1 torch.nn.functional.adaptive_avg_pool2d:1
+msgid ""
+"Applies a 2D adaptive average pooling over an input signal composed of "
+"several input planes."
+msgstr ""
+
+#: ../../source/nn.rst:184
+msgid ":hidden:`AdaptiveAvgPool3d`"
+msgstr ""
+
+#: of torch.nn.AdaptiveAvgPool3d:1 torch.nn.functional.adaptive_avg_pool3d:1
+msgid ""
+"Applies a 3D adaptive average pooling over an input signal composed of "
+"several input planes."
+msgstr ""
+
+#: of torch.nn.AdaptiveAvgPool3d:6
+msgid ""
+"the target output size of the form D x H x W. Can be a tuple (D, H, W) or"
+" a single number D for a cube D x D x D"
+msgstr ""
+
+#: ../../source/nn.rst:191
+msgid "Padding Layers"
+msgstr ""
+
+#: ../../source/nn.rst:194
+msgid ":hidden:`ReflectionPad2d`"
+msgstr ""
+
+#: of torch.nn.ReflectionPad2d:1
+msgid "Pads the input tensor using the reflection of the input boundary."
+msgstr ""
+
+#: of torch.nn.ConstantPad2d:5 torch.nn.ReflectionPad2d:3
+#: torch.nn.ReplicationPad2d:3 torch.nn.ZeroPad2d:3
+msgid ""
+"the size of the padding. If is int, uses the same padding in all "
+"boundaries. If a 4-tuple, uses (paddingLeft, paddingRight, paddingTop, "
+"paddingBottom)"
+msgstr ""
+
+#: of torch.nn.ConstantPad2d:11 torch.nn.ReflectionPad2d:9
+#: torch.nn.ReplicationPad2d:9 torch.nn.ZeroPad2d:9
+msgid ""
+"Output: :math:`(N, C, H_{out}, W_{out})` where :math:`H_{out} = H_{in} + "
+"paddingTop + paddingBottom` :math:`W_{out} = W_{in} + paddingLeft + "
+"paddingRight`"
+msgstr ""
+
+#: ../../source/nn.rst:200
+msgid ":hidden:`ReplicationPad2d`"
+msgstr ""
+
+#: of torch.nn.ReplicationPad2d:1 torch.nn.ReplicationPad3d:1
+msgid "Pads the input tensor using replication of the input boundary."
+msgstr ""
+
+#: ../../source/nn.rst:206
+msgid ":hidden:`ReplicationPad3d`"
+msgstr ""
+
+#: of torch.nn.ReplicationPad3d:3
+msgid ""
+"the size of the padding. If is int, uses the same padding in all "
+"boundaries. If a 6-tuple, uses (paddingLeft, paddingRight, paddingTop, "
+"paddingBottom, paddingFront, paddingBack)"
+msgstr ""
+
+#: of torch.nn.ReplicationPad3d:10
+msgid ""
+"Output: :math:`(N, C, D_{out}, H_{out}, W_{out})` where :math:`D_{out} = "
+"D_{in} + paddingFront + paddingBack` :math:`H_{out} = H_{in} + paddingTop"
+" + paddingBottom` :math:`W_{out} = W_{in} + paddingLeft + paddingRight`"
+msgstr ""
+
+#: ../../source/nn.rst:212
+msgid ":hidden:`ZeroPad2d`"
+msgstr ""
+
+#: of torch.nn.ZeroPad2d:1
+msgid "Pads the input tensor boundaries with zero."
+msgstr ""
+
+#: ../../source/nn.rst:218
+msgid ":hidden:`ConstantPad2d`"
+msgstr ""
+
+#: of torch.nn.ConstantPad2d:1
+msgid "Pads the input tensor boundaries with a constant value."
+msgstr ""
+
+#: of torch.nn.ConstantPad2d:3
+msgid "For Nd-padding, use nn.functional.pad()."
+msgstr ""
+
+#: ../../source/nn.rst:225
+msgid "Non-linear Activations"
+msgstr ""
+
+#: ../../source/nn.rst:228
+msgid ":hidden:`ReLU`"
+msgstr ""
+
+#: of torch.nn.ReLU:1
+msgid ""
+"Applies the rectified linear unit function element-wise :math:`{ReLU}(x)="
+" max(0, x)`"
+msgstr ""
+
+#: of torch.nn.ELU:5 torch.nn.Hardtanh:13 torch.nn.LeakyReLU:5 torch.nn.ReLU:4
+#: torch.nn.ReLU6:3 torch.nn.SELU:8 torch.nn.Threshold:10
+msgid "can optionally do the operation in-place. Default: ``False``"
+msgstr ""
+
+#: of torch.nn.BCELoss:25 torch.nn.ELU:8 torch.nn.Hardtanh:19
+#: torch.nn.L1Loss:25 torch.nn.LeakyReLU:8 torch.nn.LogSigmoid:4
+#: torch.nn.MSELoss:29 torch.nn.PReLU:15 torch.nn.ReLU:7 torch.nn.ReLU6:6
+#: torch.nn.SELU:12 torch.nn.Sigmoid:4 torch.nn.SmoothL1Loss:27
+#: torch.nn.Softplus:13 torch.nn.Softshrink:11 torch.nn.Softsign:4
+#: torch.nn.Tanh:5 torch.nn.Tanhshrink:4 torch.nn.Threshold:13
+msgid "Input: :math:`(N, *)` where `*` means, any number of additional dimensions"
+msgstr ""
+
+#: of torch.nn.ELU:10 torch.nn.Hardtanh:21 torch.nn.LeakyReLU:10
+#: torch.nn.LogSigmoid:6 torch.nn.PReLU:17 torch.nn.ReLU:9 torch.nn.ReLU6:8
+#: torch.nn.SELU:14 torch.nn.Sigmoid:6 torch.nn.Softplus:15
+#: torch.nn.Softshrink:13 torch.nn.Softsign:6 torch.nn.Tanh:7
+#: torch.nn.Tanhshrink:6 torch.nn.Threshold:15
+msgid "Output: :math:`(N, *)`, same shape as the input"
+msgstr ""
+
+#: ../../source/nn.rst:234
+msgid ":hidden:`ReLU6`"
+msgstr ""
+
+#: of torch.nn.ReLU6:1
+msgid "Applies the element-wise function :math:`{ReLU6}(x) = min(max(0,x), 6)`"
+msgstr ""
+
+#: ../../source/nn.rst:240
+msgid ":hidden:`ELU`"
+msgstr ""
+
+#: of torch.nn.ELU:1
+msgid ""
+"Applies element-wise, :math:`f(x) = max(0,x) + min(0, alpha * (exp(x) - "
+"1))`"
+msgstr ""
+
+#: of torch.nn.ELU:4
+msgid "the alpha value for the ELU formulation. Default: 1.0"
+msgstr ""
+
+#: ../../source/nn.rst:246
+msgid ":hidden:`SELU`"
+msgstr ""
+
+#: of torch.nn.SELU:1 torch.nn.functional.selu:1
+msgid ""
+"Applies element-wise, :math:`f(x) = scale * (\\max(0,x) + \\min(0, alpha "
+"* (\\exp(x) - 1)))`, with ``alpha=1.6732632423543772848170429916717`` and"
+" ``scale=1.0507009873554804934193349852946``."
+msgstr ""
+
+#: of torch.nn.AlphaDropout:18 torch.nn.SELU:6
+msgid ""
+"More details can be found in the paper `Self-Normalizing Neural "
+"Networks`_ ."
+msgstr ""
+
+#: ../../source/nn.rst:252
+msgid ":hidden:`PReLU`"
+msgstr ""
+
+#: of torch.nn.PReLU:1
+msgid ""
+"Applies element-wise the function :math:`PReLU(x) = max(0,x) + a * "
+"min(0,x)` Here \"a\" is a learnable parameter. When called without "
+"arguments, nn.PReLU() uses a single parameter \"a\" across all input "
+"channels. If called with nn.PReLU(nChannels), a separate \"a\" is used "
+"for each input channel."
+msgstr ""
+
+#: of torch.nn.PReLU:9
+msgid "weight decay should not be used when learning \"a\" for good performance."
+msgstr ""
+
+#: of torch.nn.PReLU:11
+msgid "number of \"a\" to learn. Default: 1"
+msgstr ""
+
+#: of torch.nn.PReLU:12
+msgid "the initial value of \"a\". Default: 0.25"
+msgstr ""
+
+#: ../../source/nn.rst:258
+msgid ":hidden:`LeakyReLU`"
+msgstr ""
+
+#: ../../docstring of torch.nn.LeakyReLU:1 torch.nn.functional.leaky_relu:1
+msgid ""
+"Applies element-wise, :math:`f(x) = max(0, x) + {negative\\_slope} * "
+"min(0, x)`"
+msgstr ""
+
+#: of torch.nn.LeakyReLU:4
+msgid "Controls the angle of the negative slope. Default: 1e-2"
+msgstr ""
+
+#: ../../source/nn.rst:264
+msgid ":hidden:`Threshold`"
+msgstr ""
+
+#: of torch.nn.Threshold:1
+msgid "Thresholds each element of the input Tensor"
+msgstr ""
+
+#: of torch.nn.Threshold:3
+msgid "Threshold is defined as::"
+msgstr ""
+
+#: of torch.nn.Threshold:8
+msgid "The value to threshold at"
+msgstr ""
+
+#: of torch.nn.Threshold:9
+msgid "The value to replace with"
+msgstr ""
+
+#: ../../source/nn.rst:270
+msgid ":hidden:`Hardtanh`"
+msgstr ""
+
+#: of torch.nn.Hardtanh:1
+msgid "Applies the HardTanh function element-wise"
+msgstr ""
+
+#: of torch.nn.Hardtanh:3
+msgid "HardTanh is defined as::"
+msgstr ""
+
+#: of torch.nn.Hardtanh:9
+msgid "The range of the linear region :math:`[-1, 1]` can be adjusted"
+msgstr ""
+
+#: of torch.nn.Hardtanh:11
+msgid "minimum value of the linear region range. Default: -1"
+msgstr ""
+
+#: of torch.nn.Hardtanh:12
+msgid "maximum value of the linear region range. Default: 1"
+msgstr ""
+
+#: of torch.nn.Hardtanh:15
+msgid ""
+"Keyword arguments :attr:`min_value` and :attr:`max_value` have been "
+"deprecated in favor of :attr:`min_val` and :attr:`max_val`"
+msgstr ""
+
+#: ../../source/nn.rst:276
+msgid ":hidden:`Sigmoid`"
+msgstr ""
+
+#: of torch.nn.Sigmoid:1 torch.nn.functional.sigmoid:1
+msgid "Applies the element-wise function :math:`f(x) = 1 / ( 1 + exp(-x))`"
+msgstr ""
+
+#: ../../source/nn.rst:282
+msgid ":hidden:`Tanh`"
+msgstr ""
+
+#: of torch.nn.Tanh:1 torch.nn.functional.tanh:1
+msgid ""
+"Applies element-wise, :math:`f(x) = (exp(x) - exp(-x)) / (exp(x) + "
+"exp(-x))`"
+msgstr ""
+
+#: ../../source/nn.rst:288
+msgid ":hidden:`LogSigmoid`"
+msgstr ""
+
+#: ../../docstring of torch.nn.LogSigmoid:1 torch.nn.functional.logsigmoid:1
+msgid "Applies element-wise :math:`LogSigmoid(x) = log( 1 / (1 + exp(-x_i)))`"
+msgstr ""
+
+#: ../../source/nn.rst:294
+msgid ":hidden:`Softplus`"
+msgstr ""
+
+#: of torch.nn.Softplus:1
+msgid "Applies element-wise :math:`f(x) = 1/beta * log(1 + exp(beta * x_i))`"
+msgstr ""
+
+#: of torch.nn.Softplus:3
+msgid ""
+"SoftPlus is a smooth approximation to the ReLU function and can be used "
+"to constrain the output of a machine to always be positive."
+msgstr ""
+
+#: of torch.nn.Softplus:6
+msgid ""
+"For numerical stability the implementation reverts to the linear function"
+" for inputs above a certain value."
+msgstr ""
+
+#: of torch.nn.Softplus:9
+msgid "the beta value for the Softplus formulation. Default: 1"
+msgstr ""
+
+#: of torch.nn.Softplus:10
+msgid "values above this revert to a linear function. Default: 20"
+msgstr ""
+
+#: ../../source/nn.rst:300
+msgid ":hidden:`Softshrink`"
+msgstr ""
+
+#: of torch.nn.Softshrink:1 torch.nn.functional.softshrink:1
+msgid "Applies the soft shrinkage function elementwise"
+msgstr ""
+
+#: of torch.nn.Softshrink:3
+msgid "SoftShrinkage operator is defined as::"
+msgstr ""
+
+#: of torch.nn.Softshrink:8
+msgid "the lambda value for the Softshrink formulation. Default: 0.5"
+msgstr ""
+
+#: ../../source/nn.rst:306
+msgid ":hidden:`Softsign`"
+msgstr ""
+
+#: of torch.nn.Softsign:1 torch.nn.functional.softsign:1
+msgid "Applies element-wise, the function :math:`f(x) = x / (1 + |x|)`"
+msgstr ""
+
+#: ../../source/nn.rst:312
+msgid ":hidden:`Tanhshrink`"
+msgstr ""
+
+#: of torch.nn.Tanhshrink:1 torch.nn.functional.tanhshrink:1
+msgid "Applies element-wise, :math:`Tanhshrink(x) = x - Tanh(x)`"
+msgstr ""
+
+#: ../../source/nn.rst:318
+msgid ":hidden:`Softmin`"
+msgstr ""
+
+#: of torch.nn.Softmin:1
+msgid ""
+"Applies the Softmin function to an n-dimensional input Tensor rescaling "
+"them so that the elements of the n-dimensional output Tensor lie in the "
+"range `(0, 1)` and sum to 1"
+msgstr ""
+
+#: of torch.nn.Softmin:5
+msgid ":math:`f(x) = \\frac{\\exp(-x_i)}{\\sum_j \\exp(-x_j)}`"
+msgstr ""
+
+#: of torch.nn.LogSoftmax:7 torch.nn.Softmax:9 torch.nn.Softmin:8
+msgid "Input: any shape"
+msgstr ""
+
+#: of torch.nn.LogSoftmax:8 torch.nn.Softmax:10 torch.nn.Softmin:9
+msgid "Output: same as input"
+msgstr ""
+
+#: of torch.nn.LogSoftmax:10 torch.nn.Softmax:15 torch.nn.Softmin:11
+msgid ""
+"A dimension along which Softmax will be computed (so every slice along "
+"dim will sum to 1)."
+msgstr ""
+
+#: of torch.nn.Softmin:15
+msgid ""
+"a Tensor of the same dimension and shape as the input, with values in the"
+" range [0, 1]"
+msgstr ""
+
+#: ../../source/nn.rst:324
+msgid ":hidden:`Softmax`"
+msgstr ""
+
+#: of torch.nn.Softmax:1
+msgid ""
+"Applies the Softmax function to an n-dimensional input Tensor rescaling "
+"them so that the elements of the n-dimensional output Tensor lie in the "
+"range (0,1) and sum to 1"
+msgstr ""
+
+#: of torch.nn.Softmax:5
+msgid ""
+"Softmax is defined as :math:`f_i(x) = \\frac{\\exp(x_i)}{\\sum_j "
+"\\exp(x_j)}`"
+msgstr ""
+
+#: of torch.nn.Softmax:12 torch.nn.Softmax2d:11
+msgid ""
+"a Tensor of the same dimension and shape as the input with values in the "
+"range [0, 1]"
+msgstr ""
+
+#: of torch.nn.Softmax:20
+msgid ""
+"This module doesn't work directly with NLLLoss, which expects the Log to "
+"be computed between the Softmax and itself. Use Logsoftmax instead (it's "
+"faster and has better numerical properties)."
+msgstr ""
+
+#: ../../source/nn.rst:330
+msgid ":hidden:`Softmax2d`"
+msgstr ""
+
+#: of torch.nn.Softmax2d:1
+msgid "Applies SoftMax over features to each spatial location"
+msgstr ""
+
+#: of torch.nn.Softmax2d:3
+msgid "When given an image of Channels x Height x Width, it will"
+msgstr ""
+
+#: of torch.nn.Softmax2d:5
+msgid "apply Softmax to each location :math:`(Channels, h_i, w_j)`"
+msgstr ""
+
+#: of torch.nn.BatchNorm2d:30 torch.nn.Dropout2d:23 torch.nn.InstanceNorm2d:25
+#: torch.nn.Softmax2d:8
+msgid "Input: :math:`(N, C, H, W)`"
+msgstr ""
+
+#: of torch.nn.BatchNorm2d:31 torch.nn.Dropout2d:24 torch.nn.InstanceNorm2d:26
+#: torch.nn.Softmax2d:9
+msgid "Output: :math:`(N, C, H, W)` (same shape as input)"
+msgstr ""
+
+#: ../../source/nn.rst:336
+msgid ":hidden:`LogSoftmax`"
+msgstr ""
+
+#: of torch.nn.LogSoftmax:1
+msgid ""
+"Applies the Log(Softmax(x)) function to an n-dimensional input Tensor. "
+"The LogSoftmax formulation can be simplified as"
+msgstr ""
+
+#: of torch.nn.LogSoftmax:4
+msgid ":math:`f_i(x) = log(exp(x_i) / sum_j exp(x_j) )`"
+msgstr ""
+
+#: of torch.nn.LogSoftmax:14
+msgid ""
+"a Tensor of the same dimension and shape as the input with values in the "
+"range [-inf, 0)"
+msgstr ""
+
+#: ../../source/nn.rst:343
+msgid "Normalization layers"
+msgstr ""
+
+#: ../../source/nn.rst:346
+msgid ":hidden:`BatchNorm1d`"
+msgstr ""
+
+#: of torch.nn.BatchNorm1d:1
+msgid ""
+"Applies Batch Normalization over a 2d or 3d input that is seen as a mini-"
+"batch."
+msgstr ""
+
+#: of torch.nn.BatchNorm1d:8 torch.nn.BatchNorm2d:8 torch.nn.BatchNorm3d:8
+msgid ""
+"The mean and standard-deviation are calculated per-dimension over the "
+"mini-batches and gamma and beta are learnable parameter vectors of size C"
+" (where C is the input size)."
+msgstr ""
+
+#: of torch.nn.BatchNorm1d:12 torch.nn.BatchNorm2d:12 torch.nn.BatchNorm3d:12
+#: torch.nn.InstanceNorm1d:11 torch.nn.InstanceNorm2d:11
+#: torch.nn.InstanceNorm3d:11
+msgid ""
+"During training, this layer keeps a running estimate of its computed mean"
+" and variance. The running sum is kept with a default momentum of 0.1."
+msgstr ""
+
+#: of torch.nn.BatchNorm1d:15 torch.nn.BatchNorm2d:15 torch.nn.BatchNorm3d:15
+msgid "During evaluation, this running mean/variance is used for normalization."
+msgstr ""
+
+#: of torch.nn.BatchNorm1d:17
+msgid ""
+"Because the BatchNorm is done over the `C` dimension, computing "
+"statistics on `(N, L)` slices, it's common terminology to call this "
+"Temporal BatchNorm"
+msgstr ""
+
+#: of torch.nn.BatchNorm1d:20
+msgid ""
+"num_features from an expected input of size `batch_size x num_features [x"
+" width]`"
+msgstr ""
+
+#: of torch.nn.BatchNorm1d:22 torch.nn.BatchNorm2d:22 torch.nn.BatchNorm3d:23
+#: torch.nn.InstanceNorm1d:19 torch.nn.InstanceNorm2d:19
+#: torch.nn.InstanceNorm3d:20
+msgid "a value added to the denominator for numerical stability. Default: 1e-5"
+msgstr ""
+
+#: of torch.nn.BatchNorm1d:24 torch.nn.BatchNorm2d:24 torch.nn.BatchNorm3d:25
+#: torch.nn.InstanceNorm1d:20 torch.nn.InstanceNorm2d:20
+#: torch.nn.InstanceNorm3d:21
+msgid ""
+"the value used for the running_mean and running_var computation. Default:"
+" 0.1"
+msgstr ""
+
+#: of torch.nn.BatchNorm1d:26 torch.nn.BatchNorm2d:26 torch.nn.BatchNorm3d:27
+msgid ""
+"a boolean value that when set to ``True``, gives the layer learnable "
+"affine parameters. Default: ``True``"
+msgstr ""
+
+#: of torch.nn.BatchNorm1d:30
+msgid "Input: :math:`(N, C)` or :math:`(N, C, L)`"
+msgstr ""
+
+#: of torch.nn.BatchNorm1d:31
+msgid "Output: :math:`(N, C)` or :math:`(N, C, L)` (same shape as input)"
+msgstr ""
+
+#: ../../source/nn.rst:352
+msgid ":hidden:`BatchNorm2d`"
+msgstr ""
+
+#: of torch.nn.BatchNorm2d:1
+msgid ""
+"Applies Batch Normalization over a 4d input that is seen as a mini-batch "
+"of 3d inputs"
+msgstr ""
+
+#: of torch.nn.BatchNorm2d:17
+msgid ""
+"Because the BatchNorm is done over the `C` dimension, computing "
+"statistics on `(N, H, W)` slices, it's common terminology to call this "
+"Spatial BatchNorm"
+msgstr ""
+
+#: of torch.nn.BatchNorm2d:20 torch.nn.InstanceNorm2d:18
+msgid ""
+"num_features from an expected input of size batch_size x num_features x "
+"height x width"
+msgstr ""
+
+#: ../../source/nn.rst:358
+msgid ":hidden:`BatchNorm3d`"
+msgstr ""
+
+#: of torch.nn.BatchNorm3d:1
+msgid ""
+"Applies Batch Normalization over a 5d input that is seen as a mini-batch "
+"of 4d inputs"
+msgstr ""
+
+#: of torch.nn.BatchNorm3d:17
+msgid ""
+"Because the BatchNorm is done over the `C` dimension, computing "
+"statistics on `(N, D, H, W)` slices, it's common terminology to call this"
+" Volumetric BatchNorm or Spatio-temporal BatchNorm"
+msgstr ""
+
+#: of torch.nn.BatchNorm3d:21 torch.nn.InstanceNorm3d:19
+msgid ""
+"num_features from an expected input of size batch_size x num_features x "
+"depth x height x width"
+msgstr ""
+
+#: of torch.nn.BatchNorm3d:31 torch.nn.Dropout3d:23 torch.nn.InstanceNorm3d:26
+msgid "Input: :math:`(N, C, D, H, W)`"
+msgstr ""
+
+#: of torch.nn.BatchNorm3d:32 torch.nn.Dropout3d:24 torch.nn.InstanceNorm3d:27
+msgid "Output: :math:`(N, C, D, H, W)` (same shape as input)"
+msgstr ""
+
+#: ../../source/nn.rst:364
+msgid ":hidden:`InstanceNorm1d`"
+msgstr ""
+
+#: of torch.nn.InstanceNorm1d:1
+msgid ""
+"Applies Instance Normalization over a 2d or 3d input that is seen as a "
+"mini-batch."
+msgstr ""
+
+#: of torch.nn.InstanceNorm1d:7 torch.nn.InstanceNorm2d:7
+#: torch.nn.InstanceNorm3d:7
+msgid ""
+"The mean and standard-deviation are calculated per-dimension separately "
+"for each object in a mini-batch. Gamma and beta are learnable parameter "
+"vectors of size C (where C is the input size)."
+msgstr ""
+
+#: of torch.nn.InstanceNorm1d:14 torch.nn.InstanceNorm2d:14
+#: torch.nn.InstanceNorm3d:14
+msgid ""
+"At evaluation time (`.eval()`), the default behaviour of the InstanceNorm"
+" module stays the same i.e. running mean/variance is NOT used for "
+"normalization. One can force using stored mean and variance with "
+"`.train(False)` method."
+msgstr ""
+
+#: of torch.nn.InstanceNorm1d:18
+msgid ""
+"num_features from an expected input of size `batch_size x num_features x "
+"width`"
+msgstr ""
+
+#: of torch.nn.InstanceNorm1d:21 torch.nn.InstanceNorm2d:21
+#: torch.nn.InstanceNorm3d:22
+msgid ""
+"a boolean value that when set to ``True``, gives the layer learnable "
+"affine parameters. Default: ``False``"
+msgstr ""
+
+#: of torch.nn.InstanceNorm1d:25
+msgid "Input: :math:`(N, C, L)`"
+msgstr ""
+
+#: of torch.nn.InstanceNorm1d:26
+msgid "Output: :math:`(N, C, L)` (same shape as input)"
+msgstr ""
+
+#: ../../source/nn.rst:370
+msgid ":hidden:`InstanceNorm2d`"
+msgstr ""
+
+#: of torch.nn.InstanceNorm2d:1
+msgid ""
+"Applies Instance Normalization over a 4d input that is seen as a mini-"
+"batch of 3d inputs"
+msgstr ""
+
+#: ../../source/nn.rst:376
+msgid ":hidden:`InstanceNorm3d`"
+msgstr ""
+
+#: of torch.nn.InstanceNorm3d:1
+msgid ""
+"Applies Instance Normalization over a 5d input that is seen as a mini-"
+"batch of 4d inputs"
+msgstr ""
+
+#: ../../source/nn.rst:382
+msgid "Recurrent layers"
+msgstr ""
+
+#: ../../source/nn.rst:385
+msgid ":hidden:`RNN`"
+msgstr ""
+
+#: of torch.nn.RNN:1
+msgid ""
+"Applies a multi-layer Elman RNN with tanh or ReLU non-linearity to an "
+"input sequence."
+msgstr ""
+
+#: of torch.nn.GRU:4 torch.nn.LSTM:5 torch.nn.RNN:5
+msgid ""
+"For each element in the input sequence, each layer computes the following"
+" function:"
+msgstr ""
+
+#: of torch.nn.RNN:12
+msgid ""
+"where :math:`h_t` is the hidden state at time `t`, and :math:`x_t` is the"
+" hidden state of the previous layer at time `t` or :math:`input_t` for "
+"the first layer. If nonlinearity='relu', then `ReLU` is used instead of "
+"`tanh`."
+msgstr ""
+
+#: of torch.nn.GRU:21 torch.nn.GRUCell:12 torch.nn.LSTM:25 torch.nn.LSTMCell:14
+#: torch.nn.RNN:17 torch.nn.RNNCell:9
+msgid "The number of expected features in the input x"
+msgstr ""
+
+#: of torch.nn.GRU:22 torch.nn.GRUCell:13 torch.nn.LSTM:26 torch.nn.LSTMCell:15
+#: torch.nn.RNN:18 torch.nn.RNNCell:10
+msgid "The number of features in the hidden state h"
+msgstr ""
+
+#: of torch.nn.GRU:23 torch.nn.LSTM:27 torch.nn.RNN:19
+msgid "Number of recurrent layers."
+msgstr ""
+
+#: of torch.nn.RNN:20 torch.nn.RNNCell:13
+msgid "The non-linearity to use ['tanh'|'relu']. Default: 'tanh'"
+msgstr ""
+
+#: of torch.nn.GRU:24 torch.nn.LSTM:28 torch.nn.RNN:21 torch.nn.RNNCell:11
+msgid ""
+"If ``False``, then the layer does not use bias weights b_ih and b_hh. "
+"Default: ``True``"
+msgstr ""
+
+#: of torch.nn.GRU:26 torch.nn.LSTM:30 torch.nn.RNN:23
+msgid ""
+"If ``True``, then the input and output tensors are provided as (batch, "
+"seq, feature)"
+msgstr ""
+
+#: of torch.nn.GRU:28 torch.nn.LSTM:32 torch.nn.RNN:25
+msgid ""
+"If non-zero, introduces a dropout layer on the outputs of each RNN layer "
+"except the last layer"
+msgstr ""
+
+#: of torch.nn.GRU:30 torch.nn.LSTM:34 torch.nn.RNN:27
+msgid "If ``True``, becomes a bidirectional RNN. Default: ``False``"
+msgstr ""
+
+#: of torch.nn.GRU:38 torch.nn.RNN:35
+msgid "Inputs: input, h_0"
+msgstr ""
+
+#: of torch.nn.GRU:33 torch.nn.LSTM:37 torch.nn.RNN:30
+msgid ""
+"**input** (seq_len, batch, input_size): tensor containing the features of"
+" the input sequence. The input can also be a packed variable length "
+"sequence. See :func:`torch.nn.utils.rnn.pack_padded_sequence` for "
+"details."
+msgstr ""
+
+#: of torch.nn.GRU:37 torch.nn.RNN:34
+msgid ""
+"**h_0** (num_layers * num_directions, batch, hidden_size): tensor "
+"containing the initial hidden state for each element in the batch."
+msgstr ""
+
+#: of torch.nn.GRU:46 torch.nn.RNN:43
+msgid "Outputs: output, h_n"
+msgstr ""
+
+#: of torch.nn.RNN:38
+msgid ""
+"**output** (seq_len, batch, hidden_size * num_directions): tensor "
+"containing the output features (h_k) from the last layer of the RNN, for "
+"each k.  If a :class:`torch.nn.utils.rnn.PackedSequence` has been given "
+"as the input, the output will also be a packed sequence."
+msgstr ""
+
+#: of torch.nn.RNN:42
+msgid ""
+"**h_n** (num_layers * num_directions, batch, hidden_size): tensor "
+"containing the hidden state for k=seq_len."
+msgstr ""
+
+#: of torch.nn.RNN:45
+msgid ""
+"the learnable input-hidden weights of the k-th layer, of shape "
+"`(input_size x hidden_size)`"
+msgstr ""
+
+#: of torch.nn.RNN:47
+msgid ""
+"the learnable hidden-hidden weights of the k-th layer, of shape "
+"`(hidden_size x hidden_size)`"
+msgstr ""
+
+#: of torch.nn.RNN:49
+msgid ""
+"the learnable input-hidden bias of the k-th layer, of shape "
+"`(hidden_size)`"
+msgstr ""
+
+#: of torch.nn.RNN:51
+msgid ""
+"the learnable hidden-hidden bias of the k-th layer, of shape "
+"`(hidden_size)`"
+msgstr ""
+
+#: ../../source/nn.rst:391
+msgid ":hidden:`LSTM`"
+msgstr ""
+
+#: of torch.nn.LSTM:1
+msgid ""
+"Applies a multi-layer long short-term memory (LSTM) RNN to an input "
+"sequence."
+msgstr ""
+
+#: of torch.nn.LSTM:19
+msgid ""
+"where :math:`h_t` is the hidden state at time `t`, :math:`c_t` is the "
+"cell state at time `t`, :math:`x_t` is the hidden state of the previous "
+"layer at time `t` or :math:`input_t` for the first layer, and "
+":math:`i_t`, :math:`f_t`, :math:`g_t`, :math:`o_t` are the input, forget,"
+" cell, and out gates, respectively."
+msgstr ""
+
+#: of torch.nn.LSTM:45 torch.nn.LSTMCell:24
+msgid "Inputs: input, (h_0, c_0)"
+msgstr ""
+
+#: of torch.nn.LSTM:41
+msgid ""
+"**h_0** (num_layers \\* num_directions, batch, hidden_size): tensor "
+"containing the initial hidden state for each element in the batch."
+msgstr ""
+
+#: of torch.nn.LSTM:43
+msgid ""
+"**c_0** (num_layers \\* num_directions, batch, hidden_size): tensor "
+"containing the initial cell state for each element in the batch."
+msgstr ""
+
+#: of torch.nn.LSTM:55
+msgid "Outputs: output, (h_n, c_n)"
+msgstr ""
+
+#: of torch.nn.LSTM:48
+msgid ""
+"**output** (seq_len, batch, hidden_size * num_directions): tensor "
+"containing the output features `(h_t)` from the last layer of the RNN, "
+"for each t. If a :class:`torch.nn.utils.rnn.PackedSequence` has been "
+"given as the input, the output will also be a packed sequence."
+msgstr ""
+
+#: of torch.nn.GRU:45 torch.nn.LSTM:52
+msgid ""
+"**h_n** (num_layers * num_directions, batch, hidden_size): tensor "
+"containing the hidden state for t=seq_len"
+msgstr ""
+
+#: of torch.nn.LSTM:54
+msgid ""
+"**c_n** (num_layers * num_directions, batch, hidden_size): tensor "
+"containing the cell state for t=seq_len"
+msgstr ""
+
+#: of torch.nn.LSTM:57
+msgid ""
+"the learnable input-hidden weights of the k-th layer "
+"`(W_ii|W_if|W_ig|W_io)`, of shape `(4*hidden_size x input_size)`"
+msgstr ""
+
+#: of torch.nn.LSTM:59
+msgid ""
+"the learnable hidden-hidden weights of the k-th layer "
+"`(W_hi|W_hf|W_hg|W_ho)`, of shape `(4*hidden_size x hidden_size)`"
+msgstr ""
+
+#: of torch.nn.LSTM:61
+msgid ""
+"the learnable input-hidden bias of the k-th layer "
+"`(b_ii|b_if|b_ig|b_io)`, of shape `(4*hidden_size)`"
+msgstr ""
+
+#: of torch.nn.LSTM:63
+msgid ""
+"the learnable hidden-hidden bias of the k-th layer "
+"`(b_hi|b_hf|b_hg|b_ho)`, of shape `(4*hidden_size)`"
+msgstr ""
+
+#: ../../source/nn.rst:397
+msgid ":hidden:`GRU`"
+msgstr ""
+
+#: of torch.nn.GRU:1
+msgid "Applies a multi-layer gated recurrent unit (GRU) RNN to an input sequence."
+msgstr ""
+
+#: of torch.nn.GRU:16
+msgid ""
+"where :math:`h_t` is the hidden state at time `t`, :math:`x_t` is the "
+"hidden state of the previous layer at time `t` or :math:`input_t` for the"
+" first layer, and :math:`r_t`, :math:`z_t`, :math:`n_t` are the reset, "
+"input, and new gates, respectively."
+msgstr ""
+
+#: of torch.nn.GRU:41
+msgid ""
+"**output** (seq_len, batch, hidden_size * num_directions): tensor "
+"containing the output features h_t from the last layer of the RNN, for "
+"each t. If a :class:`torch.nn.utils.rnn.PackedSequence` has been given as"
+" the input, the output will also be a packed sequence."
+msgstr ""
+
+#: of torch.nn.GRU:48
+msgid ""
+"the learnable input-hidden weights of the k-th layer (W_ir|W_iz|W_in), of"
+" shape `(3*hidden_size x input_size)`"
+msgstr ""
+
+#: of torch.nn.GRU:50
+msgid ""
+"the learnable hidden-hidden weights of the k-th layer (W_hr|W_hz|W_hn), "
+"of shape `(3*hidden_size x hidden_size)`"
+msgstr ""
+
+#: of torch.nn.GRU:52
+msgid ""
+"the learnable input-hidden bias of the k-th layer (b_ir|b_iz|b_in), of "
+"shape `(3*hidden_size)`"
+msgstr ""
+
+#: of torch.nn.GRU:54
+msgid ""
+"the learnable hidden-hidden bias of the k-th layer (b_hr|b_hz|b_hn), of "
+"shape `(3*hidden_size)`"
+msgstr ""
+
+#: ../../source/nn.rst:403
+msgid ":hidden:`RNNCell`"
+msgstr ""
+
+#: of torch.nn.RNNCell:1
+msgid "An Elman RNN cell with tanh or ReLU non-linearity."
+msgstr ""
+
+#: of torch.nn.RNNCell:7
+msgid "If nonlinearity='relu', then ReLU is used in place of tanh."
+msgstr ""
+
+#: of torch.nn.GRUCell:20 torch.nn.RNNCell:18
+msgid "Inputs: input, hidden"
+msgstr ""
+
+#: of torch.nn.GRUCell:18 torch.nn.LSTMCell:20 torch.nn.RNNCell:16
+msgid "**input** (batch, input_size): tensor containing input features"
+msgstr ""
+
+#: of torch.nn.GRUCell:19 torch.nn.RNNCell:17
+msgid ""
+"**hidden** (batch, hidden_size): tensor containing the initial hidden "
+"state for each element in the batch."
+msgstr ""
+
+#: of torch.nn.GRUCell:24 torch.nn.RNNCell:22
+msgid "Outputs: h'"
+msgstr ""
+
+#: of torch.nn.RNNCell:21
+msgid ""
+"**h'** (batch, hidden_size): tensor containing the next hidden state for "
+"each element in the batch"
+msgstr ""
+
+#: of torch.nn.RNNCell:24
+msgid "the learnable input-hidden weights, of shape `(input_size x hidden_size)`"
+msgstr ""
+
+#: of torch.nn.RNNCell:26
+msgid ""
+"the learnable hidden-hidden weights, of shape `(hidden_size x "
+"hidden_size)`"
+msgstr ""
+
+#: of torch.nn.RNNCell:28
+msgid "the learnable input-hidden bias, of shape `(hidden_size)`"
+msgstr ""
+
+#: of torch.nn.RNNCell:29
+msgid "the learnable hidden-hidden bias, of shape `(hidden_size)`"
+msgstr ""
+
+#: ../../source/nn.rst:409
+msgid ":hidden:`LSTMCell`"
+msgstr ""
+
+#: of torch.nn.LSTMCell:1
+msgid "A long short-term memory (LSTM) cell."
+msgstr ""
+
+#: of torch.nn.LSTMCell:16
+msgid ""
+"If `False`, then the layer does not use bias weights `b_ih` and `b_hh`. "
+"Default: ``True``"
+msgstr ""
+
+#: of torch.nn.LSTMCell:21
+msgid ""
+"**h_0** (batch, hidden_size): tensor containing the initial hidden state "
+"for each element in the batch."
+msgstr ""
+
+#: of torch.nn.LSTMCell:23
+msgid ""
+"**c_0** (batch. hidden_size): tensor containing the initial cell state "
+"for each element in the batch."
+msgstr ""
+
+#: of torch.nn.LSTMCell:30
+msgid "Outputs: h_1, c_1"
+msgstr ""
+
+#: of torch.nn.LSTMCell:27
+msgid ""
+"**h_1** (batch, hidden_size): tensor containing the next hidden state for"
+" each element in the batch"
+msgstr ""
+
+#: of torch.nn.LSTMCell:29
+msgid ""
+"**c_1** (batch, hidden_size): tensor containing the next cell state for "
+"each element in the batch"
+msgstr ""
+
+#: of torch.nn.LSTMCell:32
+msgid ""
+"the learnable input-hidden weights, of shape `(4*hidden_size x "
+"input_size)`"
+msgstr ""
+
+#: of torch.nn.LSTMCell:34
+msgid ""
+"the learnable hidden-hidden weights, of shape `(4*hidden_size x "
+"hidden_size)`"
+msgstr ""
+
+#: of torch.nn.LSTMCell:36
+msgid "the learnable input-hidden bias, of shape `(4*hidden_size)`"
+msgstr ""
+
+#: of torch.nn.LSTMCell:37
+msgid "the learnable hidden-hidden bias, of shape `(4*hidden_size)`"
+msgstr ""
+
+#: ../../source/nn.rst:415
+msgid ":hidden:`GRUCell`"
+msgstr ""
+
+#: of torch.nn.GRUCell:1
+msgid "A gated recurrent unit (GRU) cell"
+msgstr ""
+
+#: of torch.nn.GRUCell:14
+msgid ""
+"If `False`, then the layer does not use bias weights `b_ih` and `b_hh`. "
+"Default: `True`"
+msgstr ""
+
+#: of torch.nn.GRUCell:23
+msgid ""
+"**h'**: (batch, hidden_size): tensor containing the next hidden state for"
+" each element in the batch"
+msgstr ""
+
+#: of torch.nn.GRUCell:26
+msgid ""
+"the learnable input-hidden weights, of shape `(3*hidden_size x "
+"input_size)`"
+msgstr ""
+
+#: of torch.nn.GRUCell:28
+msgid ""
+"the learnable hidden-hidden weights, of shape `(3*hidden_size x "
+"hidden_size)`"
+msgstr ""
+
+#: of torch.nn.GRUCell:30
+msgid "the learnable input-hidden bias, of shape `(3*hidden_size)`"
+msgstr ""
+
+#: of torch.nn.GRUCell:31
+msgid "the learnable hidden-hidden bias, of shape `(3*hidden_size)`"
+msgstr ""
+
+#: ../../source/nn.rst:421
+msgid "Linear layers"
+msgstr ""
+
+#: ../../source/nn.rst:424
+msgid ":hidden:`Linear`"
+msgstr ""
+
+#: of torch.nn.Linear:1
+msgid "Applies a linear transformation to the incoming data: :math:`y = Ax + b`"
+msgstr ""
+
+#: of torch.nn.Linear:3
+msgid "size of each input sample"
+msgstr ""
+
+#: of torch.nn.Bilinear:6 torch.nn.Linear:4
+msgid "size of each output sample"
+msgstr ""
+
+#: of torch.nn.Bilinear:7 torch.nn.Linear:5
+msgid ""
+"If set to False, the layer will not learn an additive bias. Default: "
+"``True``"
+msgstr ""
+
+#: of torch.nn.Linear:9 torch.nn.functional.linear:4
+msgid ""
+"Input: :math:`(N, *, in\\_features)` where `*` means any number of "
+"additional dimensions"
+msgstr ""
+
+#: of torch.nn.Linear:11
+msgid ""
+"Output: :math:`(N, *, out\\_features)` where all but the last dimension "
+"are the same shape as the input."
+msgstr ""
+
+#: of torch.nn.Linear:14
+msgid "the learnable weights of the module of shape (out_features x in_features)"
+msgstr ""
+
+#: of torch.nn.Bilinear:16 torch.nn.Linear:16
+msgid "the learnable bias of the module of shape (out_features)"
+msgstr ""
+
+#: ../../source/nn.rst:430
+msgid ":hidden:`Bilinear`"
+msgstr ""
+
+#: of torch.nn.Bilinear:1
+msgid ""
+"Applies a bilinear transformation to the incoming data: :math:`y = x_1 * "
+"A * x_2 + b`"
+msgstr ""
+
+#: of torch.nn.Bilinear:4
+msgid "size of each first input sample"
+msgstr ""
+
+#: of torch.nn.Bilinear:5
+msgid "size of each second input sample"
+msgstr ""
+
+#: of torch.nn.Bilinear:11
+msgid "Input: :math:`(N, in1\\_features)`, :math:`(N, in2\\_features)`"
+msgstr ""
+
+#: of torch.nn.Bilinear:12
+msgid "Output: :math:`(N, out\\_features)`"
+msgstr ""
+
+#: of torch.nn.Bilinear:14
+msgid ""
+"the learnable weights of the module of shape (out_features x in1_features"
+" x in2_features)"
+msgstr ""
+
+#: ../../source/nn.rst:436
+msgid "Dropout layers"
+msgstr ""
+
+#: ../../source/nn.rst:439
+msgid ":hidden:`Dropout`"
+msgstr ""
+
+#: of torch.nn.Dropout:1
+msgid ""
+"During training, randomly zeroes some of the elements of the input tensor"
+" with probability *p* using samples from a bernoulli distribution. The "
+"elements to zero are randomized on every forward call."
+msgstr ""
+
+#: of torch.nn.Dropout:5
+msgid ""
+"This has proven to be an effective technique for regularization and "
+"preventing the co-adaptation of neurons as described in the paper "
+"`Improving neural networks by preventing co-adaptation of feature "
+"detectors`_ ."
+msgstr ""
+
+#: of torch.nn.Dropout:10
+msgid ""
+"Furthermore, the outputs are scaled by a factor of *1/(1-p)* during "
+"training. This means that during evaluation the module simply computes an"
+" identity function."
+msgstr ""
+
+#: of torch.nn.Dropout:14
+msgid "probability of an element to be zeroed. Default: 0.5"
+msgstr ""
+
+#: of torch.nn.Dropout:15
+msgid "If set to ``True``, will do this operation in-place. Default: ``False``"
+msgstr ""
+
+#: of torch.nn.AlphaDropout:24 torch.nn.Dropout:18
+msgid "Input: `Any`. Input can be of any shape"
+msgstr ""
+
+#: of torch.nn.AlphaDropout:25 torch.nn.Dropout:19
+msgid "Output: `Same`. Output is of the same shape as input"
+msgstr ""
+
+#: ../../source/nn.rst:445
+msgid ":hidden:`Dropout2d`"
+msgstr ""
+
+#: of torch.nn.Dropout2d:1
+msgid ""
+"Randomly zeroes whole channels of the input tensor. The channels to zero-"
+"out are randomized on every forward call."
+msgstr ""
+
+#: of torch.nn.Dropout2d:4
+msgid "*Usually the input comes from Conv2d modules.*"
+msgstr ""
+
+#: of torch.nn.Dropout2d:6 torch.nn.Dropout3d:6
+msgid ""
+"As described in the paper `Efficient Object Localization Using "
+"Convolutional Networks`_ , if adjacent pixels within feature maps are "
+"strongly correlated (as is normally the case in early convolution layers)"
+" then iid dropout will not regularize the activations and will otherwise "
+"just result in an effective learning rate decrease."
+msgstr ""
+
+#: of torch.nn.Dropout2d:13
+msgid ""
+"In this case, :func:`nn.Dropout2d` will help promote independence between"
+" feature maps and should be used instead."
+msgstr ""
+
+#: of torch.nn.Dropout2d:16 torch.nn.Dropout3d:16
+msgid "probability of an element to be zeroed."
+msgstr ""
+
+#: of torch.nn.Dropout2d:18 torch.nn.Dropout3d:18
+msgid "If set to ``True``, will do this operation in-place"
+msgstr ""
+
+#: ../../source/nn.rst:451
+msgid ":hidden:`Dropout3d`"
+msgstr ""
+
+#: of torch.nn.Dropout3d:1
+msgid ""
+"Randomly zeroes whole channels of the input tensor. The channels to zero "
+"are randomized on every forward call."
+msgstr ""
+
+#: of torch.nn.Dropout3d:4
+msgid "*Usually the input comes from Conv3d modules.*"
+msgstr ""
+
+#: of torch.nn.Dropout3d:13
+msgid ""
+"In this case, :func:`nn.Dropout3d` will help promote independence between"
+" feature maps and should be used instead."
+msgstr ""
+
+#: ../../source/nn.rst:457
+msgid ":hidden:`AlphaDropout`"
+msgstr ""
+
+#: of torch.nn.AlphaDropout:1
+msgid "Applies Alpha Dropout over the input."
+msgstr ""
+
+#: of torch.nn.AlphaDropout:3
+msgid ""
+"Alpha Dropout is a type of Dropout that maintains the self-normalizing "
+"property. For an input with zero mean and unit standard deviation, the "
+"output of Alpha Dropout maintains the original mean and standard "
+"deviation of the input. Alpha Dropout goes hand-in-hand with SELU "
+"activation function, which ensures that the outputs have zero mean and "
+"unit standard deviation."
+msgstr ""
+
+#: of torch.nn.AlphaDropout:11
+msgid ""
+"During training, it randomly masks some of the elements of the input "
+"tensor with probability *p* using samples from a bernoulli distribution. "
+"The elements to masked are randomized on every forward call, and scaled "
+"and shifted to maintain zero mean and unit standard deviation."
+msgstr ""
+
+#: of torch.nn.AlphaDropout:16
+msgid "During evaluation the module simply computes an identity function."
+msgstr ""
+
+#: of torch.nn.AlphaDropout:20
+msgid "probability of an element to be dropped. Default: 0.5"
+msgstr ""
+
+#: ../../source/nn.rst:464
+msgid "Sparse layers"
+msgstr ""
+
+#: ../../source/nn.rst:467
+msgid ":hidden:`Embedding`"
+msgstr ""
+
+#: of torch.nn.Embedding:1
+msgid ""
+"A simple lookup table that stores embeddings of a fixed dictionary and "
+"size."
+msgstr ""
+
+#: of torch.nn.Embedding:3
+msgid ""
+"This module is often used to store word embeddings and retrieve them "
+"using indices. The input to the module is a list of indices, and the "
+"output is the corresponding word embeddings."
+msgstr ""
+
+#: of torch.nn.Embedding:7 torch.nn.EmbeddingBag:11
+msgid "size of the dictionary of embeddings"
+msgstr ""
+
+#: of torch.nn.Embedding:9 torch.nn.EmbeddingBag:13
+msgid "the size of each embedding vector"
+msgstr ""
+
+#: of torch.nn.Embedding:11
+msgid "If given, pads the output with zeros whenever it encounters the index."
+msgstr ""
+
+#: of torch.nn.Embedding:13 torch.nn.EmbeddingBag:15
+msgid ""
+"If given, will renormalize the embeddings to always have a norm lesser "
+"than this"
+msgstr ""
+
+#: of torch.nn.Embedding:15 torch.nn.EmbeddingBag:17
+msgid "The p of the p-norm to compute for the max_norm option"
+msgstr ""
+
+#: of torch.nn.Embedding:17
+msgid ""
+"if given, this will scale gradients by the frequency of the words in the "
+"mini-batch."
+msgstr ""
+
+#: of torch.nn.Embedding:20
+msgid ""
+"if ``True``, gradient w.r.t. weight matrix will be a sparse tensor. See "
+"Notes for more details regarding sparse gradients."
+msgstr ""
+
+#: of torch.nn.Embedding:24 torch.nn.EmbeddingBag:25
+msgid ""
+"the learnable weights of the module of shape (num_embeddings, "
+"embedding_dim)"
+msgstr ""
+
+#: of torch.nn.Embedding:29
+msgid ""
+"Input: LongTensor `(N, W)`, N = mini-batch, W = number of indices to "
+"extract per mini-batch"
+msgstr ""
+
+#: of torch.nn.Embedding:30
+msgid "Output: `(N, W, embedding_dim)`"
+msgstr ""
+
+#: of torch.nn.Embedding:33
+msgid "Notes"
+msgstr ""
+
+#: of torch.nn.Embedding:34
+msgid ""
+"Keep in mind that only a limited number of optimizers support sparse "
+"gradients: currently it's `optim.SGD` (`cuda` and `cpu`), and "
+"`optim.Adagrad` (`cpu`)"
+msgstr ""
+
+#: ../../source/nn.rst:473
+msgid ":hidden:`EmbeddingBag`"
+msgstr ""
+
+#: of torch.nn.EmbeddingBag:1
+msgid ""
+"Computes sums or means of 'bags' of embeddings, without instantiating the"
+" intermediate embeddings."
+msgstr ""
+
+#: of torch.nn.EmbeddingBag:6
+msgid "For bags of constant length,"
+msgstr ""
+
+#: of torch.nn.EmbeddingBag:5
+msgid ""
+"nn.EmbeddingBag with `mode=sum` is equivalent to nn.Embedding followed by"
+" `torch.sum(dim=1)`"
+msgstr ""
+
+#: of torch.nn.EmbeddingBag:6
+msgid ""
+"with `mode=mean` is equivalent to nn.Embedding followed by "
+"`torch.mean(dim=1)`"
+msgstr ""
+
+#: of torch.nn.EmbeddingBag:8
+msgid ""
+"However, nn.EmbeddingBag is much more time and memory efficient than "
+"using a chain of these operations."
+msgstr ""
+
+#: of torch.nn.EmbeddingBag:19
+msgid ""
+"if given, this will scale gradients by the frequency of the words in the "
+"dictionary."
+msgstr ""
+
+#: of torch.nn.EmbeddingBag:22
+msgid "'sum' | 'mean'. Specifies the way to reduce the bag. Default: 'mean'"
+msgstr ""
+
+#: of torch.nn.EmbeddingBag:41
+msgid "Inputs: input, offsets"
+msgstr ""
+
+#: of torch.nn.EmbeddingBag:33
+msgid "**input** (N or BxN): LongTensor containing the indices of the embeddings"
+msgstr ""
+
+#: of torch.nn.EmbeddingBag:31
+msgid ""
+"to extract. When `input` is 1D Tensor of shape `N`, an `offsets` Tensor "
+"is given, that contains the starting position of each new sequence in the"
+" mini-batch."
+msgstr ""
+
+#: of torch.nn.EmbeddingBag:41
+msgid "**offsets** (B or None): LongTensor containing the starting positions of"
+msgstr ""
+
+#: of torch.nn.EmbeddingBag:36
+msgid ""
+"each sample in a mini-batch of variable length sequences. If `input` is "
+"2D (BxN), then offsets does not need to be given, as the `input` is "
+"treated as a mini-batch of fixed length sequences of length `N` each."
+msgstr ""
+
+#: of torch.nn.EmbeddingBag:45
+msgid "Input: LongTensor `N`, N = number of embeddings to extract"
+msgstr ""
+
+#: of torch.nn.EmbeddingBag:45
+msgid "(or) LongTensor `BxN`, B = number of sequences in mini-batch,"
+msgstr ""
+
+#: of torch.nn.EmbeddingBag:46
+msgid "N = number of embeddings per sequence"
+msgstr ""
+
+#: of torch.nn.EmbeddingBag:49
+msgid "Offsets: LongTensor `B`, B = number of bags. The values are the"
+msgstr ""
+
+#: of torch.nn.EmbeddingBag:48
+msgid ""
+"offsets in `input` for each bag, i.e. the cumsum of lengths. Offsets is "
+"not given if Input is 2D `BxN` Tensor, the input is considered to be of "
+"fixed-length sequences"
+msgstr ""
+
+#: of torch.nn.EmbeddingBag:51
+msgid "Output: `(B, embedding_dim)`"
+msgstr ""
+
+#: ../../source/nn.rst:479 ../../source/nn.rst:965
+msgid "Distance functions"
+msgstr ""
+
+#: ../../source/nn.rst:482
+msgid ":hidden:`CosineSimilarity`"
+msgstr ""
+
+#: of torch.nn.CosineSimilarity:1 torch.nn.functional.cosine_similarity:1
+msgid "Returns cosine similarity between x1 and x2, computed along dim."
+msgstr ""
+
+#: of torch.nn.CosineSimilarity:6
+msgid "Dimension where cosine similarity is computed. Default: 1"
+msgstr ""
+
+#: of torch.nn.CosineSimilarity:8 torch.nn.functional.cosine_similarity:12
+msgid "Small value to avoid division by zero. Default: 1e-8"
+msgstr ""
+
+#: of torch.nn.CosineSimilarity:13
+msgid "Input1: :math:`(\\ast_1, D, \\ast_2)` where D is at position `dim`"
+msgstr ""
+
+#: of torch.nn.CosineSimilarity:14
+msgid "Input2: :math:`(\\ast_1, D, \\ast_2)`, same shape as the Input1"
+msgstr ""
+
+#: of torch.nn.CosineSimilarity:15
+msgid "Output: :math:`(\\ast_1, \\ast_2)`"
+msgstr ""
+
+#: ../../source/nn.rst:488
+msgid ":hidden:`PairwiseDistance`"
+msgstr ""
+
+#: of torch.nn.PairwiseDistance:1 torch.nn.functional.pairwise_distance:1
+msgid "Computes the batchwise pairwise distance between vectors v1,v2:"
+msgstr ""
+
+#: of torch.nn.PairwiseDistance:6 torch.nn.TripletMarginLoss:20
+#: torch.nn.functional.pairwise_distance:8
+#: torch.nn.functional.triplet_margin_loss:21
+msgid "the norm degree. Default: 2"
+msgstr ""
+
+#: of torch.nn.PairwiseDistance:8 torch.nn.functional.pairwise_distance:9
+msgid "Small value to avoid division by zero. Default: 1e-6"
+msgstr ""
+
+#: of torch.nn.PairwiseDistance:13
+msgid "Input1: :math:`(N, D)` where `D = vector dimension`"
+msgstr ""
+
+#: of torch.nn.PairwiseDistance:14
+msgid "Input2: :math:`(N, D)`, same shape as the Input1"
+msgstr ""
+
+#: of torch.nn.PairwiseDistance:15 torch.nn.TripletMarginLoss:24
+#: torch.nn.functional.pairwise_distance:14
+#: torch.nn.functional.triplet_margin_loss:27
+msgid "Output: :math:`(N, 1)`"
+msgstr ""
+
+#: ../../source/nn.rst:495 ../../source/nn.rst:979
+msgid "Loss functions"
+msgstr ""
+
+#: ../../source/nn.rst:498
+msgid ":hidden:`L1Loss`"
+msgstr ""
+
+#: of torch.nn.L1Loss:1
+msgid ""
+"Creates a criterion that measures the mean absolute value of the element-"
+"wise difference between input `x` and target `y`:"
+msgstr ""
+
+#: of torch.nn.L1Loss:4
+msgid ":math:`{loss}(x, y)  = 1/n \\sum |x_i - y_i|`"
+msgstr ""
+
+#: of torch.nn.L1Loss:6 torch.nn.MSELoss:6
+msgid "`x` and `y` arbitrary shapes with a total of `n` elements each."
+msgstr ""
+
+#: of torch.nn.L1Loss:8 torch.nn.MSELoss:8
+msgid ""
+"The sum operation still operates over all the elements, and divides by "
+"`n`."
+msgstr ""
+
+#: of torch.nn.L1Loss:10
+msgid ""
+"The division by `n` can be avoided if one sets the constructor argument "
+"`size_average=False`."
+msgstr ""
+
+#: of torch.nn.L1Loss:13 torch.nn.NLLLoss:35 torch.nn.NLLLoss2d:8
+msgid ""
+"By default, the losses are averaged over observations for each minibatch."
+" However, if the field size_average is set to ``False``, the losses are "
+"instead summed for each minibatch. Ignored when reduce is ``False``. "
+"Default: ``True``"
+msgstr ""
+
+#: of torch.nn.L1Loss:18 torch.nn.NLLLoss:44
+msgid ""
+"By default, the losses are averaged or summed for each minibatch. When "
+"reduce is ``False``, the loss function returns a loss per batch element "
+"instead and ignores size_average. Default: ``True``"
+msgstr ""
+
+#: of torch.nn.BCELoss:27 torch.nn.L1Loss:27 torch.nn.MSELoss:31
+#: torch.nn.SmoothL1Loss:29
+msgid "Target: :math:`(N, *)`, same shape as the input"
+msgstr ""
+
+#: of torch.nn.L1Loss:28 torch.nn.SmoothL1Loss:30
+msgid ""
+"Output: scalar. If reduce is ``False``, then :math:`(N, *)`, same shape "
+"as the input"
+msgstr ""
+
+#: ../../source/nn.rst:504
+msgid ":hidden:`MSELoss`"
+msgstr ""
+
+#: of torch.nn.MSELoss:1
+msgid ""
+"Creates a criterion that measures the mean squared error between `n` "
+"elements in the input `x` and target `y`:"
+msgstr ""
+
+#: of torch.nn.MSELoss:4
+msgid ":math:`{loss}(x, y)  = 1/n \\sum |x_i - y_i|^2`"
+msgstr ""
+
+#: of torch.nn.MSELoss:10
+msgid ""
+"The division by `n` can be avoided if one sets the internal variable "
+"`size_average` to ``False``."
+msgstr ""
+
+#: of torch.nn.MSELoss:13
+msgid ""
+"To get a batch of losses, a loss per batch element, set `reduce` to "
+"``False``. These losses are not averaged and are not affected by "
+"`size_average`."
+msgstr ""
+
+#: of torch.nn.MSELoss:17
+msgid ""
+"By default, the losses are averaged over observations for each minibatch."
+" However, if the field size_average is set to ``False``, the losses are "
+"instead summed for each minibatch. Only applies when reduce is ``True``. "
+"Default: ``True``"
+msgstr ""
+
+#: of torch.nn.KLDivLoss:28 torch.nn.MSELoss:22
+msgid ""
+"By default, the losses are averaged over observations for each minibatch,"
+" or summed, depending on size_average. When reduce is ``False``, returns "
+"a loss per batch element instead and ignores size_average. Default: "
+"``True``"
+msgstr ""
+
+#: ../../source/nn.rst:510
+msgid ":hidden:`CrossEntropyLoss`"
+msgstr ""
+
+#: of torch.nn.CrossEntropyLoss:1
+msgid "This criterion combines `LogSoftMax` and `NLLLoss` in one single class."
+msgstr ""
+
+#: of torch.nn.CrossEntropyLoss:3
+msgid ""
+"It is useful when training a classification problem with `C` classes. If "
+"provided, the optional argument `weight` should be a 1D `Tensor` "
+"assigning weight to each of the classes. This is particularly useful when"
+" you have an unbalanced training set."
+msgstr ""
+
+#: of torch.nn.CrossEntropyLoss:8
+msgid "The `input` is expected to contain scores for each class."
+msgstr ""
+
+#: of torch.nn.CrossEntropyLoss:10
+msgid "`input` has to be a 2D `Tensor` of size `(minibatch, C)`."
+msgstr ""
+
+#: of torch.nn.CrossEntropyLoss:12
+msgid ""
+"This criterion expects a class index (0 to C-1) as the `target` for each "
+"value of a 1D tensor of size `minibatch`"
+msgstr ""
+
+#: of torch.nn.CrossEntropyLoss:15 torch.nn.NLLLoss:20
+#: torch.nn.PoissonNLLLoss:3
+msgid "The loss can be described as::"
+msgstr ""
+
+#: of torch.nn.CrossEntropyLoss:20
+msgid "or in the case of the `weight` argument being specified::"
+msgstr ""
+
+#: of torch.nn.CrossEntropyLoss:24
+msgid "The losses are averaged across observations for each minibatch."
+msgstr ""
+
+#: of torch.nn.CrossEntropyLoss:26
+msgid ""
+"a manual rescaling weight given to each class. If given, has to be a "
+"Tensor of size \"C\""
+msgstr ""
+
+#: of torch.nn.CrossEntropyLoss:29
+msgid ""
+"By default, the losses are averaged over observations for each minibatch."
+" However, if the field size_average is set to ``False``, the losses are "
+"instead summed for each minibatch. Ignored if reduce is ``False``."
+msgstr ""
+
+#: of torch.nn.CrossEntropyLoss:33 torch.nn.NLLLoss:40
+msgid ""
+"Specifies a target value that is ignored and does not contribute to the "
+"input gradient. When size_average is ``True``, the loss is averaged over "
+"non-ignored targets."
+msgstr ""
+
+#: of torch.nn.CrossEntropyLoss:37
+msgid ""
+"By default, the losses are averaged or summed over observations for each "
+"minibatch depending on size_average. When reduce is ``False``, returns a "
+"loss per batch element instead and ignores size_average. Default: "
+"``True``"
+msgstr ""
+
+#: of torch.nn.CrossEntropyLoss:44 torch.nn.NLLLoss:51
+msgid "Input: :math:`(N, C)` where `C = number of classes`"
+msgstr ""
+
+#: of torch.nn.CrossEntropyLoss:45 torch.nn.NLLLoss:52
+msgid "Target: :math:`(N)` where each value is `0 <= targets[i] <= C-1`"
+msgstr ""
+
+#: of torch.nn.CrossEntropyLoss:46 torch.nn.NLLLoss:53
+msgid "Output: scalar. If reduce is ``False``, then :math:`(N)` instead."
+msgstr ""
+
+#: ../../source/nn.rst:516
+msgid ":hidden:`NLLLoss`"
+msgstr ""
+
+#: of torch.nn.NLLLoss:1
+msgid ""
+"The negative log likelihood loss. It is useful to train a classification "
+"problem with `C` classes."
+msgstr ""
+
+#: of torch.nn.NLLLoss:4
+msgid ""
+"If provided, the optional argument `weight` should be a 1D Tensor "
+"assigning weight to each of the classes. This is particularly useful when"
+" you have an unbalanced training set."
+msgstr ""
+
+#: of torch.nn.NLLLoss:8
+msgid ""
+"The input given through a forward call is expected to contain log-"
+"probabilities of each class: input has to be a 2D Tensor of size "
+"`(minibatch, C)`"
+msgstr ""
+
+#: of torch.nn.NLLLoss:12
+msgid ""
+"Obtaining log-probabilities in a neural network is easily achieved by "
+"adding a  `LogSoftmax`  layer in the last layer of your network. You may "
+"use `CrossEntropyLoss` instead, if you prefer not to add an extra layer."
+msgstr ""
+
+#: of torch.nn.NLLLoss:17
+msgid ""
+"The target that this loss expects is a class index `(0 to C-1, where C = "
+"number of classes)`"
+msgstr ""
+
+#: of torch.nn.NLLLoss:24
+msgid "or in the case of the weight argument it is specified as follows::"
+msgstr ""
+
+#: of torch.nn.NLLLoss:28
+msgid "or in the case of ignore_index::"
+msgstr ""
+
+#: of torch.nn.NLLLoss:32 torch.nn.functional.cross_entropy:9
+#: torch.nn.functional.nll_loss:8
+msgid ""
+"a manual rescaling weight given to each class. If given, has to be a "
+"Tensor of size `C`"
+msgstr ""
+
+#: ../../source/nn.rst:522
+msgid ":hidden:`PoissonNLLLoss`"
+msgstr ""
+
+#: of torch.nn.PoissonNLLLoss:1
+msgid "Negative log likelihood loss with Poisson distribution of target."
+msgstr ""
+
+#: of torch.nn.PoissonNLLLoss:8
+msgid ""
+"The last term can be omitted or approximised with Stirling formula. The "
+"approximation is used for target values more than 1. For targets less or "
+"equal to 1 zeros are added to the loss."
+msgstr ""
+
+#: of torch.nn.PoissonNLLLoss:12
+msgid ""
+"if ``True`` the loss is computed as `exp(input) - target * input`, if "
+"``False`` the loss is `input - target * log(input+eps)`."
+msgstr ""
+
+#: of torch.nn.PoissonNLLLoss:16
+msgid ""
+"whether to compute full loss, i. e. to add the Stirling approximation "
+"term `target * log(target) - target + 0.5 * log(2 * pi * target)`."
+msgstr ""
+
+#: of torch.nn.PoissonNLLLoss:20
+msgid ""
+"By default, the losses are averaged over observations for each minibatch."
+" However, if the field size_average is set to ``False``, the losses are "
+"instead summed for each minibatch."
+msgstr ""
+
+#: of torch.nn.PoissonNLLLoss:24
+msgid ""
+"Small value to avoid evaluation of log(0) when log_input==``False``. "
+"Default: 1e-8"
+msgstr ""
+
+#: ../../source/nn.rst:528
+msgid ":hidden:`NLLLoss2d`"
+msgstr ""
+
+#: of torch.nn.NLLLoss2d:1
+msgid ""
+"This is negative log likehood loss, but for image inputs. It computes NLL"
+" loss per-pixel."
+msgstr ""
+
+#: of torch.nn.NLLLoss2d:4
+msgid ""
+"a manual rescaling weight given to each class. If given, has to be a 1D "
+"Tensor having as many elements, as there are classes."
+msgstr ""
+
+#: of torch.nn.NLLLoss2d:12
+msgid ""
+"By default, the losses are averaged or summed for each minibatch "
+"depending on size_average. When reduce is ``False``, the loss function "
+"returns a loss per batch element instead and ignores size_average. "
+"Default: ``True``"
+msgstr ""
+
+#: of torch.nn.NLLLoss2d:19
+msgid "Input: :math:`(N, C, H, W)` where `C = number of classes`"
+msgstr ""
+
+#: of torch.nn.NLLLoss2d:20
+msgid "Target: :math:`(N, H, W)` where each value is `0 <= targets[i] <= C-1`"
+msgstr ""
+
+#: of torch.nn.NLLLoss2d:21
+msgid "Output: scalar. If reduce is ``False``, then :math:`(N, H, W)` instead."
+msgstr ""
+
+#: ../../source/nn.rst:534
+msgid ":hidden:`KLDivLoss`"
+msgstr ""
+
+#: of torch.nn.KLDivLoss:1
+msgid "The `Kullback-Leibler divergence`_ Loss"
+msgstr ""
+
+#: of torch.nn.KLDivLoss:3
+msgid ""
+"KL divergence is a useful distance measure for continuous distributions "
+"and is often useful when performing direct regression over the space of "
+"(discretely sampled) continuous output distributions."
+msgstr ""
+
+#: of torch.nn.KLDivLoss:7
+msgid ""
+"As with `NLLLoss`, the `input` given is expected to contain *log-"
+"probabilities*, however unlike `ClassNLLLoss`, `input` is not restricted "
+"to a 2D Tensor, because the criterion is applied element-wise."
+msgstr ""
+
+#: of torch.nn.KLDivLoss:11
+msgid ""
+"This criterion expects a `target` `Tensor` of the same size as the "
+"`input` `Tensor`."
+msgstr ""
+
+#: of torch.nn.KLDivLoss:14
+msgid "The loss can be described as:"
+msgstr ""
+
+#: of torch.nn.KLDivLoss:18
+msgid ""
+"By default, the losses are averaged for each minibatch over observations "
+"**as well as** over dimensions. However, if the field `size_average` is "
+"set to ``False``, the losses are instead summed."
+msgstr ""
+
+#: of torch.nn.KLDivLoss:25
+msgid ""
+"By default, the losses are averaged for each minibatch over observations "
+"**as well as** over dimensions. However, if ``False`` the losses are "
+"instead summed."
+msgstr ""
+
+#: of torch.nn.KLDivLoss:35
+msgid "input: :math:`(N, *)` where `*` means, any number of additional dimensions"
+msgstr ""
+
+#: of torch.nn.KLDivLoss:37
+msgid "target: :math:`(N, *)`, same shape as the input"
+msgstr ""
+
+#: of torch.nn.KLDivLoss:38
+msgid "output: scalar. If `reduce` is ``True``, then :math:`(N, *)`,"
+msgstr ""
+
+#: of torch.nn.KLDivLoss:39
+msgid "same shape as the input"
+msgstr ""
+
+#: ../../source/nn.rst:540
+msgid ":hidden:`BCELoss`"
+msgstr ""
+
+#: of torch.nn.BCELoss:1
+msgid ""
+"Creates a criterion that measures the Binary Cross Entropy between the "
+"target and the output:"
+msgstr ""
+
+#: of torch.nn.BCELoss:6 torch.nn.BCEWithLogitsLoss:11
+msgid "or in the case of the weight argument being specified:"
+msgstr ""
+
+#: of torch.nn.BCELoss:10 torch.nn.BCEWithLogitsLoss:15
+msgid ""
+"This is used for measuring the error of a reconstruction in for example "
+"an auto-encoder. Note that the targets `t[i]` should be numbers between 0"
+" and 1."
+msgstr ""
+
+#: of torch.nn.BCELoss:14 torch.nn.BCEWithLogitsLoss:19
+msgid ""
+"a manual rescaling weight given to the loss of each batch element. If "
+"given, has to be a Tensor of size \"nbatch\"."
+msgstr ""
+
+#: of torch.nn.BCELoss:18 torch.nn.BCEWithLogitsLoss:23
+msgid ""
+"By default, the losses are averaged over observations for each minibatch."
+" However, if the field size_average is set to ``False``, the losses are "
+"instead summed for each minibatch. Default: ``True``"
+msgstr ""
+
+#: ../../source/nn.rst:546
+msgid ":hidden:`BCEWithLogitsLoss`"
+msgstr ""
+
+#: of torch.nn.BCEWithLogitsLoss:1
+msgid ""
+"This loss combines a `Sigmoid` layer and the `BCELoss` in one single "
+"class. This version is more numerically stable than using a plain "
+"`Sigmoid` followed by a `BCELoss` as, by combining the operations into "
+"one layer, we take advantage of the log-sum-exp trick for numerical "
+"stability."
+msgstr ""
+
+#: of torch.nn.BCEWithLogitsLoss:6
+msgid ""
+"This Binary Cross Entropy between the target and the output logits (no "
+"sigmoid applied) is:"
+msgstr ""
+
+#: ../../source/nn.rst:552
+msgid ":hidden:`MarginRankingLoss`"
+msgstr ""
+
+#: of torch.nn.MarginRankingLoss:1
+msgid ""
+"Creates a criterion that measures the loss given inputs `x1`, `x2`, two "
+"1D mini-batch `Tensor`s, and a label 1D mini-batch tensor `y` with values"
+" (`1` or `-1`)."
+msgstr ""
+
+#: of torch.nn.MarginRankingLoss:5
+msgid ""
+"If `y == 1` then it assumed the first input should be ranked higher (have"
+" a larger value) than the second input, and vice-versa for `y == -1`."
+msgstr ""
+
+#: of torch.nn.MarginRankingLoss:8
+msgid "The loss function for each sample in the mini-batch is::"
+msgstr ""
+
+#: of torch.nn.MarginRankingLoss:12
+msgid ""
+"if the internal variable `size_average = True`, the loss function "
+"averages the loss over the batch samples; if `size_average = False`, then"
+" the loss function sums over the batch samples. By default, "
+"`size_average` equals to ``True``."
+msgstr ""
+
+#: ../../source/nn.rst:558
+msgid ":hidden:`HingeEmbeddingLoss`"
+msgstr ""
+
+#: of torch.nn.HingeEmbeddingLoss:1
+msgid ""
+"Measures the loss given an input tensor `x` and a labels tensor `y` "
+"containing values (`1` or `-1`). This is usually used for measuring "
+"whether two inputs are similar or dissimilar, e.g. using the L1 pairwise "
+"distance as `x`, and is typically used for learning nonlinear embeddings "
+"or semi-supervised learning::"
+msgstr ""
+
+#: of torch.nn.HingeEmbeddingLoss:11
+msgid ""
+"`x` and `y` can be of arbitrary shapes with a total of `n` elements each."
+" The sum operation operates over all the elements."
+msgstr ""
+
+#: of torch.nn.HingeEmbeddingLoss:14
+msgid ""
+"The division by `n` can be avoided if one sets the internal variable "
+"`size_average=False`."
+msgstr ""
+
+#: of torch.nn.HingeEmbeddingLoss:17
+msgid "The `margin` has a default value of `1`, or can be set in the constructor."
+msgstr ""
+
+#: ../../source/nn.rst:564
+msgid ":hidden:`MultiLabelMarginLoss`"
+msgstr ""
+
+#: of torch.nn.MultiLabelMarginLoss:1
+msgid ""
+"Creates a criterion that optimizes a multi-class multi-classification "
+"hinge loss (margin-based loss) between input `x`  (a 2D mini-batch "
+"`Tensor`) and output `y` (which is a 2D `Tensor` of target class "
+"indices). For each sample in the mini-batch::"
+msgstr ""
+
+#: of torch.nn.MultiLabelMarginLoss:8
+msgid ""
+"where `i == 0` to `x.size(0)`, `j == 0` to `y.size(0)`, `y[j] >= 0`, and "
+"`i != y[j]` for all `i` and `j`."
+msgstr ""
+
+#: of torch.nn.MultiLabelMarginLoss:11
+msgid "`y` and `x` must have the same size."
+msgstr ""
+
+#: of torch.nn.MultiLabelMarginLoss:13
+msgid "The criterion only considers the first non zero `y[j]` targets."
+msgstr ""
+
+#: of torch.nn.MultiLabelMarginLoss:15
+msgid ""
+"This allows for different samples to have variable amounts of target "
+"classes"
+msgstr ""
+
+#: ../../source/nn.rst:570
+msgid ":hidden:`SmoothL1Loss`"
+msgstr ""
+
+#: of torch.nn.SmoothL1Loss:1
+msgid ""
+"Creates a criterion that uses a squared term if the absolute element-wise"
+" error falls below 1 and an L1 term otherwise. It is less sensitive to "
+"outliers than the `MSELoss` and in some cases prevents exploding "
+"gradients (e.g. see \"Fast R-CNN\" paper by Ross Girshick). Also known as"
+" the Huber loss::"
+msgstr ""
+
+#: of torch.nn.SmoothL1Loss:11
+msgid ""
+"`x` and `y` arbitrary shapes with a total of `n` elements each the sum "
+"operation still operates over all the elements, and divides by `n`."
+msgstr ""
+
+#: of torch.nn.SmoothL1Loss:14
+msgid ""
+"The division by `n` can be avoided if one sets the internal variable "
+"`size_average` to ``False``"
+msgstr ""
+
+#: of torch.nn.SmoothL1Loss:17
+msgid ""
+"By default, the losses are averaged over all elements. However, if the "
+"field size_average is set to ``False``, the losses are instead summed. "
+"Ignored when reduce is ``False``. Default: ``True``"
+msgstr ""
+
+#: of torch.nn.SmoothL1Loss:21
+msgid ""
+"By default, the losses are averaged or summed over elements. When reduce "
+"is ``False``, the loss function returns a loss per element instead and "
+"ignores size_average. Default: ``True``"
+msgstr ""
+
+#: ../../source/nn.rst:576
+msgid ":hidden:`SoftMarginLoss`"
+msgstr ""
+
+#: of torch.nn.SoftMarginLoss:1
+msgid ""
+"Creates a criterion that optimizes a two-class classification logistic "
+"loss between input `x` (a 2D mini-batch Tensor) and target `y` (which is "
+"a tensor containing either `1` or `-1`)."
+msgstr ""
+
+#: of torch.nn.SoftMarginLoss:9
+msgid ""
+"The normalization by the number of elements in the input can be disabled "
+"by setting `self.size_average` to ``False``."
+msgstr ""
+
+#: ../../source/nn.rst:582
+msgid ":hidden:`MultiLabelSoftMarginLoss`"
+msgstr ""
+
+#: of torch.nn.MultiLabelSoftMarginLoss:1
+msgid ""
+"Creates a criterion that optimizes a multi-label one-versus-all loss "
+"based on max-entropy, between input `x`  (a 2D mini-batch `Tensor`) and "
+"target `y` (a binary 2D `Tensor`). For each sample in the minibatch::"
+msgstr ""
+
+#: of torch.nn.MultiLabelSoftMarginLoss:8
+msgid ""
+"where `i == 0` to `x.nElement()-1`, `y[i]  in {0,1}`. `y` and `x` must "
+"have the same size."
+msgstr ""
+
+#: ../../source/nn.rst:588
+msgid ":hidden:`CosineEmbeddingLoss`"
+msgstr ""
+
+#: of torch.nn.CosineEmbeddingLoss:1
+msgid ""
+"Creates a criterion that measures the loss given  an input tensors x1, x2"
+" and a `Tensor` label `y` with values 1 or -1. This is used for measuring"
+" whether two inputs are similar or dissimilar, using the cosine distance,"
+" and is typically used for learning nonlinear embeddings or semi-"
+"supervised learning."
+msgstr ""
+
+#: of torch.nn.CosineEmbeddingLoss:7
+msgid ""
+"`margin` should be a number from `-1` to `1`, `0` to `0.5` is suggested. "
+"If `margin` is missing, the default value is `0`."
+msgstr ""
+
+#: of torch.nn.CosineEmbeddingLoss:10
+msgid "The loss function for each sample is::"
+msgstr ""
+
+#: of torch.nn.CosineEmbeddingLoss:16
+msgid ""
+"If the internal variable `size_average` is equal to ``True``, the loss "
+"function averages the loss over the batch samples; if `size_average` is "
+"``False``, then the loss function sums over the batch samples. By "
+"default, `size_average = True`."
+msgstr ""
+
+#: ../../source/nn.rst:594
+msgid ":hidden:`MultiMarginLoss`"
+msgstr ""
+
+#: of torch.nn.MultiMarginLoss:1
+msgid ""
+"Creates a criterion that optimizes a multi-class classification hinge "
+"loss (margin-based loss) between input `x` (a 2D mini-batch `Tensor`) and"
+" output `y` (which is a 1D tensor of target class indices, `0` <= `y` <= "
+"`x.size(1)`):"
+msgstr ""
+
+#: of torch.nn.MultiMarginLoss:6
+msgid "For each mini-batch sample::"
+msgstr ""
+
+#: of torch.nn.MultiMarginLoss:11
+msgid ""
+"Optionally, you can give non-equal weighting on the classes by passing a "
+"1D `weight` tensor into the constructor."
+msgstr ""
+
+#: of torch.nn.MultiMarginLoss:14
+msgid "The loss function then becomes:"
+msgstr ""
+
+#: of torch.nn.MultiMarginLoss:16
+msgid "loss(x, y) = sum_i(max(0, w[y] * (margin - x[y] - x[i]))^p) / x.size(0)"
+msgstr ""
+
+#: of torch.nn.MultiMarginLoss:18
+msgid ""
+"By default, the losses are averaged over observations for each minibatch."
+" However, if the field `size_average` is set to ``False``, the losses are"
+" instead summed."
+msgstr ""
+
+#: ../../source/nn.rst:600
+msgid ":hidden:`TripletMarginLoss`"
+msgstr ""
+
+#: of torch.nn.TripletMarginLoss:1 torch.nn.functional.triplet_margin_loss:1
+msgid ""
+"Creates a criterion that measures the triplet loss given an input tensors"
+" x1, x2, x3 and a margin with a value greater than 0. This is used for "
+"measuring a relative similarity between samples. A triplet is composed by"
+" `a`, `p` and `n`: anchor, positive examples and negative example "
+"respectively. The shape of all input variables should be :math:`(N, D)`."
+msgstr ""
+
+#: of torch.nn.TripletMarginLoss:8 torch.nn.functional.triplet_margin_loss:8
+msgid ""
+"The distance swap is described in detail in the paper `Learning shallow "
+"convolutional feature descriptors with triplet losses`_ by V. Balntas, E."
+" Riba et al."
+msgstr ""
+
+#: of torch.nn.TripletMarginLoss:15 torch.nn.functional.triplet_margin_loss:15
+msgid ""
+"where :math:`d(x_i, y_i) = \\left\\lVert {\\bf x}_i - {\\bf y}_i "
+"\\right\\rVert_p`."
+msgstr ""
+
+#: of torch.nn.TripletMarginLoss:17 torch.nn.functional.triplet_margin_loss:17
+msgid "anchor input tensor"
+msgstr ""
+
+#: of torch.nn.TripletMarginLoss:18 torch.nn.functional.triplet_margin_loss:18
+msgid "positive input tensor"
+msgstr ""
+
+#: of torch.nn.TripletMarginLoss:19 torch.nn.functional.triplet_margin_loss:19
+msgid "negative input tensor"
+msgstr ""
+
+#: of torch.nn.TripletMarginLoss:23 torch.nn.functional.pairwise_distance:13
+#: torch.nn.functional.triplet_margin_loss:26
+msgid "Input: :math:`(N, D)` where `D = vector dimension`"
+msgstr ""
+
+#: ../../source/nn.rst:607
+msgid "Vision layers"
+msgstr ""
+
+#: ../../source/nn.rst:610
+msgid ":hidden:`PixelShuffle`"
+msgstr ""
+
+#: of torch.nn.PixelShuffle:1
+msgid ""
+"Rearranges elements in a Tensor of shape :math:`(*, C * r^2, H, W]` to a "
+"tensor of shape :math:`(C, H * r, W * r)`."
+msgstr ""
+
+#: of torch.nn.PixelShuffle:4
+msgid ""
+"This is useful for implementing efficient sub-pixel convolution with a "
+"stride of :math:`1/r`."
+msgstr ""
+
+#: of torch.nn.PixelShuffle:7
+msgid ""
+"Look at the paper: `Real-Time Single Image and Video Super-Resolution "
+"Using an Efficient Sub-Pixel Convolutional Neural Network`_ by Shi et. al"
+" (2016) for more details"
+msgstr ""
+
+#: of torch.nn.PixelShuffle:11 torch.nn.functional.pixel_shuffle:8
+msgid "factor to increase spatial resolution by"
+msgstr ""
+
+#: of torch.nn.PixelShuffle:15
+msgid "Input: :math:`(N, C * {upscale\\_factor}^2, H, W)`"
+msgstr ""
+
+#: of torch.nn.PixelShuffle:16
+msgid "Output: :math:`(N, C, H * {upscale\\_factor}, W * {upscale\\_factor})`"
+msgstr ""
+
+#: ../../source/nn.rst:616
+msgid ":hidden:`Upsample`"
+msgstr ""
+
+#: of torch.nn.Upsample:1
+msgid ""
+"Upsamples a given multi-channel 1D (temporal), 2D (spatial) or 3D "
+"(volumetric) data."
+msgstr ""
+
+#: of torch.nn.Upsample:3
+msgid ""
+"The input data is assumed to be of the form `minibatch x channels x "
+"[depth] x [height] x width`. Hence, for spatial inputs, we expect a 4D "
+"Tensor and for volumetric inputs, we expect a 5D Tensor."
+msgstr ""
+
+#: of torch.nn.Upsample:6
+msgid ""
+"The algorithms available for upsampling are nearest neighbor and linear, "
+"bilinear and trilinear for 3D, 4D and 5D input Tensor, respectively."
+msgstr ""
+
+#: of torch.nn.Upsample:9
+msgid ""
+"One can either give a :attr:`scale_factor` or the target output "
+":attr:`size` to calculate the output size. (You cannot give both, as it "
+"is ambiguous)"
+msgstr ""
+
+#: of torch.nn.Upsample:12
+msgid "a tuple of ints ([D_out], [H_out], W_out) output sizes"
+msgstr ""
+
+#: of torch.nn.Upsample:14
+msgid "the multiplier for the image height / width / depth"
+msgstr ""
+
+#: of torch.nn.Upsample:16
+msgid ""
+"the upsampling algorithm: nearest | linear | bilinear | trilinear. "
+"Default: nearest"
+msgstr ""
+
+#: of torch.nn.Upsample:20
+msgid ""
+"Input: :math:`(N, C, W_{in})`, :math:`(N, C, H_{in}, W_{in})` or "
+":math:`(N, C, D_{in}, H_{in}, W_{in})`"
+msgstr ""
+
+#: of torch.nn.Upsample:21
+msgid ""
+"Output: :math:`(N, C, W_{out})`, :math:`(N, C, H_{out}, W_{out})` or "
+":math:`(N, C, D_{out}, H_{out}, W_{out})` where :math:`D_{out} = "
+"floor(D_{in} * scale\\_factor)` or `size[-3]` :math:`H_{out} = "
+"floor(H_{in} * scale\\_factor)` or `size[-2]` :math:`W_{out} = "
+"floor(W_{in}  * scale\\_factor)` or `size[-1]`"
+msgstr ""
+
+#: ../../source/nn.rst:622
+msgid ":hidden:`UpsamplingNearest2d`"
+msgstr ""
+
+#: of torch.nn.UpsamplingNearest2d:1
+msgid ""
+"Applies a 2D nearest neighbor upsampling to an input signal composed of "
+"several input channels."
+msgstr ""
+
+#: of torch.nn.UpsamplingBilinear2d:4 torch.nn.UpsamplingNearest2d:4
+msgid ""
+"To specify the scale, it takes either the :attr:`size` or the "
+":attr:`scale_factor` as it's constructor argument."
+msgstr ""
+
+#: of torch.nn.UpsamplingBilinear2d:7 torch.nn.UpsamplingNearest2d:7
+msgid "When `size` is given, it is the output size of the image (h, w)."
+msgstr ""
+
+#: of torch.nn.UpsamplingBilinear2d:9 torch.nn.UpsamplingNearest2d:9
+msgid "a tuple of ints (H_out, W_out) output sizes"
+msgstr ""
+
+#: of torch.nn.UpsamplingBilinear2d:11 torch.nn.UpsamplingNearest2d:11
+msgid "the multiplier for the image height / width"
+msgstr ""
+
+#: of torch.nn.UpsamplingBilinear2d:16 torch.nn.UpsamplingNearest2d:16
+msgid ""
+"Output: :math:`(N, C, H_{out}, W_{out})` where :math:`H_{out} = "
+"floor(H_{in} * scale\\_factor)` :math:`W_{out} = floor(W_{in}  * "
+"scale\\_factor)`"
+msgstr ""
+
+#: ../../source/nn.rst:628
+msgid ":hidden:`UpsamplingBilinear2d`"
+msgstr ""
+
+#: of torch.nn.UpsamplingBilinear2d:1
+msgid ""
+"Applies a 2D bilinear upsampling to an input signal composed of several "
+"input channels."
+msgstr ""
+
+#: ../../source/nn.rst:635
+msgid "DataParallel layers (multi-GPU, distributed)"
+msgstr ""
+
+#: ../../source/nn.rst:638
+msgid ":hidden:`DataParallel`"
+msgstr ""
+
+#: of torch.nn.DataParallel:1
+msgid "Implements data parallelism at the module level."
+msgstr ""
+
+#: of torch.nn.DataParallel:3
+msgid ""
+"This container parallelizes the application of the given module by "
+"splitting the input across the specified devices by chunking in the batch"
+" dimension. In the forward pass, the module is replicated on each device,"
+" and each replica handles a portion of the input. During the backwards "
+"pass, gradients from each replica are summed into the original module."
+msgstr ""
+
+#: of torch.nn.DataParallel:9
+msgid ""
+"The batch size should be larger than the number of GPUs used. It should "
+"also be an integer multiple of the number of GPUs so that each chunk is "
+"the same size (so that each GPU processes the same number of samples)."
+msgstr ""
+
+#: of torch.nn.DataParallel:13
+msgid "See also: :ref:`cuda-nn-dataparallel-instead`"
+msgstr ""
+
+#: of torch.nn.DataParallel:15
+msgid ""
+"Arbitrary positional and keyword inputs are allowed to be passed into "
+"DataParallel EXCEPT Tensors. All variables will be scattered on dim "
+"specified (default 0). Primitive types will be broadcasted, but all other"
+" types will be a shallow copy and can be corrupted if written to in the "
+"model's forward pass."
+msgstr ""
+
+#: of torch.nn.DataParallel:21 torch.nn.parallel.DistributedDataParallel:49
+msgid "module to be parallelized"
+msgstr ""
+
+#: of torch.nn.DataParallel:22 torch.nn.parallel.DistributedDataParallel:50
+msgid "CUDA devices (default: all devices)"
+msgstr ""
+
+#: of torch.nn.DataParallel:23 torch.nn.parallel.DistributedDataParallel:51
+msgid "device location of output (default: device_ids[0])"
+msgstr ""
+
+#: ../../source/nn.rst:644
+msgid ":hidden:`DistributedDataParallel`"
+msgstr ""
+
+#: of torch.nn.parallel.DistributedDataParallel:1
+msgid "Implements distributed data parallelism at the module level."
+msgstr ""
+
+#: of torch.nn.parallel.DistributedDataParallel:3
+msgid ""
+"This container parallelizes the application of the given module by "
+"splitting the input across the specified devices by chunking in the batch"
+" dimension. The module is replicated on each machine and each device, and"
+" each such replica handles a portion of the input. During the backwards "
+"pass, gradients from each node are averaged."
+msgstr ""
+
+#: of torch.nn.parallel.DistributedDataParallel:9
+msgid ""
+"The batch size should be larger than the number of GPUs used locally. It "
+"should also be an integer multiple of the number of GPUs so that each "
+"chunk is the same size (so that each GPU processes the same number of "
+"samples)."
+msgstr ""
+
+#: of torch.nn.parallel.DistributedDataParallel:13
+msgid ""
+"See also: :ref:`distributed-basics` and :ref:`cuda-nn-dataparallel-"
+"instead`. The same constraints on input as in "
+":class:`torch.nn.DataParallel` apply."
+msgstr ""
+
+#: of torch.nn.parallel.DistributedDataParallel:16
+msgid ""
+"Creation of this class requires the distributed package to be already "
+"initialized in the process group mode (see "
+":func:`torch.distributed.init_process_group`)."
+msgstr ""
+
+#: of torch.nn.parallel.DistributedDataParallel:21
+msgid "This module works only with the ``gloo`` backend."
+msgstr ""
+
+#: of torch.nn.parallel.DistributedDataParallel:24
+msgid ""
+"Constructor, forward method, and differentiation of the output (or a "
+"function of the output of this module) is a distributed synchronization "
+"point. Take that into account in case different processes might be "
+"executing different code."
+msgstr ""
+
+#: of torch.nn.parallel.DistributedDataParallel:30
+msgid ""
+"This module assumes all parameters are registered in the model by the "
+"time it is created. No parameters should be added nor removed later. Same"
+" applies to buffers."
+msgstr ""
+
+#: of torch.nn.parallel.DistributedDataParallel:35
+msgid "This module assumes all buffers and gradients are dense."
+msgstr ""
+
+#: of torch.nn.parallel.DistributedDataParallel:38
+msgid ""
+"This module doesn't work with :func:`torch.autograd.grad` (i.e. it will "
+"only work if gradients are to be accumulated in ``.grad`` attributes of "
+"parameters)."
+msgstr ""
+
+#: of torch.nn.parallel.DistributedDataParallel:43
+msgid ""
+"Parameters are never broadcast between processes. The module performs an "
+"all-reduce step on gradients and assumes that they will be modified by "
+"the optimizer in all processes in the same way. Buffers (e.g. BatchNorm "
+"stats) are broadcast form the module in process of rank 0, to all other "
+"replicas in the system in every iteration."
+msgstr ""
+
+#: ../../source/nn.rst:651
+msgid "Utilities"
+msgstr ""
+
+#: ../../source/nn.rst:654
+msgid ":hidden:`clip_grad_norm`"
+msgstr ""
+
+#: of torch.nn.utils.clip_grad_norm:1
+msgid "Clips gradient norm of an iterable of parameters."
+msgstr ""
+
+#: of torch.nn.utils.clip_grad_norm:3
+msgid ""
+"The norm is computed over all gradients together, as if they were "
+"concatenated into a single vector. Gradients are modified in-place."
+msgstr ""
+
+#: of torch.nn.utils.clip_grad_norm:6
+msgid "an iterable of Variables that will have gradients normalized"
+msgstr ""
+
+#: of torch.nn.utils.clip_grad_norm:9
+msgid "max norm of the gradients"
+msgstr ""
+
+#: of torch.nn.utils.clip_grad_norm:11
+msgid "type of the used p-norm. Can be ``'inf'`` for infinity norm."
+msgstr ""
+
+#: of torch.nn.utils.clip_grad_norm:15
+msgid "Total norm of the parameters (viewed as a single vector)."
+msgstr ""
+
+#: ../../source/nn.rst:659
+msgid ":hidden:`weight_norm`"
+msgstr ""
+
+#: of torch.nn.utils.weight_norm:1
+msgid "Applies weight normalization to a parameter in the given module."
+msgstr ""
+
+#: of torch.nn.utils.weight_norm:6
+msgid ""
+"Weight normalization is a reparameterization that decouples the magnitude"
+" of a weight tensor from its direction. This replaces the parameter "
+"specified by `name` (e.g. \"weight\") with two parameters: one specifying"
+" the magnitude (e.g. \"weight_g\") and one specifying the direction (e.g."
+" \"weight_v\"). Weight normalization is implemented via a hook that "
+"recomputes the weight tensor from the magnitude and direction before "
+"every :meth:`~Module.forward` call."
+msgstr ""
+
+#: of torch.nn.utils.weight_norm:14
+msgid ""
+"By default, with `dim=0`, the norm is computed independently per output "
+"channel/plane. To compute a norm over the entire weight tensor, use "
+"`dim=None`."
+msgstr ""
+
+#: of torch.nn.utils.weight_norm:18
+msgid "See https://arxiv.org/abs/1602.07868"
+msgstr ""
+
+#: of torch.nn.utils.remove_weight_norm:3 torch.nn.utils.weight_norm:20
+msgid "containing module"
+msgstr ""
+
+#: of torch.nn.utils.remove_weight_norm:5 torch.nn.utils.weight_norm:22
+msgid "name of weight parameter"
+msgstr ""
+
+#: of torch.nn.utils.weight_norm:24
+msgid "dimension over which to compute the norm"
+msgstr ""
+
+#: of torch.nn.utils.weight_norm:27
+msgid "The original module with the weight norm hook"
+msgstr ""
+
+#: ../../source/nn.rst:664
+msgid ":hidden:`remove_weight_norm`"
+msgstr ""
+
+#: of torch.nn.utils.remove_weight_norm:1
+msgid "Removes the weight normalization reparameterization from a module."
+msgstr ""
+
+#: ../../source/nn.rst:672
+msgid ":hidden:`PackedSequence`"
+msgstr ""
+
+#: of torch.nn.utils.rnn.PackedSequence:1
+msgid "Holds the data and list of batch_sizes of a packed sequence."
+msgstr ""
+
+#: of torch.nn.utils.rnn.PackedSequence:3
+msgid "All RNN modules accept packed sequences as inputs."
+msgstr ""
+
+#: of torch.nn.utils.rnn.PackedSequence:7
+msgid ""
+"Instances of this class should never be created manually. They are meant "
+"to be instantiated by functions like :func:`pack_padded_sequence`."
+msgstr ""
+
+#: of torch.nn.utils.rnn.PackedSequence:10
+msgid "Variable containing packed sequence"
+msgstr ""
+
+#: of torch.nn.utils.rnn.PackedSequence:12
+msgid ""
+"list of integers holding information about the batch size at each "
+"sequence step"
+msgstr ""
+
+#: ../../source/nn.rst:678
+msgid ":hidden:`pack_padded_sequence`"
+msgstr ""
+
+#: of torch.nn.utils.rnn.pack_padded_sequence:1
+msgid "Packs a Variable containing padded sequences of variable length."
+msgstr ""
+
+#: of torch.nn.utils.rnn.pack_padded_sequence:3
+msgid ""
+"Input can be of size ``TxBx*`` where T is the length of the longest "
+"sequence (equal to ``lengths[0]``), B is the batch size, and * is any "
+"number of dimensions (including 0). If ``batch_first`` is True ``BxTx*`` "
+"inputs are expected."
+msgstr ""
+
+#: of torch.nn.utils.rnn.pack_padded_sequence:8
+msgid ""
+"The sequences should be sorted by length in a decreasing order, i.e. "
+"``input[:,0]`` should be the longest sequence, and ``input[:,B-1]`` the "
+"shortest one."
+msgstr ""
+
+#: of torch.nn.utils.rnn.pack_padded_sequence:14
+msgid ""
+"This function accept any input that has at least two dimensions. You can "
+"apply it to pack the labels, and use the output of the RNN with them to "
+"compute the loss directly. A Variable can be retrieved from a "
+":class:`PackedSequence` object by accessing its ``.data`` attribute."
+msgstr ""
+
+#: of torch.nn.utils.rnn.pack_padded_sequence:19
+msgid "padded batch of variable length sequences."
+msgstr ""
+
+#: of torch.nn.utils.rnn.pack_padded_sequence:21
+msgid "list of sequences lengths of each batch element."
+msgstr ""
+
+#: of torch.nn.utils.rnn.pack_padded_sequence:23
+msgid "if ``True``, the input is expected in BxTx* format."
+msgstr ""
+
+#: of torch.nn.utils.rnn.pack_padded_sequence:27
+msgid "a :class:`PackedSequence` object"
+msgstr ""
+
+#: ../../source/nn.rst:684
+msgid ":hidden:`pad_packed_sequence`"
+msgstr ""
+
+#: of torch.nn.utils.rnn.pad_packed_sequence:1
+msgid "Pads a packed batch of variable length sequences."
+msgstr ""
+
+#: of torch.nn.utils.rnn.pad_packed_sequence:3
+msgid "It is an inverse operation to :func:`pack_padded_sequence`."
+msgstr ""
+
+#: of torch.nn.utils.rnn.pad_packed_sequence:5
+msgid ""
+"The returned Variable's data will be of size TxBx*, where T is the length"
+" of the longest sequence and B is the batch size. If ``batch_first`` is "
+"True, the data will be transposed into BxTx* format."
+msgstr ""
+
+#: of torch.nn.utils.rnn.pad_packed_sequence:9
+msgid "Batch elements will be ordered decreasingly by their length."
+msgstr ""
+
+#: of torch.nn.utils.rnn.pad_packed_sequence:11
+msgid "batch to pad"
+msgstr ""
+
+#: of torch.nn.utils.rnn.pad_packed_sequence:13
+msgid "if ``True``, the output will be in BxTx* format."
+msgstr ""
+
+#: of torch.nn.utils.rnn.pad_packed_sequence:16
+msgid "values for padded elements"
+msgstr ""
+
+#: of torch.nn.utils.rnn.pad_packed_sequence:19
+msgid ""
+"Tuple of Variable containing the padded sequence, and a list of lengths "
+"of each sequence in the batch."
+msgstr ""
+
+#: ../../source/nn.rst:690
+msgid "torch.nn.functional"
+msgstr ""
+
+#: ../../source/nn.rst:695
+msgid "Convolution functions"
+msgstr ""
+
+#: ../../source/nn.rst:698
+msgid ":hidden:`conv1d`"
+msgstr ""
+
+#: of torch.nn.functional.conv1d:4
+msgid "See :class:`~torch.nn.Conv1d` for details and output shape."
+msgstr ""
+
+#: of torch.nn.functional.conv1d:6 torch.nn.functional.conv_transpose1d:6
+msgid "input tensor of shape (minibatch x in_channels x iW)"
+msgstr ""
+
+#: of torch.nn.functional.conv1d:7
+msgid "filters of shape (out_channels x in_channels x kW)"
+msgstr ""
+
+#: of torch.nn.functional.conv1d:8 torch.nn.functional.conv_transpose1d:8
+#: torch.nn.functional.conv_transpose2d:8
+#: torch.nn.functional.conv_transpose3d:8
+msgid "optional bias of shape (out_channels). Default: None"
+msgstr ""
+
+#: of torch.nn.functional.conv1d:9 torch.nn.functional.conv_transpose1d:9
+msgid ""
+"the stride of the convolving kernel. Can be a single number or a tuple "
+"(sW,). Default: 1"
+msgstr ""
+
+#: of torch.nn.functional.avg_pool1d:11 torch.nn.functional.conv1d:11
+#: torch.nn.functional.conv_transpose1d:11
+msgid ""
+"implicit zero paddings on both sides of the input. Can be a single number"
+" or a tuple (padW,). Default: 0"
+msgstr ""
+
+#: of torch.nn.functional.conv1d:13 torch.nn.functional.conv_transpose1d:18
+msgid ""
+"the spacing between kernel elements. Can be a single number or a tuple "
+"(dW,). Default: 1"
+msgstr ""
+
+#: of torch.nn.functional.conv1d:15 torch.nn.functional.conv2d:15
+#: torch.nn.functional.conv3d:15 torch.nn.functional.conv_transpose1d:16
+#: torch.nn.functional.conv_transpose2d:16
+#: torch.nn.functional.conv_transpose3d:16
+msgid ""
+"split input into groups, in_channels should be divisible by the number of"
+" groups. Default: 1"
+msgstr ""
+
+#: ../../source/nn.rst:703
+msgid ":hidden:`conv2d`"
+msgstr ""
+
+#: of torch.nn.functional.conv2d:1
+msgid ""
+"Applies a 2D convolution over an input image composed of several input "
+"planes."
+msgstr ""
+
+#: of torch.nn.functional.conv2d:4
+msgid "See :class:`~torch.nn.Conv2d` for details and output shape."
+msgstr ""
+
+#: ../../docstring of torch.nn.functional.avg_pool2d:7
+#: torch.nn.functional.conv2d:6
+msgid "input tensor (minibatch x in_channels x iH x iW)"
+msgstr ""
+
+#: of torch.nn.functional.conv2d:7
+msgid "filters tensor (out_channels x in_channels/groups x kH x kW)"
+msgstr ""
+
+#: of torch.nn.functional.conv2d:8
+msgid "optional bias tensor (out_channels). Default: None"
+msgstr ""
+
+#: of torch.nn.functional.conv2d:9 torch.nn.functional.conv_transpose2d:9
+msgid ""
+"the stride of the convolving kernel. Can be a single number or a tuple "
+"(sH, sW). Default: 1"
+msgstr ""
+
+#: ../../docstring of torch.nn.functional.avg_pool2d:12
+#: torch.nn.functional.conv2d:11 torch.nn.functional.conv_transpose2d:11
+msgid ""
+"implicit zero paddings on both sides of the input. Can be a single number"
+" or a tuple (padH, padW). Default: 0"
+msgstr ""
+
+#: of torch.nn.functional.conv2d:13 torch.nn.functional.conv_transpose2d:18
+msgid ""
+"the spacing between kernel elements. Can be a single number or a tuple "
+"(dH, dW). Default: 1"
+msgstr ""
+
+#: ../../source/nn.rst:708
+msgid ":hidden:`conv3d`"
+msgstr ""
+
+#: of torch.nn.functional.conv3d:1
+msgid ""
+"Applies a 3D convolution over an input image composed of several input "
+"planes."
+msgstr ""
+
+#: of torch.nn.functional.conv3d:4
+msgid "See :class:`~torch.nn.Conv3d` for details and output shape."
+msgstr ""
+
+#: of torch.nn.functional.conv3d:6 torch.nn.functional.conv_transpose3d:6
+msgid "input tensor of shape (minibatch x in_channels x iT x iH x iW)"
+msgstr ""
+
+#: of torch.nn.functional.conv3d:7
+msgid "filters tensor of shape (out_channels x in_channels x kT x kH x kW)"
+msgstr ""
+
+#: of torch.nn.functional.conv3d:8
+msgid "optional bias tensor of shape (out_channels). Default: None"
+msgstr ""
+
+#: of torch.nn.functional.conv3d:9 torch.nn.functional.conv_transpose3d:9
+msgid ""
+"the stride of the convolving kernel. Can be a single number or a tuple "
+"(sT, sH, sW). Default: 1"
+msgstr ""
+
+#: of torch.nn.functional.conv3d:11 torch.nn.functional.conv_transpose3d:11
+msgid ""
+"implicit zero paddings on both sides of the input. Can be a single number"
+" or a tuple (padT, padH, padW). Default: 0"
+msgstr ""
+
+#: of torch.nn.functional.conv3d:13 torch.nn.functional.conv_transpose3d:18
+msgid ""
+"the spacing between kernel elements. Can be a single number or a tuple "
+"(dT, dH, dW). Default: 1"
+msgstr ""
+
+#: ../../source/nn.rst:713
+msgid ":hidden:`conv_transpose1d`"
+msgstr ""
+
+#: of torch.nn.functional.conv_transpose1d:1
+msgid ""
+"Applies a 1D transposed convolution operator over an input signal "
+"composed of several input planes, sometimes also called "
+"\"deconvolution\"."
+msgstr ""
+
+#: of torch.nn.functional.conv_transpose1d:4
+msgid "See :class:`~torch.nn.ConvTranspose1d` for details and output shape."
+msgstr ""
+
+#: of torch.nn.functional.conv_transpose1d:7
+msgid "filters of shape (in_channels x out_channels x kW)"
+msgstr ""
+
+#: of torch.nn.functional.conv_transpose1d:13
+msgid ""
+"implicit zero-paddings of 0 <= padding < stride on both sides of the "
+"output. Can be a single number or a tuple (out_padW,). Default: 0"
+msgstr ""
+
+#: ../../source/nn.rst:718
+msgid ":hidden:`conv_transpose2d`"
+msgstr ""
+
+#: of torch.nn.functional.conv_transpose2d:1
+msgid ""
+"Applies a 2D transposed convolution operator over an input image composed"
+" of several input planes, sometimes also called \"deconvolution\"."
+msgstr ""
+
+#: of torch.nn.functional.conv_transpose2d:4
+msgid "See :class:`~torch.nn.ConvTranspose2d` for details and output shape."
+msgstr ""
+
+#: of torch.nn.functional.conv_transpose2d:6
+msgid "input tensor of shape (minibatch x in_channels x iH x iW)"
+msgstr ""
+
+#: of torch.nn.functional.conv_transpose2d:7
+#: torch.nn.functional.conv_transpose3d:7
+msgid "filters of shape (in_channels x out_channels x kH x kW)"
+msgstr ""
+
+#: of torch.nn.functional.conv_transpose2d:13
+msgid ""
+"implicit zero-paddings of 0 <= padding < stride on both sides of the "
+"output. Can be a single number or a tuple (out_padH, out_padW). Default: "
+"0"
+msgstr ""
+
+#: ../../source/nn.rst:723
+msgid ":hidden:`conv_transpose3d`"
+msgstr ""
+
+#: of torch.nn.functional.conv_transpose3d:1
+msgid ""
+"Applies a 3D transposed convolution operator over an input image composed"
+" of several input planes, sometimes also called \"deconvolution\""
+msgstr ""
+
+#: of torch.nn.functional.conv_transpose3d:4
+msgid "See :class:`~torch.nn.ConvTranspose3d` for details and output shape."
+msgstr ""
+
+#: of torch.nn.functional.conv_transpose3d:13
+msgid ""
+"implicit zero-paddings of 0 <= padding < stride on both sides of the "
+"output. Can be a single number or a tuple (out_padT, out_padH, out_padW)."
+" Default: 0"
+msgstr ""
+
+#: ../../source/nn.rst:728
+msgid "Pooling functions"
+msgstr ""
+
+#: ../../source/nn.rst:731
+msgid ":hidden:`avg_pool1d`"
+msgstr ""
+
+#: of torch.nn.functional.avg_pool1d:4
+msgid "See :class:`~torch.nn.AvgPool1d` for details and output shape."
+msgstr ""
+
+#: of torch.nn.functional.avg_pool1d:6
+msgid "input tensor (minibatch x in_channels x iW)"
+msgstr ""
+
+#: of torch.nn.functional.avg_pool1d:7
+msgid "the size of the window. Can be a single number or a tuple (kW,)"
+msgstr ""
+
+#: of torch.nn.functional.avg_pool1d:9
+msgid ""
+"the stride of the window. Can be a single number or a tuple (sW,). "
+"Default: :attr:`kernel_size`"
+msgstr ""
+
+#: of torch.nn.functional.avg_pool1d:13
+msgid ""
+"when True, will use `ceil` instead of `floor` to compute the output "
+"shape. Default: ``False``"
+msgstr ""
+
+#: of torch.nn.functional.avg_pool1d:15
+msgid ""
+"when True, will include the zero-padding in the averaging calculation. "
+"Default: ``True``"
+msgstr ""
+
+#: ../../source/nn.rst:736
+msgid ":hidden:`avg_pool2d`"
+msgstr ""
+
+#: ../../docstring of torch.nn.functional.avg_pool2d:1
+msgid ""
+"Applies 2D average-pooling operation in kh x kw regions by step size dh x"
+" dw steps. The number of output features is equal to the number of input "
+"planes."
+msgstr ""
+
+#: ../../docstring of torch.nn.functional.avg_pool2d:5
+msgid "See :class:`~torch.nn.AvgPool2d` for details and output shape."
+msgstr ""
+
+#: ../../docstring of torch.nn.functional.avg_pool2d:8
+msgid "size of the pooling region. Can be a single number or a tuple (kH x kW)"
+msgstr ""
+
+#: ../../docstring of torch.nn.functional.avg_pool2d:10
+msgid ""
+"stride of the pooling operation. Can be a single number or a tuple (sH, "
+"sW). Default is equal to kernel size"
+msgstr ""
+
+#: ../../docstring of torch.nn.functional.avg_pool2d:14
+msgid ""
+"when True, will use `ceil` instead of `floor` in the formula to compute "
+"the output shape. Default: ``False``"
+msgstr ""
+
+#: ../../docstring of torch.nn.functional.avg_pool2d:16
+msgid ""
+"when True, will include the zero-padding in th averaging calculation. "
+"Default: ``True``"
+msgstr ""
+
+#: ../../source/nn.rst:741
+msgid ":hidden:`avg_pool3d`"
+msgstr ""
+
+#: ../../docstring of torch.nn.functional.avg_pool3d:1
+msgid ""
+"Applies 3D average-pooling operation in kt x kh x kw regions by step size"
+" dt x dh x dw steps. The number of output features is equal to the number"
+" of input planes / dt."
+msgstr ""
+
+#: ../../docstring of torch.nn.functional.avg_pool3d:5
+msgid "See :class:`~torch.nn.AvgPool3d` for details and output shape."
+msgstr ""
+
+#: ../../docstring of torch.nn.functional.avg_pool3d:7
+msgid "input tensor (minibatch x in_channels x iT x iH x iW)"
+msgstr ""
+
+#: ../../docstring of torch.nn.functional.avg_pool3d:8
+msgid ""
+"size of the pooling region. Can be a single number or a tuple (kT x kH x "
+"kW)"
+msgstr ""
+
+#: ../../docstring of torch.nn.functional.avg_pool3d:10
+msgid ""
+"stride of the pooling operation. Can be a single number or a tuple (sT, "
+"sH, sW). Default is equal to kernel size"
+msgstr ""
+
+#: ../../docstring of torch.nn.functional.avg_pool3d:12
+msgid ""
+"implicit zero paddings on both sides of the input. Can be a single number"
+" or a tuple (padT, padH, padW), Default: 0"
+msgstr ""
+
+#: ../../docstring of torch.nn.functional.avg_pool3d:14
+msgid ""
+"when True, will use `ceil` instead of `floor` in the formula to compute "
+"the output shape"
+msgstr ""
+
+#: ../../docstring of torch.nn.functional.avg_pool3d:16
+msgid "when True, will include the zero-padding in th averaging calculation"
+msgstr ""
+
+#: ../../source/nn.rst:746
+msgid ":hidden:`max_pool1d`"
+msgstr ""
+
+#: of torch.nn.functional.max_pool1d:4
+msgid "See :class:`~torch.nn.MaxPool1d` for details."
+msgstr ""
+
+#: ../../source/nn.rst:751
+msgid ":hidden:`max_pool2d`"
+msgstr ""
+
+#: of torch.nn.functional.max_pool2d:4 torch.nn.functional.max_pool3d:4
+msgid "See :class:`~torch.nn.MaxPool2d` for details."
+msgstr ""
+
+#: ../../source/nn.rst:756
+msgid ":hidden:`max_pool3d`"
+msgstr ""
+
+#: ../../source/nn.rst:761
+msgid ":hidden:`max_unpool1d`"
+msgstr ""
+
+#: of torch.nn.functional.max_unpool1d:3
+msgid "See :class:`~torch.nn.MaxUnpool1d` for details."
+msgstr ""
+
+#: ../../source/nn.rst:766
+msgid ":hidden:`max_unpool2d`"
+msgstr ""
+
+#: of torch.nn.functional.max_unpool2d:3
+msgid "See :class:`~torch.nn.MaxUnpool2d` for details."
+msgstr ""
+
+#: ../../source/nn.rst:771
+msgid ":hidden:`max_unpool3d`"
+msgstr ""
+
+#: of torch.nn.functional.max_unpool3d:3
+msgid "See :class:`~torch.nn.MaxUnpool3d` for details."
+msgstr ""
+
+#: ../../source/nn.rst:776
+msgid ":hidden:`lp_pool2d`"
+msgstr ""
+
+#: of torch.nn.functional.lp_pool2d:4
+msgid "See :class:`~torch.nn.LPPool2d` for details."
+msgstr ""
+
+#: ../../source/nn.rst:781
+msgid ":hidden:`adaptive_max_pool1d`"
+msgstr ""
+
+#: of torch.nn.functional.adaptive_max_pool1d:4
+msgid "See :class:`~torch.nn.AdaptiveMaxPool1d` for details and output shape."
+msgstr ""
+
+#: of torch.nn.functional.adaptive_avg_pool1d:6
+#: torch.nn.functional.adaptive_max_pool1d:6
+msgid "the target output size (single integer)"
+msgstr ""
+
+#: of torch.nn.functional.adaptive_max_pool1d:7
+#: torch.nn.functional.adaptive_max_pool2d:8
+#: torch.nn.functional.adaptive_max_pool3d:8
+msgid "whether to return pooling indices. Default: ``False``"
+msgstr ""
+
+#: ../../source/nn.rst:786
+msgid ":hidden:`adaptive_max_pool2d`"
+msgstr ""
+
+#: of torch.nn.functional.adaptive_max_pool2d:4
+msgid "See :class:`~torch.nn.AdaptiveMaxPool2d` for details and output shape."
+msgstr ""
+
+#: of torch.nn.functional.adaptive_avg_pool2d:6
+#: torch.nn.functional.adaptive_max_pool2d:6
+msgid "the target output size (single integer or double-integer tuple)"
+msgstr ""
+
+#: ../../source/nn.rst:791
+msgid ":hidden:`adaptive_max_pool3d`"
+msgstr ""
+
+#: of torch.nn.functional.adaptive_max_pool3d:4
+msgid "See :class:`~torch.nn.AdaptiveMaxPool3d` for details and output shape."
+msgstr ""
+
+#: of torch.nn.functional.adaptive_avg_pool3d:6
+#: torch.nn.functional.adaptive_max_pool3d:6
+msgid "the target output size (single integer or triple-integer tuple)"
+msgstr ""
+
+#: ../../source/nn.rst:796
+msgid ":hidden:`adaptive_avg_pool1d`"
+msgstr ""
+
+#: of torch.nn.functional.adaptive_avg_pool1d:4
+msgid "See :class:`~torch.nn.AdaptiveAvgPool1d` for details and output shape."
+msgstr ""
+
+#: ../../source/nn.rst:801
+msgid ":hidden:`adaptive_avg_pool2d`"
+msgstr ""
+
+#: of torch.nn.functional.adaptive_avg_pool2d:4
+msgid "See :class:`~torch.nn.AdaptiveAvgPool2d` for details and output shape."
+msgstr ""
+
+#: ../../source/nn.rst:806
+msgid ":hidden:`adaptive_avg_pool3d`"
+msgstr ""
+
+#: of torch.nn.functional.adaptive_avg_pool3d:4
+msgid "See :class:`~torch.nn.AdaptiveAvgPool3d` for details and output shape."
+msgstr ""
+
+#: ../../source/nn.rst:812
+msgid "Non-linear activation functions"
+msgstr ""
+
+#: ../../source/nn.rst:815
+msgid ":hidden:`threshold`"
+msgstr ""
+
+#: ../../docstring of torch.nn.functional.threshold:1
+msgid "Thresholds each element of the input Tensor."
+msgstr ""
+
+#: ../../docstring of torch.nn.functional.threshold:3
+msgid "See :class:`~torch.nn.Threshold` for more details."
+msgstr ""
+
+#: ../../source/nn.rst:821
+msgid ":hidden:`relu`"
+msgstr ""
+
+#: of torch.nn.functional.relu:1
+msgid ""
+"Applies the rectified linear unit function element-wise. See "
+":class:`~torch.nn.ReLU` for more details."
+msgstr ""
+
+#: ../../source/nn.rst:826
+msgid ":hidden:`hardtanh`"
+msgstr ""
+
+#: ../../docstring of torch.nn.functional.hardtanh:1
+msgid ""
+"Applies the HardTanh function element-wise. See "
+":class:`~torch.nn.Hardtanh` for more details."
+msgstr ""
+
+#: ../../source/nn.rst:831
+msgid ":hidden:`relu6`"
+msgstr ""
+
+#: of torch.nn.functional.relu6:1
+msgid "Applies the element-wise function :math:`{ReLU6}(x) = min(max(0,x), 6)`."
+msgstr ""
+
+#: of torch.nn.functional.relu6:3
+msgid "See :class:`~torch.nn.ReLU6` for more details."
+msgstr ""
+
+#: ../../source/nn.rst:836
+msgid ":hidden:`elu`"
+msgstr ""
+
+#: ../../docstring of torch.nn.functional.elu:1
+msgid ""
+"Applies element-wise, :math:`f(x) = max(0,x) + min(0, alpha * (exp(x) - "
+"1))`."
+msgstr ""
+
+#: ../../docstring of torch.nn.functional.elu:4
+msgid "See :class:`~torch.nn.ELU` for more details."
+msgstr ""
+
+#: ../../source/nn.rst:841
+msgid ":hidden:`selu`"
+msgstr ""
+
+#: of torch.nn.functional.selu:6
+msgid "See :class:`~torch.nn.SELU` for more details."
+msgstr ""
+
+#: ../../source/nn.rst:846
+msgid ":hidden:`leaky_relu`"
+msgstr ""
+
+#: ../../docstring of torch.nn.functional.leaky_relu:4
+msgid "See :class:`~torch.nn.LeakyReLU` for more details."
+msgstr ""
+
+#: ../../source/nn.rst:851
+msgid ":hidden:`prelu`"
+msgstr ""
+
+#: of torch.nn.functional.prelu:1
+msgid ""
+"Applies element-wise the function :math:`PReLU(x) = max(0,x) + weight * "
+"min(0,x)` where weight is a learnable parameter."
+msgstr ""
+
+#: of torch.nn.functional.prelu:5
+msgid "See :class:`~torch.nn.PReLU` for more details."
+msgstr ""
+
+#: ../../source/nn.rst:856
+msgid ":hidden:`rrelu`"
+msgstr ""
+
+#: ../../source/nn.rst:861
+msgid ":hidden:`glu`"
+msgstr ""
+
+#: ../../docstring of torch.nn.functional.glu:1
+msgid "The gated linear unit. Computes:"
+msgstr ""
+
+#: ../../docstring of torch.nn.functional.glu:7
+msgid "where `input` is split in half along `dim` to form `A` and `B`."
+msgstr ""
+
+#: ../../docstring of torch.nn.functional.glu:9
+msgid ""
+"See `Language Modeling with Gated Convolutional Networks "
+"<https://arxiv.org/abs/1612.08083>`_."
+msgstr ""
+
+#: ../../docstring of torch.nn.functional.glu:11
+msgid "input variable"
+msgstr ""
+
+#: ../../docstring of torch.nn.functional.glu:13
+msgid "dimension on which to split the input"
+msgstr ""
+
+#: ../../source/nn.rst:866
+msgid ":hidden:`logsigmoid`"
+msgstr ""
+
+#: ../../docstring of torch.nn.functional.logsigmoid:3
+msgid "See :class:`~torch.nn.LogSigmoid` for more details."
+msgstr ""
+
+#: ../../source/nn.rst:871
+msgid ":hidden:`hardshrink`"
+msgstr ""
+
+#: ../../docstring of torch.nn.functional.hardshrink:1
+msgid "Applies the hard shrinkage function element-wise"
+msgstr ""
+
+#: ../../docstring of torch.nn.functional.hardshrink:3
+msgid "See :class:`~torch.nn.Hardshrink` for more details."
+msgstr ""
+
+#: ../../source/nn.rst:876
+msgid ":hidden:`tanhshrink`"
+msgstr ""
+
+#: of torch.nn.functional.tanhshrink:3
+msgid "See :class:`~torch.nn.Tanhshrink` for more details."
+msgstr ""
+
+#: ../../source/nn.rst:881
+msgid ":hidden:`softsign`"
+msgstr ""
+
+#: of torch.nn.functional.softsign:3
+msgid "See :class:`~torch.nn.Softsign` for more details."
+msgstr ""
+
+#: ../../source/nn.rst:886
+msgid ":hidden:`softplus`"
+msgstr ""
+
+#: ../../source/nn.rst:891
+msgid ":hidden:`softmin`"
+msgstr ""
+
+#: of torch.nn.functional.softmin:1
+msgid "Applies a softmin function."
+msgstr ""
+
+#: of torch.nn.functional.softmin:3
+msgid ""
+"Note that softmin(x) = softmax(-x). See softmax definition for "
+"mathematical formula."
+msgstr ""
+
+#: of torch.nn.functional.softmin:5
+msgid "See :class:`~torch.nn.Softmin` for more details."
+msgstr ""
+
+#: of torch.nn.functional.log_softmax:9 torch.nn.functional.softmax:12
+#: torch.nn.functional.softmin:7 torch.nn.functional.upsample:15
+#: torch.nn.functional.upsample_bilinear:8
+#: torch.nn.functional.upsample_nearest:8
+msgid "input"
+msgstr ""
+
+#: of torch.nn.functional.softmin:9
+msgid ""
+"A dimension along which softmin will be computed (so every slice along "
+"dim will sum to 1)."
+msgstr ""
+
+#: ../../source/nn.rst:896
+msgid ":hidden:`softmax`"
+msgstr ""
+
+#: of torch.nn.functional.softmax:1
+msgid "Applies a softmax function."
+msgstr ""
+
+#: of torch.nn.functional.softmax:3
+msgid "Softmax is defined as:"
+msgstr ""
+
+#: of torch.nn.functional.softmax:5
+msgid ":math:`softmax(x) = \\frac{exp(x_i)}{\\sum_j exp(x_j)}`"
+msgstr ""
+
+#: of torch.nn.functional.softmax:7
+msgid ""
+"It is applied to all slices along dim, and will rescale them so that the "
+"elements lie in the range `(0, 1)` and sum to 1."
+msgstr ""
+
+#: of torch.nn.functional.softmax:10
+msgid "See :class:`~torch.nn.Softmax` for more details."
+msgstr ""
+
+#: of torch.nn.functional.softmax:14
+msgid "A dimension along which softmax will be computed."
+msgstr ""
+
+#: of torch.nn.functional.softmax:18
+msgid ""
+"This function doesn't work directly with NLLLoss, which expects the Log "
+"to be computed between the Softmax and itself. Use log_softmax instead "
+"(it's faster and has better numerical properties)."
+msgstr ""
+
+#: ../../source/nn.rst:901
+msgid ":hidden:`softshrink`"
+msgstr ""
+
+#: of torch.nn.functional.softshrink:3
+msgid "See :class:`~torch.nn.Softshrink` for more details."
+msgstr ""
+
+#: ../../source/nn.rst:906
+msgid ":hidden:`log_softmax`"
+msgstr ""
+
+#: of torch.nn.functional.log_softmax:1
+msgid "Applies a softmax followed by a logarithm."
+msgstr ""
+
+#: of torch.nn.functional.log_softmax:3
+msgid ""
+"While mathematically equivalent to log(softmax(x)), doing these two "
+"operations separately is slower, and numerically unstable. This function "
+"uses an alternative formulation to compute the output and gradient "
+"correctly."
+msgstr ""
+
+#: of torch.nn.functional.log_softmax:7
+msgid "See :class:`~torch.nn.LogSoftmax` for more details."
+msgstr ""
+
+#: of torch.nn.functional.log_softmax:11
+msgid "A dimension along which log_softmax will be computed."
+msgstr ""
+
+#: ../../source/nn.rst:911
+msgid ":hidden:`tanh`"
+msgstr ""
+
+#: of torch.nn.functional.tanh:4
+msgid "See :class:`~torch.nn.Tanh` for more details."
+msgstr ""
+
+#: ../../source/nn.rst:916
+msgid ":hidden:`sigmoid`"
+msgstr ""
+
+#: of torch.nn.functional.sigmoid:3
+msgid "See :class:`~torch.nn.Sigmoid` for more details."
+msgstr ""
+
+#: ../../source/nn.rst:921
+msgid "Normalization functions"
+msgstr ""
+
+#: ../../source/nn.rst:924
+msgid ":hidden:`batch_norm`"
+msgstr ""
+
+#: ../../source/nn.rst:929
+msgid ":hidden:`normalize`"
+msgstr ""
+
+#: of torch.nn.functional.normalize:1
+msgid "Performs :math:`L_p` normalization of inputs over specified dimension."
+msgstr ""
+
+#: of torch.nn.functional.normalize:3
+msgid "Does:"
+msgstr ""
+
+#: of torch.nn.functional.normalize:8
+msgid ""
+"for each subtensor v over dimension dim of input. Each subtensor is "
+"flattened into a vector, i.e. :math:`\\lVert v \\rVert_p` is not a matrix"
+" norm."
+msgstr ""
+
+#: of torch.nn.functional.normalize:12
+msgid ""
+"With default arguments normalizes over the second dimension with "
+"Euclidean norm."
+msgstr ""
+
+#: of torch.nn.functional.normalize:15
+msgid "input tensor of any shape"
+msgstr ""
+
+#: of torch.nn.functional.normalize:16
+msgid "the exponent value in the norm formulation. Default: 2"
+msgstr ""
+
+#: of torch.nn.functional.normalize:18
+msgid "the dimension to reduce. Default: 1"
+msgstr ""
+
+#: of torch.nn.functional.normalize:20
+msgid "small value to avoid division by zero. Default: 1e-12"
+msgstr ""
+
+#: ../../source/nn.rst:934
+msgid "Linear functions"
+msgstr ""
+
+#: ../../source/nn.rst:937
+msgid ":hidden:`linear`"
+msgstr ""
+
+#: of torch.nn.functional.linear:1
+msgid ""
+"Applies a linear transformation to the incoming data: :math:`y = xA^T + "
+"b`."
+msgstr ""
+
+#: of torch.nn.functional.linear:6
+msgid "Weight: :math:`(out\\_features, in\\_features)`"
+msgstr ""
+
+#: of torch.nn.functional.linear:7
+msgid "Bias: :math:`(out\\_features)`"
+msgstr ""
+
+#: of torch.nn.functional.linear:8
+msgid "Output: :math:`(N, *, out\\_features)`"
+msgstr ""
+
+#: ../../source/nn.rst:942
+msgid "Dropout functions"
+msgstr ""
+
+#: ../../source/nn.rst:945
+msgid ":hidden:`dropout`"
+msgstr ""
+
+#: ../../source/nn.rst:950
+msgid ":hidden:`alpha_dropout`"
+msgstr ""
+
+#: of torch.nn.functional.alpha_dropout:1
+msgid "Applies alpha dropout to the input."
+msgstr ""
+
+#: of torch.nn.functional.alpha_dropout:3
+msgid "See :class:`~torch.nn.AlphaDropout` for details."
+msgstr ""
+
+#: of torch.nn.functional.alpha_dropout:5
+msgid "the drop probability. Default: 0.5"
+msgstr ""
+
+#: of torch.nn.functional.alpha_dropout:7
+msgid "switch between training and evaluation mode. Default: ``False``"
+msgstr ""
+
+#: ../../source/nn.rst:955
+msgid ":hidden:`dropout2d`"
+msgstr ""
+
+#: ../../source/nn.rst:960
+msgid ":hidden:`dropout3d`"
+msgstr ""
+
+#: ../../source/nn.rst:968
+msgid ":hidden:`pairwise_distance`"
+msgstr ""
+
+#: of torch.nn.functional.pairwise_distance:6
+msgid "first input tensor"
+msgstr ""
+
+#: of torch.nn.functional.pairwise_distance:7
+msgid "second input tensor"
+msgstr ""
+
+#: ../../source/nn.rst:973
+msgid ":hidden:`cosine_similarity`"
+msgstr ""
+
+#: of torch.nn.functional.cosine_similarity:6
+msgid "First input."
+msgstr ""
+
+#: of torch.nn.functional.cosine_similarity:8
+msgid "Second input (of size matching x1)."
+msgstr ""
+
+#: of torch.nn.functional.cosine_similarity:10
+msgid "Dimension of vectors. Default: 1"
+msgstr ""
+
+#: of torch.nn.functional.cosine_similarity:17
+msgid "Input: :math:`(\\ast_1, D, \\ast_2)` where D is at position `dim`."
+msgstr ""
+
+#: of torch.nn.functional.cosine_similarity:18
+msgid "Output: :math:`(\\ast_1, \\ast_2)` where 1 is at position `dim`."
+msgstr ""
+
+#: ../../source/nn.rst:982
+msgid ":hidden:`binary_cross_entropy`"
+msgstr ""
+
+#: of torch.nn.functional.binary_cross_entropy:1
+msgid ""
+"Function that measures the Binary Cross Entropy between the target and "
+"the output."
+msgstr ""
+
+#: of torch.nn.functional.binary_cross_entropy:4
+msgid "See :class:`~torch.nn.BCELoss` for details."
+msgstr ""
+
+#: ../../docstring of torch.nn.functional.binary_cross_entropy:6
+#: torch.nn.functional.binary_cross_entropy_with_logits:6
+#: torch.nn.functional.kl_div:5
+msgid "Variable of arbitrary shape"
+msgstr ""
+
+#: ../../docstring of torch.nn.functional.binary_cross_entropy:7
+#: torch.nn.functional.binary_cross_entropy_with_logits:7
+#: torch.nn.functional.kl_div:6
+msgid "Variable of the same shape as input"
+msgstr ""
+
+#: of torch.nn.functional.binary_cross_entropy:8
+#: torch.nn.functional.binary_cross_entropy_with_logits:8
+msgid ""
+"a manual rescaling weight if provided it's repeated to match input tensor"
+" shape"
+msgstr ""
+
+#: of torch.nn.functional.binary_cross_entropy:11
+#: torch.nn.functional.binary_cross_entropy_with_logits:11
+#: torch.nn.functional.poisson_nll_loss:13
+msgid ""
+"By default, the losses are averaged over observations for each minibatch."
+" However, if the field sizeAverage is set to False, the losses are "
+"instead summed for each minibatch. Default: ``True``"
+msgstr ""
+
+#: ../../source/nn.rst:987
+msgid ":hidden:`poisson_nll_loss`"
+msgstr ""
+
+#: of torch.nn.functional.poisson_nll_loss:1
+msgid "Poisson negative log likelihood loss."
+msgstr ""
+
+#: of torch.nn.functional.poisson_nll_loss:3
+msgid "See :class:`~torch.nn.PoissonNLLLoss` for details."
+msgstr ""
+
+#: of torch.nn.functional.poisson_nll_loss:5
+msgid "expectation of underlying Poisson distribution."
+msgstr ""
+
+#: of torch.nn.functional.poisson_nll_loss:6
+msgid "random sample :math:`target \\sim Pois(input)`."
+msgstr ""
+
+#: of torch.nn.functional.poisson_nll_loss:7
+msgid ""
+"if ``True`` the loss is computed as `exp(input) - target * input`, if "
+"``False`` then loss is `input - target * log(input+eps)`. Default: "
+"``True``"
+msgstr ""
+
+#: of torch.nn.functional.poisson_nll_loss:10
+msgid ""
+"whether to compute full loss, i. e. to add the Stirling approximation "
+"term. Default: ``False`` `target * log(target) - target + 0.5 * log(2 * "
+"pi * target)`."
+msgstr ""
+
+#: of torch.nn.functional.poisson_nll_loss:16
+msgid ""
+"Small value to avoid evaluation of log(0) when log_input=False. Default: "
+"1e-8"
+msgstr ""
+
+#: ../../source/nn.rst:992
+msgid ":hidden:`cosine_embedding_loss`"
+msgstr ""
+
+#: of torch.nn.functional.cosine_embedding_loss:1
+msgid "See :class:`~torch.nn.CosineEmbeddingLoss` for details."
+msgstr ""
+
+#: ../../source/nn.rst:997
+msgid ":hidden:`cross_entropy`"
+msgstr ""
+
+#: of torch.nn.functional.cross_entropy:1
+msgid "This criterion combines `log_softmax` and `nll_loss` in a single function."
+msgstr ""
+
+#: of torch.nn.functional.cross_entropy:4
+msgid "See :class:`~torch.nn.CrossEntropyLoss` for details."
+msgstr ""
+
+#: of torch.nn.functional.cross_entropy:6
+msgid "Variable :math:`(N, C)` where `C = number of classes`"
+msgstr ""
+
+#: of torch.nn.functional.cross_entropy:7
+msgid "Variable :math:`(N)` where each value is `0 <= targets[i] <= C-1`"
+msgstr ""
+
+#: of torch.nn.functional.cross_entropy:12
+msgid ""
+"By default, the losses are averaged over observations for each minibatch."
+" However, if the field sizeAverage is set to False, the losses are "
+"instead summed for each minibatch. Ignored if reduce is False. Default: "
+"``True``"
+msgstr ""
+
+#: of torch.nn.functional.cross_entropy:17 torch.nn.functional.nll_loss:15
+msgid ""
+"Specifies a target value that is ignored and does not contribute to the "
+"input gradient. When size_average is True, the loss is averaged over non-"
+"ignored targets. Default: -100"
+msgstr ""
+
+#: of torch.nn.functional.cross_entropy:21
+msgid ""
+"By default, the losses are averaged or summed over observations for each "
+"minibatch depending on size_average. When reduce is False, returns a loss"
+" per batch element instead and ignores size_average. Default: ``True``"
+msgstr ""
+
+#: ../../source/nn.rst:1002
+msgid ":hidden:`hinge_embedding_loss`"
+msgstr ""
+
+#: of torch.nn.functional.hinge_embedding_loss:1
+msgid "See :class:`~torch.nn.HingeEmbeddingLoss` for details."
+msgstr ""
+
+#: ../../source/nn.rst:1007
+msgid ":hidden:`kl_div`"
+msgstr ""
+
+#: ../../docstring of torch.nn.functional.kl_div:1
+msgid "The `Kullback-Leibler divergence`_ Loss."
+msgstr ""
+
+#: ../../docstring of torch.nn.functional.kl_div:3
+msgid "See :class:`~torch.nn.KLDivLoss` for details."
+msgstr ""
+
+#: ../../docstring of torch.nn.functional.kl_div:7
+msgid ""
+"if ``True`` the output is divided by the number of elements in input "
+"tensor. Default: ``True``"
+msgstr ""
+
+#: ../../docstring of torch.nn.functional.kl_div:9
+msgid ""
+"By default, the losses are averaged over observations for each minibatch,"
+" or summed, depending on size_average. When reduce is False, returns a "
+"loss per batch element instead and ignores size_average. Default: "
+"``True``"
+msgstr ""
+
+#: ../../source/nn.rst:1012
+msgid ":hidden:`l1_loss`"
+msgstr ""
+
+#: ../../docstring of torch.nn.functional.l1_loss:1
+msgid "Function that takes the mean element-wise absolute value difference."
+msgstr ""
+
+#: ../../docstring of torch.nn.functional.l1_loss:3
+msgid "See :class:`~torch.nn.L1Loss` for details."
+msgstr ""
+
+#: ../../source/nn.rst:1017
+msgid ":hidden:`mse_loss`"
+msgstr ""
+
+#: ../../docstring of torch.nn.functional.mse_loss:1
+msgid "Measures the element-wise mean squared error."
+msgstr ""
+
+#: ../../docstring of torch.nn.functional.mse_loss:3
+msgid "See :class:`~torch.nn.MSELoss` for details."
+msgstr ""
+
+#: ../../source/nn.rst:1022
+msgid ":hidden:`margin_ranking_loss`"
+msgstr ""
+
+#: of torch.nn.functional.margin_ranking_loss:1
+msgid "See :class:`~torch.nn.MarginRankingLoss` for details."
+msgstr ""
+
+#: ../../source/nn.rst:1027
+msgid ":hidden:`multilabel_margin_loss`"
+msgstr ""
+
+#: ../../docstring of torch.nn.functional.multilabel_margin_loss:1
+msgid "See :class:`~torch.nn.MultiLabelMarginLoss` for details."
+msgstr ""
+
+#: ../../source/nn.rst:1032
+msgid ":hidden:`multilabel_soft_margin_loss`"
+msgstr ""
+
+#: of torch.nn.functional.multilabel_soft_margin_loss:1
+msgid "See :class:`~torch.nn.MultiLabelSoftMarginLoss` for details."
+msgstr ""
+
+#: ../../source/nn.rst:1037
+msgid ":hidden:`multi_margin_loss`"
+msgstr ""
+
+#: of torch.nn.functional.multi_margin_loss:1
+msgid "See :class:`~torch.nn.MultiMarginLoss` for details."
+msgstr ""
+
+#: ../../source/nn.rst:1042
+msgid ":hidden:`nll_loss`"
+msgstr ""
+
+#: of torch.nn.functional.nll_loss:1
+msgid "The negative log likelihood loss."
+msgstr ""
+
+#: of torch.nn.functional.nll_loss:3
+msgid "See :class:`~torch.nn.NLLLoss` for details."
+msgstr ""
+
+#: of torch.nn.functional.nll_loss:5
+msgid ""
+":math:`(N, C)` where `C = number of classes` or `(N, C, H, W)` in case of"
+" 2D - Loss"
+msgstr ""
+
+#: of torch.nn.functional.nll_loss:7
+msgid ":math:`(N)` where each value is `0 <= targets[i] <= C-1`"
+msgstr ""
+
+#: of torch.nn.functional.nll_loss:11
+msgid ""
+"By default, the losses are averaged over observations for each minibatch."
+" If size_average is False, the losses are summed for each minibatch. "
+"Default: ``True``"
+msgstr ""
+
+#: ../../source/nn.rst:1047
+msgid ":hidden:`binary_cross_entropy_with_logits`"
+msgstr ""
+
+#: of torch.nn.functional.binary_cross_entropy_with_logits:1
+msgid ""
+"Function that measures Binary Cross Entropy between target and output "
+"logits."
+msgstr ""
+
+#: of torch.nn.functional.binary_cross_entropy_with_logits:4
+msgid "See :class:`~torch.nn.BCEWithLogitsLoss` for details."
+msgstr ""
+
+#: ../../source/nn.rst:1052
+msgid ":hidden:`smooth_l1_loss`"
+msgstr ""
+
+#: ../../docstring of torch.nn.functional.smooth_l1_loss:1
+msgid ""
+"Function that uses a squared term if the absolute element-wise error "
+"falls below 1 and an L1 term otherwise."
+msgstr ""
+
+#: ../../docstring of torch.nn.functional.smooth_l1_loss:4
+msgid "See :class:`~torch.nn.SmoothL1Loss` for details."
+msgstr ""
+
+#: ../../source/nn.rst:1057
+msgid ":hidden:`soft_margin_loss`"
+msgstr ""
+
+#: ../../docstring of torch.nn.functional.soft_margin_loss:1
+msgid "See :class:`~torch.nn.SoftMarginLoss` for details."
+msgstr ""
+
+#: ../../source/nn.rst:1062
+msgid ":hidden:`triplet_margin_loss`"
+msgstr ""
+
+#: of torch.nn.functional.triplet_margin_loss:20
+msgid "the margin value. Default: 1"
+msgstr ""
+
+#: of torch.nn.functional.triplet_margin_loss:22
+msgid "small epsilon value to avoid numerical issues. Default: 1e-6"
+msgstr ""
+
+#: of torch.nn.functional.triplet_margin_loss:23
+msgid "compute distance swap. Default: ``False``"
+msgstr ""
+
+#: ../../source/nn.rst:1067
+msgid "Vision functions"
+msgstr ""
+
+#: ../../source/nn.rst:1070
+msgid ":hidden:`pixel_shuffle`"
+msgstr ""
+
+#: of torch.nn.functional.pixel_shuffle:1
+msgid ""
+"Rearranges elements in a tensor of shape ``[*, C*r^2, H, W]`` to a tensor"
+" of shape ``[C, H*r, W*r]``."
+msgstr ""
+
+#: of torch.nn.functional.pixel_shuffle:4
+msgid "See :class:`~torch.nn.PixelShuffle` for details."
+msgstr ""
+
+#: of torch.nn.functional.pixel_shuffle:6
+msgid "Input"
+msgstr ""
+
+#: ../../source/nn.rst:1075
+msgid ":hidden:`pad`"
+msgstr ""
+
+#: of torch.nn.functional.pad:1
+msgid "Pads tensor."
+msgstr ""
+
+#: of torch.nn.functional.pad:5
+msgid "Nd constant padding:  The number of dimensions to pad is"
+msgstr ""
+
+#: of torch.nn.functional.pad:4
+msgid ""
+"len(padding) // 2 and the dimensions that gets padded begins with the "
+"last dimension and moves forward.  See below for examples."
+msgstr ""
+
+#: of torch.nn.functional.pad:12
+msgid "1D, 2D and 3D \"reflect\"/\"replicate\" padding:"
+msgstr ""
+
+#: of torch.nn.functional.pad:8
+msgid ""
+"1D: 3D input with padding in form (pad_l, pad_r) 2D: 4D input tensor pad "
+"should be in form (pad_l, pad_r, pad_t, pad_b ). 3D: 5D pad (pleft, "
+"pright, ptop, pbottom, pfront, pback). No \"reflect\" implementation"
+msgstr ""
+
+#: of torch.nn.functional.pad:14
+msgid "Nd tensor"
+msgstr ""
+
+#: of torch.nn.functional.pad:16
+msgid "m-elem tuple, where m // 2 <= input dimensions and m % 2 == 0"
+msgstr ""
+
+#: of torch.nn.functional.pad:18
+msgid "'constant', 'reflect' or 'replicate'. Default: 'constant'"
+msgstr ""
+
+#: of torch.nn.functional.pad:19
+msgid "fill value for 'constant' padding. Default: 0"
+msgstr ""
+
+#: ../../source/nn.rst:1080
+msgid ":hidden:`upsample`"
+msgstr ""
+
+#: of torch.nn.functional.upsample:1
+msgid ""
+"Upsamples the input to either the given :attr:`size` or the given "
+":attr:`scale_factor`"
+msgstr ""
+
+#: of torch.nn.functional.upsample:4
+msgid "The algorithm used for upsampling is determined by :attr:`mode`."
+msgstr ""
+
+#: of torch.nn.functional.upsample:6
+msgid ""
+"Currently temporal, spatial and volumetric upsampling are supported, i.e."
+" expected inputs are 3-D, 4-D or 5-D in shape."
+msgstr ""
+
+#: of torch.nn.functional.upsample:9
+msgid ""
+"The input dimensions are interpreted in the form: `mini-batch x channels "
+"x [depth] x [height] x width`"
+msgstr ""
+
+#: of torch.nn.functional.upsample:12
+msgid ""
+"The modes available for upsampling are: `nearest`, `linear` (3D-only), "
+"`bilinear` (4D-only), `trilinear` (5D-only)"
+msgstr ""
+
+#: of torch.nn.functional.upsample:17 torch.nn.functional.upsample_bilinear:10
+msgid "output spatial size."
+msgstr ""
+
+#: of torch.nn.functional.upsample:19 torch.nn.functional.upsample_nearest:13
+msgid "multiplier for spatial size. Has to be an integer."
+msgstr ""
+
+#: of torch.nn.functional.upsample:21
+msgid ""
+"algorithm used for upsampling: 'nearest' | 'linear' | 'bilinear' | "
+"'trilinear'. Default: 'nearest'"
+msgstr ""
+
+#: ../../source/nn.rst:1085
+msgid ":hidden:`upsample_nearest`"
+msgstr ""
+
+#: of torch.nn.functional.upsample_nearest:1
+msgid "Upsamples the input, using nearest neighbours' pixel values."
+msgstr ""
+
+#: of torch.nn.functional.upsample_bilinear:3
+#: torch.nn.functional.upsample_nearest:3
+msgid "**Note:: This function is deprecated. Use nn.functional.upsample instead**"
+msgstr ""
+
+#: of torch.nn.functional.upsample_nearest:5
+msgid ""
+"Currently spatial and volumetric upsampling are supported (i.e. expected "
+"inputs are 4 or 5 dimensional)."
+msgstr ""
+
+#: of torch.nn.functional.upsample_nearest:10
+msgid "output spatia size."
+msgstr ""
+
+#: ../../source/nn.rst:1090
+msgid ":hidden:`upsample_bilinear`"
+msgstr ""
+
+#: of torch.nn.functional.upsample_bilinear:1
+msgid "Upscales the input, using bilinear upsampling."
+msgstr ""
+
+#: of torch.nn.functional.upsample_bilinear:5
+msgid ""
+"Expected inputs are spatial (4 dimensional). Use upsample_trilinear fo "
+"volumetric (5 dimensional) inputs."
+msgstr ""
+
+#: of torch.nn.functional.upsample_bilinear:12
+msgid "multiplier for spatial size"
+msgstr ""
+
+#: ../../source/nn.rst:1095
+msgid ":hidden:`grid_sample`"
+msgstr ""
+
+#: of torch.nn.functional.grid_sample:1
+msgid ""
+"Given an :attr:`input` and a flow-field :attr:`grid`, computes the "
+"`output` using input pixel locations from the grid."
+msgstr ""
+
+#: of torch.nn.functional.grid_sample:4
+msgid ""
+"Uses bilinear interpolation to sample the input pixels. Currently, only "
+"spatial (4 dimensional) inputs are supported."
+msgstr ""
+
+#: of torch.nn.functional.grid_sample:7
+msgid ""
+"For each output location, :attr:`grid` has `x` and `y` input pixel "
+"locations which are used to compute output."
+msgstr ""
+
+#: of torch.nn.functional.grid_sample:10
+msgid ""
+":attr:`grid` has values in the range of `[-1, 1]`. This is because the "
+"pixel locations are normalized by the input height and width."
+msgstr ""
+
+#: of torch.nn.functional.grid_sample:14
+msgid "For example, values: x: -1, y: -1 is the left-top pixel of the input"
+msgstr ""
+
+#: of torch.nn.functional.grid_sample:14
+msgid "values: x: 1, y: 1 is the right-bottom pixel of the input"
+msgstr ""
+
+#: of torch.nn.functional.grid_sample:16
+msgid ""
+"If :attr:`grid` has values outside the range of `[-1, 1]`, those "
+"locations are handled as defined by `padding_mode`. Options are `zeros` "
+"or `border`, defining those locations to use 0 or image border values as "
+"contribution to the bilinear interpolation."
+msgstr ""
+
+#: of torch.nn.functional.grid_sample:21
+msgid "This function is used in building Spatial Transformer Networks"
+msgstr ""
+
+#: of torch.nn.functional.grid_sample:23
+msgid "input batch of images (N x C x IH x IW)"
+msgstr ""
+
+#: of torch.nn.functional.grid_sample:25
+msgid "flow-field of size (N x OH x OW x 2)"
+msgstr ""
+
+#: of torch.nn.functional.grid_sample:27
+msgid "padding mode for outside grid values 'zeros' | 'border'. Default: 'zeros'"
+msgstr ""
+
+#: of torch.nn.functional.grid_sample:31
+msgid "output Tensor"
+msgstr ""
+
+#: ../../source/nn.rst:1100
+msgid ":hidden:`affine_grid`"
+msgstr ""
+
+#: of torch.nn.functional.affine_grid:1
+msgid ""
+"Generates a 2d flow field, given a batch of affine matrices :attr:`theta`"
+" Generally used in conjunction with :func:`grid_sample` to implement "
+"Spatial Transformer Networks."
+msgstr ""
+
+#: of torch.nn.functional.affine_grid:5
+msgid "input batch of affine matrices (N x 2 x 3)"
+msgstr ""
+
+#: of torch.nn.functional.affine_grid:7
+msgid ""
+"the target output image size (N x C x H x W) Example: torch.Size((32, 3, "
+"24, 24))"
+msgstr ""
+
+#: of torch.nn.functional.affine_grid:11
+msgid "output Tensor of size (N x H x W x 2)"
+msgstr ""
+
+#: ../../source/nn.rst:1106
+msgid "torch.nn.init"
+msgstr ""
+
+#: of torch.nn.init.calculate_gain:1
+msgid ""
+"Return the recommended gain value for the given nonlinearity function. "
+"The values are as follows:"
+msgstr ""
+
+#: of torch.nn.init.calculate_gain:5
+msgid "nonlinearity"
+msgstr ""
+
+#: of torch.nn.init.calculate_gain:5
+msgid "gain"
+msgstr ""
+
+#: of torch.nn.init.calculate_gain:7
+msgid "linear"
+msgstr ""
+
+#: of torch.nn.init.calculate_gain:7 torch.nn.init.calculate_gain:8
+#: torch.nn.init.calculate_gain:9
+msgid ":math:`1`"
+msgstr ""
+
+#: of torch.nn.init.calculate_gain:8
+msgid "conv{1,2,3}d"
+msgstr ""
+
+#: of torch.nn.init.calculate_gain:9
+msgid "sigmoid"
+msgstr ""
+
+#: of torch.nn.init.calculate_gain:10
+msgid "tanh"
+msgstr ""
+
+#: of torch.nn.init.calculate_gain:10
+msgid ":math:`5 / 3`"
+msgstr ""
+
+#: of torch.nn.init.calculate_gain:11
+msgid "relu"
+msgstr ""
+
+#: of torch.nn.init.calculate_gain:11
+msgid ":math:`\\sqrt{2}`"
+msgstr ""
+
+#: of torch.nn.init.calculate_gain:12
+msgid "leaky_relu"
+msgstr ""
+
+#: of torch.nn.init.calculate_gain:12
+msgid ":math:`\\sqrt{2 / (1 + negative\\_slope^2)}`"
+msgstr ""
+
+#: of torch.nn.init.calculate_gain:15
+msgid "the nonlinear function (`nn.functional` name)"
+msgstr ""
+
+#: of torch.nn.init.calculate_gain:16
+msgid "optional parameter for the nonlinear function"
+msgstr ""
+
+#: of torch.nn.init.uniform:1
+msgid ""
+"Fills the input Tensor or Variable with values drawn from the uniform "
+"distribution :math:`U(a, b)`."
+msgstr ""
+
+#: of torch.nn.init.constant:3 torch.nn.init.kaiming_normal:9
+#: torch.nn.init.kaiming_uniform:9 torch.nn.init.normal:4
+#: torch.nn.init.sparse:6 torch.nn.init.uniform:4 torch.nn.init.xavier_normal:9
+#: torch.nn.init.xavier_uniform:9
+msgid "an n-dimensional torch.Tensor or autograd.Variable"
+msgstr ""
+
+#: of torch.nn.init.uniform:5
+msgid "the lower bound of the uniform distribution"
+msgstr ""
+
+#: of torch.nn.init.uniform:6
+msgid "the upper bound of the uniform distribution"
+msgstr ""
+
+#: of torch.nn.init.normal:1
+msgid ""
+"Fills the input Tensor or Variable with values drawn from the normal "
+"distribution :math:`N(mean, std)`."
+msgstr ""
+
+#: of torch.nn.init.normal:5
+msgid "the mean of the normal distribution"
+msgstr ""
+
+#: of torch.nn.init.normal:6
+msgid "the standard deviation of the normal distribution"
+msgstr ""
+
+#: of torch.nn.init.constant:1
+msgid "Fills the input Tensor or Variable with the value `val`."
+msgstr ""
+
+#: of torch.nn.init.constant:4
+msgid "the value to fill the tensor with"
+msgstr ""
+
+#: of torch.nn.init.eye:1
+msgid ""
+"Fills the 2-dimensional input Tensor or Variable with the identity "
+"matrix. Preserves the identity of the inputs in Linear layers, where as "
+"many inputs are preserved as possible."
+msgstr ""
+
+#: of torch.nn.init.eye:5
+msgid "a 2-dimensional torch.Tensor or autograd.Variable"
+msgstr ""
+
+#: of torch.nn.init.dirac:1
+msgid ""
+"Fills the {3, 4, 5}-dimensional input Tensor or Variable with the Dirac "
+"delta function. Preserves the identity of the inputs in Convolutional "
+"layers, where as many input channels are preserved as possible."
+msgstr ""
+
+#: of torch.nn.init.dirac:5
+msgid "a {3, 4, 5}-dimensional torch.Tensor or autograd.Variable"
+msgstr ""
+
+#: of torch.nn.init.xavier_uniform:1
+msgid ""
+"Fills the input Tensor or Variable with values according to the method "
+"described in \"Understanding the difficulty of training deep feedforward "
+"neural networks\" - Glorot, X. & Bengio, Y. (2010), using a uniform "
+"distribution. The resulting tensor will have values sampled from "
+":math:`U(-a, a)` where :math:`a = gain \\times \\sqrt{2 / (fan\\_in + "
+"fan\\_out)} \\times \\sqrt{3}`. Also known as Glorot initialisation."
+msgstr ""
+
+#: of torch.nn.init.xavier_normal:10 torch.nn.init.xavier_uniform:10
+msgid "an optional scaling factor"
+msgstr ""
+
+#: of torch.nn.init.xavier_normal:1
+msgid ""
+"Fills the input Tensor or Variable with values according to the method "
+"described in \"Understanding the difficulty of training deep feedforward "
+"neural networks\" - Glorot, X. & Bengio, Y. (2010), using a normal "
+"distribution. The resulting tensor will have values sampled from "
+":math:`N(0, std)` where :math:`std = gain \\times \\sqrt{2 / (fan\\_in + "
+"fan\\_out)}`. Also known as Glorot initialisation."
+msgstr ""
+
+#: of torch.nn.init.kaiming_uniform:1
+msgid ""
+"Fills the input Tensor or Variable with values according to the method "
+"described in \"Delving deep into rectifiers: Surpassing human-level "
+"performance on ImageNet classification\" - He, K. et al. (2015), using a "
+"uniform distribution. The resulting tensor will have values sampled from "
+":math:`U(-bound, bound)` where :math:`bound = \\sqrt{2 / ((1 + a^2) "
+"\\times fan\\_in)} \\times \\sqrt{3}`. Also known as He initialisation."
+msgstr ""
+
+#: of torch.nn.init.kaiming_normal:10 torch.nn.init.kaiming_uniform:10
+msgid ""
+"the negative slope of the rectifier used after this layer (0 for ReLU by "
+"default)"
+msgstr ""
+
+#: of torch.nn.init.kaiming_normal:12 torch.nn.init.kaiming_uniform:12
+msgid ""
+"either 'fan_in' (default) or 'fan_out'. Choosing `fan_in` preserves the "
+"magnitude of the variance of the weights in the forward pass. Choosing "
+"`fan_out` preserves the magnitudes in the backwards pass."
+msgstr ""
+
+#: of torch.nn.init.kaiming_normal:1
+msgid ""
+"Fills the input Tensor or Variable with values according to the method "
+"described in \"Delving deep into rectifiers: Surpassing human-level "
+"performance on ImageNet classification\" - He, K. et al. (2015), using a "
+"normal distribution. The resulting tensor will have values sampled from "
+":math:`N(0, std)` where :math:`std = \\sqrt{2 / ((1 + a^2) \\times "
+"fan\\_in)}`. Also known as He initialisation."
+msgstr ""
+
+#: of torch.nn.init.orthogonal:1
+msgid ""
+"Fills the input Tensor or Variable with a (semi) orthogonal matrix, as "
+"described in \"Exact solutions to the nonlinear dynamics of learning in "
+"deep linear neural networks\" - Saxe, A. et al. (2013). The input tensor "
+"must have at least 2 dimensions, and for tensors with more than 2 "
+"dimensions the trailing dimensions are flattened."
+msgstr ""
+
+#: of torch.nn.init.orthogonal:7
+msgid "an n-dimensional torch.Tensor or autograd.Variable, where n >= 2"
+msgstr ""
+
+#: of torch.nn.init.orthogonal:8
+msgid "optional scaling factor"
+msgstr ""
+
+#: of torch.nn.init.sparse:1
+msgid ""
+"Fills the 2D input Tensor or Variable as a sparse matrix, where the non-"
+"zero elements will be drawn from the normal distribution :math:`N(0, "
+"0.01)`, as described in \"Deep learning via Hessian-free optimization\" -"
+" Martens, J. (2010)."
+msgstr ""
+
+#: of torch.nn.init.sparse:7
+msgid "The fraction of elements in each column to be set to zero"
+msgstr ""
+
+#: of torch.nn.init.sparse:8
+msgid "the standard deviation of the normal distribution used to generate"
+msgstr ""
+
