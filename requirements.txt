@@ -1,0 +1,5 @@
+sphinx
+#http://download.pytorch.org/whl/cpu/torch-0.3.0.post4-cp35-cp35m-linux_x86_64.whl 
+torchvision
+cffi
+-e git://github.com/snide/sphinx_rtd_theme.git#egg=sphinx_rtd_theme
