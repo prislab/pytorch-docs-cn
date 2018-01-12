@@ -1,0 +1,513 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017, Torch Contributors
+# This file is distributed under the same license as the PyTorch package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PyTorch master (0.3.0.post4 )\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-01-12 14:38+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/distributed.rst:5
+msgid "Distributed communication package - torch.distributed"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/distributed/__init__.py:docstring of torch.distributed:1
+msgid "torch.distributed provides an MPI-like interface for exchanging tensor data across multi-machine networks. It supports a few different backends and initialization methods."
+msgstr ""
+
+#: ../../source/distributed.rst:10
+msgid "Currently torch.distributed supports three backends, each with different capabilities. The table below shows which functions are available for use with CPU / CUDA tensors. MPI supports cuda only if the implementation used to build PyTorch supports it."
+msgstr ""
+
+#: ../../source/distributed.rst:17
+msgid "Backend"
+msgstr ""
+
+#: ../../source/distributed.rst:17
+msgid "``tcp``"
+msgstr ""
+
+#: ../../source/distributed.rst:17
+msgid "``gloo``"
+msgstr ""
+
+#: ../../source/distributed.rst:17
+msgid "``mpi``"
+msgstr ""
+
+#: ../../source/distributed.rst:19
+msgid "Device"
+msgstr ""
+
+#: ../../source/distributed.rst:19
+#: ../../source/distributed.rst:19
+#: ../../source/distributed.rst:19
+msgid "CPU"
+msgstr ""
+
+#: ../../source/distributed.rst:19
+#: ../../source/distributed.rst:19
+#: ../../source/distributed.rst:19
+msgid "GPU"
+msgstr ""
+
+#: ../../source/distributed.rst:21
+msgid "send"
+msgstr ""
+
+#: ../../source/distributed.rst:21
+#: ../../source/distributed.rst:21
+#: ../../source/distributed.rst:23
+#: ../../source/distributed.rst:23
+#: ../../source/distributed.rst:25
+#: ../../source/distributed.rst:25
+#: ../../source/distributed.rst:25
+#: ../../source/distributed.rst:25
+#: ../../source/distributed.rst:27
+#: ../../source/distributed.rst:27
+#: ../../source/distributed.rst:27
+#: ../../source/distributed.rst:27
+#: ../../source/distributed.rst:29
+#: ../../source/distributed.rst:29
+#: ../../source/distributed.rst:31
+#: ../../source/distributed.rst:31
+#: ../../source/distributed.rst:33
+#: ../../source/distributed.rst:33
+#: ../../source/distributed.rst:35
+#: ../../source/distributed.rst:35
+#: ../../source/distributed.rst:37
+#: ../../source/distributed.rst:37
+#: ../../source/distributed.rst:37
+#: ../../source/distributed.rst:37
+msgid "✓"
+msgstr ""
+
+#: ../../source/distributed.rst:21
+#: ../../source/distributed.rst:21
+#: ../../source/distributed.rst:21
+#: ../../source/distributed.rst:23
+#: ../../source/distributed.rst:23
+#: ../../source/distributed.rst:23
+#: ../../source/distributed.rst:25
+#: ../../source/distributed.rst:27
+#: ../../source/distributed.rst:29
+#: ../../source/distributed.rst:29
+#: ../../source/distributed.rst:29
+#: ../../source/distributed.rst:31
+#: ../../source/distributed.rst:31
+#: ../../source/distributed.rst:31
+#: ../../source/distributed.rst:33
+#: ../../source/distributed.rst:33
+#: ../../source/distributed.rst:33
+#: ../../source/distributed.rst:35
+#: ../../source/distributed.rst:35
+#: ../../source/distributed.rst:35
+#: ../../source/distributed.rst:37
+msgid "✘"
+msgstr ""
+
+#: ../../source/distributed.rst:21
+#: ../../source/distributed.rst:23
+#: ../../source/distributed.rst:25
+#: ../../source/distributed.rst:27
+#: ../../source/distributed.rst:29
+#: ../../source/distributed.rst:31
+#: ../../source/distributed.rst:33
+#: ../../source/distributed.rst:35
+#: ../../source/distributed.rst:37
+msgid "?"
+msgstr ""
+
+#: ../../source/distributed.rst:23
+msgid "recv"
+msgstr ""
+
+#: ../../source/distributed.rst:25
+msgid "broadcast"
+msgstr ""
+
+#: ../../source/distributed.rst:27
+msgid "all_reduce"
+msgstr ""
+
+#: ../../source/distributed.rst:29
+msgid "reduce"
+msgstr ""
+
+#: ../../source/distributed.rst:31
+msgid "all_gather"
+msgstr ""
+
+#: ../../source/distributed.rst:33
+msgid "gather"
+msgstr ""
+
+#: ../../source/distributed.rst:35
+msgid "scatter"
+msgstr ""
+
+#: ../../source/distributed.rst:37
+msgid "barrier"
+msgstr ""
+
+#: ../../source/distributed.rst:43
+msgid "Basics"
+msgstr ""
+
+#: ../../source/distributed.rst:45
+msgid "The `torch.distributed` package provides PyTorch support and communication primitives for multiprocess parallelism across several computation nodes running on one or more machines. The class :func:`torch.nn.parallel.DistributedDataParallel` builds on this functionality to provide synchronous distributed training as a wrapper around any PyTorch model. This differs from the kinds of parallelism provided by :doc:`multiprocessing` and :func:`torch.nn.DataParallel` in that it supports multiple network-connected machines and in that the user must explicitly launch a separate copy of the main training script for each process."
+msgstr ""
+
+#: ../../source/distributed.rst:54
+msgid "In the single-machine synchronous case, `torch.distributed` or the :func:`torch.nn.parallel.DistributedDataParallel` wrapper may still have advantages over other approaches to data-parallelism, including :func:`torch.nn.DataParallel`:"
+msgstr ""
+
+#: ../../source/distributed.rst:58
+msgid "Each process maintains its own optimizer and performs a complete optimization step with each iteration. While this may appear redundant, since the gradients have already been gathered together and averaged across processes and are thus the same for every process, this means that no parameter broadcast step is needed, reducing time spent transferring tensors between nodes."
+msgstr ""
+
+#: ../../source/distributed.rst:63
+msgid "Each process contains an independent Python interpreter, eliminating the extra interpreter overhead and \"GIL-thrashing\" that comes from driving several execution threads, model replicas, or GPUs from a single Python process. This is especially important for models that make heavy use of the Python runtime, including models with recurrent layers or many small components."
+msgstr ""
+
+#: ../../source/distributed.rst:70
+msgid "Initialization"
+msgstr ""
+
+#: ../../source/distributed.rst:72
+msgid "The package needs to be initialized using the :func:`torch.distributed.init_process_group` function before calling any other methods. This blocks until all processes have joined."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/distributed/__init__.py:docstring of torch.distributed.init_process_group:1
+msgid "Initializes the distributed package."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/distributed/__init__.py:docstring of torch.distributed.init_process_group:0
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/distributed/__init__.py:docstring of torch.distributed.new_group:0
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/distributed/__init__.py:docstring of torch.distributed.send:0
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/distributed/__init__.py:docstring of torch.distributed.recv:0
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/distributed/__init__.py:docstring of torch.distributed.isend:0
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/distributed/__init__.py:docstring of torch.distributed.irecv:0
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/distributed/__init__.py:docstring of torch.distributed.broadcast:0
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/distributed/__init__.py:docstring of torch.distributed.all_reduce:0
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/distributed/__init__.py:docstring of torch.distributed.reduce:0
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/distributed/__init__.py:docstring of torch.distributed.all_gather:0
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/distributed/__init__.py:docstring of torch.distributed.gather:0
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/distributed/__init__.py:docstring of torch.distributed.scatter:0
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/distributed/__init__.py:docstring of torch.distributed.barrier:0
+msgid "参数"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/distributed/__init__.py:docstring of torch.distributed.init_process_group:3
+msgid "Name of the backend to use. Depending on build-time configuration valid values include: ``tcp``, ``mpi`` and ``gloo``."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/distributed/__init__.py:docstring of torch.distributed.init_process_group:6
+msgid "URL specifying how to initialize the package."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/distributed/__init__.py:docstring of torch.distributed.init_process_group:8
+msgid "Number of processes participating in the job."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/distributed/__init__.py:docstring of torch.distributed.init_process_group:10
+msgid "Rank of the current process."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/distributed/__init__.py:docstring of torch.distributed.init_process_group:12
+msgid "Group name. See description of init methods."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/distributed/__init__.py:docstring of torch.distributed.init_process_group:15
+msgid "To enable ``backend == mpi``, PyTorch needs to built from source on a system that supports MPI."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/distributed/__init__.py:docstring of torch.distributed.get_rank:1
+msgid "Returns the rank of current process."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/distributed/__init__.py:docstring of torch.distributed.get_rank:3
+msgid "Rank is a unique identifier assigned to each process within a distributed group. They are always consecutive integers ranging from 0 to ``world_size``."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/distributed/__init__.py:docstring of torch.distributed.get_world_size:1
+msgid "Returns the number of processes in the distributed group."
+msgstr ""
+
+#: ../../source/distributed.rst:84
+msgid "Currently three initialization methods are supported:"
+msgstr ""
+
+#: ../../source/distributed.rst:87
+msgid "TCP initialization"
+msgstr ""
+
+#: ../../source/distributed.rst:89
+msgid "There are two ways to initialize using TCP, both requiring a network address reachable from all processes and a desired ``world_size``. The first way requires specifying an address that belongs to the rank 0 process. This first way of initialization requires that all processes have manually specified ranks."
+msgstr ""
+
+#: ../../source/distributed.rst:94
+msgid "Alternatively, the address has to be a valid IP multicast address, in which case ranks can be assigned automatically. Multicast initialization also supports a ``group_name`` argument, which allows you to use the same address for multiple jobs, as long as they use different group names."
+msgstr ""
+
+#: ../../source/distributed.rst:111
+msgid "Shared file-system initialization"
+msgstr ""
+
+#: ../../source/distributed.rst:113
+msgid "Another initialization method makes use of a file system that is shared and visible from all machines in a group, along with a desired ``world_size``. The URL should start with ``file://`` and contain a path to a non-existent file (in an existing directory) on a shared file system. This initialization method also supports a ``group_name`` argument, which allows you to use the same shared file path for multiple jobs, as long as they use different group names."
+msgstr ""
+
+#: ../../source/distributed.rst:121
+msgid "This method assumes that the file system supports locking using ``fcntl`` - most local systems and NFS support it."
+msgstr ""
+
+#: ../../source/distributed.rst:133
+msgid "Environment variable initialization"
+msgstr ""
+
+#: ../../source/distributed.rst:135
+msgid "This method will read the configuration from environment variables, allowing one to fully customize how the information is obtained. The variables to be set are:"
+msgstr ""
+
+#: ../../source/distributed.rst:139
+msgid "``MASTER_PORT`` - required; has to be a free port on machine with rank 0"
+msgstr ""
+
+#: ../../source/distributed.rst:140
+msgid "``MASTER_ADDR`` - required (except for rank 0); address of rank 0 node"
+msgstr ""
+
+#: ../../source/distributed.rst:141
+msgid "``WORLD_SIZE`` - required; can be set either here, or in a call to init function"
+msgstr ""
+
+#: ../../source/distributed.rst:142
+msgid "``RANK`` - required; can be set either here, or in a call to init function"
+msgstr ""
+
+#: ../../source/distributed.rst:144
+msgid "The machine with rank 0 will be used to set up all connections."
+msgstr ""
+
+#: ../../source/distributed.rst:146
+msgid "This is the default method, meaning that ``init_method`` does not have to be specified (or can be ``env://``)."
+msgstr ""
+
+#: ../../source/distributed.rst:150
+msgid "Groups"
+msgstr ""
+
+#: ../../source/distributed.rst:152
+msgid "By default collectives operate on the default group (also called the world) and require all processes to enter the distributed function call. However, some workloads can benefit from more fine-grained communication. This is where distributed groups come into play. :func:`~torch.distributed.new_group` function can be used to create new groups, with arbitrary subsets of all processes. It returns an opaque group handle that can be given as a ``group`` argument to all collectives (collectives are distributed functions to exchange information in certain well-known programming patterns)."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/distributed/__init__.py:docstring of torch.distributed.new_group:1
+msgid "Creates a new distributed group."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/distributed/__init__.py:docstring of torch.distributed.new_group:3
+msgid "This function requires that all processes in the main group (i.e. all processes that are part of the distributed job) enter this function, even if they are not going to be members of the group. Additionally, groups should be created in the same order in all processes."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/distributed/__init__.py:docstring of torch.distributed.new_group:8
+msgid "List of ranks of group members."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/distributed/__init__.py:docstring of torch.distributed.new_group:0
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/distributed/__init__.py:docstring of torch.distributed.recv:0
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/distributed/__init__.py:docstring of torch.distributed.isend:0
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/distributed/__init__.py:docstring of torch.distributed.irecv:0
+msgid "返回"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/distributed/__init__.py:docstring of torch.distributed.new_group:11
+msgid "A handle of distributed group that can be given to collective calls."
+msgstr ""
+
+#: ../../source/distributed.rst:163
+msgid "Point-to-point communication"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/distributed/__init__.py:docstring of torch.distributed.send:1
+msgid "Sends a tensor synchronously."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/distributed/__init__.py:docstring of torch.distributed.send:3
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/distributed/__init__.py:docstring of torch.distributed.isend:3
+msgid "Tensor to send."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/distributed/__init__.py:docstring of torch.distributed.send:5
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/distributed/__init__.py:docstring of torch.distributed.isend:5
+msgid "Destination rank."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/distributed/__init__.py:docstring of torch.distributed.recv:1
+msgid "Receives a tensor synchronously."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/distributed/__init__.py:docstring of torch.distributed.recv:3
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/distributed/__init__.py:docstring of torch.distributed.irecv:3
+msgid "Tensor to fill with received data."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/distributed/__init__.py:docstring of torch.distributed.recv:5
+msgid "Source rank. Will receive from any process if unspecified."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/distributed/__init__.py:docstring of torch.distributed.recv:9
+msgid "Sender rank."
+msgstr ""
+
+#: ../../source/distributed.rst:169
+msgid ":func:`~torch.distributed.isend` and :func:`~torch.distributed.irecv` return distributed request objects when used. In general, the type of this object is unspecified as they should never be created manually, but they are guaranteed to support two methods:"
+msgstr ""
+
+#: ../../source/distributed.rst:173
+msgid "``is_completed()`` - returns True if the operation has finished"
+msgstr ""
+
+#: ../../source/distributed.rst:174
+msgid "``wait()`` - will block the process until the operation is finished. ``is_completed()`` is guaranteed to return True once it returns."
+msgstr ""
+
+#: ../../source/distributed.rst:177
+msgid "When using the MPI backend, :func:`~torch.distributed.isend` and :func:`~torch.distributed.irecv` support non-overtaking, which has some guarantees on supporting message order. For more detail, see http://mpi-forum.org/docs/mpi-2.2/mpi22-report/node54.htm#Node54"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/distributed/__init__.py:docstring of torch.distributed.isend:1
+msgid "Sends a tensor asynchronously."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/distributed/__init__.py:docstring of torch.distributed.isend:8
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/distributed/__init__.py:docstring of torch.distributed.irecv:8
+msgid "A distributed request object."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/distributed/__init__.py:docstring of torch.distributed.irecv:1
+msgid "Receives a tensor asynchronously."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/distributed/__init__.py:docstring of torch.distributed.irecv:5
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/distributed/__init__.py:docstring of torch.distributed.broadcast:9
+msgid "Source rank."
+msgstr ""
+
+#: ../../source/distributed.rst:186
+msgid "Collective functions"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/distributed/__init__.py:docstring of torch.distributed.broadcast:1
+msgid "Broadcasts the tensor to the whole group."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/distributed/__init__.py:docstring of torch.distributed.broadcast:3
+msgid "``tensor`` must have the same number of elements in all processes participating in the collective."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/distributed/__init__.py:docstring of torch.distributed.broadcast:6
+msgid "Data to be sent if ``src`` is the rank of current process, and tensor to be used to save received data otherwise."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/distributed/__init__.py:docstring of torch.distributed.broadcast:11
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/distributed/__init__.py:docstring of torch.distributed.all_reduce:12
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/distributed/__init__.py:docstring of torch.distributed.reduce:11
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/distributed/__init__.py:docstring of torch.distributed.all_gather:8
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/distributed/__init__.py:docstring of torch.distributed.gather:11
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/distributed/__init__.py:docstring of torch.distributed.scatter:14
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/distributed/__init__.py:docstring of torch.distributed.barrier:5
+msgid "Group of the collective."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/distributed/__init__.py:docstring of torch.distributed.all_reduce:1
+msgid "Reduces the tensor data across all machines in such a way that all get the final result."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/distributed/__init__.py:docstring of torch.distributed.all_reduce:4
+msgid "After the call ``tensor`` is going to be bitwise identical in all processes."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/distributed/__init__.py:docstring of torch.distributed.all_reduce:6
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/distributed/__init__.py:docstring of torch.distributed.reduce:5
+msgid "Input and output of the collective. The function operates in-place."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/distributed/__init__.py:docstring of torch.distributed.all_reduce:9
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/distributed/__init__.py:docstring of torch.distributed.reduce:8
+msgid "One of the values from ``torch.distributed.reduce_op`` enum.  Specifies an operation used for element-wise reductions."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/distributed/__init__.py:docstring of torch.distributed.reduce:1
+msgid "Reduces the tensor data across all machines."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/distributed/__init__.py:docstring of torch.distributed.reduce:3
+msgid "Only the process with rank ``dst`` is going to receive the final result."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/distributed/__init__.py:docstring of torch.distributed.all_gather:1
+msgid "Gathers tensors from the whole group in a list."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/distributed/__init__.py:docstring of torch.distributed.all_gather:3
+msgid "Output list. It should contain correctly-sized tensors to be used for output of the collective."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/distributed/__init__.py:docstring of torch.distributed.all_gather:6
+msgid "Tensor to be broadcast from current process."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/distributed/__init__.py:docstring of torch.distributed.gather:1
+msgid "Gathers a list of tensors in a single process."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/distributed/__init__.py:docstring of torch.distributed.gather:3
+msgid "Input tensor."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/distributed/__init__.py:docstring of torch.distributed.gather:5
+msgid "Destination rank. Required in all processes except the one that is receiveing the data."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/distributed/__init__.py:docstring of torch.distributed.gather:8
+msgid "List of appropriately-sized tensors to use for received data. Required only in the receiving process."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/distributed/__init__.py:docstring of torch.distributed.scatter:1
+msgid "Scatters a list of tensors to all processes in a group."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/distributed/__init__.py:docstring of torch.distributed.scatter:3
+msgid "Each process will receive exactly one tensor and store its data in the ``tensor`` argument."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/distributed/__init__.py:docstring of torch.distributed.scatter:6
+msgid "Output tensor."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/distributed/__init__.py:docstring of torch.distributed.scatter:8
+msgid "Source rank. Required in all processes except the one that is sending the data."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/distributed/__init__.py:docstring of torch.distributed.scatter:11
+msgid "List of tensors to scatter. Required only in the process that is sending the data."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/distributed/__init__.py:docstring of torch.distributed.barrier:1
+msgid "Synchronizes all processes."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/distributed/__init__.py:docstring of torch.distributed.barrier:3
+msgid "This collective blocks processes until the whole group enters this function."
+msgstr ""
+

@@ -1,0 +1,54 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017, Torch Contributors
+# This file is distributed under the same license as the PyTorch package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PyTorch master (0.3.0.post4 )\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-01-12 14:38+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/model_zoo.rst:2
+msgid "torch.utils.model_zoo"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/utils/model_zoo.py:docstring of torch.utils.model_zoo.load_url:1
+msgid "Loads the Torch serialized object at the given URL."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/utils/model_zoo.py:docstring of torch.utils.model_zoo.load_url:3
+msgid "If the object is already present in `model_dir`, it's deserialized and returned. The filename part of the URL should follow the naming convention ``filename-<sha256>.ext`` where ``<sha256>`` is the first eight or more digits of the SHA256 hash of the contents of the file. The hash is used to ensure unique names and to verify the contents of the file."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/utils/model_zoo.py:docstring of torch.utils.model_zoo.load_url:9
+msgid "The default value of `model_dir` is ``$TORCH_HOME/models`` where ``$TORCH_HOME`` defaults to ``~/.torch``. The default directory can be overriden with the ``$TORCH_MODEL_ZOO`` environment variable."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/utils/model_zoo.py:docstring of torch.utils.model_zoo.load_url:0
+msgid "参数"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/utils/model_zoo.py:docstring of torch.utils.model_zoo.load_url:13
+msgid "URL of the object to download"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/utils/model_zoo.py:docstring of torch.utils.model_zoo.load_url:15
+msgid "directory in which to save the object"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/utils/model_zoo.py:docstring of torch.utils.model_zoo.load_url:17
+msgid "a function or a dict specifying how to remap storage locations (see torch.load)"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/utils/model_zoo.py:docstring of torch.utils.model_zoo.load_url:21
+msgid "Example"
+msgstr ""
+

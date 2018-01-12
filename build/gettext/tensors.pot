@@ -1,0 +1,1399 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017, Torch Contributors
+# This file is distributed under the same license as the PyTorch package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PyTorch master (0.3.0.post4 )\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-01-12 14:38+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/tensors.rst:4
+msgid "torch.Tensor"
+msgstr ""
+
+#: ../../source/tensors.rst:6
+msgid "A :class:`torch.Tensor` is a multi-dimensional matrix containing elements of a single data type."
+msgstr ""
+
+#: ../../source/tensors.rst:9
+msgid "Torch defines seven CPU tensor types and eight GPU tensor types:"
+msgstr ""
+
+#: ../../source/tensors.rst:12
+msgid "Data type"
+msgstr ""
+
+#: ../../source/tensors.rst:12
+msgid "CPU tensor"
+msgstr ""
+
+#: ../../source/tensors.rst:12
+msgid "GPU tensor"
+msgstr ""
+
+#: ../../source/tensors.rst:14
+msgid "32-bit floating point"
+msgstr ""
+
+#: ../../source/tensors.rst:14
+msgid ":class:`torch.FloatTensor`"
+msgstr ""
+
+#: ../../source/tensors.rst:14
+msgid ":class:`torch.cuda.FloatTensor`"
+msgstr ""
+
+#: ../../source/tensors.rst:15
+msgid "64-bit floating point"
+msgstr ""
+
+#: ../../source/tensors.rst:15
+msgid ":class:`torch.DoubleTensor`"
+msgstr ""
+
+#: ../../source/tensors.rst:15
+msgid ":class:`torch.cuda.DoubleTensor`"
+msgstr ""
+
+#: ../../source/tensors.rst:16
+msgid "16-bit floating point"
+msgstr ""
+
+#: ../../source/tensors.rst:16
+msgid ":class:`torch.HalfTensor`"
+msgstr ""
+
+#: ../../source/tensors.rst:16
+msgid ":class:`torch.cuda.HalfTensor`"
+msgstr ""
+
+#: ../../source/tensors.rst:17
+msgid "8-bit integer (unsigned)"
+msgstr ""
+
+#: ../../source/tensors.rst:17
+msgid ":class:`torch.ByteTensor`"
+msgstr ""
+
+#: ../../source/tensors.rst:17
+msgid ":class:`torch.cuda.ByteTensor`"
+msgstr ""
+
+#: ../../source/tensors.rst:18
+msgid "8-bit integer (signed)"
+msgstr ""
+
+#: ../../source/tensors.rst:18
+msgid ":class:`torch.CharTensor`"
+msgstr ""
+
+#: ../../source/tensors.rst:18
+msgid ":class:`torch.cuda.CharTensor`"
+msgstr ""
+
+#: ../../source/tensors.rst:19
+msgid "16-bit integer (signed)"
+msgstr ""
+
+#: ../../source/tensors.rst:19
+msgid ":class:`torch.ShortTensor`"
+msgstr ""
+
+#: ../../source/tensors.rst:19
+msgid ":class:`torch.cuda.ShortTensor`"
+msgstr ""
+
+#: ../../source/tensors.rst:20
+msgid "32-bit integer (signed)"
+msgstr ""
+
+#: ../../source/tensors.rst:20
+msgid ":class:`torch.IntTensor`"
+msgstr ""
+
+#: ../../source/tensors.rst:20
+msgid ":class:`torch.cuda.IntTensor`"
+msgstr ""
+
+#: ../../source/tensors.rst:21
+msgid "64-bit integer (signed)"
+msgstr ""
+
+#: ../../source/tensors.rst:21
+msgid ":class:`torch.LongTensor`"
+msgstr ""
+
+#: ../../source/tensors.rst:21
+msgid ":class:`torch.cuda.LongTensor`"
+msgstr ""
+
+#: ../../source/tensors.rst:24
+msgid "The :class:`torch.Tensor` constructor is an alias for the default tensor type (:class:`torch.FloatTensor`)."
+msgstr ""
+
+#: ../../source/tensors.rst:27
+msgid "A tensor can be constructed from a Python :class:`list` or sequence:"
+msgstr ""
+
+#: ../../source/tensors.rst:36
+msgid "An empty tensor can be constructed by specifying its size:"
+msgstr ""
+
+#: ../../source/tensors.rst:45
+msgid "The contents of a tensor can be accessed and modified using Python's indexing and slicing notation:"
+msgstr ""
+
+#: ../../source/tensors.rst:59
+msgid "Each tensor has an associated :class:`torch.Storage`, which holds its data. The tensor class provides multi-dimensional, `strided <https://en.wikipedia.org/wiki/Stride_of_an_array>`_ view of a storage and defines numeric operations on it."
+msgstr ""
+
+#: ../../source/tensors.rst:64
+msgid "Methods which mutate a tensor are marked with an underscore suffix. For example, :func:`torch.FloatTensor.abs_` computes the absolute value in-place and returns the modified tensor, while :func:`torch.FloatTensor.abs` computes the result in a new tensor."
+msgstr ""
+
+#: ../../source/tensors.rst:77
+msgid "Creates a new tensor from an optional size or data."
+msgstr ""
+
+#: ../../source/tensors.rst:79
+msgid "If no arguments are given, an empty zero-dimensional tensor is returned. If a :class:`numpy.ndarray`, :class:`torch.Tensor`, or :class:`torch.Storage` is given, a new tensor that shares the same data is returned. If a Python sequence is given, a new tensor is created from a copy of the sequence."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.abs:1
+msgid "See :func:`torch.abs`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.abs_:1
+msgid "In-place version of :meth:`~Tensor.abs`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.acos:1
+msgid "See :func:`torch.acos`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.acos_:1
+msgid "In-place version of :meth:`~Tensor.acos`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.add:1
+msgid "See :func:`torch.add`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.add_:1
+msgid "In-place version of :meth:`~Tensor.add`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.addbmm:1
+msgid "See :func:`torch.addbmm`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.addbmm_:1
+msgid "In-place version of :meth:`~Tensor.addbmm`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.addcdiv:1
+msgid "See :func:`torch.addcdiv`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.addcdiv_:1
+msgid "In-place version of :meth:`~Tensor.addcdiv`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.addcmul:1
+msgid "See :func:`torch.addcmul`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.addcmul_:1
+msgid "In-place version of :meth:`~Tensor.addcmul`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.addmm:1
+msgid "See :func:`torch.addmm`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.addmm_:1
+msgid "In-place version of :meth:`~Tensor.addmm`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.addmv:1
+msgid "See :func:`torch.addmv`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.addmv_:1
+msgid "In-place version of :meth:`~Tensor.addmv`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.addr:1
+msgid "See :func:`torch.addr`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.addr_:1
+msgid "In-place version of :meth:`~Tensor.addr`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.apply_:1
+msgid "Applies the function :attr:`callable` to each element in the tensor, replacing each element with the value returned by :attr:`callable`."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.apply_:6
+msgid "This function only works with CPU tensors and should not be used in code sections that require high performance."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.asin:1
+msgid "See :func:`torch.asin`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.asin_:1
+msgid "In-place version of :meth:`~Tensor.asin`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.atan:1
+msgid "See :func:`torch.atan`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.atan2:1
+msgid "See :func:`torch.atan2`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.atan2_:1
+msgid "In-place version of :meth:`~Tensor.atan2`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.atan_:1
+msgid "In-place version of :meth:`~Tensor.atan`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.baddbmm:1
+msgid "See :func:`torch.baddbmm`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.baddbmm_:1
+msgid "In-place version of :meth:`~Tensor.baddbmm`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.bernoulli:1
+msgid "See :func:`torch.bernoulli`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.bernoulli_:1
+msgid "In-place version of :meth:`~Tensor.bernoulli`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.bmm:1
+msgid "See :func:`torch.bmm`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/tensor.py:docstring of torch.Tensor.byte:1
+msgid "Casts this tensor to byte type"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.cauchy_:1
+msgid "Fills the tensor with numbers drawn from the Cauchy distribution:"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.ceil:1
+msgid "See :func:`torch.ceil`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.ceil_:1
+msgid "In-place version of :meth:`~Tensor.ceil`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/tensor.py:docstring of torch.Tensor.char:1
+msgid "Casts this tensor to char type"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/tensor.py:docstring of torch.Tensor.chunk:1
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/tensor.py:docstring of torch.Tensor.split:1
+msgid "Splits this tensor into a tuple of tensors."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/tensor.py:docstring of torch.Tensor.chunk:3
+msgid "See :func:`torch.chunk`."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.clamp:1
+msgid "See :func:`torch.clamp`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.clamp_:1
+msgid "In-place version of :meth:`~Tensor.clamp`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.clone:1
+msgid "Returns a copy of the tensor. The copy has the same size and data type as the original tensor."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.contiguous:1
+msgid "Returns a contiguous Tensor containing the same data as this tensor. If this tensor is contiguous, this function returns the original tensor."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.copy_:1
+msgid "Copies the elements from :attr:`src` into this tensor and returns this tensor."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.copy_:3
+msgid "If :attr:`broadcast` is True, the source tensor must be :ref:`broadcastable <broadcasting-semantics>` with this tensor. Otherwise, source tensor should have the same number of elements as this tensor. It may be of a different data type or reside on a different device."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.copy_:0
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/_utils.py:docstring of torch.Tensor.cuda:0
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.expand:0
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.index:0
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.index_add_:0
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.index_copy_:0
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.index_fill_:0
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.masked_scatter_:0
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.masked_fill_:0
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.narrow:0
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/tensor.py:docstring of torch.Tensor.permute:0
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.put_:0
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/tensor.py:docstring of torch.Tensor.repeat:0
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.resize_:0
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.scatter_:0
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.select:0
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.set_:0
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.stride:0
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/_utils.py:docstring of torch.Tensor.type:0
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.unfold:0
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.view:0
+msgid "参数"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.copy_:8
+msgid "Source tensor to copy"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.copy_:10
+msgid "If ``True`` and this copy is between CPU and GPU, then the copy may occur asynchronously with respect to the host. For other copies, this argument has no effect."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.copy_:14
+msgid "If ``True``, :attr:`src` will be broadcast to the shape of the underlying tensor."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.cos:1
+msgid "See :func:`torch.cos`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.cos_:1
+msgid "In-place version of :meth:`~Tensor.cos`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.cosh:1
+msgid "See :func:`torch.cosh`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.cosh_:1
+msgid "In-place version of :meth:`~Tensor.cosh`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/tensor.py:docstring of torch.Tensor.cpu:1
+msgid "Returns a CPU copy of this tensor if it's not already on the CPU"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.cross:1
+msgid "See :func:`torch.cross`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/_utils.py:docstring of torch.Tensor.cuda:1
+msgid "Returns a copy of this object in CUDA memory."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/_utils.py:docstring of torch.Tensor.cuda:3
+msgid "If this object is already in CUDA memory and on the correct device, then no copy is performed and the original object is returned."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/_utils.py:docstring of torch.Tensor.cuda:6
+msgid "The destination GPU id. Defaults to the current device."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/_utils.py:docstring of torch.Tensor.cuda:8
+msgid "If ``True`` and the source is in pinned memory, the copy will be asynchronous with respect to the host. Otherwise, the argument has no effect."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.cumprod:1
+msgid "See :func:`torch.cumprod`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.cumsum:1
+msgid "See :func:`torch.cumsum`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.data_ptr:1
+msgid "Returns the address of the first element of this tensor."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.diag:1
+msgid "See :func:`torch.diag`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.dim:1
+msgid "Returns the number of dimensions of this tensor."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.dist:1
+msgid "See :func:`torch.dist`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.div:1
+msgid "See :func:`torch.div`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.div_:1
+msgid "In-place version of :meth:`~Tensor.div`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.dot:1
+msgid "See :func:`torch.dot`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/tensor.py:docstring of torch.Tensor.double:1
+msgid "Casts this tensor to double type"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.eig:1
+msgid "See :func:`torch.eig`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.element_size:1
+msgid "Returns the size in bytes of an individual element."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.element_size:4
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.expand:21
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.index_add_:13
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.index_copy_:13
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.index_fill_:12
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.narrow:13
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/tensor.py:docstring of torch.Tensor.permute:7
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/tensor.py:docstring of torch.Tensor.repeat:10
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.resize_:11
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.size:5
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.storage_offset:5
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.stride:10
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.view:11
+msgid "Example"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.eq:1
+msgid "See :func:`torch.eq`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.eq_:1
+msgid "In-place version of :meth:`~Tensor.eq`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.equal:1
+msgid "See :func:`torch.equal`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.erf:1
+msgid "See :func:`torch.erf`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.erfinv:1
+msgid "See :func:`torch.erfinv`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.exp:1
+msgid "See :func:`torch.exp`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.exp_:1
+msgid "In-place version of :meth:`~Tensor.exp`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.expand:1
+msgid "Returns a new view of the tensor with singleton dimensions expanded to a larger size."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.expand:4
+msgid "Passing -1 as the size for a dimension means not changing the size of that dimension."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.expand:7
+msgid "Tensor can be also expanded to a larger number of dimensions, and the new ones will be appended at the front. (For the new dimensions, the size cannot be set to -1.)"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.expand:11
+msgid "Expanding a tensor does not allocate new memory, but only creates a new view on the existing tensor where a dimension of size one is expanded to a larger size by setting the ``stride`` to 0. Any dimension of size 1 can be expanded to an arbitrary value without allocating new memory."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.expand:17
+msgid "The desired expanded size"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/tensor.py:docstring of torch.Tensor.expand_as:1
+msgid "Expands this tensor to the size of the specified tensor."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/tensor.py:docstring of torch.Tensor.expand_as:3
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/tensor.py:docstring of torch.Tensor.view_as:3
+msgid "This is equivalent to::"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.exponential_:1
+msgid "Fills this tensor with elements drawn from the exponential distribution:"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.fill_:1
+msgid "Fills this tensor with the specified value."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/tensor.py:docstring of torch.Tensor.float:1
+msgid "Casts this tensor to float type"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.floor:1
+msgid "See :func:`torch.floor`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.floor_:1
+msgid "In-place version of :meth:`~Tensor.floor`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.fmod:1
+msgid "See :func:`torch.fmod`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.fmod_:1
+msgid "In-place version of :meth:`~Tensor.fmod`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.frac:1
+msgid "See :func:`torch.frac`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.frac_:1
+msgid "In-place version of :meth:`~Tensor.frac`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.gather:1
+msgid "See :func:`torch.gather`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.ge:1
+msgid "See :func:`torch.ge`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.ge_:1
+msgid "In-place version of :meth:`~Tensor.ge`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.gels:1
+msgid "See :func:`torch.gels`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.geometric_:1
+msgid "Fills this tensor with elements drawn from the geometric distribution:"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.geqrf:1
+msgid "See :func:`torch.geqrf`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.ger:1
+msgid "See :func:`torch.ger`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.gesv:1
+msgid "See :func:`torch.gesv`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.gt:1
+msgid "See :func:`torch.gt`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.gt_:1
+msgid "In-place version of :meth:`~Tensor.gt`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/tensor.py:docstring of torch.Tensor.half:1
+msgid "Casts this tensor to half-precision float type"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.histc:1
+msgid "See :func:`torch.histc`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.index:1
+msgid "Selects elements from this tensor using a binary mask or along a given dimension. The expression ``tensor.index(m)`` is equivalent to ``tensor[m]``."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.index:4
+msgid "The dimension or mask used to select elements"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.index_add_:1
+msgid "Accumulate the elements of tensor into the original tensor by adding to the indices in the order given in index. The shape of tensor must exactly match the elements indexed or an error will be raised."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.index_add_:5
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.index_copy_:5
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.index_fill_:4
+msgid "Dimension along which to index"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.index_add_:7
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.index_copy_:7
+msgid "Indices to select from tensor"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.index_add_:9
+msgid "Tensor containing values to add"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.index_copy_:1
+msgid "Copies the elements of tensor into the original tensor by selecting the indices in the order given in index. The shape of tensor must exactly match the elements indexed or an error will be raised."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.index_copy_:9
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.put_:11
+msgid "Tensor containing values to copy"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.index_fill_:1
+msgid "Fills the elements of the original tensor with value :attr:`val` by selecting the indices in the order given in index."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.index_fill_:6
+msgid "Indices"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.index_fill_:8
+msgid "Value to fill"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.index_select:1
+msgid "See :func:`torch.index_select`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/tensor.py:docstring of torch.Tensor.int:1
+msgid "Casts this tensor to int type"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.inverse:1
+msgid "See :func:`torch.inverse`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.is_contiguous:1
+msgid "Returns True if this tensor is contiguous in memory in C order."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/tensor.py:docstring of torch.Tensor.is_pinned:1
+msgid "Returns true if this tensor resides in pinned memory"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.is_set_to:1
+msgid "Returns True if this object refers to the same ``THTensor`` object from the Torch C API as the given tensor."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.kthvalue:1
+msgid "See :func:`torch.kthvalue`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.le:1
+msgid "See :func:`torch.le`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.le_:1
+msgid "In-place version of :meth:`~Tensor.le`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.lerp:1
+msgid "See :func:`torch.lerp`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.lerp_:1
+msgid "In-place version of :meth:`~Tensor.lerp`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.log:1
+msgid "See :func:`torch.log`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.log1p:1
+msgid "See :func:`torch.log1p`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.log1p_:1
+msgid "In-place version of :meth:`~Tensor.log1p`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.log_:1
+msgid "In-place version of :meth:`~Tensor.log`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.log_normal_:1
+msgid "Fills this tensor with numbers samples from the log-normal distribution parameterized by the given mean (µ) and standard deviation (σ). Note that :attr:`mean` and :attr:`stdv` are the mean and standard deviation of the underlying normal distribution, and not of the returned distribution:"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/tensor.py:docstring of torch.Tensor.long:1
+msgid "Casts this tensor to long type"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.lt:1
+msgid "See :func:`torch.lt`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.lt_:1
+msgid "In-place version of :meth:`~Tensor.lt`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.map_:1
+msgid "Applies :attr:`callable` for each element in this tensor and the given tensor and stores the results in this tensor.  This tensor and the given tensor must be :ref:`broadcastable <broadcasting-semantics>`."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.map_:5
+msgid "The :attr:`callable` should have the signature::"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.masked_scatter_:1
+msgid "Copies elements from :attr:`source` into this tensor at positions where the :attr:`mask` is one. The shape of :attr:`mask` must be :ref:`broadcastable <broadcasting-semantics>` with the shape of the underlying tensor. The :attr:`source` should have at least as many elements as the number of ones in :attr:`mask`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.masked_scatter_:7
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.masked_fill_:5
+msgid "The binary mask"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.masked_scatter_:9
+msgid "The tensor to copy from"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.masked_scatter_:14
+msgid "The :attr:`mask` operates on the :attr:`self` tensor, not on the given :attr:`source` tensor."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.masked_fill_:1
+msgid "Fills elements of this tensor with :attr:`value` where :attr:`mask` is one. The shape of :attr:`mask` must be :ref:`broadcastable <broadcasting-semantics>` with the shape of the underlying tensor."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.masked_fill_:7
+msgid "The value to fill"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.masked_select:1
+msgid "See :func:`torch.masked_select`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/tensor.py:docstring of torch.Tensor.matmul:1
+msgid "Matrix product of two tensors."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/tensor.py:docstring of torch.Tensor.matmul:3
+msgid "See :func:`torch.matmul`."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.max:1
+msgid "See :func:`torch.max`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.mean:1
+msgid "See :func:`torch.mean`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.median:1
+msgid "See :func:`torch.median`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.min:1
+msgid "See :func:`torch.min`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.mm:1
+msgid "See :func:`torch.mm`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.mode:1
+msgid "See :func:`torch.mode`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.mul:1
+msgid "See :func:`torch.mul`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.mul_:1
+msgid "In-place version of :meth:`~Tensor.mul`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.multinomial:1
+msgid "See :func:`torch.multinomial`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.mv:1
+msgid "See :func:`torch.mv`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.narrow:1
+msgid "Returns a new tensor that is a narrowed version of this tensor. The dimension :attr:`dim` is narrowed from :attr:`start` to :attr:`start + length`. The returned tensor and this tensor share the same underlying storage."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.narrow:5
+msgid "The dimension along which to narrow"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.narrow:7
+msgid "The starting dimension"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.ndimension:1
+msgid "Alias for :meth:`~Tensor.dim()`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.ne:1
+msgid "See :func:`torch.ne`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.ne_:1
+msgid "In-place version of :meth:`~Tensor.ne`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.neg:1
+msgid "See :func:`torch.neg`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.neg_:1
+msgid "In-place version of :meth:`~Tensor.neg`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.nelement:1
+msgid "Alias for :meth:`~Tensor.numel`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/tensor.py:docstring of torch.Tensor.new:1
+msgid "Constructs a new tensor of the same data type."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.nonzero:1
+msgid "See :func:`torch.nonzero`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.norm:1
+msgid "See :func:`torch.norm`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.normal_:1
+msgid "Fills this tensor with elements samples from the normal distribution parameterized by :attr:`mean` and :attr:`std`."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.numel:1
+msgid "See :func:`torch.numel`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.numpy:1
+msgid "Returns this tensor as a NumPy :class:`ndarray`. This tensor and the returned :class:`ndarray` share the same underlying storage. Changes to this tensor will be reflected in the :class:`ndarray` and vice versa."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.orgqr:1
+msgid "See :func:`torch.orgqr`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.ormqr:1
+msgid "See :func:`torch.ormqr`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/tensor.py:docstring of torch.Tensor.permute:1
+msgid "Permute the dimensions of this tensor."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/tensor.py:docstring of torch.Tensor.permute:3
+msgid "The desired ordering of dimensions"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/tensor.py:docstring of torch.Tensor.pin_memory:1
+msgid "Copies the tensor to pinned memory, if it's not already pinned."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.potrf:1
+msgid "See :func:`torch.potrf`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.potri:1
+msgid "See :func:`torch.potri`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.potrs:1
+msgid "See :func:`torch.potrs`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.pow:1
+msgid "See :func:`torch.pow`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.pow_:1
+msgid "In-place version of :meth:`~Tensor.pow`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.prod:1
+msgid "See :func:`torch.prod`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.pstrf:1
+msgid "See :func:`torch.pstrf`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.put_:1
+msgid "Copies the elements from :attr:`tensor` into the positions specified by indices. For the puropose of indexing, the ``self`` tensor is treated as if it were a 1D tensor."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.put_:5
+msgid "If :attr:`accumulate` is ``True``, the elements in :attr:`tensor` are added to :attr:`self`. If accumulate is ``False``, the behavior is undefined if indices contains duplicate elements."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.put_:9
+msgid "the indices into self"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.put_:13
+msgid "True to accumulate into self"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.put_:16
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.scatter_:18
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.unfold:18
+msgid "Example::"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.qr:1
+msgid "See :func:`torch.qr`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.random_:1
+msgid "Fills this tensor with numbers sampled from the discrete uniform distribution over [from, to - 1]. If not specified, the values are usually only bounded by this tensor's data type. However, for floating point types, if unspecified, range will be [0, 2^mantissa] to ensure that every value is representable. For example, `torch.DoubleTensor(1).random_()` will be uniform in [0, 2^53]."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.reciprocal:1
+msgid "See :func:`torch.reciprocal`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.reciprocal_:1
+msgid "In-place version of :meth:`~Tensor.reciprocal`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.remainder:1
+msgid "See :func:`torch.remainder`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.remainder_:1
+msgid "In-place version of :meth:`~Tensor.remainder`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.renorm:1
+msgid "See :func:`torch.renorm`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.renorm_:1
+msgid "In-place version of :meth:`~Tensor.renorm`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/tensor.py:docstring of torch.Tensor.repeat:1
+msgid "Repeats this tensor along the specified dimensions."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/tensor.py:docstring of torch.Tensor.repeat:3
+msgid "Unlike :meth:`expand`, this function copies the tensor's data."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/tensor.py:docstring of torch.Tensor.repeat:5
+msgid "The number of times to repeat this tensor along each dimension"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.resize_:1
+msgid "Resizes this tensor to the specified size. If the number of elements is larger than the current storage size, then the underlying storage is resized to fit the new number of elements. If the number of elements is smaller, the underlying storage is not changed. Existing elements are preserved but any new memory is uninitialized."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.resize_:7
+msgid "The desired size"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.resize_as_:1
+msgid "Resizes the current tensor to be the same size as the specified tensor. This is equivalent to::"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.round:1
+msgid "See :func:`torch.round`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.round_:1
+msgid "In-place version of :meth:`~Tensor.round`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.rsqrt:1
+msgid "See :func:`torch.rsqrt`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.rsqrt_:1
+msgid "In-place version of :meth:`~Tensor.rsqrt`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.scatter_:1
+msgid "Writes all values from the Tensor :attr:`src` into self at the indices specified in the :attr:`index` Tensor. The indices are specified with respect to the given dimension, dim, in the manner described in :meth:`~Tensor.gather`."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.scatter_:5
+msgid "Note that, as for gather, the values of index must be between `0` and `(self.size(dim) -1)` inclusive and all values in a row along the specified dimension must be unique."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.scatter_:9
+msgid "The source tensor"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.scatter_:11
+msgid "The axis along which to index"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.scatter_:13
+msgid "The indices of elements to scatter"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.scatter_:15
+msgid "The source element(s) to scatter"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.select:1
+msgid "Slices the tensor along the selected dimension at the given index. If this tensor is one dimensional, this function returns a number. Otherwise, it returns a tensor with the given dimension removed."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.select:5
+msgid "Dimension to slice"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.select:7
+msgid "Index to select"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.select:12
+msgid ":meth:`select` is equivalent to slicing. For example, ``tensor.select(0, index)`` is equivalent to ``tensor[index]`` and ``tensor.select(2, index)`` is equivalent to ``tensor[:,:,index]``."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.set_:1
+msgid "Sets the underlying storage, size, and strides. If :attr:`source` is a tensor, this tensor will share the same storage and have the same size and strides as the given tensor. Changes to elements in one tensor will be reflected in the other."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.set_:6
+msgid "If :attr:`source` is a :class:`~torch.Storage`, the method sets the underlying storage, offset, size, and stride."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.set_:9
+msgid "The tensor or storage to use"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.set_:11
+msgid "The offset in the storage"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.set_:13
+msgid "The desired size. Defaults to the size of the source."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.set_:15
+msgid "The desired stride. Defaults to C-contiguous strides."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/tensor.py:docstring of torch.Tensor.share_memory_:1
+msgid "Moves the underlying storage to shared memory."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/tensor.py:docstring of torch.Tensor.share_memory_:3
+msgid "This is a no-op if the underlying storage is already in shared memory and for CUDA tensors. Tensors in shared memory cannot be resized."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/tensor.py:docstring of torch.Tensor.short:1
+msgid "Casts this tensor to short type"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.sigmoid:1
+msgid "See :func:`torch.sigmoid`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.sigmoid_:1
+msgid "In-place version of :meth:`~Tensor.sigmoid`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.sign:1
+msgid "See :func:`torch.sign`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.sign_:1
+msgid "In-place version of :meth:`~Tensor.sign`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.sin:1
+msgid "See :func:`torch.sin`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.sin_:1
+msgid "In-place version of :meth:`~Tensor.sin`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.sinh:1
+msgid "See :func:`torch.sinh`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.sinh_:1
+msgid "In-place version of :meth:`~Tensor.sinh`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.size:1
+msgid "Returns the size of the tensor. The returned value is a subclass of :class:`tuple`."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.sort:1
+msgid "See :func:`torch.sort`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/tensor.py:docstring of torch.Tensor.split:3
+msgid "See :func:`torch.split`."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.sqrt:1
+msgid "See :func:`torch.sqrt`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.sqrt_:1
+msgid "In-place version of :meth:`~Tensor.sqrt`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.squeeze:1
+msgid "See :func:`torch.squeeze`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.squeeze_:1
+msgid "In-place version of :meth:`~Tensor.squeeze`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.std:1
+msgid "See :func:`torch.std`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.storage:1
+msgid "Returns the underlying storage"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.storage_offset:1
+msgid "Returns this tensor's offset in the underlying storage in terms of number of storage elements (not bytes)."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.stride:1
+msgid "Returns the stride of the tensor. Stride is the jump necessary to go from one element to the next one in the specified dimension dim. Tuple is returned when no Argument is passed. So we get stride in all dimensions. Integer value is returned when we desire stride in particular dimension."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.stride:6
+msgid "The desired dimension in which stride is required."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.sub:1
+msgid "Subtracts a scalar or tensor from this tensor. If both :attr:`value` and :attr:`other` are specified, each element of :attr:`other` is scaled by :attr:`value` before being used."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.sub:5
+msgid "When :attr:`other` is a tensor, the shape of :attr:`other` must be :ref:`broadcastable <broadcasting-semantics>` with the shape of the underlying tensor."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.sub_:1
+msgid "In-place version of :meth:`~Tensor.sub`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.sum:1
+msgid "See :func:`torch.sum`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.svd:1
+msgid "See :func:`torch.svd`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.symeig:1
+msgid "See :func:`torch.symeig`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.t:1
+msgid "See :func:`torch.t`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.t_:1
+msgid "In-place version of :meth:`~Tensor.t`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.take:1
+msgid "See :func:`torch.take`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.tan_:1
+msgid "In-place version of :meth:`~Tensor.tan`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.tanh:1
+msgid "See :func:`torch.tanh`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.tanh_:1
+msgid "In-place version of :meth:`~Tensor.tanh`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/tensor.py:docstring of torch.Tensor.tolist:1
+msgid "Returns a nested list represenation of this tensor."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.topk:1
+msgid "See :func:`torch.topk`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.trace:1
+msgid "See :func:`torch.trace`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.transpose:1
+msgid "See :func:`torch.transpose`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.transpose_:1
+msgid "In-place version of :meth:`~Tensor.transpose`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.tril:1
+msgid "See :func:`torch.tril`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.tril_:1
+msgid "In-place version of :meth:`~Tensor.tril`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.triu:1
+msgid "See :func:`torch.triu`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.triu_:1
+msgid "In-place version of :meth:`~Tensor.triu`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.trtrs:1
+msgid "See :func:`torch.trtrs`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.trunc:1
+msgid "See :func:`torch.trunc`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.trunc_:1
+msgid "In-place version of :meth:`~Tensor.trunc`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/_utils.py:docstring of torch.Tensor.type:1
+msgid "Returns the type if `new_type` is not provided, else casts this object to the specified type."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/_utils.py:docstring of torch.Tensor.type:4
+msgid "If this is already of the correct type, no copy is performed and the original object is returned."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/_utils.py:docstring of torch.Tensor.type:7
+msgid "The desired type"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/_utils.py:docstring of torch.Tensor.type:9
+msgid "If ``True``, and the source is in pinned memory and destination is on the GPU or vice versa, the copy is performed asynchronously with respect to the host. Otherwise, the argument has no effect."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/tensor.py:docstring of torch.Tensor.type_as:1
+msgid "Returns this tensor cast to the type of the given tensor."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/tensor.py:docstring of torch.Tensor.type_as:3
+msgid "This is a no-op if the tensor is already of the correct type. This is equivalent to::"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/tensor.py:docstring of torch.Tensor.type_as:8
+msgid "Params:"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/tensor.py:docstring of torch.Tensor.type_as:9
+msgid "tensor (Tensor): the tensor which has the desired type"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.unfold:1
+msgid "Returns a tensor which contains all slices of size :attr:`size` in the dimension :attr:`dim`."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.unfold:4
+msgid "Step between two slices is given by :attr:`step`."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.unfold:6
+msgid "If `sizedim` is the original size of dimension dim, the size of dimension `dim` in the returned tensor will be `(sizedim - size) / step + 1`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.unfold:9
+msgid "An additional dimension of size size is appended in the returned tensor."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.unfold:11
+msgid "dimension in which unfolding happens"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.unfold:13
+msgid "size of each slice that is unfolded"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.unfold:15
+msgid "the step between each slice"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.uniform_:1
+msgid "Fills this tensor with numbers sampled from the uniform distribution:"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.unsqueeze:1
+msgid "See :func:`torch.unsqueeze`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.unsqueeze_:1
+msgid "In-place version of :meth:`~Tensor.unsqueeze`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.var:1
+msgid "See :func:`torch.var`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.view:1
+msgid "Returns a new tensor with the same data but different size."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.view:3
+msgid "The returned tensor shares the same data and must have the same number of elements, but may have a different size. A tensor must be :func:`contiguous` to be viewed."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.view:7
+msgid "Desired size"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/tensor.py:docstring of torch.Tensor.view_as:1
+msgid "Returns this tensor viewed as the size as the specified tensor."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.Tensor.zero_:1
+msgid "Fills this tensor with zeros."
+msgstr ""
+
+#: ../../source/tensors.rst:319
+msgid "The following methods are unique to :class:`torch.ByteTensor`."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.ByteTensor.all:1
+msgid "Returns True if all elements in the tensor are non-zero, False otherwise."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/__init__.py:docstring of torch.ByteTensor.any:1
+msgid "Returns True if any elements in the tensor are non-zero, False otherwise."
+msgstr ""
+

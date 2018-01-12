@@ -1,0 +1,135 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017, Torch Contributors
+# This file is distributed under the same license as the PyTorch package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PyTorch master (0.3.0.post4 )\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-01-12 14:38+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/distributions.rst:5
+msgid "Probability distributions - torch.distributions"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/distributions.py:docstring of torch.distributions:1
+msgid "The ``distributions`` package contains parameterizable probability distributions and sampling functions."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/distributions.py:docstring of torch.distributions:4
+msgid "Policy gradient methods can be implemented using the :meth:`~torch.distributions.Distribution.log_prob` method, when the probability density function is differentiable with respect to its parameters. A basic method is the REINFORCE rule:"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/distributions.py:docstring of torch.distributions:13
+msgid "where :math:`\\theta` are the parameters, :math:`\\alpha` is the learning rate, :math:`r` is the reward and :math:`p(a|\\pi^\\theta(s))` is the probability of taking action :math:`a` in state :math:`s` given policy :math:`\\pi^\\theta`."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/distributions.py:docstring of torch.distributions:17
+msgid "In practice we would sample an action from the output of a network, apply this action in an environment, and then use ``log_prob`` to construct an equivalent loss function. Note that we use a negative because optimisers use gradient descent, whilst the rule above assumes gradient ascent. With a categorical policy, the code for implementing REINFORCE would be as follows::"
+msgstr ""
+
+#: ../../source/distributions.rst:11
+msgid ":hidden:`Distribution`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/distributions.py:docstring of torch.distributions.Distribution:1
+msgid "Distribution is the abstract base class for probability distributions."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/distributions.py:docstring of torch.distributions.Distribution.log_prob:1
+msgid "Returns the log of the probability density/mass function evaluated at `value`."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/distributions.py:docstring of torch.distributions.Distribution.log_prob:0
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/distributions.py:docstring of torch.distributions.Bernoulli:0
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/distributions.py:docstring of torch.distributions.Categorical:0
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/distributions.py:docstring of torch.distributions.Normal:0
+msgid "参数"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/distributions.py:docstring of torch.distributions.Distribution.sample:1
+msgid "Generates a single sample or single batch of samples if the distribution parameters are batched."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/distributions.py:docstring of torch.distributions.Distribution.sample_n:1
+msgid "Generates n samples or n batches of samples if the distribution parameters are batched."
+msgstr ""
+
+#: ../../source/distributions.rst:17
+msgid ":hidden:`Bernoulli`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/distributions.py:docstring of torch.distributions.Bernoulli:1
+msgid "Creates a Bernoulli distribution parameterized by `probs`."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/distributions.py:docstring of torch.distributions.Bernoulli:3
+msgid "Samples are binary (0 or 1). They take the value `1` with probability `p` and `0` with probability `1 - p`."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/distributions.py:docstring of torch.distributions.Bernoulli:6
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/distributions.py:docstring of torch.distributions.Categorical:15
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/distributions.py:docstring of torch.distributions.Normal:4
+msgid "Example::"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/distributions.py:docstring of torch.distributions.Bernoulli:13
+msgid "the probabilty of sampling `1`"
+msgstr ""
+
+#: ../../source/distributions.rst:23
+msgid ":hidden:`Categorical`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/distributions.py:docstring of torch.distributions.Categorical:1
+msgid "Creates a categorical distribution parameterized by `probs`."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/distributions.py:docstring of torch.distributions.Categorical:4
+msgid "It is equivalent to the distribution that ``multinomial()`` samples from."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/distributions.py:docstring of torch.distributions.Categorical:6
+msgid "Samples are integers from `0 ... K-1` where `K` is probs.size(-1)."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/distributions.py:docstring of torch.distributions.Categorical:8
+msgid "If `probs` is 1D with length-`K`, each element is the relative probability of sampling the class at that index."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/distributions.py:docstring of torch.distributions.Categorical:11
+msgid "If `probs` is 2D, it is treated as a batch of probability vectors."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/distributions.py:docstring of torch.distributions.Categorical:13
+msgid "See also: :func:`torch.multinomial`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/distributions.py:docstring of torch.distributions.Categorical:22
+msgid "event probabilities"
+msgstr ""
+
+#: ../../source/distributions.rst:29
+msgid ":hidden:`Normal`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/distributions.py:docstring of torch.distributions.Normal:1
+msgid "Creates a normal (also called Gaussian) distribution parameterized by `mean` and `std`."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/distributions.py:docstring of torch.distributions.Normal:11
+msgid "mean of the distribution"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/distributions.py:docstring of torch.distributions.Normal:13
+msgid "standard deviation of the distribution"
+msgstr ""
+

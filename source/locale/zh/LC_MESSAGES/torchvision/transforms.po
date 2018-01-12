@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyTorch master (0.3.0.post4 )\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-01-12 11:27+0800\n"
+"POT-Creation-Date: 2018-01-12 14:42+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,8 +37,7 @@ msgstr ""
 #: torchvision.transforms.Normalize torchvision.transforms.Normalize.__call__
 #: torchvision.transforms.Pad torchvision.transforms.RandomCrop
 #: torchvision.transforms.RandomGrayscale
-#: torchvision.transforms.RandomResizedCrop
-#: torchvision.transforms.RandomRotation torchvision.transforms.Resize
+#: torchvision.transforms.RandomResizedCrop torchvision.transforms.Resize
 #: torchvision.transforms.TenCrop torchvision.transforms.ToPILImage
 #: torchvision.transforms.ToPILImage.__call__
 #: torchvision.transforms.ToTensor.__call__
@@ -261,40 +260,7 @@ msgid ""
 "Should be >=0 and <= 0.5."
 msgstr ""
 
-#: of torchvision.transforms.RandomRotation:1
-msgid "Rotate the image by angle."
-msgstr ""
-
-#: of torchvision.transforms.RandomRotation:3
-msgid ""
-"Range of degrees to select from. If degrees is a number instead of "
-"sequence like (min, max), the range of degrees will be (-degrees, "
-"+degrees)."
-msgstr ""
-
-#: of torchvision.transforms.RandomRotation:7
-msgid ""
-"An optional resampling filter. See "
-"http://pillow.readthedocs.io/en/3.4.x/handbook/concepts.html#filters If "
-"omitted, or if the image has mode \"1\" or \"P\", it is set to "
-"PIL.Image.NEAREST."
-msgstr ""
-
-#: of torchvision.transforms.RandomRotation:11
-msgid ""
-"Optional expansion flag. If true, expands the output to make it large "
-"enough to hold the entire rotated image. If false or omitted, make the "
-"output image the same size as the input image. Note that the expand flag "
-"assumes rotation around the center and no translation."
-msgstr ""
-
-#: of torchvision.transforms.RandomRotation:16
-msgid ""
-"Optional center of rotation. Origin is the upper left corner. Default is "
-"the center of the image."
-msgstr ""
-
-#: ../../source/torchvision/transforms.rst:44
+#: ../../source/torchvision/transforms.rst:42
 msgid "Transforms on torch.\\*Tensor"
 msgstr ""
 
@@ -322,7 +288,7 @@ msgstr ""
 msgid "Normalized Tensor image."
 msgstr ""
 
-#: ../../source/torchvision/transforms.rst:52
+#: ../../source/torchvision/transforms.rst:50
 msgid "Conversion Transforms"
 msgstr ""
 
@@ -372,7 +338,7 @@ msgstr ""
 msgid "Image converted to PIL Image."
 msgstr ""
 
-#: ../../source/torchvision/transforms.rst:63
+#: ../../source/torchvision/transforms.rst:61
 msgid "Generic Transforms"
 msgstr ""
 
@@ -383,4 +349,40 @@ msgstr ""
 #: of torchvision.transforms.Lambda:3
 msgid "Lambda/function to be used for transform."
 msgstr ""
+
+#~ msgid "Rotate the image by angle."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Range of degrees to select from. "
+#~ "If degrees is a number instead of"
+#~ " sequence like (min, max), the range"
+#~ " of degrees will be (-degrees, "
+#~ "+degrees)."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "An optional resampling filter. See "
+#~ "http://pillow.readthedocs.io/en/3.4.x/handbook/concepts.html#filters"
+#~ " If omitted, or if the image "
+#~ "has mode \"1\" or \"P\", it is "
+#~ "set to PIL.Image.NEAREST."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Optional expansion flag. If true, "
+#~ "expands the output to make it "
+#~ "large enough to hold the entire "
+#~ "rotated image. If false or omitted, "
+#~ "make the output image the same "
+#~ "size as the input image. Note that"
+#~ " the expand flag assumes rotation "
+#~ "around the center and no translation."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Optional center of rotation. Origin is"
+#~ " the upper left corner. Default is"
+#~ " the center of the image."
+#~ msgstr ""
 

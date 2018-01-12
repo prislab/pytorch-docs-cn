@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyTorch master (0.3.0.post4 )\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-01-12 11:27+0800\n"
+"POT-Creation-Date: 2018-01-12 14:42+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -109,18 +109,14 @@ msgid ""
 msgstr ""
 
 #: ../../source/torchvision/datasets.rst:39
-msgid "EMNIST"
-msgstr ""
-
-#: ../../source/torchvision/datasets.rst:44
 msgid "COCO"
 msgstr ""
 
-#: ../../source/torchvision/datasets.rst:47
+#: ../../source/torchvision/datasets.rst:42
 msgid "These require the `COCO API to be installed`_"
 msgstr ""
 
-#: ../../source/torchvision/datasets.rst:53
+#: ../../source/torchvision/datasets.rst:48
 msgid "Captions"
 msgstr ""
 
@@ -187,7 +183,7 @@ msgstr ""
 msgid "返回类型"
 msgstr ""
 
-#: ../../source/torchvision/datasets.rst:61
+#: ../../source/torchvision/datasets.rst:56
 msgid "Detection"
 msgstr ""
 
@@ -201,7 +197,7 @@ msgstr ""
 msgid "Tuple (image, target). target is the object returned by ``coco.loadAnns``."
 msgstr ""
 
-#: ../../source/torchvision/datasets.rst:68
+#: ../../source/torchvision/datasets.rst:63
 msgid "LSUN"
 msgstr ""
 
@@ -223,7 +219,7 @@ msgstr ""
 msgid "Tuple (image, target) where target is the index of the target category."
 msgstr ""
 
-#: ../../source/torchvision/datasets.rst:75
+#: ../../source/torchvision/datasets.rst:70
 msgid "ImageFolder"
 msgstr ""
 
@@ -243,11 +239,11 @@ msgstr ""
 msgid "(image, target) where target is class_index of the target class."
 msgstr ""
 
-#: ../../source/torchvision/datasets.rst:83
+#: ../../source/torchvision/datasets.rst:78
 msgid "Imagenet-12"
 msgstr ""
 
-#: ../../source/torchvision/datasets.rst:85
+#: ../../source/torchvision/datasets.rst:80
 msgid ""
 "This should simply be implemented with an ``ImageFolder`` dataset. The "
 "data is preprocessed `as described here "
@@ -255,13 +251,13 @@ msgid ""
 "#download-the-imagenet-dataset>`__"
 msgstr ""
 
-#: ../../source/torchvision/datasets.rst:89
+#: ../../source/torchvision/datasets.rst:84
 msgid ""
 "`Here is an example "
 "<https://github.com/pytorch/examples/blob/27e2a46c1d1505324032b1d94fc6ce24d5b67e97/imagenet/main.py#L48-L62>`__."
 msgstr ""
 
-#: ../../source/torchvision/datasets.rst:93
+#: ../../source/torchvision/datasets.rst:88
 msgid "CIFAR"
 msgstr ""
 
@@ -293,7 +289,7 @@ msgstr ""
 msgid "This is a subclass of the `CIFAR10` Dataset."
 msgstr ""
 
-#: ../../source/torchvision/datasets.rst:102
+#: ../../source/torchvision/datasets.rst:97
 msgid "STL10"
 msgstr ""
 
@@ -311,7 +307,7 @@ msgid ""
 "dataset is selected."
 msgstr ""
 
-#: ../../source/torchvision/datasets.rst:110
+#: ../../source/torchvision/datasets.rst:105
 msgid "SVHN"
 msgstr ""
 
@@ -334,7 +330,7 @@ msgid ""
 "'extra' is Extra training set."
 msgstr ""
 
-#: ../../source/torchvision/datasets.rst:118
+#: ../../source/torchvision/datasets.rst:113
 msgid "PhotoTour"
 msgstr ""
 
@@ -361,4 +357,7 @@ msgstr ""
 #: of torchvision.datasets.PhotoTour.__getitem__:4
 msgid "(data1, data2, matches)"
 msgstr ""
+
+#~ msgid "EMNIST"
+#~ msgstr ""
 

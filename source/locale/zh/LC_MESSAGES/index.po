@@ -25,7 +25,7 @@ msgstr ""
 msgid ""
 "PyTorch is an optimized tensor library for deep learning using GPUs and "
 "CPUs."
-msgstr ""
+msgstr "PyTorch是一个"
 
 #: ../../source/index.rst:13
 msgid "Notes"

@@ -1,0 +1,581 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017, Torch Contributors
+# This file is distributed under the same license as the PyTorch package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PyTorch master (0.3.0.post4 )\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-01-12 14:38+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/optim.rst:2
+msgid "torch.optim"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/__init__.py:docstring of torch.optim:1
+msgid ":mod:`torch.optim` is a package implementing various optimization algorithms. Most commonly used methods are already supported, and the interface is general enough, so that more sophisticated ones can be also easily integrated in the future."
+msgstr ""
+
+#: ../../source/optim.rst:7
+msgid "How to use an optimizer"
+msgstr ""
+
+#: ../../source/optim.rst:9
+msgid "To use :mod:`torch.optim` you have to construct an optimizer object, that will hold the current state and will update the parameters based on the computed gradients."
+msgstr ""
+
+#: ../../source/optim.rst:13
+msgid "Constructing it"
+msgstr ""
+
+#: ../../source/optim.rst:15
+msgid "To construct an :class:`Optimizer` you have to give it an iterable containing the parameters (all should be :class:`~torch.autograd.Variable` s) to optimize. Then, you can specify optimizer-specific options such as the learning rate, weight decay, etc."
+msgstr ""
+
+#: ../../source/optim.rst:21
+msgid "If you need to move a model to GPU via `.cuda()`, please do so before constructing optimizers for it. Parameters of a model after `.cuda()` will be different objects with those before the call."
+msgstr ""
+
+#: ../../source/optim.rst:25
+msgid "In general, you should make sure that optimized parameters live in consistent locations when optimizers are constructed and used."
+msgstr ""
+
+#: ../../source/optim.rst:28
+#: ../../source/optim.rst:75
+#: ../../source/optim.rst:92
+msgid "Example::"
+msgstr ""
+
+#: ../../source/optim.rst:34
+msgid "Per-parameter options"
+msgstr ""
+
+#: ../../source/optim.rst:36
+msgid ":class:`Optimizer` s also support specifying per-parameter options. To do this, instead of passing an iterable of :class:`~torch.autograd.Variable` s, pass in an iterable of :class:`dict` s. Each of them will define a separate parameter group, and should contain a ``params`` key, containing a list of parameters belonging to it. Other keys should match the keyword arguments accepted by the optimizers, and will be used as optimization options for this group."
+msgstr ""
+
+#: ../../source/optim.rst:45
+msgid "You can still pass options as keyword arguments. They will be used as defaults, in the groups that didn't override them. This is useful when you only want to vary a single option, while keeping all others consistent between parameter groups."
+msgstr ""
+
+#: ../../source/optim.rst:51
+msgid "For example, this is very useful when one wants to specify per-layer learning rates::"
+msgstr ""
+
+#: ../../source/optim.rst:58
+msgid "This means that ``model.base``'s parameters will use the default learning rate of ``1e-2``, ``model.classifier``'s parameters will use a learning rate of ``1e-3``, and a momentum of ``0.9`` will be used for all parameters"
+msgstr ""
+
+#: ../../source/optim.rst:63
+msgid "Taking an optimization step"
+msgstr ""
+
+#: ../../source/optim.rst:65
+msgid "All optimizers implement a :func:`~Optimizer.step` method, that updates the parameters. It can be used in two ways:"
+msgstr ""
+
+#: ../../source/optim.rst:69
+msgid "``optimizer.step()``"
+msgstr ""
+
+#: ../../source/optim.rst:71
+msgid "This is a simplified version supported by most optimizers. The function can be called once the gradients are computed using e.g. :func:`~torch.autograd.Variable.backward`."
+msgstr ""
+
+#: ../../source/optim.rst:85
+msgid "``optimizer.step(closure)``"
+msgstr ""
+
+#: ../../source/optim.rst:87
+msgid "Some optimization algorithms such as Conjugate Gradient and LBFGS need to reevaluate the function multiple times, so you have to pass in a closure that allows them to recompute your model. The closure should clear the gradients, compute the loss, and return it."
+msgstr ""
+
+#: ../../source/optim.rst:104
+msgid "Algorithms"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/optimizer.py:docstring of torch.optim.Optimizer:1
+msgid "Base class for all optimizers."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/optimizer.py:docstring of torch.optim.Optimizer:0
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/optimizer.py:docstring of torch.optim.Optimizer.add_param_group:0
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/optimizer.py:docstring of torch.optim.Optimizer.load_state_dict:0
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/optimizer.py:docstring of torch.optim.Optimizer.step:0
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/adadelta.py:docstring of torch.optim.Adadelta:0
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/adadelta.py:docstring of torch.optim.Adadelta.step:0
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/adagrad.py:docstring of torch.optim.Adagrad:0
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/adagrad.py:docstring of torch.optim.Adagrad.step:0
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/adam.py:docstring of torch.optim.Adam:0
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/adam.py:docstring of torch.optim.Adam.step:0
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/sparse_adam.py:docstring of torch.optim.SparseAdam:0
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/sparse_adam.py:docstring of torch.optim.SparseAdam.step:0
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/adamax.py:docstring of torch.optim.Adamax:0
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/adamax.py:docstring of torch.optim.Adamax.step:0
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/asgd.py:docstring of torch.optim.ASGD:0
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/asgd.py:docstring of torch.optim.ASGD.step:0
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/lbfgs.py:docstring of torch.optim.LBFGS:0
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/lbfgs.py:docstring of torch.optim.LBFGS.step:0
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/rmsprop.py:docstring of torch.optim.RMSprop:0
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/rmsprop.py:docstring of torch.optim.RMSprop.step:0
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/rprop.py:docstring of torch.optim.Rprop:0
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/rprop.py:docstring of torch.optim.Rprop.step:0
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/sgd.py:docstring of torch.optim.SGD:0
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/sgd.py:docstring of torch.optim.SGD.step:0
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/lr_scheduler.py:docstring of torch.optim.lr_scheduler.LambdaLR:0
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/lr_scheduler.py:docstring of torch.optim.lr_scheduler.StepLR:0
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/lr_scheduler.py:docstring of torch.optim.lr_scheduler.MultiStepLR:0
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/lr_scheduler.py:docstring of torch.optim.lr_scheduler.ExponentialLR:0
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/lr_scheduler.py:docstring of torch.optim.lr_scheduler.ReduceLROnPlateau:0
+msgid "参数"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/optimizer.py:docstring of torch.optim.Optimizer:3
+msgid "an iterable of :class:`Variable` s or :class:`dict` s. Specifies what Variables should be optimized."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/optimizer.py:docstring of torch.optim.Optimizer:6
+msgid "(dict): a dict containing default values of optimization options (used when a parameter group doesn't specify them)."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/optimizer.py:docstring of torch.optim.Optimizer.add_param_group:1
+msgid "Add a param group to the :class:`Optimizer` s `param_groups`."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/optimizer.py:docstring of torch.optim.Optimizer.add_param_group:3
+msgid "This can be useful when fine tuning a pre-trained network as frozen layers can be made trainable and added to the :class:`Optimizer` as training progresses."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/optimizer.py:docstring of torch.optim.Optimizer.add_param_group:6
+msgid "Specifies what Variables should be optimized along with group"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/optimizer.py:docstring of torch.optim.Optimizer.load_state_dict:1
+msgid "Loads the optimizer state."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/optimizer.py:docstring of torch.optim.Optimizer.load_state_dict:3
+msgid "optimizer state. Should be an object returned from a call to :meth:`state_dict`."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/optimizer.py:docstring of torch.optim.Optimizer.state_dict:1
+msgid "Returns the state of the optimizer as a :class:`dict`."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/optimizer.py:docstring of torch.optim.Optimizer.state_dict:3
+msgid "It contains two entries:"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/optimizer.py:docstring of torch.optim.Optimizer.state_dict:5
+msgid "state - a dict holding current optimization state. Its content"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/optimizer.py:docstring of torch.optim.Optimizer.state_dict:6
+msgid "differs between optimizer classes."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/optimizer.py:docstring of torch.optim.Optimizer.state_dict:7
+msgid "param_groups - a dict containing all parameter groups"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/optimizer.py:docstring of torch.optim.Optimizer.step:1
+msgid "Performs a single optimization step (parameter update)."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/optimizer.py:docstring of torch.optim.Optimizer.step:3
+msgid "A closure that reevaluates the model and returns the loss. Optional for most optimizers."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/optimizer.py:docstring of torch.optim.Optimizer.zero_grad:1
+msgid "Clears the gradients of all optimized :class:`Variable` s."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/adadelta.py:docstring of torch.optim.Adadelta:1
+msgid "Implements Adadelta algorithm."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/adadelta.py:docstring of torch.optim.Adadelta:3
+msgid "It has been proposed in `ADADELTA: An Adaptive Learning Rate Method`__."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/adadelta.py:docstring of torch.optim.Adadelta:5
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/adagrad.py:docstring of torch.optim.Adagrad:6
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/adam.py:docstring of torch.optim.Adam:5
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/sparse_adam.py:docstring of torch.optim.SparseAdam:6
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/adamax.py:docstring of torch.optim.Adamax:5
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/asgd.py:docstring of torch.optim.ASGD:6
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/rmsprop.py:docstring of torch.optim.RMSprop:9
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/rprop.py:docstring of torch.optim.Rprop:3
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/sgd.py:docstring of torch.optim.SGD:6
+msgid "iterable of parameters to optimize or dicts defining parameter groups"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/adadelta.py:docstring of torch.optim.Adadelta:8
+msgid "coefficient used for computing a running average of squared gradients (default: 0.9)"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/adadelta.py:docstring of torch.optim.Adadelta:11
+msgid "term added to the denominator to improve numerical stability (default: 1e-6)"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/adadelta.py:docstring of torch.optim.Adadelta:14
+msgid "coefficient that scale delta before it is applied to the parameters (default: 1.0)"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/adadelta.py:docstring of torch.optim.Adadelta:17
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/adagrad.py:docstring of torch.optim.Adagrad:13
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/adam.py:docstring of torch.optim.Adam:16
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/adamax.py:docstring of torch.optim.Adamax:16
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/asgd.py:docstring of torch.optim.ASGD:17
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/rmsprop.py:docstring of torch.optim.RMSprop:24
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/sgd.py:docstring of torch.optim.SGD:13
+msgid "weight decay (L2 penalty) (default: 0)"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/adadelta.py:docstring of torch.optim.Adadelta.step:1
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/adagrad.py:docstring of torch.optim.Adagrad.step:1
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/adam.py:docstring of torch.optim.Adam.step:1
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/sparse_adam.py:docstring of torch.optim.SparseAdam.step:1
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/adamax.py:docstring of torch.optim.Adamax.step:1
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/asgd.py:docstring of torch.optim.ASGD.step:1
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/lbfgs.py:docstring of torch.optim.LBFGS.step:1
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/rmsprop.py:docstring of torch.optim.RMSprop.step:1
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/rprop.py:docstring of torch.optim.Rprop.step:1
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/sgd.py:docstring of torch.optim.SGD.step:1
+msgid "Performs a single optimization step."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/adadelta.py:docstring of torch.optim.Adadelta.step:3
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/adagrad.py:docstring of torch.optim.Adagrad.step:3
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/adam.py:docstring of torch.optim.Adam.step:3
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/sparse_adam.py:docstring of torch.optim.SparseAdam.step:3
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/adamax.py:docstring of torch.optim.Adamax.step:3
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/asgd.py:docstring of torch.optim.ASGD.step:3
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/lbfgs.py:docstring of torch.optim.LBFGS.step:3
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/rmsprop.py:docstring of torch.optim.RMSprop.step:3
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/rprop.py:docstring of torch.optim.Rprop.step:3
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/sgd.py:docstring of torch.optim.SGD.step:3
+msgid "A closure that reevaluates the model and returns the loss."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/adagrad.py:docstring of torch.optim.Adagrad:1
+msgid "Implements Adagrad algorithm."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/adagrad.py:docstring of torch.optim.Adagrad:3
+msgid "It has been proposed in `Adaptive Subgradient Methods for Online Learning and Stochastic Optimization`_."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/adagrad.py:docstring of torch.optim.Adagrad:9
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/asgd.py:docstring of torch.optim.ASGD:9
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/rmsprop.py:docstring of torch.optim.RMSprop:12
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/rprop.py:docstring of torch.optim.Rprop:6
+msgid "learning rate (default: 1e-2)"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/adagrad.py:docstring of torch.optim.Adagrad:11
+msgid "learning rate decay (default: 0)"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/adam.py:docstring of torch.optim.Adam:1
+msgid "Implements Adam algorithm."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/adam.py:docstring of torch.optim.Adam:3
+msgid "It has been proposed in `Adam: A Method for Stochastic Optimization`_."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/adam.py:docstring of torch.optim.Adam:8
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/sparse_adam.py:docstring of torch.optim.SparseAdam:9
+msgid "learning rate (default: 1e-3)"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/adam.py:docstring of torch.optim.Adam:10
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/sparse_adam.py:docstring of torch.optim.SparseAdam:11
+msgid "coefficients used for computing running averages of gradient and its square (default: (0.9, 0.999))"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/adam.py:docstring of torch.optim.Adam:13
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/sparse_adam.py:docstring of torch.optim.SparseAdam:14
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/adamax.py:docstring of torch.optim.Adamax:13
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/rmsprop.py:docstring of torch.optim.RMSprop:18
+msgid "term added to the denominator to improve numerical stability (default: 1e-8)"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/sparse_adam.py:docstring of torch.optim.SparseAdam:1
+msgid "Implements lazy version of Adam algorithm suitable for sparse tensors."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/sparse_adam.py:docstring of torch.optim.SparseAdam:3
+msgid "In this variant, only moments that show up in the gradient get updated, and only those portions of the gradient get applied to the parameters."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/adamax.py:docstring of torch.optim.Adamax:1
+msgid "Implements Adamax algorithm (a variant of Adam based on infinity norm)."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/adamax.py:docstring of torch.optim.Adamax:3
+msgid "It has been proposed in `Adam: A Method for Stochastic Optimization`__."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/adamax.py:docstring of torch.optim.Adamax:8
+msgid "learning rate (default: 2e-3)"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/adamax.py:docstring of torch.optim.Adamax:10
+msgid "coefficients used for computing running averages of gradient and its square"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/asgd.py:docstring of torch.optim.ASGD:1
+msgid "Implements Averaged Stochastic Gradient Descent."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/asgd.py:docstring of torch.optim.ASGD:3
+msgid "It has been proposed in `Acceleration of stochastic approximation by averaging`_."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/asgd.py:docstring of torch.optim.ASGD:11
+msgid "decay term (default: 1e-4)"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/asgd.py:docstring of torch.optim.ASGD:13
+msgid "power for eta update (default: 0.75)"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/asgd.py:docstring of torch.optim.ASGD:15
+msgid "point at which to start averaging (default: 1e6)"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/lbfgs.py:docstring of torch.optim.LBFGS:1
+msgid "Implements L-BFGS algorithm."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/lbfgs.py:docstring of torch.optim.LBFGS:4
+msgid "This optimizer doesn't support per-parameter options and parameter groups (there can be only one)."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/lbfgs.py:docstring of torch.optim.LBFGS:8
+msgid "Right now all parameters have to be on a single device. This will be improved in the future."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/lbfgs.py:docstring of torch.optim.LBFGS:12
+msgid "This is a very memory intensive optimizer (it requires additional ``param_bytes * (history_size + 1)`` bytes). If it doesn't fit in memory try reducing the history size, or use a different algorithm."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/lbfgs.py:docstring of torch.optim.LBFGS:16
+msgid "learning rate (default: 1)"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/lbfgs.py:docstring of torch.optim.LBFGS:18
+msgid "maximal number of iterations per optimization step (default: 20)"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/lbfgs.py:docstring of torch.optim.LBFGS:21
+msgid "maximal number of function evaluations per optimization step (default: max_iter * 1.25)."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/lbfgs.py:docstring of torch.optim.LBFGS:24
+msgid "termination tolerance on first order optimality (default: 1e-5)."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/lbfgs.py:docstring of torch.optim.LBFGS:27
+msgid "termination tolerance on function value/parameter changes (default: 1e-9)."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/lbfgs.py:docstring of torch.optim.LBFGS:30
+msgid "update history size (default: 100)."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/rmsprop.py:docstring of torch.optim.RMSprop:1
+msgid "Implements RMSprop algorithm."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/rmsprop.py:docstring of torch.optim.RMSprop:3
+msgid "Proposed by G. Hinton in his `course <http://www.cs.toronto.edu/~tijmen/csc321/slides/lecture_slides_lec6.pdf>`_."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/rmsprop.py:docstring of torch.optim.RMSprop:6
+msgid "The centered version first appears in `Generating Sequences With Recurrent Neural Networks <https://arxiv.org/pdf/1308.0850v5.pdf>`_."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/rmsprop.py:docstring of torch.optim.RMSprop:14
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/sgd.py:docstring of torch.optim.SGD:11
+msgid "momentum factor (default: 0)"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/rmsprop.py:docstring of torch.optim.RMSprop:16
+msgid "smoothing constant (default: 0.99)"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/rmsprop.py:docstring of torch.optim.RMSprop:21
+msgid "if ``True``, compute the centered RMSProp, the gradient is normalized by an estimation of its variance"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/rprop.py:docstring of torch.optim.Rprop:1
+msgid "Implements the resilient backpropagation algorithm."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/rprop.py:docstring of torch.optim.Rprop:8
+msgid "pair of (etaminus, etaplis), that are multiplicative increase and decrease factors (default: (0.5, 1.2))"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/rprop.py:docstring of torch.optim.Rprop:12
+msgid "a pair of minimal and maximal allowed step sizes (default: (1e-6, 50))"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/sgd.py:docstring of torch.optim.SGD:1
+msgid "Implements stochastic gradient descent (optionally with momentum)."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/sgd.py:docstring of torch.optim.SGD:3
+msgid "Nesterov momentum is based on the formula from `On the importance of initialization and momentum in deep learning`__."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/sgd.py:docstring of torch.optim.SGD:9
+msgid "learning rate"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/sgd.py:docstring of torch.optim.SGD:15
+msgid "dampening for momentum (default: 0)"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/sgd.py:docstring of torch.optim.SGD:17
+msgid "enables Nesterov momentum (default: False)"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/sgd.py:docstring of torch.optim.SGD:21
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/lr_scheduler.py:docstring of torch.optim.lr_scheduler.LambdaLR:14
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/lr_scheduler.py:docstring of torch.optim.lr_scheduler.StepLR:16
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/lr_scheduler.py:docstring of torch.optim.lr_scheduler.MultiStepLR:16
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/lr_scheduler.py:docstring of torch.optim.lr_scheduler.ReduceLROnPlateau:45
+msgid "Example"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/sgd.py:docstring of torch.optim.SGD:30
+msgid "The implementation of SGD with Momentum/Nesterov subtly differs from Sutskever et. al. and implementations in some other frameworks."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/sgd.py:docstring of torch.optim.SGD:33
+msgid "Considering the specific case of Momentum, the update can be written as"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/sgd.py:docstring of torch.optim.SGD:39
+msgid "where p, g, v and :math:`\\rho` denote the parameters, gradient, velocity, and momentum respectively."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/sgd.py:docstring of torch.optim.SGD:42
+msgid "This is in contrast to Sutskever et. al. and other frameworks which employ an update of the form"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/sgd.py:docstring of torch.optim.SGD:49
+msgid "The Nesterov version is analogously modified."
+msgstr ""
+
+#: ../../source/optim.rst:130
+msgid "How to adjust Learning Rate"
+msgstr ""
+
+#: ../../source/optim.rst:132
+msgid ":mod:`torch.optim.lr_scheduler` provides several methods to adjust the learning rate based on the number of epoches. :class:`torch.optim.lr_scheduler.ReduceLROnPlateau` allows dynamic learning rate reducing based on some validation measurements."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/lr_scheduler.py:docstring of torch.optim.lr_scheduler.LambdaLR:1
+msgid "Sets the learning rate of each parameter group to the initial lr times a given function. When last_epoch=-1, sets initial lr as lr."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/lr_scheduler.py:docstring of torch.optim.lr_scheduler.LambdaLR:4
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/lr_scheduler.py:docstring of torch.optim.lr_scheduler.StepLR:5
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/lr_scheduler.py:docstring of torch.optim.lr_scheduler.MultiStepLR:5
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/lr_scheduler.py:docstring of torch.optim.lr_scheduler.ExponentialLR:4
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/lr_scheduler.py:docstring of torch.optim.lr_scheduler.ReduceLROnPlateau:7
+msgid "Wrapped optimizer."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/lr_scheduler.py:docstring of torch.optim.lr_scheduler.LambdaLR:6
+msgid "A function which computes a multiplicative factor given an integer parameter epoch, or a list of such functions, one for each group in optimizer.param_groups."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/lr_scheduler.py:docstring of torch.optim.lr_scheduler.LambdaLR:10
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/lr_scheduler.py:docstring of torch.optim.lr_scheduler.StepLR:12
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/lr_scheduler.py:docstring of torch.optim.lr_scheduler.MultiStepLR:12
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/lr_scheduler.py:docstring of torch.optim.lr_scheduler.ExponentialLR:8
+msgid "The index of last epoch. Default: -1."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/lr_scheduler.py:docstring of torch.optim.lr_scheduler.StepLR:1
+msgid "Sets the learning rate of each parameter group to the initial lr decayed by gamma every step_size epochs. When last_epoch=-1, sets initial lr as lr."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/lr_scheduler.py:docstring of torch.optim.lr_scheduler.StepLR:7
+msgid "Period of learning rate decay."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/lr_scheduler.py:docstring of torch.optim.lr_scheduler.StepLR:9
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/lr_scheduler.py:docstring of torch.optim.lr_scheduler.MultiStepLR:9
+msgid "Multiplicative factor of learning rate decay. Default: 0.1."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/lr_scheduler.py:docstring of torch.optim.lr_scheduler.MultiStepLR:1
+msgid "Set the learning rate of each parameter group to the initial lr decayed by gamma once the number of epoch reaches one of the milestones. When last_epoch=-1, sets initial lr as lr."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/lr_scheduler.py:docstring of torch.optim.lr_scheduler.MultiStepLR:7
+msgid "List of epoch indices. Must be increasing."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/lr_scheduler.py:docstring of torch.optim.lr_scheduler.ExponentialLR:1
+msgid "Set the learning rate of each parameter group to the initial lr decayed by gamma every epoch. When last_epoch=-1, sets initial lr as lr."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/lr_scheduler.py:docstring of torch.optim.lr_scheduler.ExponentialLR:6
+msgid "Multiplicative factor of learning rate decay."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/lr_scheduler.py:docstring of torch.optim.lr_scheduler.ReduceLROnPlateau:1
+msgid "Reduce learning rate when a metric has stopped improving. Models often benefit from reducing the learning rate by a factor of 2-10 once learning stagnates. This scheduler reads a metrics quantity and if no improvement is seen for a 'patience' number of epochs, the learning rate is reduced."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/lr_scheduler.py:docstring of torch.optim.lr_scheduler.ReduceLROnPlateau:9
+msgid "One of `min`, `max`. In `min` mode, lr will be reduced when the quantity monitored has stopped decreasing; in `max` mode it will be reduced when the quantity monitored has stopped increasing. Default: 'min'."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/lr_scheduler.py:docstring of torch.optim.lr_scheduler.ReduceLROnPlateau:14
+msgid "Factor by which the learning rate will be reduced. new_lr = lr * factor. Default: 0.1."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/lr_scheduler.py:docstring of torch.optim.lr_scheduler.ReduceLROnPlateau:17
+msgid "Number of epochs with no improvement after which learning rate will be reduced. Default: 10."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/lr_scheduler.py:docstring of torch.optim.lr_scheduler.ReduceLROnPlateau:20
+msgid "If ``True``, prints a message to stdout for each update. Default: ``False``."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/lr_scheduler.py:docstring of torch.optim.lr_scheduler.ReduceLROnPlateau:23
+msgid "Threshold for measuring the new optimum, to only focus on significant changes. Default: 1e-4."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/lr_scheduler.py:docstring of torch.optim.lr_scheduler.ReduceLROnPlateau:26
+msgid "One of `rel`, `abs`. In `rel` mode, dynamic_threshold = best * ( 1 + threshold ) in 'max' mode or best * ( 1 - threshold ) in `min` mode. In `abs` mode, dynamic_threshold = best + threshold in `max` mode or best - threshold in `min` mode. Default: 'rel'."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/lr_scheduler.py:docstring of torch.optim.lr_scheduler.ReduceLROnPlateau:32
+msgid "Number of epochs to wait before resuming normal operation after lr has been reduced. Default: 0."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/lr_scheduler.py:docstring of torch.optim.lr_scheduler.ReduceLROnPlateau:35
+msgid "A scalar or a list of scalars. A lower bound on the learning rate of all param groups or each group respectively. Default: 0."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/optim/lr_scheduler.py:docstring of torch.optim.lr_scheduler.ReduceLROnPlateau:39
+msgid "Minimal decay applied to lr. If the difference between new and old lr is smaller than eps, the update is ignored. Default: 1e-8."
+msgstr ""
+

@@ -1,0 +1,384 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017, Torch Contributors
+# This file is distributed under the same license as the PyTorch package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PyTorch master (0.3.0.post4 )\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-01-12 14:38+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/autograd.rst:5
+msgid "Automatic differentiation package - torch.autograd"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/autograd/__init__.py:docstring of torch.autograd:1
+msgid "torch.autograd provides classes and functions implementing automatic differentiation of arbitrary scalar valued functions. It requires minimal changes to the existing code - you only need to wrap all tensors in :class:`.Variable` objects."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/autograd/__init__.py:docstring of torch.autograd.backward:1
+msgid "Computes the sum of gradients of given variables w.r.t. graph leaves."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/autograd/__init__.py:docstring of torch.autograd.backward:3
+msgid "The graph is differentiated using the chain rule. If any of ``variables`` are non-scalar (i.e. their data has more than one element) and require gradient, the function additionally requires specifying ``grad_variables``. It should be a sequence of matching length, that contains gradient of the differentiated function w.r.t. corresponding variables (``None`` is an acceptable value for all variables that don't need gradient tensors)."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/autograd/__init__.py:docstring of torch.autograd.backward:10
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/autograd/variable.py:docstring of torch.autograd.Variable.backward:9
+msgid "This function accumulates gradients in the leaves - you might need to zero them before calling it."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/autograd/__init__.py:docstring of torch.autograd.backward:0
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/autograd/__init__.py:docstring of torch.autograd.grad:0
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/autograd/variable.py:docstring of torch.autograd.Variable:0
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/autograd/variable.py:docstring of torch.autograd.Variable.backward:0
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/autograd/profiler.py:docstring of torch.autograd.profiler.profile:0
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/autograd/profiler.py:docstring of torch.autograd.profiler.profile.export_chrome_trace:0
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/autograd/profiler.py:docstring of torch.autograd.profiler.profile.table:0
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/autograd/profiler.py:docstring of torch.autograd.profiler.emit_nvtx:0
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/autograd/profiler.py:docstring of torch.autograd.profiler.load_nvprof:0
+msgid "参数"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/autograd/__init__.py:docstring of torch.autograd.backward:13
+msgid "Variables of which the derivative will be computed."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/autograd/__init__.py:docstring of torch.autograd.backward:16
+msgid "Gradients w.r.t. each element of corresponding variables.  Any tensors will be automatically converted to Variables that are volatile unless ``create_graph`` is ``True``.  None values can be specified for scalar Variables or ones that don't require grad. If a None value would be acceptable for all grad_variables, then this argument is optional."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/autograd/__init__.py:docstring of torch.autograd.backward:23
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/autograd/__init__.py:docstring of torch.autograd.grad:26
+msgid "If ``False``, the graph used to compute the grad will be freed. Note that in nearly all cases setting this option to ``True`` is not needed and often can be worked around in a much more efficient way. Defaults to the value of ``create_graph``."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/autograd/__init__.py:docstring of torch.autograd.backward:28
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/autograd/__init__.py:docstring of torch.autograd.grad:31
+msgid "If ``True``, graph of the derivative will be constructed, allowing to compute higher order derivative products. Defaults to ``False``, unless ``grad_variables`` contains at least one non-volatile Variable."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/autograd/__init__.py:docstring of torch.autograd.grad:1
+msgid "Computes and returns the sum of gradients of outputs w.r.t. the inputs."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/autograd/__init__.py:docstring of torch.autograd.grad:3
+msgid "``grad_outputs`` should be a sequence of length matching ``output`` containing the pre-computed gradients w.r.t. each of the outputs. If an output doesn't require_grad, then the gradient can be ``None``). Gradients can be given as Tensors when one doesn't need the graph of the derivative, or as Variables, in which case the graph will be created."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/autograd/__init__.py:docstring of torch.autograd.grad:9
+msgid "If ``only_inputs`` is ``True``, the function will only return a list of gradients w.r.t the specified inputs. If it's ``False``, then gradient w.r.t. all remaining leaves will still be computed, and will be accumulated into their ``.grad`` attribute."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/autograd/__init__.py:docstring of torch.autograd.grad:14
+msgid "outputs of the differentiated function."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/autograd/__init__.py:docstring of torch.autograd.grad:16
+msgid "Inputs w.r.t. which the gradient will be returned (and not accumulated into ``.grad``)."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/autograd/__init__.py:docstring of torch.autograd.grad:19
+msgid "Gradients w.r.t. each output. Any tensors will be automatically converted to Variables that are volatile unless ``create_graph`` is ``True``. None values can be specified for scalar Variables or ones that don't require grad. If a None value would be acceptable for all grad_variables, then this argument is optional."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/autograd/__init__.py:docstring of torch.autograd.grad:36
+msgid "If ``True``, gradient w.r.t. leaves that are part of the graph, but don't appear in ``inputs`` won't be computed and accumulated. Defaults to ``True``."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/autograd/__init__.py:docstring of torch.autograd.grad:40
+msgid "If ``False``, specifying inputs that were not used when computing outputs (and therefore their grad is always zero) is an error. Defaults to ``False``."
+msgstr ""
+
+#: ../../source/autograd.rst:15
+msgid "Variable"
+msgstr ""
+
+#: ../../source/autograd.rst:18
+msgid "API compatibility"
+msgstr ""
+
+#: ../../source/autograd.rst:20
+msgid "Variable API is nearly the same as regular Tensor API (with the exception of a couple in-place methods, that would overwrite inputs required for gradient computation). In most cases Tensors can be safely replaced with Variables and the code will remain to work just fine. Because of this, we're not documenting all the operations on variables, and you should refer to :class:`torch.Tensor` docs for this purpose."
+msgstr ""
+
+#: ../../source/autograd.rst:28
+msgid "In-place operations on Variables"
+msgstr ""
+
+#: ../../source/autograd.rst:30
+msgid "Supporting in-place operations in autograd is a hard matter, and we discourage their use in most cases. Autograd's aggressive buffer freeing and reuse makes it very efficient and there are very few occasions when in-place operations actually lower memory usage by any significant amount. Unless you're operating under heavy memory pressure, you might never need to use them."
+msgstr ""
+
+#: ../../source/autograd.rst:37
+msgid "In-place correctness checks"
+msgstr ""
+
+#: ../../source/autograd.rst:39
+msgid "All :class:`Variable` s keep track of in-place operations applied to them, and if the implementation detects that a variable was saved for backward in one of the functions, but it was modified in-place afterwards, an error will be raised once backward pass is started. This ensures that if you're using in-place functions and not seeing any errors, you can be sure that the computed gradients are correct."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/autograd/variable.py:docstring of torch.autograd.Variable:1
+msgid "Wraps a tensor and records the operations applied to it."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/autograd/variable.py:docstring of torch.autograd.Variable:3
+msgid "Variable is a thin wrapper around a Tensor object, that also holds the gradient w.r.t. to it, and a reference to a function that created it. This reference allows retracing the whole chain of operations that created the data. If the Variable has been created by the user, its grad_fn will be ``None`` and we call such objects *leaf* Variables."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/autograd/variable.py:docstring of torch.autograd.Variable:9
+msgid "Since autograd only supports scalar valued function differentiation, grad size always matches the data size. Also, grad is normally only allocated for leaf variables, and will be always zero otherwise."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/autograd/variable.py:docstring of torch.autograd.Variable:0
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/autograd/function.py:docstring of torch.autograd.Function:0
+msgid "变量"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/autograd/variable.py:docstring of torch.autograd.Variable:13
+msgid "Wrapped tensor of any type."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/autograd/variable.py:docstring of torch.autograd.Variable:14
+msgid "Variable holding the gradient of type and location matching the ``.data``.  This attribute is lazily allocated and can't be reassigned."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/autograd/variable.py:docstring of torch.autograd.Variable:17
+msgid "Boolean indicating whether the Variable has been created by a subgraph containing any Variable, that requires it. See :ref:`excluding-subgraphs` for more details. Can be changed only on leaf Variables."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/autograd/variable.py:docstring of torch.autograd.Variable:21
+msgid "Boolean indicating that the Variable should be used in inference mode, i.e. don't save the history. See :ref:`excluding-subgraphs` for more details. Can be changed only on leaf Variables."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/autograd/variable.py:docstring of torch.autograd.Variable:25
+msgid "Boolean indicating if the Variable is a graph leaf (i.e if it was created by the user)."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/autograd/variable.py:docstring of torch.autograd.Variable:27
+msgid "Gradient function graph trace."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/autograd/variable.py:docstring of torch.autograd.Variable:30
+msgid "Tensor to wrap."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/autograd/variable.py:docstring of torch.autograd.Variable:32
+msgid "Value of the requires_grad flag. **Keyword only.**"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/autograd/variable.py:docstring of torch.autograd.Variable:34
+msgid "Value of the volatile flag. **Keyword only.**"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/autograd/variable.py:docstring of torch.autograd.Variable.backward:1
+msgid "Computes the gradient of current variable w.r.t. graph leaves."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/autograd/variable.py:docstring of torch.autograd.Variable.backward:3
+msgid "The graph is differentiated using the chain rule. If the variable is non-scalar (i.e. its data has more than one element) and requires gradient, the function additionally requires specifying ``gradient``. It should be a tensor of matching type and location, that contains the gradient of the differentiated function w.r.t. ``self``."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/autograd/variable.py:docstring of torch.autograd.Variable.backward:12
+msgid "Gradient w.r.t. the variable. If it is a tensor, it will be automatically converted to a Variable that is volatile unless ``create_graph`` is True. None values can be specified for scalar Variables or ones that don't require grad. If a None value would be acceptable then this argument is optional."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/autograd/variable.py:docstring of torch.autograd.Variable.backward:19
+msgid "If ``False``, the graph used to compute the grads will be freed. Note that in nearly all cases setting this option to True is not needed and often can be worked around in a much more efficient way. Defaults to the value of ``create_graph``."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/autograd/variable.py:docstring of torch.autograd.Variable.backward:25
+msgid "If ``True``, graph of the derivative will be constructed, allowing to compute higher order derivative products. Defaults to ``False``, unless ``gradient`` is a volatile Variable."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/autograd/variable.py:docstring of torch.autograd.Variable.detach:1
+msgid "Returns a new Variable, detached from the current graph."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/autograd/variable.py:docstring of torch.autograd.Variable.detach:3
+msgid "Result will never require gradient. If the input is volatile, the output will be volatile too."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/autograd/variable.py:docstring of torch.autograd.Variable.detach:8
+msgid "Returned Variable uses the same data tensor, as the original one, and in-place modifications on either of them will be seen, and may trigger errors in correctness checks."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/autograd/variable.py:docstring of torch.autograd.Variable.detach_:1
+msgid "Detaches the Variable from the graph that created it, making it a leaf."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/autograd/variable.py:docstring of torch.autograd.Variable.register_hook:1
+msgid "Registers a backward hook."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/autograd/variable.py:docstring of torch.autograd.Variable.register_hook:3
+msgid "The hook will be called every time a gradient with respect to the variable is computed. The hook should have the following signature::"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/autograd/variable.py:docstring of torch.autograd.Variable.register_hook:8
+msgid "The hook should not modify its argument, but it can optionally return a new gradient which will be used in place of :attr:`grad`."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/autograd/variable.py:docstring of torch.autograd.Variable.register_hook:11
+msgid "This function returns a handle with a method ``handle.remove()`` that removes the hook from the module."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/autograd/variable.py:docstring of torch.autograd.Variable.register_hook:15
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/autograd/profiler.py:docstring of torch.autograd.profiler.profile:12
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/autograd/profiler.py:docstring of torch.autograd.profiler.emit_nvtx:23
+msgid "Example"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/autograd/variable.py:docstring of torch.autograd.Variable.retain_grad:1
+msgid "Enables .grad attribute for non-leaf Variables."
+msgstr ""
+
+#: ../../source/autograd.rst:51
+msgid ":hidden:`Function`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/autograd/function.py:docstring of torch.autograd.Function:1
+msgid "Records operation history and defines formulas for differentiating ops."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/autograd/function.py:docstring of torch.autograd.Function:3
+msgid "Every operation performed on :class:`Variable` s creates a new function object, that performs the computation, and records that it happened. The history is retained in the form of a DAG of functions, with edges denoting data dependencies (``input <- output``). Then, when backward is called, the graph is processed in the topological ordering, by calling :func:`backward` methods of each :class:`Function` object, and passing returned gradients on to next :class:`Function` s."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/autograd/function.py:docstring of torch.autograd.Function:11
+msgid "Normally, the only way users interact with functions is by creating subclasses and defining new operations. This is a recommended way of extending torch.autograd."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/autograd/function.py:docstring of torch.autograd.Function:15
+msgid "Each function is meant to be used only once (in the forward pass)."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/autograd/function.py:docstring of torch.autograd.Function:17
+msgid "Boolean indicating whether the :func:`backward` will ever need to be called."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/autograd/function.py:docstring of torch.autograd.Function:21
+msgid "Examples::"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/autograd/function.py:docstring of torch.autograd.Function.backward:1
+msgid "Defines a formula for differentiating the operation."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/autograd/function.py:docstring of torch.autograd.Function.backward:3
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/autograd/function.py:docstring of torch.autograd.Function.forward:3
+msgid "This function is to be overriden by all subclasses."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/autograd/function.py:docstring of torch.autograd.Function.backward:5
+msgid "It must accept a context ctx as the first argument, followed by as many outputs did :func:`forward` return, and it should return as many tensors, as there were inputs to :func:`forward`. Each argument is the gradient w.r.t the given output, and each returned value should be the gradient w.r.t. the corresponding input."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/autograd/function.py:docstring of torch.autograd.Function.backward:11
+msgid "The context can be used to retrieve variables saved during the forward pass."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/autograd/function.py:docstring of torch.autograd.Function.forward:1
+msgid "Performs the operation."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/autograd/function.py:docstring of torch.autograd.Function.forward:5
+msgid "It must accept a context ctx as the first argument, followed by any number of arguments (tensors or other types)."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/autograd/function.py:docstring of torch.autograd.Function.forward:8
+msgid "The context can be used to store variables that can be then retrieved during the backward pass."
+msgstr ""
+
+#: ../../source/autograd.rst:57
+msgid "Profiler"
+msgstr ""
+
+#: ../../source/autograd.rst:59
+msgid "Autograd includes a profiler that lets you inspect the cost of different operators inside your model - both on the CPU and GPU. There are two modes implemented at the moment - CPU-only using :class:`~torch.autograd.profiler.profile`. and nvprof based (registers both CPU and GPU activity) using :class:`~torch.autograd.profiler.emit_nvtx`."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/autograd/profiler.py:docstring of torch.autograd.profiler.profile:1
+msgid "Context manager that manages autograd profiler state and holds a summary of results."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/autograd/profiler.py:docstring of torch.autograd.profiler.profile:3
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/autograd/profiler.py:docstring of torch.autograd.profiler.emit_nvtx:18
+msgid "Setting this to False makes this context manager a no-op. Default: ``True``."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/autograd/profiler.py:docstring of torch.autograd.profiler.profile.export_chrome_trace:1
+msgid "Exports an EventList as a Chrome tracing tools file."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/autograd/profiler.py:docstring of torch.autograd.profiler.profile.export_chrome_trace:3
+msgid "The checkpoint can be later loaded and inspected under ``chrome://tracing`` URL."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/autograd/profiler.py:docstring of torch.autograd.profiler.profile.export_chrome_trace:5
+msgid "Path where the trace will be written."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/autograd/profiler.py:docstring of torch.autograd.profiler.profile.key_averages:1
+msgid "Averages all function events over their keys."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/autograd/profiler.py:docstring of torch.autograd.profiler.profile.key_averages:0
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/autograd/profiler.py:docstring of torch.autograd.profiler.profile.table:0
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/autograd/profiler.py:docstring of torch.autograd.profiler.profile.total_average:0
+msgid "返回"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/autograd/profiler.py:docstring of torch.autograd.profiler.profile.key_averages:3
+msgid "An EventList containing FunctionEventAvg objects."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/autograd/profiler.py:docstring of torch.autograd.profiler.profile.table:1
+msgid "Prints an EventList as a nicely formatted table."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/autograd/profiler.py:docstring of torch.autograd.profiler.profile.table:3
+msgid "Attribute used to sort entries. By default they are printed in the same order as they were registered. Valid keys include: ``cpu_time``, ``cuda_time``, ``cpu_time_total``, ``cuda_time_total``, ``count``."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/autograd/profiler.py:docstring of torch.autograd.profiler.profile.table:9
+msgid "A string containing the table."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/autograd/profiler.py:docstring of torch.autograd.profiler.profile.total_average:1
+msgid "Averages all events."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/autograd/profiler.py:docstring of torch.autograd.profiler.profile.total_average:3
+msgid "A FunctionEventAvg object."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/autograd/profiler.py:docstring of torch.autograd.profiler.emit_nvtx:1
+msgid "Context manager that makes every autograd operation emit an NVTX range."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/autograd/profiler.py:docstring of torch.autograd.profiler.emit_nvtx:3
+msgid "It is useful when running the program under nvprof::"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/autograd/profiler.py:docstring of torch.autograd.profiler.emit_nvtx:7
+msgid "Unfortunately, there's no way to force nvprof to flush the data it collected to disk, so for CUDA profiling one has to use this context manager to annotate nvprof traces and wait for the process to exit before inspecting them. Then, either NVIDIA Visual Profiler (nvvp) can be used to visualize the timeline, or :func:`torch.autograd.profiler.load_nvprof` can load the results for inspection e.g. in Python REPL."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/autograd/profiler.py:docstring of torch.autograd.profiler.load_nvprof:1
+msgid "Opens an nvprof trace file and parses autograd annotations."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torch/autograd/profiler.py:docstring of torch.autograd.profiler.load_nvprof:3
+msgid "path to nvprof trace"
+msgstr ""
+

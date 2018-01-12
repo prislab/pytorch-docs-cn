@@ -1,0 +1,303 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017, Torch Contributors
+# This file is distributed under the same license as the PyTorch package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PyTorch master (0.3.0.post4 )\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-01-12 14:41+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/torchvision/source/transforms.rst:2
+msgid "torchvision.transforms"
+msgstr ""
+
+#: ../../source/torchvision/source/transforms.rst:6
+msgid "Transforms are common image transforms. They can be chained together using :class:`Compose`"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torchvision/transforms/transforms.py:docstring of torchvision.transforms.Compose:1
+msgid "Composes several transforms together."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torchvision/transforms/transforms.py:docstring of torchvision.transforms.Compose:0
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torchvision/transforms/transforms.py:docstring of torchvision.transforms.Resize:0
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torchvision/transforms/transforms.py:docstring of torchvision.transforms.CenterCrop:0
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torchvision/transforms/transforms.py:docstring of torchvision.transforms.RandomCrop:0
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torchvision/transforms/transforms.py:docstring of torchvision.transforms.RandomResizedCrop:0
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torchvision/transforms/transforms.py:docstring of torchvision.transforms.Grayscale:0
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torchvision/transforms/transforms.py:docstring of torchvision.transforms.RandomGrayscale:0
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torchvision/transforms/transforms.py:docstring of torchvision.transforms.FiveCrop:0
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torchvision/transforms/transforms.py:docstring of torchvision.transforms.TenCrop:0
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torchvision/transforms/transforms.py:docstring of torchvision.transforms.Pad:0
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torchvision/transforms/transforms.py:docstring of torchvision.transforms.ColorJitter:0
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torchvision/transforms/transforms.py:docstring of torchvision.transforms.Normalize:0
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torchvision/transforms/transforms.py:docstring of torchvision.transforms.Normalize.__call__:0
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torchvision/transforms/transforms.py:docstring of torchvision.transforms.ToTensor.__call__:0
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torchvision/transforms/transforms.py:docstring of torchvision.transforms.ToPILImage:0
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torchvision/transforms/transforms.py:docstring of torchvision.transforms.ToPILImage.__call__:0
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torchvision/transforms/transforms.py:docstring of torchvision.transforms.Lambda:0
+msgid "参数"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torchvision/transforms/transforms.py:docstring of torchvision.transforms.Compose:3
+msgid "list of transforms to compose."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torchvision/transforms/transforms.py:docstring of torchvision.transforms.Compose:7
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torchvision/transforms/transforms.py:docstring of torchvision.transforms.FiveCrop:13
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torchvision/transforms/transforms.py:docstring of torchvision.transforms.TenCrop:17
+msgid "Example"
+msgstr ""
+
+#: ../../source/torchvision/source/transforms.rst:11
+msgid "Transforms on PIL Image"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torchvision/transforms/transforms.py:docstring of torchvision.transforms.Resize:1
+msgid "Resize the input PIL Image to the given size."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torchvision/transforms/transforms.py:docstring of torchvision.transforms.Resize:3
+msgid "Desired output size. If size is a sequence like (h, w), output size will be matched to this. If size is an int, smaller edge of the image will be matched to this number. i.e, if height > width, then image will be rescaled to (size * height / width, size)"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torchvision/transforms/transforms.py:docstring of torchvision.transforms.Resize:9
+msgid "Desired interpolation. Default is ``PIL.Image.BILINEAR``"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torchvision/transforms/transforms.py:docstring of torchvision.transforms.Scale:1
+msgid "Note: This transform is deprecated in favor of Resize."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torchvision/transforms/transforms.py:docstring of torchvision.transforms.CenterCrop:1
+msgid "Crops the given PIL Image at the center."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torchvision/transforms/transforms.py:docstring of torchvision.transforms.CenterCrop:3
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torchvision/transforms/transforms.py:docstring of torchvision.transforms.RandomCrop:3
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torchvision/transforms/transforms.py:docstring of torchvision.transforms.TenCrop:9
+msgid "Desired output size of the crop. If size is an int instead of sequence like (h, w), a square crop (size, size) is made."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torchvision/transforms/transforms.py:docstring of torchvision.transforms.RandomCrop:1
+msgid "Crop the given PIL Image at a random location."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torchvision/transforms/transforms.py:docstring of torchvision.transforms.RandomCrop:7
+msgid "Optional padding on each border of the image. Default is 0, i.e no padding. If a sequence of length 4 is provided, it is used to pad left, top, right, bottom borders respectively."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torchvision/transforms/transforms.py:docstring of torchvision.transforms.RandomHorizontalFlip:1
+msgid "Horizontally flip the given PIL Image randomly with a probability of 0.5."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torchvision/transforms/transforms.py:docstring of torchvision.transforms.RandomVerticalFlip:1
+msgid "Vertically flip the given PIL Image randomly with a probability of 0.5."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torchvision/transforms/transforms.py:docstring of torchvision.transforms.RandomResizedCrop:1
+msgid "Crop the given PIL Image to random size and aspect ratio."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torchvision/transforms/transforms.py:docstring of torchvision.transforms.RandomResizedCrop:3
+msgid "A crop of random size (default: of 0.08 to 1.0) of the original size and a random aspect ratio (default: of 3/4 to 4/3) of the original aspect ratio is made. This crop is finally resized to given size. This is popularly used to train the Inception networks."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torchvision/transforms/transforms.py:docstring of torchvision.transforms.RandomResizedCrop:8
+msgid "expected output size of each edge"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torchvision/transforms/transforms.py:docstring of torchvision.transforms.RandomResizedCrop:9
+msgid "range of size of the origin size cropped"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torchvision/transforms/transforms.py:docstring of torchvision.transforms.RandomResizedCrop:10
+msgid "range of aspect ratio of the origin aspect ratio cropped"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torchvision/transforms/transforms.py:docstring of torchvision.transforms.RandomResizedCrop:11
+msgid "Default: PIL.Image.BILINEAR"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torchvision/transforms/transforms.py:docstring of torchvision.transforms.RandomSizedCrop:1
+msgid "Note: This transform is deprecated in favor of RandomResizedCrop."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torchvision/transforms/transforms.py:docstring of torchvision.transforms.Grayscale:1
+msgid "Convert image to grayscale."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torchvision/transforms/transforms.py:docstring of torchvision.transforms.Grayscale:3
+msgid "(1 or 3) number of channels desired for output image"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torchvision/transforms/transforms.py:docstring of torchvision.transforms.Grayscale:0
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torchvision/transforms/transforms.py:docstring of torchvision.transforms.RandomGrayscale:0
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torchvision/transforms/transforms.py:docstring of torchvision.transforms.Normalize.__call__:0
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torchvision/transforms/transforms.py:docstring of torchvision.transforms.ToTensor.__call__:0
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torchvision/transforms/transforms.py:docstring of torchvision.transforms.ToPILImage.__call__:0
+msgid "返回"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torchvision/transforms/transforms.py:docstring of torchvision.transforms.Grayscale:6
+msgid "Grayscale version of the input. - If num_output_channels == 1 : returned image is single channel - If num_output_channels == 3 : returned image is 3 channel with r == g == b"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torchvision/transforms/transforms.py:docstring of torchvision.transforms.Grayscale:0
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torchvision/transforms/transforms.py:docstring of torchvision.transforms.RandomGrayscale:0
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torchvision/transforms/transforms.py:docstring of torchvision.transforms.Normalize.__call__:0
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torchvision/transforms/transforms.py:docstring of torchvision.transforms.ToTensor.__call__:0
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torchvision/transforms/transforms.py:docstring of torchvision.transforms.ToPILImage.__call__:0
+msgid "返回类型"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torchvision/transforms/transforms.py:docstring of torchvision.transforms.RandomGrayscale:1
+msgid "Randomly convert image to grayscale with a probability of p (default 0.1)."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torchvision/transforms/transforms.py:docstring of torchvision.transforms.RandomGrayscale:3
+msgid "probability that image should be converted to grayscale."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torchvision/transforms/transforms.py:docstring of torchvision.transforms.RandomGrayscale:6
+msgid "Grayscale version of the input image with probability p and unchanged with probability (1-p). - If input image is 1 channel: grayscale version is 1 channel - If input image is 3 channel: grayscale version is 3 channel with r == g == b"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torchvision/transforms/transforms.py:docstring of torchvision.transforms.FiveCrop:1
+msgid "Crop the given PIL Image into four corners and the central crop"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torchvision/transforms/transforms.py:docstring of torchvision.transforms.FiveCrop:4
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torchvision/transforms/transforms.py:docstring of torchvision.transforms.TenCrop:5
+msgid "This transform returns a tuple of images and there may be a mismatch in the number of inputs and targets your Dataset returns. See below for an example of how to deal with this."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torchvision/transforms/transforms.py:docstring of torchvision.transforms.FiveCrop:8
+msgid "Desired output size of the crop. If size is an ``int`` instead of sequence like (h, w), a square crop of size (size, size) is made."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torchvision/transforms/transforms.py:docstring of torchvision.transforms.TenCrop:1
+msgid "Crop the given PIL Image into four corners and the central crop plus the flipped version of these (horizontal flipping is used by default)"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torchvision/transforms/transforms.py:docstring of torchvision.transforms.TenCrop:13
+msgid "Use vertical flipping instead of horizontal"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torchvision/transforms/transforms.py:docstring of torchvision.transforms.Pad:1
+msgid "Pad the given PIL Image on all sides with the given \"pad\" value."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torchvision/transforms/transforms.py:docstring of torchvision.transforms.Pad:3
+msgid "Padding on each border. If a single int is provided this is used to pad all borders. If tuple of length 2 is provided this is the padding on left/right and top/bottom respectively. If a tuple of length 4 is provided this is the padding for the left, top, right and bottom borders respectively."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torchvision/transforms/transforms.py:docstring of torchvision.transforms.Pad:9
+msgid "Pixel fill value. Default is 0. If a tuple of length 3, it is used to fill R, G, B channels respectively."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torchvision/transforms/transforms.py:docstring of torchvision.transforms.ColorJitter:1
+msgid "Randomly change the brightness, contrast and saturation of an image."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torchvision/transforms/transforms.py:docstring of torchvision.transforms.ColorJitter:3
+msgid "How much to jitter brightness. brightness_factor is chosen uniformly from [max(0, 1 - brightness), 1 + brightness]."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torchvision/transforms/transforms.py:docstring of torchvision.transforms.ColorJitter:6
+msgid "How much to jitter contrast. contrast_factor is chosen uniformly from [max(0, 1 - contrast), 1 + contrast]."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torchvision/transforms/transforms.py:docstring of torchvision.transforms.ColorJitter:9
+msgid "How much to jitter saturation. saturation_factor is chosen uniformly from [max(0, 1 - saturation), 1 + saturation]."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torchvision/transforms/transforms.py:docstring of torchvision.transforms.ColorJitter:12
+msgid "How much to jitter hue. hue_factor is chosen uniformly from [-hue, hue]. Should be >=0 and <= 0.5."
+msgstr ""
+
+#: ../../source/torchvision/source/transforms.rst:42
+msgid "Transforms on torch.\\*Tensor"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torchvision/transforms/transforms.py:docstring of torchvision.transforms.Normalize:1
+msgid "Normalize an tensor image with mean and standard deviation. Given mean: ``(M1,...,Mn)`` and std: ``(S1,..,Sn)`` for ``n`` channels, this transform will normalize each channel of the input ``torch.*Tensor`` i.e. ``input[channel] = (input[channel] - mean[channel]) / std[channel]``"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torchvision/transforms/transforms.py:docstring of torchvision.transforms.Normalize:6
+msgid "Sequence of means for each channel."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torchvision/transforms/transforms.py:docstring of torchvision.transforms.Normalize:8
+msgid "Sequence of standard deviations for each channel."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torchvision/transforms/transforms.py:docstring of torchvision.transforms.Normalize.__call__:1
+msgid "Tensor image of size (C, H, W) to be normalized."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torchvision/transforms/transforms.py:docstring of torchvision.transforms.Normalize.__call__:4
+msgid "Normalized Tensor image."
+msgstr ""
+
+#: ../../source/torchvision/source/transforms.rst:50
+msgid "Conversion Transforms"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torchvision/transforms/transforms.py:docstring of torchvision.transforms.ToTensor:1
+msgid "Convert a ``PIL Image`` or ``numpy.ndarray`` to tensor."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torchvision/transforms/transforms.py:docstring of torchvision.transforms.ToTensor:3
+msgid "Converts a PIL Image or numpy.ndarray (H x W x C) in the range [0, 255] to a torch.FloatTensor of shape (C x H x W) in the range [0.0, 1.0]."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torchvision/transforms/transforms.py:docstring of torchvision.transforms.ToTensor.__call__:1
+msgid "Image to be converted to tensor."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torchvision/transforms/transforms.py:docstring of torchvision.transforms.ToTensor.__call__:4
+msgid "Converted image."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torchvision/transforms/transforms.py:docstring of torchvision.transforms.ToPILImage:1
+msgid "Convert a tensor or an ndarray to PIL Image."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torchvision/transforms/transforms.py:docstring of torchvision.transforms.ToPILImage:3
+msgid "Converts a torch.*Tensor of shape C x H x W or a numpy ndarray of shape H x W x C to a PIL Image while preserving the value range."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torchvision/transforms/transforms.py:docstring of torchvision.transforms.ToPILImage:6
+msgid "color space and pixel depth of input data (optional). If ``mode`` is ``None`` (default) there are some assumptions made about the input data: 1. If the input has 3 channels, the ``mode`` is assumed to be ``RGB``. 2. If the input has 4 channels, the ``mode`` is assumed to be ``RGBA``. 3. If the input has 1 channel, the ``mode`` is determined by the data type (i,e, ``int``, ``float``, ``short``)."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torchvision/transforms/transforms.py:docstring of torchvision.transforms.ToPILImage.__call__:1
+msgid "Image to be converted to PIL Image."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torchvision/transforms/transforms.py:docstring of torchvision.transforms.ToPILImage.__call__:4
+msgid "Image converted to PIL Image."
+msgstr ""
+
+#: ../../source/torchvision/source/transforms.rst:61
+msgid "Generic Transforms"
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torchvision/transforms/transforms.py:docstring of torchvision.transforms.Lambda:1
+msgid "Apply a user-defined lambda as a transform."
+msgstr ""
+
+#: ../../../pytorch/docs-pris/py3/lib/python3.6/site-packages/torchvision/transforms/transforms.py:docstring of torchvision.transforms.Lambda:3
+msgid "Lambda/function to be used for transform."
+msgstr ""
+
